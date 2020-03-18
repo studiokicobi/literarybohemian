@@ -38,10 +38,10 @@
 				<?php
 			endif;
 			// $literarybohemian_description = get_bloginfo( 'description', 'display' );
-			 if ( $literarybohemian_description || is_customize_preview() ) :
-			 	?>
-			// 	<p class="site-description"><?php echo $literarybohemian_description; /* WPCS: xss ok. */ ?></p>
-			// <?php endif; ?>
+			// if ( $literarybohemian_description || is_customize_preview() ) :
+			//	?>
+		 	<!-- <p class="site-description"><?php //echo $literarybohemian_description; /* WPCS: xss ok. */ ?></p> -->
+		  <?php //endif; ?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
