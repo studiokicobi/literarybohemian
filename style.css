@@ -409,7 +409,9 @@ html {
 
 body {
   background: #f7f2ee;
-  /* Fallback for when there is no custom background color defined. */ }
+  /* Fallback for when there is no custom background color defined. */
+  font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  padding: 1em; }
 
 hr {
   background-color: #ccc;
@@ -549,7 +551,8 @@ a {
   clear: both;
   display: block;
   float: left;
-  width: 100%; }
+  width: 100%;
+  border-top: 3px solid black; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -714,9 +717,22 @@ a {
 /*--------------------------------------------------------------
 ## Layout
 --------------------------------------------------------------*/
-.site-branding svg {
-  height: 125px;
-  width: 150px; }
+.site-branding {
+  /* figure out this value */
+  max-width: calc(12rem + 10vw);
+  /* space below the logo */
+  padding-bottom: 1em; }
+
+.logo-container {
+  height: 0;
+  padding-top: 41.6666666667%;
+  position: relative;
+  width: 50%; }
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 /*--------------------------------------------------------------
 ## Posts and pages
