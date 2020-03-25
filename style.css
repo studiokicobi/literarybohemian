@@ -734,6 +734,26 @@ a {
   top: 0;
   left: 0; }
 
+/* Layout for the header nav + search form */
+#main-navigation-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  margin-top: -2.5em; }
+  #main-navigation-container #site-navigation {
+    -webkit-box-ordinal-group: 3;
+            order: 2; }
+  #main-navigation-container .search-form {
+    -webkit-box-ordinal-group: 2;
+            order: 1;
+    /* place the search form above the nav */
+    align-self: flex-end;
+    /* move form to the right */
+    margin-bottom: 1em;
+    /* push the nav border down*/ }
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
