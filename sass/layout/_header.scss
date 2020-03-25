@@ -15,3 +15,20 @@
   top: 0;
   left: 0;
 }
+
+/* Layout for the header nav + search form */
+#main-navigation-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: -2.5em;
+
+  #site-navigation {
+    order: 2;
+  }
+
+  .search-form {
+    order: 1; /* place the search form above the nav */
+    align-self: flex-end; /* move form to the right */
+    margin-bottom: 1em; /* push the nav border down*/
+  }
+}
