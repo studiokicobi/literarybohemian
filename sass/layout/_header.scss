@@ -1,4 +1,17 @@
-.site-branding svg {
-  height: 125px;
-  width: 150px;
+.site-branding {
+  /* figure out this value */
+  max-width: calc(12rem + 10vw);
+  /* space below the logo */
+  padding-bottom: 1em;
+}
+.logo-container {
+  height: 0;
+  padding-top: 41.6666666667%;
+  position: relative;
+  width: 50%;
+}
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
