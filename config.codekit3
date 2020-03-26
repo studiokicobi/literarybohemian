@@ -691,6 +691,14 @@
 		"oAP": "/search.php",
 		"oF": 0
 		},
+	"/searchform.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/searchform.php",
+		"oF": 0
+		},
 	"/sidebar.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -724,6 +732,16 @@
 		"oA": 0,
 		"oAP": "/style.css.map",
 		"oF": 0
+		},
+	"/svg/icon-search.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/icon-search.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/svg/the-literary-bohemian-logo.svg": {
 		"ft": 2097152,
