@@ -6,8 +6,24 @@ optgroup,
 textarea {
   color: $color__text-main;
   font-family: $font__main;
+  font-weight: 400;
+  font-style: normal;
   @include font-size(1);
   line-height: $font__line-height-body;
+}
+
+em,
+i {
+  font-family: grad, serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+strong,
+b {
+  font-family: grad, serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 @import "headings";
@@ -30,4 +46,8 @@ textarea {
 //
 // font-family: grad, serif;
 // font-weight: 700;
+// font-style: normal;
+
+// font-family: sofia-pro,sans-serif;
+// font-weight: 600;
 // font-style: normal;
