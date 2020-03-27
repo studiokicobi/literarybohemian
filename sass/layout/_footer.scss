@@ -1,0 +1,86 @@
+.site-footer {
+  .site-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include sans;
+    font-size: calc(0.65rem + 0.333vw);
+    margin-bottom: 4rem; // room for the footer landscape image
+
+    .menu-primary-container,
+    .menu-secondary-container,
+    .menu-tertiary-container,
+    .menu-social-channels-container {
+      flex-basis: 16.6666666667%;
+      max-width: 11rem;
+
+      @media screen and (max-width: 55rem) {
+        flex-basis: 25%;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    @media screen and (max-width: 35rem) {
+      .menu-primary-container {
+        order: 0;
+        flex-basis: 50%;
+        margin-bottom: 0.5rem;
+      }
+      .menu-secondary-container {
+        order: 2;
+        flex-basis: 100%;
+        margin-bottom: 0.5rem;
+        margin-right: 5rem; // Need this to make sure the next container doesn't share the same row
+      }
+      .menu-tertiary-container {
+        order: 3;
+        flex-basis: 100%;
+        margin-bottom: 0.5rem;
+      }
+      .menu-social-channels-container {
+        order: 1;
+        flex-basis: 50%;
+        flex-grow: 1;
+      }
+    }
+
+    @media screen and (max-width: 20em) {
+      .menu-primary-container {
+        order: 0;
+      }
+      .menu-secondary-container {
+        order: 1;
+      }
+      .menu-tertiary-container {
+        order: 2;
+      }
+      .menu-social-channels-container {
+        order: 3;
+      }
+    }
+
+    .copyright {
+      flex-basis: 32%;
+      flex-grow: 1; // make it expand after the max-width of the menu containers is used up
+      text-align: right;
+      color: rgba(0, 0, 0, 0.5);
+      order: 4;
+
+      @media screen and (max-width: 55rem) {
+        flex-basis: 100%;
+        margin-top: 5rem;
+        text-align: left;
+      }
+    }
+  }
+
+  img {
+    // close the bottom gap beneath the bg image
+    vertical-align: bottom;
+  }
+}
