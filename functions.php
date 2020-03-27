@@ -44,19 +44,14 @@ if (!function_exists('literarybohemian_setup')) :
 		 */
 		add_theme_support('post-thumbnails');
 
-		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus(array(
-			'menu-1' => esc_html__('Primary', 'literarybohemian'),
-		));
-
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
 		add_theme_support('html5', array(
 			'search-form',
-			'comment-form',
-			'comment-list',
+			// 'comment-form',
+			// 'comment-list',
 			'gallery',
 			'caption',
 		));
@@ -75,12 +70,12 @@ if (!function_exists('literarybohemian_setup')) :
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
-		add_theme_support('custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
-			'flex-width'  => true,
-			'flex-height' => true,
-		));
+		// add_theme_support('custom-logo', array(
+		// 	'height'      => 250,
+		// 	'width'       => 250,
+		// 	'flex-width'  => true,
+		// 	'flex-height' => true,
+		// ));
 	}
 endif;
 add_action('after_setup_theme', 'literarybohemian_setup');
@@ -140,7 +135,7 @@ add_action('wp_enqueue_scripts', 'literarybohemian_scripts');
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/inc/custom-header.php';
+// require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
