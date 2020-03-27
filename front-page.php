@@ -29,6 +29,8 @@ get_header();
 		endwhile; // End of the loop.
 		?>
 
+<!-- temp while building footer -->
+<br><br><br><br><br><br><br><br><br><br><br>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
