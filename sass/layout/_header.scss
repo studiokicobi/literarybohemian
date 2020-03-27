@@ -79,5 +79,44 @@
     grid-column: 1 /3;
     @include sans;
     font-size: 85%;
+    clear: both;
+    display: block;
+    float: left;
+    width: 100%;
+    // full-width divider between logo/search and navigation
+    border-top: 3px solid rgba(0, 0, 0, 1);
+    padding-top: 0.5rem;
+    margin-top: calc(0.5rem - 3px);
+
+    li {
+      display: block;
+      background-position: left 50%;
+      background-repeat: no-repeat;
+      margin-right: 1.5rem;
+
+      &.icon-journal {
+        background-image: url("svg/icon-journal.svg");
+        background-size: calc(1rem + 0.333vw);
+        padding-left: calc(1.4rem + 0.333vw);
+      }
+
+      &.icon-logbook {
+        background-image: url("svg/icon-logbook.svg");
+        background-size: calc(0.7rem + 0.333vw);
+        padding-left: calc(1.1rem + 0.333vw);
+      }
+
+      &.icon-submissions {
+        background-image: url("svg/icon-submissions.svg");
+        background-size: calc(1.3rem + 0.333vw);
+        padding-left: calc(1.6rem + 0.333vw);
+      }
+
+      a {
+        @include on-event {
+          color: $hot;
+        }
+      }
+    }
   }
 }
