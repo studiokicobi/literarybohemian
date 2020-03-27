@@ -121,6 +121,28 @@
 		"oAP": "/index.php",
 		"oF": 0
 		},
+	"/jpg/footer-landscape-1920.jpg": {
+		"ft": 16384,
+		"iS": 47320,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/jpg/footer-landscape-1920.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/jpg/footer-landscape-640.jpg": {
+		"ft": 16384,
+		"iS": 8523,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/jpg/footer-landscape-640.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/js/customizer-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -386,6 +408,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/_content-sidebar.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/sass/layout/_footer.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_footer.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
