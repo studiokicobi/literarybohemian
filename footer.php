@@ -15,12 +15,34 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu__footer',
-			) );
-			?>
+
+				<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_class'        => 'nav__footer',
+				) );
+				?>
+
+				<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-2',
+					'menu_class'        => 'nav__footer',
+				) );
+				?>
+
+				<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-3',
+					'menu_class'        => 'nav__footer',
+				) );
+				?>
+
+				<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-4',
+					'menu_class'        => 'nav__footer',
+				) );
+				?>
 
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
