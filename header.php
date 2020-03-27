@@ -17,6 +17,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+	<style>
+	.bg {
+		background-image: url('<?php echo get_template_directory_uri(); ?>/random-bg/<?php echo rand(1,100)?>.png');
+	}
+</style>
 	<?php wp_head(); ?>
 </head>
 
