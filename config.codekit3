@@ -49,6 +49,14 @@
 		"oAP": "/footer.php",
 		"oF": 0
 		},
+	"/front-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/front-page.php",
+		"oF": 0
+		},
 	"/functions.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -113,6 +121,17 @@
 		"oAP": "/index.php",
 		"oF": 0
 		},
+	"/js/customizer-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/customizer-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"/js/customizer.js": {
 		"bF": 0,
 		"ft": 64,
@@ -124,6 +143,17 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"/js/navigation-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/navigation-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"/js/navigation.js": {
 		"bF": 0,
 		"ft": 64,
@@ -131,6 +161,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/navigation-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/js/skip-link-focus-fix-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/skip-link-focus-fix-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -162,6 +203,16 @@
 		"oAP": "/languages/readme.txt",
 		"oF": 0
 		},
+	"/layouts/content-sidebar-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/layouts/content-sidebar-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/layouts/content-sidebar.css": {
 		"aP": 1,
 		"bl": 0,
@@ -169,6 +220,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/layouts/content-sidebar-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/layouts/sidebar-content-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/layouts/sidebar-content-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -196,6 +257,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/phpcs.xml.dist",
+		"oF": 0
+		},
+	"/README.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/README.html",
 		"oF": 0
 		},
 	"/README.md": {
@@ -738,6 +807,46 @@
 		"miP": 0,
 		"oA": 1,
 		"oAP": "/assets/svg/icon-journal.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/svg/icon-logbook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/icon-logbook.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/svg/icon-search.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/icon-search.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/svg/icon-submissions.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/icon-submissions.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/svg/the-literary-bohemian-logo-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/the-literary-bohemian-logo-2.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
