@@ -12,8 +12,18 @@ html {
 body {
   background: $color__background-body; /* Fallback for when there is no custom background color defined. */
   font-size: calc(1rem + 0.333vw);
-  font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  //font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+}
+
+// Create page margins
+.site-header {
   padding: calc(2rem + 0.333vw) calc(2.5rem + 0.333vw) 0;
+}
+.site-content {
+  padding: 0 calc(2.5rem + 0.333vw);
+}
+.site-info {
+  padding: 0 calc(4.5rem + 0.333vw);
 }
 
 hr {
