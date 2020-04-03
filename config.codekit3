@@ -73,6 +73,204 @@
 		"oAP": "/header.php",
 		"oF": 0
 		},
+	"/img/arrow-line.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/arrow-line.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/arrow-square.png": {
+		"ft": 32768,
+		"iS": 502,
+		"oA": 0,
+		"oAP": "/img/arrow-square.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/arrow-square.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/arrow-square.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/arrow-square@2x.png": {
+		"ft": 32768,
+		"iS": 507,
+		"oA": 0,
+		"oAP": "/img/arrow-square@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/arrow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/arrow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/arrowhead.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/arrowhead.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/footer-landscape-1920.jpg": {
+		"ft": 16384,
+		"iS": 47320,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/footer-landscape-1920.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/footer-landscape-640.jpg": {
+		"ft": 16384,
+		"iS": 8523,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/footer-landscape-640.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/icon-journal.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/icon-journal.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/icon-logbook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/icon-logbook.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/icon-search.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/icon-search.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/icon-submissions.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/icon-submissions.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/map-bg.jpg": {
+		"ft": 16384,
+		"iS": 28075,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/map-bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/map-bg.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/map-bg.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/map-bg@0.5x.jpg": {
+		"ft": 16384,
+		"iS": 35114,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/map-bg@0.5x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/map-bg@1.jpg": {
+		"ft": 16384,
+		"iS": 121160,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/map-bg@1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/map-bg@2x.jpg": {
+		"ft": 16384,
+		"iS": 268351,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/map-bg@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/the-literary-bohemian-logo-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/the-literary-bohemian-logo-2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/the-literary-bohemian-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/the-literary-bohemian-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/inc/custom-header.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -120,28 +318,6 @@
 		"oA": 0,
 		"oAP": "/index.php",
 		"oF": 0
-		},
-	"/jpg/footer-landscape-1920.jpg": {
-		"ft": 16384,
-		"iS": 47320,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/jpg/footer-landscape-1920.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/jpg/footer-landscape-640.jpg": {
-		"ft": 16384,
-		"iS": 8523,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/jpg/footer-landscape-640.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
 		},
 	"/js/customizer-min.js": {
 		"bF": 0,
@@ -555,6 +731,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/sass/modules/_custom-scrollbars.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_custom-scrollbars.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/sass/modules/_infinite-scroll.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -836,66 +1025,6 @@
 		"oA": 0,
 		"oAP": "/style.css.map",
 		"oF": 0
-		},
-	"/svg/icon-journal.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 1,
-		"oAP": "/assets/svg/icon-journal.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/svg/icon-logbook.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 1,
-		"oAP": "/assets/svg/icon-logbook.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/svg/icon-search.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 1,
-		"oAP": "/assets/svg/icon-search.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/svg/icon-submissions.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 1,
-		"oAP": "/assets/svg/icon-submissions.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/svg/the-literary-bohemian-logo-2.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 1,
-		"oAP": "/assets/svg/the-literary-bohemian-logo-2.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/svg/the-literary-bohemian-logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 1,
-		"oAP": "/assets/svg/the-literary-bohemian-logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
 		},
 	"/template-parts/content-none.php": {
 		"cB": 0,
