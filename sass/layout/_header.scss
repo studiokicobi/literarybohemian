@@ -33,7 +33,9 @@
     height: $search-dim;
     width: calc(100% + (#{$rl-site-margin} * 2));
     margin: 0 calc(#{$rl-site-margin} * -1);
-    background: $dark-brown;
+    //background: $dark-warm-brown;
+    background-image: linear-gradient(#714e46, #460f01);
+
     margin-bottom: calc(1rem + #{$scale-value});
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
     transition: all 0.3s linear;
