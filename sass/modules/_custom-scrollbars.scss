@@ -1,0 +1,23 @@
+// // --------------------------------------------------------------
+// // Scrollbar colors
+//
+// $scrollbar-bg: darken($color__background-body, 20%);
+// $scrollbar-button: darken($color__background-body, 50%);
+//
+// // --------------------------------------------------------------
+// body::-webkit-scrollbar {
+//   width: 20px;
+// }
+// body {
+//   scrollbar-width: auto;
+//   scrollbar-color: $scrollbar-button $scrollbar-bg;
+// }
+// body::-webkit-scrollbar-track {
+//   background: $scrollbar-bg;
+// }
+// body::-webkit-scrollbar-thumb {
+//   background-color: $scrollbar-button;
+//   border-radius: 10px;
+//   border: 5px solid $scrollbar-bg;
+// }
+// // --------------------------------------------------------------
