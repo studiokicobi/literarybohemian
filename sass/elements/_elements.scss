@@ -11,20 +11,38 @@ html {
 
 body {
   background: $color__background-body; /* Fallback for when there is no custom background color defined. */
-  font-size: calc(1rem + 0.333vw);
+  font-size: calc(1rem + #{$scale-value});
   //font-size: calc(16px + 6 * ((100vw - 320px) / 680));
 }
 
 // Create page margins
 .site-header {
-  padding: calc(2rem + 0.333vw) calc(2.5rem + 0.333vw) 0;
+  padding: 0 $rl-site-margin;
 }
 .site-content {
-  padding: 0 calc(2.5rem + 0.333vw);
+  padding: 0 $rl-site-margin;
 }
 .site-info {
-  padding: 0 calc(4.5rem + 0.333vw);
+  padding: 0 calc(4.5rem + #{$scale-value});
 }
+
+// Sticky footer
+// html,
+// body {
+//   height: 100%;
+// }
+// body {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+// }
+// .site-header,
+// .site-info {
+//   flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+// }
+// .site-content {
+//   flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+// }
 
 hr {
   background-color: $color__background-hr;

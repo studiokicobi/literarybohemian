@@ -30,14 +30,15 @@
 		</div><!-- .site-info -->
 
 		<picture>
-		  <source srcset="<?php echo get_template_directory_uri(); ?>/jpg/footer-landscape-640.jpg" media="(max-width: 640px)">
-		  <source srcset="<?php echo get_template_directory_uri(); ?>/jpg/footer-landscape-1920.jpg">
-		  <img src="<?php echo get_template_directory_uri(); ?>/jpg/footer-landscape-1920.jpg" alt="">
+		  <source srcset="<?php echo get_template_directory_uri(); ?>/img/footer-landscape-640.jpg" media="(max-width: 640px)">
+		  <source srcset="<?php echo get_template_directory_uri(); ?>/img/footer-landscape-1920.jpg">
+		  <img src="<?php echo get_template_directory_uri(); ?>/img/footer-landscape-1920.jpg" alt="">
 		</picture>
 
 	</footer><!-- #colophon -->
-	<div class="footer-bg"></div>
 </div><!-- #page -->
+
+<div class="footer-bg"></div>
 
 <?php wp_footer(); ?>
 

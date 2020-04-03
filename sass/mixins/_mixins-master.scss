@@ -1,3 +1,8 @@
+// Animation
+@mixin link-fade {
+  transition: all 0.15s linear;
+}
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
   font-size: ($sizeValue * 16) * 1px;

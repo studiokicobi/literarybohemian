@@ -1,122 +1,289 @@
 .site-header {
   // Build the header grid layout
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  //grid-template-rows: repeat(2, 1fr);
-  grid-template-rows: auto auto;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-template-areas:
+    "search search search search"
+    "logo x x x"
+    "arrow arrow arrow arrow"
+    "nav nav nav nav";
+  grid-gap: 0;
+  overflow: hidden; // need this if we are scaling the search field on hover
 
   //IE grid fix
   @media all and (-ms-high-contrast: none) {
     .site-header {
       display: -ms-grid;
-      -ms-grid-template-columns: repeat(2, 1fr);
-      -ms-grid-template-rows: repeat(2, 1fr);
+      -ms-grid-template-columns: repeat(4, 1fr);
+      -ms-grid-template-rows: repeat(3, 1fr);
     }
   }
 
   .site-branding {
-    grid-area: 1 / 1 / 2 / 2;
-    //Size the logo accordingly
-    max-width: calc(12rem + 10vw);
-    // Add space below the logo, same as .search-form
-    padding-bottom: 1rem;
+    grid-area: logo;
+    margin-left: 0.9vw;
 
-    .logo-container {
-      height: 0;
-      padding-top: 41.6666666667%;
+    img {
+      width: 45%;
+      min-width: 6rem;
+    }
+  }
+
+  .search-wrapper {
+    grid-area: search;
+    height: $search-dim;
+    width: calc(100% + (#{$rl-site-margin} * 2));
+    margin: 0 calc(#{$rl-site-margin} * -1);
+    background: $dark-brown;
+    margin-bottom: calc(1rem + #{$scale-value});
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+
+    .search-form {
+      height: $search-dim;
+      float: right;
+      width: calc(20rem + (#{$search-dim} * 2));
       position: relative;
-      width: 50%;
+      transition: all 0.3s linear;
 
-      .logo {
+      @include on-event {
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+        transform: scale(1.05) translate(-9px, 0);
+        overflow: hidden;
+      }
+
+      .search-field {
+        height: $search-dim;
+        padding: 0 1rem;
+        clear: both;
+        border: none;
+        background-color: white;
+        border-radius: 0;
+        font-style: italic;
         position: absolute;
         top: 0;
-        left: 0;
-      }
-    }
-  }
+        right: calc(#{$search-dim} * 2);
+        width: 20rem;
+        font-size: calc(0.75rem + 0.333vw);
 
-  .search-form {
-    grid-area: 1 / 2 / 2 / 3;
-    justify-self: end;
-    align-self: end;
-    // Add space below the form, same as .site-branding
-    margin-bottom: 0.2rem;
-
-    .search-field {
-      transform: translateY(-1.35rem);
-      color: #666;
-      border: none;
-      background-color: transparent;
-      font-style: italic;
-      margin-right: 0.5rem;
-      font-style: italic;
-      border-bottom: 1px dotted #ccc;
-      border-radius: 0;
-    }
-
-    button {
-      border: none;
-      background: transparent;
-      color: rgba(0, 0, 0, 0);
-      line-height: auto;
-      padding: 0;
-
-      .icon-search {
-        width: calc(2.5rem + 0.333vw);
-        height: calc(2.5rem + 0.333vw);
-        background: url("svg/icon-search.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        display: block;
-      }
-    }
-  }
-
-  .main-navigation {
-    grid-area: 2 / 1 / 3 / 2;
-    grid-column: 1 /3;
-    @include sans;
-    font-size: 85%;
-    clear: both;
-    display: block;
-    float: left;
-    width: 100%;
-    // full-width divider between logo/search and navigation
-    border-top: 3px solid rgba(0, 0, 0, 1);
-    padding-top: 0.5rem;
-    margin-top: calc(0.5rem - 3px);
-
-    li {
-      display: block;
-      background-position: left 50%;
-      background-repeat: no-repeat;
-      margin-right: 1.5rem;
-
-      &.icon-journal {
-        background-image: url("svg/icon-journal.svg");
-        background-size: calc(1rem + 0.333vw);
-        padding-left: calc(1.4rem + 0.333vw);
-      }
-
-      &.icon-logbook {
-        background-image: url("svg/icon-logbook.svg");
-        background-size: calc(0.7rem + 0.333vw);
-        padding-left: calc(1.1rem + 0.333vw);
-      }
-
-      &.icon-submissions {
-        background-image: url("svg/icon-submissions.svg");
-        background-size: calc(1.3rem + 0.333vw);
-        padding-left: calc(1.6rem + 0.333vw);
-      }
-
-      a {
         @include on-event {
-          color: $hot;
+          background-color: white;
+          color: #111;
+          @include link-fade;
+
+          &::placeholder {
+            color: #111;
+          }
+        }
+
+        &::placeholder {
+          font-size: calc(0.75rem + 0.333vw);
+          font-style: italic;
+          color: rgba(0, 0, 0, 0.6);
+        }
+      }
+
+      button {
+        border: none;
+        height: $search-dim;
+        width: calc(#{$search-dim} * 2);
+        background: $pale-hot;
+        color: rgba(0, 0, 0, 0);
+        line-height: $search-dim;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 0;
+        cursor: pointer;
+
+        @include on-event {
+          background: $dark-hot;
+          transition: all 0.15s linear;
+        }
+
+        .icon-search {
+          height: $search-dim;
+          width: calc(#{$search-dim} * 2);
+          // width: calc(1.75rem + 0.333vw);
+          // height: calc(1.75rem + 0.333vw);
+          background: url("img/icon-search.svg");
+          background-position: center;
+          background-size: calc(1.75rem + 0.333vw);
+          background-repeat: no-repeat;
+          display: block;
         }
       }
     }
+  }
+}
+
+.arrow-wrapper {
+  // See the bottom of the page for the CSS arrow code
+  grid-area: arrow;
+}
+
+.main-navigation {
+  grid-area: nav;
+  @include sans;
+  font-size: calc(0.85rem + 0.333vw);
+  clear: both;
+  display: block;
+  width: calc(100% - 1vw);
+  transform: translateY(calc(-1rem - 0.333vw));
+  margin-left: 1vw;
+
+  li {
+    display: block;
+    float: left;
+    position: relative;
+    background-position: left 50%;
+    background-repeat: no-repeat;
+    margin-right: 1.5rem;
+
+    &.icon-journal {
+      background-image: url("img/icon-journal.svg");
+      background-size: calc(1rem + 0.333vw);
+      padding-left: calc(1.4rem + 0.333vw);
+    }
+
+    &.icon-logbook {
+      background-image: url("img/icon-logbook.svg");
+      background-size: calc(0.7rem + 0.333vw);
+      padding-left: calc(1.1rem + 0.333vw);
+    }
+
+    &.icon-submissions {
+      background-image: url("img/icon-submissions.svg");
+      background-size: calc(1.3rem + 0.333vw);
+      padding-left: calc(1.6rem + 0.333vw);
+    }
+
+    @media screen and (max-width: 38rem) {
+      float: none;
+      margin-bottom: 0.35rem;
+
+      &.icon-journal {
+        background-position: 0.19rem;
+        padding-left: calc(1.6rem + 0.333vw);
+      }
+      &.icon-logbook {
+        background-position: 0.35rem;
+        padding-left: calc(1.6rem + 0.333vw);
+      }
+      &.icon-submissions {
+        padding-left: calc(1.6rem + 0.333vw);
+      }
+    }
+
+    a {
+      @include on-event {
+        color: $hot;
+      }
+    }
+  }
+}
+
+/***********************
+ *                      *
+ * The navigation arrow *
+ *                      *
+ ************************/
+
+$arrow-scale-value: 0.2vw;
+$arrow-color: black;
+$arrow-line-height: calc(0.05rem + #{$arrow-scale-value});
+$arrow-square-side: calc(0.55rem + #{$arrow-scale-value});
+$arrowhead-border: calc(0.5rem + #{$arrow-scale-value});
+// NB: $rl-site-margin is found on _elements.scss
+
+.arrow-wrapper {
+  position: relative;
+  height: calc(1.25rem + #{$arrow-scale-value});
+  width: 100%;
+  margin: #{$scale-value} 0 calc(1.25rem + #{$scale-value}) 0;
+}
+
+// The arrowhead
+.arrow {
+  border-top: #{$arrowhead-border} solid transparent;
+  border-left: calc(1.8rem + #{$arrow-scale-value}) solid #{$arrow-color};
+  border-bottom: #{$arrowhead-border} solid transparent;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+// The line
+.arrow:before {
+  content: "";
+  position: absolute;
+  height: #{$arrow-line-height};
+  min-height: 0.2rem;
+  width: calc(
+    100vw - #{$rl-site-margin} - #{$rl-site-margin} - #{$arrow-square-side} - #{$arrowhead-border}
+  ); // a little extra subtracted from the width to make sure the line doesn't overlap either of the ends
+  background: #{$arrow-color};
+  right: #{$arrow-square-side};
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 2rem;
+}
+
+// The square end
+.arrow:after {
+  content: "";
+  position: absolute;
+  left: calc((100vw - #{$rl-site-margin} - #{$rl-site-margin}) * -1);
+  top: 50%;
+  transform: translateY(-50%);
+  height: #{$arrow-square-side};
+  width: #{$arrow-square-side};
+  background: #{$arrow-color};
+}
+
+// The sliding discs
+$disc-size: calc(#{$scale-value} + 1rem);
+
+.disc {
+  border: calc(0.2rem + 0.05vw) solid black; // using a smaller scale value here
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: calc(50% - (#{$arrow-line-height} / 2));
+  transform: translateY(calc((50% - (#{$arrow-line-height} / 4)) * -1));
+  box-sizing: content-box;
+}
+
+$disc-scale-dim: 0.2vw;
+$disc-1-dim: calc(1rem + #{$disc-scale-dim});
+$disc-2-dim: calc(0.8rem + #{$disc-scale-dim});
+$disc-3-dim: calc(0.35rem + #{$disc-scale-dim});
+
+.disc-1 {
+  height: $disc-1-dim;
+  width: $disc-1-dim;
+  background-color: #e6c8bf;
+}
+
+.disc-2 {
+  height: $disc-2-dim;
+  width: $disc-2-dim;
+  background-color: #ffaf99;
+}
+
+.disc-3 {
+  height: $disc-3-dim;
+  width: $disc-3-dim;
+  background-color: #fff;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
   }
 }
