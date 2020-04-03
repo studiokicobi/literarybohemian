@@ -993,7 +993,7 @@ a {
   .site-footer .site-info .menu-tertiary-container,
   .site-footer .site-info .menu-social-channels-container {
     flex-basis: 16.6666666667%;
-    max-width: 11rem; }
+    max-width: 20rem; }
     @media screen and (max-width: 55rem) {
       .site-footer .site-info .menu-primary-container,
       .site-footer .site-info .menu-secondary-container,
