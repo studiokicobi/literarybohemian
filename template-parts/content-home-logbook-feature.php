@@ -37,21 +37,35 @@
   }
 
   // The category
-  echo '<h4>' . $post_categories . '</h4>';
+  echo '<strong class="card__meta">' . $post_categories . '</strong>';
 
+  // Card body wrapper
+  echo '<div class="card__body">';
 
   // The title
   // ----------------------------------------------------------------------------
-  the_title( sprintf( '<h2><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' );
+  the_title( sprintf( '<h2 class="card__title"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' );
 
+  // If this is a Postcard Prose post type
+  // ----------------------------------------------------------------------------
+  if ( get_post_type( get_the_ID() ) == 'book_review' ) {
+    // The author's name
+    echo '<h3 class="card__author">By ' . get_field('author_of_the_book_review') . '</h3>';
+  }
 
-  // The author's name
-  echo '<h3>By ' . the_field('name') . '</h3>';
+  if ( get_post_type( get_the_ID() ) == 'logbook' ) {
+    // The author's name
+    echo '<h3 class="card__author">By ' . get_author() . '</h3>';
+  }
+
 
 
   // The excerpt
   // ----------------------------------------------------------------------------
   echo '<p>' . get_the_excerpt() . '</p>';
+
+  // Card body wrapper
+  echo '</div>';
 
   endwhile;
 

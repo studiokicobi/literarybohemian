@@ -7,20 +7,21 @@
 
 // Reset the query
 wp_reset_query();
-?>
 
-  <?php
+
   // The latest post from The Journal
       query_posts(array(
           'post_type' => array('poetry', 'postcard_prose', 'travel_notes',),
           'post_status' => 'publish',
           'orderby' => 'publish_date',
           'order' => 'DESC',
-          'showposts' => 1
+          'showposts' => 6,
+          'offset' => 1
       ) );
-  ?>
 
-  <?php while (have_posts()) : the_post();
+  while (have_posts()) : the_post();
+
+  echo '<li class="card">';
 
   // Get the category (or categories: this is futureproof)
   // ----------------------------------------------------------------------------
@@ -84,6 +85,9 @@ wp_reset_query();
 
   // Card body wrapper
   echo '</div>';
+
+
+  echo '</li>';
 
   endwhile;
 

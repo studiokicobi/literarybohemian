@@ -586,6 +586,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/sass/layout/_cards.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_cards.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/sass/layout/_content-sidebar.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1069,6 +1082,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/archive-author-list.php",
+		"oF": 0
+		},
+	"/template-parts/content-home-features-small.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/content-home-features-small.php",
 		"oF": 0
 		},
 	"/template-parts/content-home-journal-feature.php": {

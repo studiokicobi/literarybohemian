@@ -1,0 +1,190 @@
+// Global styles for cards
+// @https://inclusive-components.design/cards/
+// ----------------------------------------------------------------------------
+
+.cards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card + .card {
+  margin-top: calc(1.5rem + #{$scale-value});
+}
+
+@supports (display: grid) {
+  .cards > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-column-gap: calc(1.5rem + #{$scale-value});
+    grid-row-gap: calc(1.5rem + #{$scale-value});
+  }
+
+  // Two large feature cards on homepage
+  #features-large.cards > ul {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: calc(3rem + #{$scale-value});
+    grid-row-gap: calc(3rem + #{$scale-value});
+  }
+
+  // The smaller feature cards on homepage
+  #features-small.cards > ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: calc(3rem + #{$scale-value});
+    grid-row-gap: calc(3rem + #{$scale-value});
+  }
+
+  .card + .card {
+    margin-top: 0;
+  }
+}
+
+$base-spacing-unit: 2rem;
+$half-spacing-unit: $base-spacing-unit / 2;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.3s linear;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0;
+    border-color: transparent transparent $dark-warm-brown transparent;
+    transition: border-width 0.3s;
+  }
+
+  &::before {
+    content: "→"; // TEMP: replace this with svg arrow
+    font-size: 150%;
+    opacity: 0;
+    color: #fff;
+    position: absolute;
+    bottom: 0.4rem;
+    right: 0.4rem;
+    z-index: 2;
+    transition: opacity 0.15s;
+    white-space: pre-wrap;
+    text-align: right;
+  }
+
+  @include on-event {
+    &::before {
+      opacity: 1;
+      transition: opacity 0.5s;
+    }
+
+    &::after {
+      border-width: 0 0 ($base-spacing-unit * 3) ($base-spacing-unit * 3);
+    }
+  }
+}
+
+.card .card__body {
+  padding: 1rem;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card p {
+  max-width: 60ch;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card a:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+.card:focus-within,
+.card:hover {
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.007);
+}
+
+.card:focus-within a:focus {
+  text-decoration: none;
+}
+
+.card small {
+  display: block;
+}
+
+.card .card__body > * + * {
+  margin-top: 0.75rem;
+}
+
+.card .card__body > :last-child {
+  margin-top: auto;
+  padding-top: 0.75rem;
+}
+
+// Homepage styles for cards
+// ----------------------------------------------------------------------------
+
+body.home {
+  .card {
+    background: $color__card-body;
+    transition: all ease-in 0.15s;
+
+    @include on-event {
+      background-color: lighten($color__card-body, 3);
+      transition: all 0.3s;
+      cursor: pointer;
+
+      .card__meta {
+        background-color: $hot;
+        transition: all 0.3s;
+      }
+    }
+
+    &__meta {
+      @include sans;
+      margin: 0;
+      padding: calc(1.5rem + #{$scale-value}) calc(2rem + #{$scale-value});
+      background-color: $orange-1;
+      color: white;
+      font-size: calc(45% + #{$scale-value});
+      text-transform: uppercase;
+      transition: all 0.15s;
+    }
+
+    &__body {
+      padding: 0 calc(2rem + #{$scale-value}) calc(12rem + #{$scale-value})
+        calc(2rem + #{$scale-value});
+    }
+
+    &__title {
+      margin: calc(1.5rem + #{$scale-value}) 0 0 0;
+      a {
+        font-weight: 400;
+        margin: 0;
+        font-size: calc(130% + #{$scale-value});
+      }
+    }
+
+    &__author {
+      font-size: calc(85% + 0.333vw);
+      font-weight: 400;
+      margin: 0 0 1rem 0;
+      opacity: 85%;
+    }
+
+    &__excerpt {
+      max-width: 40rem;
+      font-size: calc(100% + #{$scale-value});
+    }
+  }
+}

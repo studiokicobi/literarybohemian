@@ -6,50 +6,6 @@ body.home {
     margin-bottom: calc(3rem + #{$scale-value});
   }
 
-  // Cards
-  // -----------–-----------–-----------–
-
-  .card {
-    background: $color__card-body;
-
-    // &__category {
-    //   @include sans;
-    //   margin: 0;
-    // }
-
-    &__cpt {
-      @include sans;
-      margin: 0;
-      padding: calc(1.5rem + #{$scale-value}) calc(2rem + #{$scale-value});
-      background-color: $orange-1;
-      color: white;
-      font-size: calc(45% + #{$scale-value});
-      text-transform: uppercase;
-    }
-
-    &__body {
-      padding: 0 calc(2rem + #{$scale-value}) calc(12rem + #{$scale-value})
-        calc(2rem + #{$scale-value});
-    }
-
-    &__title {
-      margin: calc(1.5rem + #{$scale-value}) 0 0 0;
-      a {
-        font-weight: 400;
-        margin: 0;
-        font-size: calc(130% + #{$scale-value});
-      }
-    }
-
-    &__author {
-      font-size: calc(95% + #{$scale-value});
-      font-weight: 400;
-      margin: 0;
-    }
-
-    &__excerpt {
-      max-width: 40rem;
-      font-size: calc(100% + #{$scale-value});
-    }
+  #features-large {
   }
 }

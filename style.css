@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: The Literary Bohemian
 Theme URI: https://literarybohemian.com
@@ -1071,9 +1072,129 @@ a {
 body.home .site-header {
   margin-bottom: calc(3rem + 0.333vw); }
 
+.cards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.card + .card {
+  margin-top: calc(1.5rem + 0.333vw); }
+
+@supports (display: grid) {
+  .cards > ul {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-column-gap: calc(1.5rem + 0.333vw);
+    grid-row-gap: calc(1.5rem + 0.333vw); }
+  #features-large.cards > ul {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: calc(3rem + 0.333vw);
+    grid-row-gap: calc(3rem + 0.333vw); }
+  #features-small.cards > ul {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: calc(3rem + 0.333vw);
+    grid-row-gap: calc(3rem + 0.333vw); }
+  .card + .card {
+    margin-top: 0; } }
+
+.card {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  position: relative;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.05);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+  .card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0;
+    border-color: transparent transparent #420e00 transparent;
+    -webkit-transition: border-width 0.3s;
+    transition: border-width 0.3s; }
+  .card::before {
+    content: "→";
+    font-size: 150%;
+    opacity: 0;
+    color: #fff;
+    position: absolute;
+    bottom: 0.4rem;
+    right: 0.4rem;
+    z-index: 2;
+    -webkit-transition: opacity 0.15s;
+    transition: opacity 0.15s;
+    white-space: pre-wrap;
+    text-align: right; }
+  .card:hover::before, .card:active::before, .card:focus::before {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+  .card:hover::after, .card:active::after, .card:focus::after {
+    border-width: 0 0 6rem 6rem; }
+
+.card .card__body {
+  padding: 1rem;
+  -webkit-box-flex: 1;
+          flex: 1 0 auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+
+.card p {
+  max-width: 60ch; }
+
+.card a {
+  text-decoration: none; }
+
+.card a:focus {
+  outline: none;
+  text-decoration: underline; }
+
+.card:focus-within,
+.card:hover {
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.007);
+          transform: scale(1.007); }
+
+.card:focus-within a:focus {
+  text-decoration: none; }
+
+.card small {
+  display: block; }
+
+.card .card__body > * + * {
+  margin-top: 0.75rem; }
+
+.card .card__body > :last-child {
+  margin-top: auto;
+  padding-top: 0.75rem; }
+
 body.home .card {
-  background: #fcf9f6; }
-  body.home .card__cpt {
+  background: #fcf9f6;
+  -webkit-transition: all ease-in 0.15s;
+  transition: all ease-in 0.15s; }
+  body.home .card:hover, body.home .card:active, body.home .card:focus {
+    background-color: white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer; }
+    body.home .card:hover .card__meta, body.home .card:active .card__meta, body.home .card:focus .card__meta {
+      background-color: #cd2c00;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
+  body.home .card__meta {
     font-family: sofia-pro, sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -1082,7 +1203,9 @@ body.home .card {
     background-color: #db7258;
     color: white;
     font-size: calc(45% + 0.333vw);
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    -webkit-transition: all 0.15s;
+    transition: all 0.15s; }
   body.home .card__body {
     padding: 0 calc(2rem + 0.333vw) calc(12rem + 0.333vw) calc(2rem + 0.333vw); }
   body.home .card__title {
@@ -1092,9 +1215,10 @@ body.home .card {
       margin: 0;
       font-size: calc(130% + 0.333vw); }
   body.home .card__author {
-    font-size: calc(95% + 0.333vw);
+    font-size: calc(85% + 0.333vw);
     font-weight: 400;
-    margin: 0; }
+    margin: 0 0 1rem 0;
+    opacity: 85%; }
   body.home .card__excerpt {
     max-width: 40rem;
     font-size: calc(100% + 0.333vw); }

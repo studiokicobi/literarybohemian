@@ -14,31 +14,40 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-			<div class="switcher">
-				<div class="switcher-wrapper">
-
-					<div class="feature card">
+			<div id="features-large" class="cards">
+				<ul>
+					<li class="card">
 						<?php
 						// Journal feature
 						get_template_part( 'template-parts/content', 'home-journal-feature' );
 						?>
-					</div>
+					</li>
 
-					<div class="feature card">
-						<?php
-						// Logbook feature
+					<li class="card">
+						<?php // Logbook feature
 						get_template_part( 'template-parts/content', 'home-logbook-feature' );
 						?>
-					</div>
+					</li>
+				</ul>
+			</div><!-- #features-large -->
 
-				</div><!-- .switcher-wrapper -->
-			</div><!-- .switcher -->
+			<div id="features-small" class="cards">
+				<ul>
+					<?php
+					// Journal feature
+					get_template_part( 'template-parts/content', 'home-features-small' );
+					?>
+				</ul>
+			</div><!-- #features-large -->
+
 
 			<div class="journal-contents">
-				<?php
-				// Journal contents
-				get_template_part( 'template-parts/content', 'journal-contents' );
-				?>
+				<ul>
+					<?php
+					// Journal contents
+					get_template_part( 'template-parts/content', 'journal-contents' );
+					?>
+				</ul>
 			</div>
 
 		</main><!-- #main -->
