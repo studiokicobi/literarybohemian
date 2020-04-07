@@ -3,10 +3,8 @@ $size__site-sidebar: 25%;
 
 // Basic scale value
 $scale-value: 0.333vw;
+$scale-value-2: 0.5vw;
 // Top margin
-$top-site-margin: calc(2rem + 0.333vw);
+$top-site-margin: calc(2rem + #{$scale-value});
 // Right and left side margins
-$rl-site-margin: calc(2.5rem + 0.333vw);
-
-// Value used in the search button
-$search-dim: calc(2.5rem + 0.333vw);
+$rl-site-margin: calc(2.5rem + #{$scale-value});

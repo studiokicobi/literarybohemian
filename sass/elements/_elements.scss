@@ -10,7 +10,11 @@ html {
 }
 
 body {
-  background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+  background: $color__background-body;
+  // background-image: linear-gradient(
+  //   $color__background-body-2,
+  //   $color__background-body 70%
+  // );
   font-size: calc(1rem + #{$scale-value});
   //font-size: calc(16px + 6 * ((100vw - 320px) / 680));
 }

@@ -13,7 +13,16 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		<?php if ( have_posts() ) : ?>
+			<?php
+		  // The latest post from The Journal
+		      query_posts(array(
+		          'post_type' => 'poetry', 'postcard_prose',
+		          'post_status' => 'publish',
+		          'orderby' => 'publish_date',
+		          'order' => 'DESC'
+		      ) );
+
+					 if ( have_posts() ) : ?>
 
 			<header class="page-header">
 				<?php
