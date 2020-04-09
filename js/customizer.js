@@ -6,7 +6,9 @@
  * Contains handlers to make Theme Customizer preview reload changes asynchronously.
  */
 
- const cards = document.querySelectorAll('.card');
+// Inclusive Cards, see SCSS file for details
+// --------------------------------------------------------------
+const cards = document.querySelectorAll('.card');
 Array.prototype.forEach.call(cards, card => {
     let down, up, link = card.querySelector('h2 a');
     card.style.cursor = 'pointer';
@@ -19,7 +21,8 @@ Array.prototype.forEach.call(cards, card => {
     }
 });
 
-
+// Underscores defaults
+// --------------------------------------------------------------
 ( function( $ ) {
 
 	// Site title and description.

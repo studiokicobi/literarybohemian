@@ -262,6 +262,17 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/img/plane.jpg": {
+		"ft": 16384,
+		"iS": 23690,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/plane.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/img/the-literary-bohemian-logo-2.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -686,6 +697,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/_switcher.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/sass/layout/_tooltip.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_tooltip.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

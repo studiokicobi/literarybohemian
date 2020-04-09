@@ -46,9 +46,9 @@
   // ----------------------------------------------------------------------------
   the_title( sprintf( '<h2 class="card__title"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' );
 
-  // If this is a Postcard Prose post type
+  // If this is a Book Review post type
   // ----------------------------------------------------------------------------
-  if ( get_post_type( get_the_ID() ) == 'book_review' ) {
+  if ( get_post_type( get_the_ID() ) == 'book_reviews' ) {
     // The author's name
     echo '<h3 class="card__author">By ' . get_field('author_of_the_book_review') . '</h3>';
   }

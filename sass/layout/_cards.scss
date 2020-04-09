@@ -15,7 +15,7 @@
 @supports (display: grid) {
   .cards > ul {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    // grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
     grid-column-gap: calc(1.5rem + #{$scale-value});
     grid-row-gap: calc(1.5rem + #{$scale-value});
   }
@@ -25,6 +25,11 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: calc(3rem + #{$scale-value});
     grid-row-gap: calc(3rem + #{$scale-value});
+    margin-bottom: calc(3rem + #{$scale-value});
+
+    @media screen and (max-width: 55rem) {
+      grid-template-columns: 1fr;
+    }
   }
 
   // The smaller feature cards on homepage
@@ -58,7 +63,8 @@ $half-spacing-unit: $base-spacing-unit / 2;
     height: 0;
     border-style: solid;
     border-width: 0;
-    border-color: transparent transparent $dark-warm-brown transparent;
+    border-color: transparent transparent darken($lighter-warm-brown, 3)
+      transparent;
     transition: border-width 0.3s;
   }
 
@@ -68,22 +74,26 @@ $half-spacing-unit: $base-spacing-unit / 2;
     opacity: 0;
     color: #fff;
     position: absolute;
-    bottom: 0.4rem;
-    right: 0.4rem;
+    bottom: 0.75rem;
+    right: 1.5rem;
     z-index: 2;
     transition: opacity 0.15s;
     white-space: pre-wrap;
     text-align: right;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.25s;
+    transform: translateX(-10rem);
   }
 
   @include on-event {
     &::before {
       opacity: 1;
-      transition: opacity 0.5s;
+      transition: all 0.5s;
+      transform: translateX(0rem);
     }
 
     &::after {
-      border-width: 0 0 ($base-spacing-unit * 3) ($base-spacing-unit * 3);
+      border-width: 0 0 ($base-spacing-unit * 4.5) ($base-spacing-unit * 4.5);
     }
   }
 }
@@ -111,7 +121,7 @@ $half-spacing-unit: $base-spacing-unit / 2;
 .card:focus-within,
 .card:hover {
   box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
-  transform: scale(1.007);
+  transform: scale(1.007) translateY(-5px);
 }
 
 .card:focus-within a:focus {
@@ -127,8 +137,10 @@ $half-spacing-unit: $base-spacing-unit / 2;
 }
 
 .card .card__body > :last-child {
-  margin-top: auto;
-  padding-top: 0.75rem;
+  // margin-top: auto;
+  // padding-top: 0.75rem;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 // Homepage styles for cards
@@ -140,12 +152,13 @@ body.home {
     transition: all ease-in 0.15s;
 
     @include on-event {
-      background-color: lighten($color__card-body, 3);
+      background-color: lighten($color__card-body, 1);
       transition: all 0.3s;
       cursor: pointer;
 
       .card__meta {
         background-color: $hot;
+        background-color: $dark-warm-brown;
         transition: all 0.3s;
       }
     }
@@ -167,16 +180,21 @@ body.home {
     }
 
     &__title {
+      @include sans;
       margin: calc(1.5rem + #{$scale-value}) 0 0 0;
       a {
         font-weight: 400;
         margin: 0;
-        font-size: calc(130% + #{$scale-value});
+        font-size: calc(100% + #{$scale-value});
+
+        @include on-event {
+          color: $color__link;
+        }
       }
     }
 
     &__author {
-      font-size: calc(85% + 0.333vw);
+      font-size: calc(70% + 0.333vw);
       font-weight: 400;
       margin: 0 0 1rem 0;
       opacity: 85%;
@@ -184,7 +202,84 @@ body.home {
 
     &__excerpt {
       max-width: 40rem;
-      font-size: calc(100% + #{$scale-value});
+      font-size: calc(80% + #{$scale-value});
+    }
+  }
+
+  // Features small styles
+  // ----------------------------------------------------------------------------
+  #features-small {
+    .card {
+      // Various header colours for the small cards
+      &:nth-of-type(1) {
+        .card__meta {
+          background-color: $feature-small-header-1;
+        }
+      }
+      &:nth-of-type(2) {
+        .card__meta {
+          background-color: $feature-small-header-2;
+        }
+      }
+      &:nth-of-type(3) {
+        .card__meta {
+          background-color: $feature-small-header-3;
+        }
+      }
+      &:nth-of-type(4) {
+        .card__meta {
+          background-color: $feature-small-header-4;
+        }
+      }
+      &:nth-of-type(5) {
+        .card__meta {
+          background-color: $feature-small-header-5;
+        }
+      }
+      &:nth-of-type(6) {
+        .card__meta {
+          background-color: $feature-small-header-6;
+        }
+      }
+
+      @include on-event {
+        .card__meta {
+          background-color: $dark-warm-brown;
+        }
+      }
+
+      &__meta {
+        font-size: calc(40% + #{$scale-value});
+      }
+
+      &__body {
+      }
+
+      &__title {
+        margin: calc(1.5rem + #{$scale-value}) 0 0 0;
+        line-height: 1.3;
+        a {
+          font-weight: 400;
+          margin: 0;
+          font-size: calc(80% + #{$scale-value});
+
+          @include on-event {
+            color: $color__link;
+          }
+        }
+      }
+
+      &__author {
+        font-size: calc(85% + 0.333vw);
+        font-weight: 400;
+        margin: 0 0 1rem 0;
+        opacity: 85%;
+      }
+
+      &__excerpt {
+        max-width: 40rem;
+        font-size: calc(80% + #{$scale-value});
+      }
     }
   }
 }

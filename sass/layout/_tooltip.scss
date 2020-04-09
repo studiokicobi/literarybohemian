@@ -1,0 +1,29 @@
+// Tooltip styles. Use the following for an accessible tooltip:
+// <a href="#" aria-describedby="txt32" aria-controls="txt32" aria-haspopup="true" class="tooltip">role=link aria-describedby aria-haspopup=true</a> <span id="txt32">I am the tooltip text referenced to via aria-describedby.</span><br>
+// http://pauljadam.com/demos/aria-role-tooltip.html
+
+#random-link-1 {
+  visibility: hidden;
+  position: relative;
+  background: $dark-warm-brown;
+  margin: 1.5em;
+  padding: 0.2em;
+  outline-offset: 3px;
+  max-width: 15rem;
+  text-align: center;
+  transform: translate(calc(-50% - #{$disc-1-dim} + 0.1rem + 0.025vw), -165%);
+  color: white;
+  @include sans;
+  font-size: 75%;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -0.5rem;
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: $dark-warm-brown transparent transparent transparent;
+  }
+}

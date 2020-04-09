@@ -41,10 +41,10 @@
 	@keyframes slide-2 { 0% { left: <?php echo $d_2a . "%"; ?>; } 100% { left: <?php echo $d_2b . "%"; ?>; } }
 	@keyframes slide-3 { 0% { left: <?php echo $d_3a . "%"; ?>; } 100% { left: <?php echo $d_3b . "%"; ?>; } }
 
-	<?php // Fade and slide animations for the discs ?>
-	.disc-1 { left: <?php echo $d_1b . "%"; ?>; animation: slide-1 <?php echo $fade_1 . "s"; ?> ease-out 1, fade <?php echo $fade_time; ?> linear 1; }
-	.disc-2 { left: <?php echo $d_2b . "%"; ?>; animation: slide-2 <?php echo $fade_2 . "s"; ?> ease-out 1, fade <?php echo $fade_time; ?> linear 1; }
-	.disc-3 { left: <?php echo $d_3b . "%"; ?>; animation: slide-3 <?php echo $fade_3 . "s"; ?> ease-out 1, fade <?php echo $fade_time; ?> linear 1; }
+	<?php // Fade and slide animations for the discs (and the random links) ?>
+	.disc-1, #random-content-1 { left: <?php echo $d_1b . "%"; ?>; animation: slide-1 <?php echo $fade_1 . "s"; ?> ease-out 1, fade <?php echo $fade_time; ?> linear 1; }
+	.disc-2, #random-content-2 { left: <?php echo $d_2b . "%"; ?>; animation: slide-2 <?php echo $fade_2 . "s"; ?> ease-out 1, fade <?php echo $fade_time; ?> linear 1; }
+	.disc-3, #random-content-3 { left: <?php echo $d_3b . "%"; ?>; animation: slide-3 <?php echo $fade_3 . "s"; ?> ease-out 1, fade <?php echo $fade_time; ?> linear 1; }
 
 	.bg { background-image: url('<?php echo get_template_directory_uri(); ?>/random-bg/<?php echo rand(1,100)?>.png'); }
 	</style>
@@ -70,10 +70,20 @@
 
 			<div class="arrow-wrapper">
 				<div class="arrow"></div>
-				<div class="disc disc-1"></div>
-				<div class="disc disc-2"></div>
-				<div class="disc disc-3"></div>
+
+				<a href="/destination-unknown" class="disc disc-1 tooltip">
+					<span class="tooltiptext">Somewhere</span>
+				</a>
+
+				<a href="/destination-unknown" class="disc disc-2 tooltip">
+					<span class="tooltiptext">Indeterminate</span>
+				</a>
+
+				<a href="/destination-unknown" class="disc disc-3 tooltip">
+					<span class="tooltiptext">Undecided</span>
+				</a>
 			</div>
+
 
 			<!-- Main navigation -->
 			<nav id="site-navigation" class="main-navigation">
