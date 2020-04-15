@@ -1376,7 +1376,8 @@ body.home .card {
     align-content: flex-end;
     margin: calc(13vh + 0.333vw) 10vw calc(13vh + 0.333vw) 0; }
     body.home .card__divider img {
-      max-height: calc(6vw + 0.333vw); }
+      max-height: calc(6vw + 0.333vw);
+      min-height: 100px; }
 
 body.home #features-small .card:nth-of-type(1) .card__meta {
   background-color: #e09886; }

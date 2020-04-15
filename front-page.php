@@ -35,9 +35,9 @@ get_header();
 
 
 			<picture class="card__divider">
-			  <source srcset="<?php echo get_template_directory_uri(); ?>/img/plane.webp" type="image/webp">
-			  <source srcset="<?php echo get_template_directory_uri(); ?>/img/plane.jpg" type="image/jpeg">
-			  <img src="<?php echo get_template_directory_uri(); ?>/img/plane.jpg" alt="">
+			  <!-- <source srcset="<?php //echo get_template_directory_uri(); ?>/img/plane2.webp" type="image/webp"> -->
+			  <source srcset="<?php echo get_template_directory_uri(); ?>/img/plane2.svg" type="image/svg">
+			  <img src="<?php echo get_template_directory_uri(); ?>/img/plane2.svg" alt="">
 			</picture>
 
 
