@@ -19,12 +19,12 @@
 
 	<?php
 	// Random numbers for the disc positions on the header arrow
-	$d_1a = (rand(30,87));
-	$d_1b = (rand(30,87));
-	$d_2a = (rand(30,87));
-	$d_2b = (rand(30,87));
-	$d_3a = (rand(30,87));
-	$d_3b = (rand(30,87));
+	$d_1a = (rand(26,83));
+	$d_1b = (rand(26,83));
+	$d_2a = (rand(26,83));
+	$d_2b = (rand(26,83));
+	$d_3a = (rand(26,83));
+	$d_3b = (rand(26,83));
 
 	// Random numbers for the disc slide times
 	$fade_1 = (rand(1,4));
@@ -72,15 +72,15 @@
 				<div class="arrow"></div>
 
 				<a href="/destination-unknown" class="disc disc-1 tooltip">
-					<span class="tooltiptext">Somewhere</span>
+					<span class="tooltiptext"><span class="tooltip-arrow"></span> Somewhere</span>
 				</a>
 
 				<a href="/destination-unknown" class="disc disc-2 tooltip">
-					<span class="tooltiptext">Indeterminate</span>
+					<span class="tooltiptext"><span class="tooltip-arrow"></span> Indeterminate</span>
 				</a>
 
 				<a href="/destination-unknown" class="disc disc-3 tooltip">
-					<span class="tooltiptext">Undecided</span>
+					<span class="tooltiptext"><span class="tooltip-arrow"></span> Undecided</span>
 				</a>
 			</div>
 

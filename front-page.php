@@ -33,6 +33,14 @@ get_header();
 				</ul>
 			</div><!-- #features-large -->
 
+
+			<picture class="card__divider">
+			  <source srcset="<?php echo get_template_directory_uri(); ?>/img/plane.webp" type="image/webp">
+			  <source srcset="<?php echo get_template_directory_uri(); ?>/img/plane.jpg" type="image/jpeg">
+			  <img src="<?php echo get_template_directory_uri(); ?>/img/plane.jpg" alt="">
+			</picture>
+
+
 			<div id="features-small" class="cards">
 				<ul>
 					<?php

@@ -45,7 +45,8 @@ wp_reset_query();
   }
 
   // Print the custom post type and category
-  echo '<strong class="card__meta">' . $post_categories . ' · ' . $journal_cpt . '</strong>';
+  // echo '<strong class="card__meta">' . $post_categories . ' · ' . $journal_cpt . '</strong>';
+  echo '<strong class="card__meta">' . $journal_cpt . '</strong>';
 
   // Card body wrapper
   echo '<div class="card__body">';

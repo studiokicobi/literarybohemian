@@ -50,6 +50,10 @@
     box-shadow: 0px 0px 80px 0px rgba(white, 0.6);
     transition: all 0.15s linear;
 
+    @media screen and (max-width: 420px) {
+      width: 100vw;
+    }
+
     .search-form {
       height: $search-dim;
       float: right;
@@ -57,10 +61,19 @@
       position: relative;
       transition: all 0.2s linear;
 
+      @media screen and (max-width: 420px) {
+        width: 100vw;
+      }
+
       @include on-event {
-        box-shadow: 0 0 20px 0.3rem rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 2rem 0.3rem rgba(0, 0, 0, 0.4);
         transform: scale(1.05) translate(-9px, 0);
         overflow: hidden;
+
+        @media screen and (max-width: 420px) {
+          transform: none;
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
       }
 
       .search-field {
@@ -76,6 +89,10 @@
         right: calc(#{$search-dim} * 2);
         width: 20rem;
         font-size: calc(0.75rem + #{$scale-value});
+
+        @media screen and (max-width: 420px) {
+          width: auto;
+        }
 
         @include on-event {
           background-color: white;
@@ -154,19 +171,19 @@
     &.icon-journal {
       background-image: url("img/icon-journal.svg");
       background-size: calc(1rem + #{$scale-value-2});
-      padding-left: calc(1.4rem + #{$scale-value-2});
+      padding-left: calc(1rem + #{$scale-value-2});
     }
 
     &.icon-logbook {
       background-image: url("img/icon-logbook.svg");
       background-size: calc(0.7rem + #{$scale-value-2});
-      padding-left: calc(1.1rem + #{$scale-value-2});
+      padding-left: calc(0.8rem + #{$scale-value-2});
     }
 
     &.icon-submissions {
       background-image: url("img/icon-submissions.svg");
       background-size: calc(1.3rem + #{$scale-value-2});
-      padding-left: calc(1.6rem + #{$scale-value-2});
+      padding-left: calc(1.3rem + #{$scale-value-2});
     }
 
     @media screen and (max-width: 38rem) {
@@ -237,6 +254,13 @@ $arrowhead-border: calc(0.5rem + #{$arrow-scale-value});
   top: 50%;
   transform: translateY(-50%);
   margin-left: 2rem;
+
+  @media screen and (max-width: 500px) {
+    width: calc(
+      100vw - #{$rl-site-margin-small} - #{$rl-site-margin-small} - #{$arrow-square-side} -
+        #{$arrowhead-border}
+    );
+  }
 }
 
 // The square end
@@ -249,6 +273,12 @@ $arrowhead-border: calc(0.5rem + #{$arrow-scale-value});
   height: #{$arrow-square-side};
   width: #{$arrow-square-side};
   background: #{$arrow-color};
+
+  @media screen and (max-width: 500px) {
+    left: calc(
+      (100vw - #{$rl-site-margin-small} - #{$rl-site-margin-small}) * -1
+    );
+  }
 }
 
 // ------------------------------------------------------------------------------------------------------
@@ -259,55 +289,11 @@ $disc-1-dim: calc(0.6rem + #{$disc-scale-dim});
 $disc-2-dim: calc(0.3rem + #{$disc-scale-dim});
 $disc-3-dim: calc(0.15rem + #{$disc-scale-dim});
 
-// $random-1-dim: calc(-50% - 0.4rem - 0.05vw - #{$disc-1-dim});
-// $random-2-dim: calc(-50% - 0.4rem - 0.05vw - #{$disc-1-dim});
-// $random-3-dim: calc(-50% - 0.4rem - 0.05vw - #{$disc-1-dim});
-$random-dim: calc(-50% - 0.4rem - 0.05vw - #{$disc-1-dim});
-
+// Need to get an accessible tooltip here instead
+// $random-dim: calc(-50% - 0.4rem - 0.05vw - #{$disc-1-dim});
 // Tooltip styles. Use the following for an accessible tooltip:
 // <a href="#" aria-describedby="txt32" aria-controls="txt32" aria-haspopup="true" class="tooltip">role=link aria-describedby aria-haspopup=true</a> <span id="txt32">I am the tooltip text referenced to via aria-describedby.</span><br>
 // http://pauljadam.com/demos/aria-role-tooltip.html
-
-// #random-content-1 {
-// }
-// #random-content-2 {
-//   transform: translate($random-2-dim, -170%);
-// }
-// #random-content-3 {
-//   transform: translate($random-3-dim, -170%);
-// }
-
-// #random-content-1,
-// #random-content-2,
-// #random-content-3 {
-// transform: translate($random-dim, -170%);
-// display: inline-block;
-// visibility: hidden;
-// opacity: 0;
-// position: relative;
-// background: black;
-// color: white;
-// margin: 1.5rem;
-// padding: 0.5rem;
-// width: 10rem;
-// font-style: italic;
-// text-align: center;
-// font-size: 75%;
-// box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
-// transition: all 0.15s;
-
-// &::after {
-//   content: " ";
-//   position: absolute;
-//   top: 99%; /* At the bottom of the tooltip */
-//   left: 50%;
-//   margin-left: -0.5rem;
-//   border-width: 0.5rem;
-//   border-style: solid;
-//   border-color: black transparent transparent transparent;
-//   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
-// }
-// }
 
 .tooltip {
   position: relative;
@@ -316,24 +302,22 @@ $random-dim: calc(-50% - 0.4rem - 0.05vw - #{$disc-1-dim});
   .tooltiptext {
     visibility: hidden;
     opacity: 0;
-    width: 10rem;
+    width: 12rem;
+    // background-color: $warm-brown;
     background-color: $dark-warm-brown;
     color: rgba(white, 1);
-    // font-style: italic;
     @include sans;
     text-align: center;
-    font-size: 70%;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    font-size: 85%;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.35);
     transition: all 0.3s;
     transition-delay: 0.3s;
     padding: 0.5rem 0;
-
-    /* Position the tooltip */
     position: absolute;
     z-index: 1;
     bottom: 100%;
     left: 50%;
-    margin-left: -5rem;
+    margin-left: -6rem;
     transform: translateY(-1rem);
 
     &::after {
@@ -347,6 +331,18 @@ $random-dim: calc(-50% - 0.4rem - 0.05vw - #{$disc-1-dim});
       border-width: 5px;
       border-style: solid;
       border-color: $dark-warm-brown transparent transparent transparent;
+    }
+
+    .tooltip-arrow {
+      display: inline-flex;
+      background-image: url("img/arrow-right.svg");
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: 1.4rem;
+      height: 0.75rem;
+      width: 1.4rem;
+      padding: 0 0.15rem 0 0;
+      opacity: 0.5;
     }
   }
 
@@ -372,12 +368,19 @@ $random-dim: calc(-50% - 0.4rem - 0.05vw - #{$disc-1-dim});
     background-color: $hot !important;
     border-color: $hot;
     transition: all 0.3s;
+    box-shadow: 0 0 0 3px rgba($hot, 1);
 
     .tooltiptext {
       visibility: visible;
       opacity: 1;
       transition: all 0.3s;
       transform: translateY(-0.8rem);
+
+      @media screen and (max-width: 500px) {
+        // Don't display the rollover text on small screens
+        visibility: hidden;
+        opacity: 0;
+      }
 
       &::after {
         transition: all 0.3s;
@@ -391,16 +394,6 @@ $random-dim: calc(-50% - 0.4rem - 0.05vw - #{$disc-1-dim});
         }
       }
     }
-
-    // #random-content-1 {
-    //   transform: translate($random-1-dim, -200%);
-    // }
-    // #random-content-2 {
-    //   transform: translate($random-2-dim, -200%);
-    // }
-    // #random-content-3 {
-    //   transform: translate($random-3-dim, -200%);
-    // }
   }
 }
 

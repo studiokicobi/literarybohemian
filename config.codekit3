@@ -83,6 +83,16 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/img/arrow-right.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/arrow-right.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/img/arrow-square.png": {
 		"ft": 32768,
 		"iS": 502,
@@ -167,6 +177,16 @@
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
+		},
+	"/img/icon-broadcast.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/icon-broadcast.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/img/icon-journal.svg": {
 		"ft": 2097152,
@@ -270,8 +290,16 @@
 		"oAP": "/img/plane.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
+		},
+	"/img/plane.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/plane.webp",
+		"oF": 0
 		},
 	"/img/the-literary-bohemian-logo-2.svg": {
 		"ft": 2097152,

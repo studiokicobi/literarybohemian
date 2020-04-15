@@ -30,6 +30,18 @@ body {
   padding: 0 calc(4.5rem + #{$scale-value});
 }
 
+@media screen and (max-width: 500px) {
+  .site-header {
+    padding: 0 $rl-site-margin-small;
+  }
+  .site-content {
+    padding: 0 $rl-site-margin-small;
+  }
+  .site-info {
+    padding: 0 calc(4.5rem + #{$scale-value});
+  }
+}
+
 // Sticky footer
 // html,
 // body {

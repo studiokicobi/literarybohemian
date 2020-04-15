@@ -13,6 +13,12 @@ textarea {
   line-height: $font__line-height-body;
 }
 
+h1,
+h2,
+h3 {
+  line-height: $font__line-height-headings;
+}
+
 em,
 i {
   font-family: grad, serif;

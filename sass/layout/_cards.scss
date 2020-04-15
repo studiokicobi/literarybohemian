@@ -37,6 +37,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: calc(3rem + #{$scale-value});
     grid-row-gap: calc(3rem + #{$scale-value});
+
+    @media screen and (max-width: 55rem) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .card + .card {
@@ -63,8 +67,8 @@ $half-spacing-unit: $base-spacing-unit / 2;
     height: 0;
     border-style: solid;
     border-width: 0;
-    border-color: transparent transparent darken($lighter-warm-brown, 3)
-      transparent;
+    // border-color: transparent transparent darken($lighter-warm-brown, 3)
+    border-color: transparent transparent $hot transparent;
     transition: border-width 0.3s;
   }
 
@@ -93,7 +97,7 @@ $half-spacing-unit: $base-spacing-unit / 2;
     }
 
     &::after {
-      border-width: 0 0 ($base-spacing-unit * 4.5) ($base-spacing-unit * 4.5);
+      border-width: 0 0 ($base-spacing-unit * 4) ($base-spacing-unit * 4);
     }
   }
 }
@@ -120,7 +124,7 @@ $half-spacing-unit: $base-spacing-unit / 2;
 
 .card:focus-within,
 .card:hover {
-  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4rem 0 rgba(0, 0, 0, 0.4);
   transform: scale(1.007) translateY(-5px);
 }
 
@@ -152,9 +156,9 @@ body.home {
     transition: all ease-in 0.15s;
 
     @include on-event {
-      background-color: lighten($color__card-body, 1);
       transition: all 0.3s;
       cursor: pointer;
+      background-color: white;
 
       .card__meta {
         background-color: $hot;
@@ -166,12 +170,14 @@ body.home {
     &__meta {
       @include sans;
       margin: 0;
-      padding: calc(1.5rem + #{$scale-value}) calc(2rem + #{$scale-value});
+      padding: calc(1.5rem + #{$scale-value}) calc(2rem + #{$scale-value})
+        calc(1.5rem + #{$scale-value}) calc(4.2rem + #{$scale-value});
       background-color: $orange-1;
       color: white;
       font-size: calc(45% + #{$scale-value});
       text-transform: uppercase;
       transition: all 0.15s;
+      @include broadcast;
     }
 
     &__body {
@@ -181,7 +187,7 @@ body.home {
 
     &__title {
       @include sans;
-      margin: calc(1.5rem + #{$scale-value}) 0 0 0;
+      margin: calc(1.5rem + #{$scale-value}) 0 calc(0.25rem + #{$scale-value}) 0;
       a {
         font-weight: 400;
         margin: 0;
@@ -203,6 +209,18 @@ body.home {
     &__excerpt {
       max-width: 40rem;
       font-size: calc(80% + #{$scale-value});
+    }
+
+    &__divider {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-content: flex-end;
+      margin: calc(13vh + #{$scale-value}) 10vw calc(13vh + #{$scale-value}) 0;
+
+      img {
+        max-height: calc(6vw + #{$scale-value});
+      }
     }
   }
 
@@ -256,7 +274,8 @@ body.home {
       }
 
       &__title {
-        margin: calc(1.5rem + #{$scale-value}) 0 0 0;
+        margin: calc(1.5rem + #{$scale-value}) 0 calc(0.25rem + #{$scale-value})
+          0;
         line-height: 1.3;
         a {
           font-weight: 400;

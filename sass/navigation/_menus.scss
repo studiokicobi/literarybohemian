@@ -48,6 +48,12 @@
     display: block;
     text-decoration: none;
     color: black;
+    padding: 0 0.3rem;
+
+    @include on-event {
+      // background-color: white;
+      // box-shadow: 0 5px 10px 0 rgba(black, 0.02);
+    }
   }
 
   .current_page_item > a,
