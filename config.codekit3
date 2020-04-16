@@ -312,6 +312,16 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/img/plane2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/plane2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/img/plane2.webp": {
 		"cB": 0,
 		"ft": 8192,
@@ -384,6 +394,204 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/img/random/1.jpg": {
+		"ft": 16384,
+		"iS": 11081,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/random/1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/random/1@0.5x.jpg": {
+		"ft": 16384,
+		"iS": 4959,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/random/1@0.5x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/random/2.jpg": {
+		"ft": 16384,
+		"iS": 20011,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/random/2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/random/2@0.5x.jpg": {
+		"ft": 16384,
+		"iS": 7521,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/random/2@0.5x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/random/3.jpg": {
+		"ft": 16384,
+		"iS": 14854,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/random/3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/random/3@0.5x.jpg": {
+		"ft": 16384,
+		"iS": 5450,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/random/3@0.5x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/random/4.jpg": {
+		"ft": 16384,
+		"iS": 16204,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/random/4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/random/4@0.5x.jpg": {
+		"ft": 16384,
+		"iS": 5929,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/random/4@0.5x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/random/5.jpg": {
+		"ft": 16384,
+		"iS": 9458,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/random/5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/random/5@0.5x.jpg": {
+		"ft": 16384,
+		"iS": 3220,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/random/5@0.5x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/random/6.jpg": {
+		"ft": 16384,
+		"iS": 20037,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/random/6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/random/6@0.5x.jpg": {
+		"ft": 16384,
+		"iS": 6569,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/random/6@0.5x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/random/7.jpg": {
+		"ft": 16384,
+		"iS": 15094,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/random/7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/random/7@0.5x.jpg": {
+		"ft": 16384,
+		"iS": 5825,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/random/7@0.5x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/random/8.jpg": {
+		"ft": 16384,
+		"iS": 35273,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/random/8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/random/8@0.5x.jpg": {
+		"ft": 16384,
+		"iS": 11649,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/random/8@0.5x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/random/9.jpg": {
+		"ft": 16384,
+		"iS": 16950,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/random/9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/random/9@0.5x.jpg": {
+		"ft": 16384,
+		"iS": 6139,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/random/9@0.5x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/img/the-literary-bohemian-logo-2.svg": {

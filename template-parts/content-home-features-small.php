@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying the latest Journal post
+ * Template part for displaying the latest Journal posts (small cards)
  * *
  * @package The_Literary_Bohemian
  */
@@ -22,6 +22,7 @@ wp_reset_query();
   while (have_posts()) : the_post();
 
   echo '<li class="card">';
+
 
   // Get the category (or categories: this is futureproof)
   // ----------------------------------------------------------------------------
@@ -84,9 +85,13 @@ wp_reset_query();
   // ----------------------------------------------------------------------------
   echo '<p class="card__excerpt">' . get_the_excerpt() . '</p>';
 
-  // Card body wrapper
+  // Card body bg and wrapper
   echo '</div>';
+  ?>
 
+  <div class="card__bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/random/<?php echo rand(1,9)?>.jpg');"></div>
+
+  <?
 
   echo '</li>';
 

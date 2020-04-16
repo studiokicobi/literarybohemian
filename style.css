@@ -762,7 +762,7 @@ a {
     width: calc(100% + (calc(2.5rem + 0.333vw) * 2));
     margin: 0 calc(calc(2.5rem + 0.333vw) * -1);
     margin-bottom: calc(1rem + 0.333vw);
-    background-color: #e1d6cc;
+    background-color: #dac8c3;
     box-shadow: 0px 0px 80px 0px rgba(255, 255, 255, 0.6);
     -webkit-transition: all 0.15s linear;
     transition: all 0.15s linear; }
@@ -974,7 +974,7 @@ a {
     visibility: hidden;
     opacity: 0;
     width: 12rem;
-    background-color: #420e00;
+    background-color: #8f6e65;
     color: white;
     font-family: sofia-pro, sans-serif;
     font-weight: 600;
@@ -992,8 +992,8 @@ a {
     bottom: 100%;
     left: 50%;
     margin-left: -6rem;
-    -webkit-transform: translateY(-1rem);
-            transform: translateY(-1rem); }
+    -webkit-transform: translateY(-1.5rem);
+            transform: translateY(-1.5rem); }
     .tooltip .tooltiptext::after {
       -webkit-transition: all 0.3s;
       transition: all 0.3s;
@@ -1006,7 +1006,7 @@ a {
       margin-left: -5px;
       border-width: 5px;
       border-style: solid;
-      border-color: #420e00 transparent transparent transparent; }
+      border-color: #8f6e65 transparent transparent transparent; }
     .tooltip .tooltiptext .tooltip-arrow {
       display: -webkit-inline-box;
       display: inline-flex;
@@ -1219,6 +1219,10 @@ body.home .site-header {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: calc(3rem + 0.333vw);
     grid-row-gap: calc(3rem + 0.333vw); }
+    @media screen and (max-width: 80rem) {
+      #features-small.cards > ul {
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr; } }
     @media screen and (max-width: 55rem) {
       #features-small.cards > ul {
         -ms-grid-columns: 1fr;
@@ -1233,9 +1237,25 @@ body.home .site-header {
   -webkit-box-direction: normal;
           flex-direction: column;
   position: relative;
-  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.12);
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear; }
+  .card__bg {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode: multiply;
+    background-color: #fcf9f6;
+    -webkit-filter: grayscale(60%);
+            filter: grayscale(60%);
+    opacity: 0.75; }
   .card::after {
     content: "";
     position: absolute;
@@ -1297,7 +1317,7 @@ body.home .site-header {
 
 .card:focus-within,
 .card:hover {
-  box-shadow: 0 0 4rem 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.3);
   -webkit-transform: scale(1.007) translateY(-5px);
           transform: scale(1.007) translateY(-5px); }
 
@@ -1315,17 +1335,16 @@ body.home .site-header {
   padding-top: 0; }
 
 body.home .card {
-  background: #fcf9f6;
   -webkit-transition: all ease-in 0.15s;
-  transition: all ease-in 0.15s; }
+  transition: all ease-in 0.15s;
+  position: relative; }
   body.home .card:hover, body.home .card:active, body.home .card:focus {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     cursor: pointer;
     background-color: white; }
     body.home .card:hover .card__meta, body.home .card:active .card__meta, body.home .card:focus .card__meta {
-      background-color: #cd2c00;
-      background-color: #420e00;
+      background-color: #2a2626;
       -webkit-transition: all 0.3s;
       transition: all 0.3s; }
   body.home .card__meta {
@@ -1345,7 +1364,10 @@ body.home .card {
     background-repeat: no-repeat;
     background-size: calc(1rem + 0.333vw); }
   body.home .card__body {
-    padding: 0 calc(2rem + 0.333vw) calc(12rem + 0.333vw) calc(2rem + 0.333vw); }
+    padding: 0 calc(2rem + 0.333vw) 15vw calc(2rem + 0.333vw); }
+    @media screen and (max-width: 55rem) {
+      body.home .card__body {
+        padding-bottom: 33vw; } }
   body.home .card__title {
     font-family: sofia-pro, sans-serif;
     font-weight: 600;
@@ -1398,7 +1420,7 @@ body.home #features-small .card:nth-of-type(6) .card__meta {
   background-color: #ec9782; }
 
 body.home #features-small .card:hover .card__meta, body.home #features-small .card:active .card__meta, body.home #features-small .card:focus .card__meta {
-  background-color: #420e00; }
+  background-color: #2a2626; }
 
 body.home #features-small .card__meta {
   font-size: calc(40% + 0.333vw); }

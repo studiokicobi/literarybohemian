@@ -38,6 +38,10 @@
     grid-column-gap: calc(3rem + #{$scale-value});
     grid-row-gap: calc(3rem + #{$scale-value});
 
+    @media screen and (max-width: 80rem) {
+      grid-template-columns: 1fr 1fr;
+    }
+
     @media screen and (max-width: 55rem) {
       grid-template-columns: 1fr;
     }
@@ -55,9 +59,28 @@ $half-spacing-unit: $base-spacing-unit / 2;
   display: flex;
   flex-direction: column;
   position: relative;
-  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.12);
   transition: all 0.3s linear;
 
+  // Random bg image
+  &__bg {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode: multiply;
+    background-color: $color__card-body;
+    filter: grayscale(60%);
+    opacity: 0.75;
+  }
+
+  // Triangular corner + arrow on hover
   &::after {
     content: "";
     position: absolute;
@@ -67,7 +90,6 @@ $half-spacing-unit: $base-spacing-unit / 2;
     height: 0;
     border-style: solid;
     border-width: 0;
-    // border-color: transparent transparent darken($lighter-warm-brown, 3)
     border-color: transparent transparent $hot transparent;
     transition: border-width 0.3s;
   }
@@ -124,7 +146,7 @@ $half-spacing-unit: $base-spacing-unit / 2;
 
 .card:focus-within,
 .card:hover {
-  box-shadow: 0 0 4rem 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.3);
   transform: scale(1.007) translateY(-5px);
 }
 
@@ -141,8 +163,6 @@ $half-spacing-unit: $base-spacing-unit / 2;
 }
 
 .card .card__body > :last-child {
-  // margin-top: auto;
-  // padding-top: 0.75rem;
   margin-top: 0;
   padding-top: 0;
 }
@@ -152,8 +172,8 @@ $half-spacing-unit: $base-spacing-unit / 2;
 
 body.home {
   .card {
-    background: $color__card-body;
     transition: all ease-in 0.15s;
+    position: relative;
 
     @include on-event {
       transition: all 0.3s;
@@ -161,8 +181,7 @@ body.home {
       background-color: white;
 
       .card__meta {
-        background-color: $hot;
-        background-color: $dark-warm-brown;
+        background-color: $color__text-main;
         transition: all 0.3s;
       }
     }
@@ -181,8 +200,11 @@ body.home {
     }
 
     &__body {
-      padding: 0 calc(2rem + #{$scale-value}) calc(12rem + #{$scale-value})
-        calc(2rem + #{$scale-value});
+      padding: 0 calc(2rem + #{$scale-value}) 15vw calc(2rem + #{$scale-value});
+
+      @media screen and (max-width: 55rem) {
+        padding-bottom: 33vw;
+      }
     }
 
     &__title {
@@ -263,7 +285,7 @@ body.home {
 
       @include on-event {
         .card__meta {
-          background-color: $dark-warm-brown;
+          background-color: $color__text-main;
         }
       }
 
@@ -271,7 +293,9 @@ body.home {
         font-size: calc(40% + #{$scale-value});
       }
 
+      // Decrease the bottom padding
       &__body {
+        // padding-bottom: calc(8rem + (#{$scale-value} * 5));
       }
 
       &__title {

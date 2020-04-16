@@ -45,8 +45,6 @@
 	.disc-1, #random-content-1 { left: <?php echo $d_1b . "%"; ?>; animation: slide-1 <?php echo $fade_1 . "s"; ?> ease-out 1, fade <?php echo $fade_time; ?> linear 1; }
 	.disc-2, #random-content-2 { left: <?php echo $d_2b . "%"; ?>; animation: slide-2 <?php echo $fade_2 . "s"; ?> ease-out 1, fade <?php echo $fade_time; ?> linear 1; }
 	.disc-3, #random-content-3 { left: <?php echo $d_3b . "%"; ?>; animation: slide-3 <?php echo $fade_3 . "s"; ?> ease-out 1, fade <?php echo $fade_time; ?> linear 1; }
-
-	.bg { background-image: url('<?php echo get_template_directory_uri(); ?>/random-bg/<?php echo rand(1,100)?>.png'); }
 	</style>
 
 	<?php wp_head(); ?>

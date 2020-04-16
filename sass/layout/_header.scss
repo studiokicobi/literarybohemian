@@ -46,7 +46,7 @@
     width: calc(100% + (#{$rl-site-margin} * 2));
     margin: 0 calc(#{$rl-site-margin} * -1);
     margin-bottom: calc(1rem + #{$scale-value});
-    background-color: $lighter-warm-brown;
+    background-color: $light-warm-brown;
     box-shadow: 0px 0px 80px 0px rgba(white, 0.6);
     transition: all 0.15s linear;
 
@@ -303,8 +303,7 @@ $disc-3-dim: calc(0.15rem + #{$disc-scale-dim});
     visibility: hidden;
     opacity: 0;
     width: 12rem;
-    // background-color: $warm-brown;
-    background-color: $dark-warm-brown;
+    background-color: $warm-brown;
     color: rgba(white, 1);
     @include sans;
     text-align: center;
@@ -318,7 +317,7 @@ $disc-3-dim: calc(0.15rem + #{$disc-scale-dim});
     bottom: 100%;
     left: 50%;
     margin-left: -6rem;
-    transform: translateY(-1rem);
+    transform: translateY(-1.5rem);
 
     &::after {
       transition: all 0.3s;
@@ -330,7 +329,7 @@ $disc-3-dim: calc(0.15rem + #{$disc-scale-dim});
       margin-left: -5px;
       border-width: 5px;
       border-style: solid;
-      border-color: $dark-warm-brown transparent transparent transparent;
+      border-color: $warm-brown transparent transparent transparent;
     }
 
     .tooltip-arrow {
