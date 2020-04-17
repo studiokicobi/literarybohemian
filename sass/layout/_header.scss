@@ -127,7 +127,7 @@
         cursor: pointer;
 
         @include on-event {
-          background: $dark-hot;
+          background: darken($pale-hot, 8%);
           transition: all 0.15s linear;
         }
 
@@ -146,7 +146,7 @@
 }
 
 .arrow-wrapper {
-  // See the bottom of the page for the CSS arrow code
+  // See the below for the CSS arrow code
   grid-area: arrow;
 }
 
@@ -247,7 +247,7 @@ $arrowhead-border: calc(0.5rem + #{$arrow-scale-value});
   height: #{$arrow-line-height};
   min-height: 0.2rem;
   width: calc(
-    100vw - #{$rl-site-margin} - #{$rl-site-margin} - #{$arrow-square-side} - #{$arrowhead-border}
+    100vw - (#{$rl-site-margin} * 2) - #{$arrow-square-side} - #{$arrowhead-border}
   ); // a little extra subtracted from the width to make sure the line doesn't overlap either of the ends
   background: #{$arrow-color};
   right: #{$arrow-square-side};

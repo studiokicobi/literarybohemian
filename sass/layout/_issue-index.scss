@@ -1,0 +1,238 @@
+// The issue index feature
+// ------------------------------------------------------------------------
+
+.journal-contents {
+  position: relative;
+  margin-top: 22vw;
+  background-color: $color__background-body;
+
+  &__heading {
+    @include sans;
+    margin: 0 0 0.75rem 0;
+    position: absolute;
+    top: -3.5rem;
+    left: 0;
+    font-size: calc(150% + #{$scale-value});
+  }
+
+  // Place the tea label building bg image
+  // ------------------------------------------------------------------------
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -18vw;
+    right: 2%;
+    height: 18vw;
+    width: 100%;
+    background-image: url("img/tea-label.svg");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 46%;
+    background-blend-mode: darken;
+    opacity: 0.4;
+
+    // Small screen: hide the bg image so it doesn't conflict with the heading
+    @media screen and (max-width: 600px) {
+      background-image: none;
+    }
+  }
+
+  // The ul
+  // Create the split color background
+  // ------------------------------------------------------------------------
+  .issue-index {
+    background: linear-gradient(
+      90deg,
+      $issue-index-bg-1 50%,
+      $color__card-body 50%
+    );
+
+    // Bookend with top and bottom borders
+    // ------------------------------------------------------------------------
+    border-top: 1rem solid darken($color__card-body, 10%);
+    border-bottom: 1rem solid darken($color__card-body, 10%);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: all 0.3s linear;
+
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.12);
+
+    @include on-event {
+      box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.3);
+      // transform: scale(1.007) translateY(-5px);
+    }
+
+    // Single column: use a single colored background
+    @media screen and (max-width: 45rem) {
+      background: $color__card-body;
+    }
+
+    // The li
+    // ------------------------------------------------------------------------
+    &__item-wrapper {
+      position: relative;
+      display: block;
+
+      // Create the on-event split color background
+      // ------------------------------------------------------------------------
+      &::before {
+        background: linear-gradient(90deg, $dark-warm-brown 50%, white 50%);
+        // Hide the bg
+        opacity: 0;
+
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        transition: all 0.45s;
+
+        // Single column: we don't need the on-event split bg
+        @media screen and (max-width: 45rem) {
+          display: none;
+        }
+      }
+
+      // Show the on-event split color background
+      // ------------------------------------------------------------------------
+      @include on-event {
+        &::before {
+          opacity: 1;
+        }
+      }
+
+      // Create the line connecting the title and excerpt
+      // ------------------------------------------------------------------------
+      &::after {
+        // background: linear-gradient(90deg, $issue-index-divider 80%, $light-warm-brown 20%);
+        background: $issue-index-divider;
+        transform: translate(-80%, -50%);
+        content: "";
+        position: absolute;
+        height: calc(1px + (#{$scale-value} / 4));
+        width: calc(7rem + (#{$scale-value} / 4));
+        top: 50%;
+        left: 44%;
+        z-index: 10;
+
+        // Hide the line at this width
+        @media screen and (max-width: 65rem) {
+          display: none;
+        }
+      }
+    }
+
+    // The anchor inside the li
+    // ------------------------------------------------------------------------
+    &__link {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+
+      // Single column: switch for row column
+      @media screen and (max-width: 45rem) {
+        flex-direction: column;
+
+        @include on-event {
+          background-color: white;
+        }
+      }
+
+      // The title
+      // ------------------------------------------------------------------------
+      &--title {
+        margin: 0 15% 0 0;
+        padding: 1.25rem 0 1.25rem 2.5rem;
+        flex-basis: 35%;
+        display: block;
+        width: auto;
+        z-index: 3;
+        @include sans;
+        color: rgba(white, 0.85);
+        font-size: 100%;
+        text-align: right;
+
+        // Large screens: give the title more space
+        @media screen and (min-width: 120rem) {
+          // padding-left: 10rem;
+        }
+        // Getting smaller: give the title more space
+        @media screen and (max-width: 65rem) {
+          margin: 0;
+          flex-basis: 50%;
+        }
+
+        // Single column: change the text-align
+        @media screen and (max-width: 45rem) {
+          text-align: left;
+          color: $color__text-main;
+          padding: 1.25rem 2.5rem 0 2.5rem;
+          width: 100%;
+        }
+      }
+
+      // The excerpt
+      // ------------------------------------------------------------------------
+      &--excerpt {
+        margin: 1rem 0 1rem 5rem;
+        // Scale the padding on the right
+        padding: 0.5rem calc(1.5rem + (5 * 1.5vw)) 0.5rem 0;
+        flex-basis: 50%;
+        font-size: 90%;
+        z-index: 4;
+        transition: all 0.45s;
+        color: $color__text-main;
+
+        // The disc at the end of the line between the title and excerpt
+        // ------------------------------------------------------------------------
+        &::before {
+          content: "";
+          height: 0.95rem;
+          width: 0.95rem;
+          border-radius: 50%;
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 44%;
+          box-sizing: content-box;
+          background-color: $issue-index-divider;
+          transform: translate(100%, -50%);
+          z-index: 11;
+
+          // Getting smaller: hide the disc
+          @media screen and (max-width: 65rem) {
+            display: none;
+          }
+        }
+
+        // Single column adjustments
+        @media screen and (max-width: 45rem) {
+          margin: 0;
+          padding: 1.25rem 2.5rem 1.25rem 2.5rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Single column adjustments
+@media screen and (max-width: 45rem) {
+  .issue-index__link {
+    @include on-event {
+      .issue-index__link--title {
+        color: $hot;
+      }
+      .issue-index__link--excerpt {
+        // color: white;
+      }
+    }
+  }
+}

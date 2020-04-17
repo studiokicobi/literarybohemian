@@ -16,7 +16,7 @@ get_header();
 
 
 
-			<div id="features-large" class="cards">
+			<section id="features-large" class="cards">
 				<ul>
 					<li class="card">
 						<?php
@@ -31,7 +31,7 @@ get_header();
 						?>
 					</li>
 				</ul>
-			</div><!-- #features-large -->
+			</section><!-- #features-large -->
 
 
 			<picture class="card__divider">
@@ -41,24 +41,25 @@ get_header();
 			</picture>
 
 
-			<div id="features-small" class="cards">
+			<section id="features-small" class="cards">
 				<ul>
 					<?php
 					// Journal feature
 					get_template_part( 'template-parts/content', 'home-features-small' );
 					?>
 				</ul>
-			</div><!-- #features-large -->
+			</section><!-- #features-large -->
 
 
-			<div class="journal-contents">
-				<ul>
+			<section class="journal-contents">
+				<h1 class="journal-contents__heading">The Journal</h1>
+				<ul class="issue-index">
 					<?php
 					// Journal contents
 					get_template_part( 'template-parts/content', 'journal-contents' );
 					?>
 				</ul>
-			</div>
+			</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

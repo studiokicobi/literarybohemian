@@ -90,7 +90,7 @@ $half-spacing-unit: $base-spacing-unit / 2;
     height: 0;
     border-style: solid;
     border-width: 0;
-    border-color: transparent transparent $hot transparent;
+    border-color: transparent transparent $light-warm-brown transparent;
     transition: border-width 0.3s;
   }
 
@@ -181,7 +181,7 @@ body.home {
       background-color: white;
 
       .card__meta {
-        background-color: $color__text-main;
+        background-color: $dark-warm-brown;
         transition: all 0.3s;
       }
     }
@@ -250,6 +250,8 @@ body.home {
   // Features small styles
   // ----------------------------------------------------------------------------
   #features-small {
+    margin-bottom: 5rem;
+
     .card {
       // Various header colours for the small cards
       &:nth-of-type(1) {
@@ -285,7 +287,7 @@ body.home {
 
       @include on-event {
         .card__meta {
-          background-color: $color__text-main;
+          background-color: $dark-warm-brown;
         }
       }
 
