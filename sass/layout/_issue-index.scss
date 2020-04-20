@@ -1,6 +1,17 @@
 // The issue index feature
 // ------------------------------------------------------------------------
 
+// Set the colors here
+$issue-container-bg-color-1: darken($warm-brown, 0%);
+$issue-container-bg-color-2: lighten($pale-hot, 15%);
+$issue-container-border-color: lighten($warm-brown, 35%);
+$issue-item-bg-hover-1: $dark-warm-brown;
+$issue-item-bg-hover-2: white;
+$line-color-1: lighten($warm-brown, 20%);
+$line-color-2: transparent;
+$disc-bg-1: $line-color-1;
+$disc-bg-2: lighten($pale-hot, 10%);
+
 .journal-contents {
   position: relative;
   margin-top: 22vw;
@@ -44,14 +55,14 @@
   .issue-index {
     background: linear-gradient(
       90deg,
-      $issue-index-bg-1 50%,
-      $color__card-body 50%
+      $issue-container-bg-color-1 50%,
+      $issue-container-bg-color-2 50%
     );
 
     // Bookend with top and bottom borders
     // ------------------------------------------------------------------------
-    border-top: 1rem solid darken($color__card-body, 10%);
-    border-bottom: 1rem solid darken($color__card-body, 10%);
+    border-top: 1rem solid $issue-container-border-color;
+    border-bottom: 1rem solid $issue-container-border-color;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -78,7 +89,11 @@
       // Create the on-event split color background
       // ------------------------------------------------------------------------
       &::before {
-        background: linear-gradient(90deg, $dark-warm-brown 50%, white 50%);
+        background: linear-gradient(
+          90deg,
+          $issue-item-bg-hover-1 50%,
+          $issue-item-bg-hover-2 50%
+        );
         // Hide the bg
         opacity: 0;
 
@@ -109,16 +124,24 @@
       // Create the line connecting the title and excerpt
       // ------------------------------------------------------------------------
       &::after {
-        // background: linear-gradient(90deg, $issue-index-divider 80%, $light-warm-brown 20%);
-        background: $issue-index-divider;
-        transform: translate(-80%, -50%);
+        // background: linear-gradient(
+        //   90deg,
+        //   $line-color-1 50%,
+        //   $line-color-2 50%
+        // );
+        background: $line-color-1;
+        transform: translate(-50%, -50%);
         content: "";
         position: absolute;
         height: calc(1px + (#{$scale-value} / 4));
-        width: calc(7rem + (#{$scale-value} / 4));
+        width: calc(2rem + (#{$scale-value} / 4));
         top: 50%;
-        left: 44%;
+        left: calc(50% - (1.4rem + (#{$scale-value} / 4)));
         z-index: 10;
+        // border-radius: 10rem;
+        // opacity: 0.4;
+
+        // display: none;
 
         // Hide the line at this width
         @media screen and (max-width: 65rem) {
@@ -148,9 +171,9 @@
       // The title
       // ------------------------------------------------------------------------
       &--title {
-        margin: 0 15% 0 0;
-        padding: 1.25rem 0 1.25rem 2.5rem;
-        flex-basis: 35%;
+        margin: 0;
+        padding: 1.25rem 2.5rem 1.25rem 2.5rem;
+        flex-basis: 50%;
         display: block;
         width: auto;
         z-index: 3;
@@ -178,12 +201,19 @@
         }
       }
 
+      // The span for controlling title width
+      // ------------------------------------------------------------------------
+      &--span {
+        max-width: 48rem;
+        display: inline-block;
+      }
+
       // The excerpt
       // ------------------------------------------------------------------------
       &--excerpt {
-        margin: 1rem 0 1rem 5rem;
+        margin: 1rem 0 1rem 2.5rem;
         // Scale the padding on the right
-        padding: 0.5rem calc(1.5rem + (5 * 1.5vw)) 0.5rem 0;
+        padding: 0.5rem calc(1.5rem + (5 * 1.5vw)) 0.5rem 2.5rem;
         flex-basis: 50%;
         font-size: 90%;
         z-index: 4;
@@ -194,17 +224,21 @@
         // ------------------------------------------------------------------------
         &::before {
           content: "";
-          height: 0.95rem;
-          width: 0.95rem;
+          height: 1rem;
+          width: 1rem;
           border-radius: 50%;
           display: block;
           position: absolute;
           top: 50%;
-          left: 44%;
+          left: 50%;
           box-sizing: content-box;
-          background-color: $issue-index-divider;
-          transform: translate(100%, -50%);
-          z-index: 11;
+          background: linear-gradient(90deg, $disc-bg-1 50%, $disc-bg-2 50%);
+          // opacity: 0.4;
+
+          // display: none;
+
+          transform: translate(-50%, -50%);
+          z-index: 18;
 
           // Getting smaller: hide the disc
           @media screen and (max-width: 65rem) {

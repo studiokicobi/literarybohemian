@@ -43,18 +43,18 @@ wp_reset_query();
 
     if ($second_row_poem == '') {
       // There's no second poem and we need to include the author name
-      echo '<h2 class="issue-index__link--title">' . get_the_title() . ' by ' . $author_name . '</h2>';
+      echo '<h2 class="issue-index__link--title"><span class="issue-index__link--span">' . get_the_title() . ' by ' . $author_name . '</span></h2>';
     } else {
       // There are multiple poems – no name needed.
-      echo '<h2 class="issue-index__link--title">' . get_the_title() . '</h2>';
+      echo '<h2 class="issue-index__link--title"><span class="issue-index__link--span">' . get_the_title() . '</span></h2>';
     }
   } else {
       // This is a Postcard Prose text
-      echo '<h2 class="issue-index__link--title">' . get_the_title() . ' by ' . $author_name . '</h2>';
+      echo '<h2 class="issue-index__link--title"><span class="issue-index__link--span">' . get_the_title() . ' by ' . $author_name . '</span></h2>';
   }
 
   // Print the excerpt
-  echo '<p class="issue-index__link--excerpt">' . get_the_excerpt() . '</p>';
+  echo '<p class="issue-index__link--excerpt"><span class="issue-index__link--span">' . get_the_excerpt() . '</span></p>';
 
   echo '</a>';
   echo '</li>';
