@@ -30,6 +30,11 @@ body {
   padding: 0 calc(4.5rem + #{$scale-value});
 }
 
+.newsletter {
+  margin-left: $rl-site-margin;
+  margin-right: $rl-site-margin;
+}
+
 @media screen and (max-width: 500px) {
   .site-header {
     padding: 0 $rl-site-margin-small;
@@ -39,6 +44,11 @@ body {
   }
   .site-info {
     padding: 0 calc(4.5rem + #{$scale-value});
+  }
+
+  .newsletter {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

@@ -13,10 +13,10 @@
 
 	</div><!-- #content -->
 
-	<div class="newsletter">
-		<h2>Join The Literary Bohemian Wanderlust Club</h2>
-		<p>and receive a regular missive from your journal of journeys</p>
-	</div>
+	<?php
+	// Newsletter feature
+	get_template_part( 'template-parts/content', 'newsletter' );
+	?>
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">

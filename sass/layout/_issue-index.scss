@@ -14,7 +14,7 @@ $disc-bg-2: lighten($pale-hot, 10%);
 
 .journal-contents {
   position: relative;
-  margin-top: 22vw;
+  margin: 22vw 0 3rem 0;
   background-color: $color__background-body;
 
   &__heading {

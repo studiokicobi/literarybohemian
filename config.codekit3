@@ -1518,6 +1518,14 @@
 		"oAP": "/template-parts/content-journal-contents.php",
 		"oF": 0
 		},
+	"/template-parts/content-newsletter.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/content-newsletter.php",
+		"oF": 0
+		},
 	"/template-parts/content-none.php": {
 		"cB": 0,
 		"ft": 8192,

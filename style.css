@@ -46,6 +46,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("//cdn-images.mailchimp.com/embedcode/classic-10_7.css");
 html {
   line-height: 1.15;
   /* 1 */
@@ -443,13 +444,20 @@ body {
 .site-info {
   padding: 0 calc(4.5rem + 0.333vw); }
 
+.newsletter {
+  margin-left: calc(2.5rem + 0.333vw);
+  margin-right: calc(2.5rem + 0.333vw); }
+
 @media screen and (max-width: 500px) {
   .site-header {
     padding: 0 calc(1.5rem + 0.333vw); }
   .site-content {
     padding: 0 calc(1.5rem + 0.333vw); }
   .site-info {
-    padding: 0 calc(4.5rem + 0.333vw); } }
+    padding: 0 calc(4.5rem + 0.333vw); }
+  .newsletter {
+    margin-left: 0;
+    margin-right: 0; } }
 
 hr {
   background-color: #ccc;
@@ -1437,9 +1445,37 @@ body.home #features-small {
     max-width: 40rem;
     font-size: calc(80% + 0.333vw); }
 
+.newsletter {
+  background-image: url("img/map-bg@2x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 2rem;
+  padding: 6rem 2rem; }
+  .newsletter__fieldset {
+    border: none; }
+  .newsletter__heading {
+    text-align: center;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 200%;
+    margin: 0;
+    padding: 0; }
+  .newsletter__subheading {
+    text-align: center;
+    font-size: 150%;
+    margin: 0;
+    padding: 0; }
+
+#mc_embed_signup {
+  background: transparent;
+  clear: left;
+  font: 1rem; }
+
 .journal-contents {
   position: relative;
-  margin-top: 22vw;
+  margin: 22vw 0 3rem 0;
   background-color: #f7f2ee; }
   .journal-contents__heading {
     font-family: sofia-pro, sans-serif;

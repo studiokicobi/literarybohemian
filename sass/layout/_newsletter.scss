@@ -1,0 +1,40 @@
+.newsletter {
+  background-image: url("img/map-bg@2x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 2rem;
+  padding: 6rem 2rem;
+
+  &__fieldset {
+    border: none;
+  }
+
+  &__heading {
+    text-align: center;
+    @include sans;
+    font-size: 200%;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__subheading {
+    text-align: center;
+    font-size: 150%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// Mailchimp styles
+// ----------------------------------------------------------------------------
+@import url("//cdn-images.mailchimp.com/embedcode/classic-10_7.css");
+
+#mc_embed_signup {
+  background: transparent;
+  clear: left;
+  font: 1rem;
+}
+
+// Custom Mailchimp styles
+// ----------------------------------------------------------------------------
