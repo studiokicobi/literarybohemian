@@ -2,17 +2,17 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: $color__border-button;
-  border-radius: 3px;
-  background: $color__background-button;
-  color: rgba(0, 0, 0, 0.8);
-  // @include font-size(0.75);
+  border: none;
+  border-radius: 0;
+  background: $hot;
+  color: rgba(white, 1);
   line-height: 1;
-  padding: 0.6em 1em 0.4em;
+  padding: 0.5em 1em 0.6em;
+  @include sans;
+  font-weight: normal !important;
 
   &:hover {
-    border-color: $color__border-button-hover;
+    background: black;
   }
 
   &:active,

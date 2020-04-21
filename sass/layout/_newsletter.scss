@@ -6,10 +6,6 @@
   margin-bottom: 2rem;
   padding: 6rem 2rem;
 
-  &__fieldset {
-    border: none;
-  }
-
   &__heading {
     text-align: center;
     @include sans;
@@ -24,17 +20,46 @@
     margin: 0;
     padding: 0;
   }
+
+  // The form
+  // ----------------------------------------------------------------------------
+  &__fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__label {
+    @include sans;
+    font-size: 85%;
+  }
+
+  &__input,
+  input[type="text"],
+  input[type="email"],
+  input[type="url"] {
+    border: none;
+    border-radius: 0;
+  }
+}
+
+.error {
+  border: 2px solid red !important;
+}
+
+label {
+  display: block;
+}
+
+.input-group {
+  margin: 10px 0;
 }
 
 // Mailchimp styles
 // ----------------------------------------------------------------------------
-@import url("//cdn-images.mailchimp.com/embedcode/classic-10_7.css");
 
 #mc_embed_signup {
   background: transparent;
   clear: left;
   font: 1rem;
 }
-
-// Custom Mailchimp styles
-// ----------------------------------------------------------------------------

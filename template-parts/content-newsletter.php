@@ -20,22 +20,22 @@
 
 				<fieldset id="step_1" class="newsletter__fieldset">
 					<div class="mc-field-group">
-						<label for="mce-EMAIL">Email Address </label>
-						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+						<label for="mce-EMAIL" class="newsletter__label">Email Address </label>
+						<input type="email" value="" name="EMAIL" class="required email newsletter__input" id="mce-EMAIL">
 					</div>
 				</fieldset>
 
-				<fieldset id="step_2" class="newsletter__fieldset">
+				<fieldset id="step_2" class="newsletter__fieldset hidden">
 					<div class="mc-field-group">
-						<label for="mce-FNAME">First Name </label>
-						<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+						<label for="mce-FNAME" class="newsletter__label">First Name </label>
+						<input type="text" value="" name="FNAME" class="required newsletter__input" id="mce-FNAME">
 					</div>
 				</fieldset>
 
-				<fieldset id="step_3" class="newsletter__fieldset">
+				<fieldset id="step_3" class="newsletter__fieldset hidden">
 					<div class="mc-field-group">
-						<label for="mce-LNAME">Last Name </label>
-						<input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+						<label for="mce-LNAME" class="newsletter__label">Last Name </label>
+						<input type="text" value="" name="LNAME" class="required newsletter__input" id="mce-LNAME">
 					</div>
 				</fieldset>
 
@@ -46,6 +46,8 @@
 
 				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e10427dc014f047245e843d80_cf83fcce33" tabindex="-1" value=""></div>
+
+				<button id="next-button" type="button">Next</button>
 				<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
 			</div>
 	</form>

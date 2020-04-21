@@ -36,6 +36,21 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+.visually-hidden:not(:focus):not(:active),
+.vh:not(:focus):not(:active) {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  /* added line */ }
+
+.hidden {
+  display: none; }
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -46,7 +61,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("//cdn-images.mailchimp.com/embedcode/classic-10_7.css");
 html {
   line-height: 1.15;
   /* 1 */
@@ -506,18 +520,21 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 0;
+  background: #cd2c00;
+  color: white;
   line-height: 1;
-  padding: 0.6em 1em 0.4em; }
+  padding: 0.5em 1em 0.6em;
+  font-family: sofia-pro, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-weight: normal !important; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa; }
+    background: black; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -1452,8 +1469,6 @@ body.home #features-small {
   background-size: cover;
   margin-bottom: 2rem;
   padding: 6rem 2rem; }
-  .newsletter__fieldset {
-    border: none; }
   .newsletter__heading {
     text-align: center;
     font-family: sofia-pro, sans-serif;
@@ -1467,6 +1482,30 @@ body.home #features-small {
     font-size: 150%;
     margin: 0;
     padding: 0; }
+  .newsletter__fieldset {
+    border: none;
+    margin: 0;
+    padding: 0; }
+  .newsletter__label {
+    font-family: sofia-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 85%; }
+  .newsletter__input,
+  .newsletter input[type="text"],
+  .newsletter input[type="email"],
+  .newsletter input[type="url"] {
+    border: none;
+    border-radius: 0; }
+
+.error {
+  border: 2px solid red !important; }
+
+label {
+  display: block; }
+
+.input-group {
+  margin: 10px 0; }
 
 #mc_embed_signup {
   background: transparent;
