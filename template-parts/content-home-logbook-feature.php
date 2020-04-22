@@ -22,8 +22,13 @@
 
   <?php while (have_posts()) : the_post();
 
+
   // Get the category (or categories: make this futureproof)
   // ----------------------------------------------------------------------------
+
+  // Post ID
+  $post_id = $post->ID;
+
   $cats = array();
   foreach (get_the_category($post_id) as $c) {
     $cat = get_category($c);
@@ -33,7 +38,7 @@
   if (sizeOf($cats) > 0) {
     $post_categories = implode(', ', $cats);
   } else {
-    $post_categories = 'Not Assigned';
+    $post_categories = '—'; // If we ever see this, we know there's no assigned category
   }
 
   // The category

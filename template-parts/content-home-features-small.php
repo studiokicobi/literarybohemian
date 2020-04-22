@@ -23,9 +23,10 @@ wp_reset_query();
 
   echo '<li class="card">';
 
-
   // Get the category (or categories: this is futureproof)
   // ----------------------------------------------------------------------------
+  $post_id = $post->ID;
+
   $cats = array();
   foreach (get_the_category($post_id) as $c) {
     $cat = get_category($c);
@@ -63,22 +64,35 @@ wp_reset_query();
     // Check if we have multiple poems
     // If false, print the author name
 
-    $rows = get_field('poems' ); // get all the rows
-    $second_row = $rows[1]; // get the second row
-    $second_row_poem = $second_row['poem' ]; // check for content
+    // Get the ACF rows
+    if ( have_rows( 'poems' ) ) :
+      while ( have_rows( 'poems' ) ) : the_row();
+      // check if content exists on these rows
+      $poem_2 = the_row(1);
+      $poem_3 = the_row(2);
+      $poem_4 = the_row(3);
+      $poem_5 = the_row(4);
+      $poem_6 = the_row(5);
+      $poem_7 = the_row(6);
+      $poem_8 = the_row(7);
+      $poem_9 = the_row(8);
+      $poem_10 = the_row(9);
+      $poem_11 = the_row(10);
+      $poem_12 = the_row(11);
 
-    if ($second_row_poem == '') {
-      echo '<h3 class="card__author">' . get_field('name') . '</h3>';
-    }
-  }
+      if ($poem_2 || $poem_3 || $poem_4 || $poem_5 || $poem_6 || $poem_7 || $poem_8 || $poem_9 || $poem_10 || $poem_11 || $poem_12 != '') :
+        // We have multiple poems; do nothing.
+        else :
+          // This is a single poem; get the author name.
+          echo '<h3 class="card__author">By ' . get_field('name') . '</h3>';
+        endif;
+      endwhile;
+    endif;
+  } // end get poetry post type
 
-  // If this is a Postcard Prose post type
-  // ----------------------------------------------------------------------------
-  if ( get_post_type( get_the_ID() ) == 'postcard_prose' ) {
-
-  // The author's name
-  echo '<h3 class="card__author">By ' . get_field('name') . '</h3>';
-
+  else {
+    // This is a Postcard Prose text
+    echo '<h3 class="card__author">By ' . get_field('name') . '</h3>';
   }
 
   // The excerpt
