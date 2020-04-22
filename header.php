@@ -58,33 +58,16 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<div class="logo-container">
-						<a href="/" rel="home">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/the-literary-bohemian-logo.svg" alt="">
-							<!-- screen reader text -->
-							<span class="screen-reader-text">The Literary Bohemian</span>
-						</a>
-				</div><!-- .logo-container -->
-			</div><!-- .site-branding -->
-
-			<div class="arrow-wrapper">
-				<div class="arrow"></div>
-
-				<a href="/destination-unknown" class="disc disc-1 tooltip">
-					<span class="tooltiptext"><span class="tooltip-arrow"></span> Somewhere</span>
+				<a href="/" rel="home">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/the-literary-bohemian-logo.svg" alt="">
+					<!-- screen reader text -->
+					<span class="screen-reader-text">The Literary Bohemian</span>
 				</a>
+			</div><!-- .logo-container -->
+		</div><!-- .site-branding -->
 
-				<a href="/destination-unknown" class="disc disc-2 tooltip">
-					<span class="tooltiptext"><span class="tooltip-arrow"></span> Indeterminate</span>
-				</a>
-
-				<a href="/destination-unknown" class="disc disc-3 tooltip">
-					<span class="tooltiptext"><span class="tooltip-arrow"></span> Undecided</span>
-				</a>
-			</div>
-
-
-			<!-- Main navigation -->
-			<nav id="site-navigation" class="main-navigation">
+		<!-- Main navigation -->
+		<nav id="site-navigation" class="main-navigation">
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
@@ -92,6 +75,23 @@
 			) );
 			?>
 		</nav><!-- #site-navigation -->
+
+		<div class="arrow-wrapper">
+			<div class="arrow"></div>
+
+			<!-- Random links. These work as easter eggs to be discovered by visual users. -->
+			<a href="/destination-unknown" class="disc disc-1 tooltip" aria-hidden="true">
+				<span class="tooltiptext">Somewhere <span class="tooltip-arrow"></span></span>
+			</a>
+
+			<a href="/destination-unknown" class="disc disc-2 tooltip" aria-hidden="true">
+				<span class="tooltiptext">Indeterminate <span class="tooltip-arrow"></span></span>
+			</a>
+
+			<a href="/destination-unknown" class="disc disc-3 tooltip" aria-hidden="true">
+				<span class="tooltiptext">Undecided <span class="tooltip-arrow"></span></span>
+			</a>
+		</div>
 
 		<div class="search-wrapper">
 			<?php

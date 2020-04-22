@@ -1,0 +1,1 @@
+const cards=document.querySelectorAll(".card");Array.prototype.forEach.call(cards,e=>{let o,r,c=e.querySelector("h2 a");e.style.cursor="pointer",e.onmousedown=()=>o=+new Date,e.onmouseup=()=>{r=+new Date,r-o<200&&c.click()}});

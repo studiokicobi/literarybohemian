@@ -5,6 +5,8 @@
   background-size: cover;
   margin-bottom: 2rem;
   padding: 6rem 2rem;
+  // background-color: #827069;
+  // background-blend-mode: color-burn;
 
   &__heading {
     text-align: center;
@@ -12,6 +14,7 @@
     font-size: 200%;
     margin: 0;
     padding: 0;
+    // color: white;
   }
 
   &__subheading {
@@ -19,14 +22,19 @@
     font-size: 150%;
     margin: 0;
     padding: 0;
+    // color: white;
   }
 
   // The form
   // ----------------------------------------------------------------------------
-  &__fieldset {
-    border: none;
-    margin: 0;
-    padding: 0;
+
+  $form-element-height: 2.7rem;
+
+  &__form-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 4rem 0 1rem 0;
   }
 
   &__label {
@@ -40,19 +48,23 @@
   input[type="url"] {
     border: none;
     border-radius: 0;
+    min-height: $form-element-height;
+    margin-right: 0.75rem;
+    padding-left: 1rem;
+    min-width: 18rem;
   }
-}
 
-.error {
-  border: 2px solid red !important;
-}
+  &__alert {
+    &--error {
+      border: 2px solid red !important;
+    }
+    &--success {
+    }
+  }
 
-label {
-  display: block;
-}
-
-.input-group {
-  margin: 10px 0;
+  &__submit {
+    min-height: $form-element-height;
+  }
 }
 
 // Mailchimp styles

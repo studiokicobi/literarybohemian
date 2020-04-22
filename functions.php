@@ -122,13 +122,14 @@ function literarybohemian_scripts()
 {
 	wp_enqueue_style('literarybohemian-style', get_stylesheet_uri());
 
+	// Enqueue global js
+  wp_enqueue_script('literarybohemian-global', get_template_directory_uri() . '/js/global-min.js', array(), time(), true);
+
 	// wp_enqueue_script('literarybohemian-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true);
-
-	wp_enqueue_script('literarybohemian-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true);
-
-	if (is_singular() && comments_open() && get_option('thread_comments')) {
-		wp_enqueue_script('comment-reply');
-	}
+	// wp_enqueue_script('literarybohemian-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true);
+	// if (is_singular() && comments_open() && get_option('thread_comments')) {
+	// 	wp_enqueue_script('comment-reply');
+	// }
 }
 add_action('wp_enqueue_scripts', 'literarybohemian_scripts');
 

@@ -13,14 +13,14 @@
   grid-gap: 0;
   overflow: hidden; // need this if we are scaling the search field on hover
 
-  //IE grid fix
-  @media all and (-ms-high-contrast: none) {
-    .site-header {
-      display: -ms-grid;
-      -ms-grid-template-columns: repeat(4, 1fr);
-      -ms-grid-template-rows: repeat(3, 1fr);
-    }
-  }
+  // //IE grid fix
+  // @media all and (-ms-high-contrast: none) {
+  //   .site-header {
+  //     display: -ms-grid;
+  //     -ms-grid-template-columns: repeat(4, 1fr);
+  //     -ms-grid-template-rows: repeat(3, 1fr);
+  //   }
+  // }
 
   // Logo
   // -----------–-----------–-----------–
@@ -47,7 +47,7 @@
     margin: 0 calc(#{$rl-site-margin} * -1);
     margin-bottom: calc(1rem + #{$scale-value});
     background-color: $light-warm-brown;
-    box-shadow: 0px 0px 80px 0px rgba(white, 0.6);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
     transition: all 0.15s linear;
 
     @media screen and (max-width: 420px) {

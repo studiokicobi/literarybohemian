@@ -7,7 +7,7 @@
 		"uuidString": "FD7CC8E3-4A0E-49F4-BB1A-8DBC93B7F011"
 		}
 	],
-"creatorBuild": "31491",
+"creatorBuild": "32001",
 "files": {
 	"/.gitignore": {
 		"cB": 0,
@@ -698,7 +698,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/js/customizer-min-min.js",
 		"oF": 0,
 		"sC": 1,
@@ -715,12 +715,56 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/js/navigation-min.js": {
+	"/js/global-min.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
+		"oAP": "/js/global-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/js/global.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/global-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/js/inclusive-cards-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/js/inclusive-cards-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/js/inclusive-cards.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/inclusive-cards-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/js/navigation-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
 		"oAP": "/js/navigation-min-min.js",
 		"oF": 0,
 		"sC": 1,
@@ -742,7 +786,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/js/skip-link-focus-fix-min-min.js",
 		"oF": 0,
 		"sC": 1,
@@ -776,17 +820,17 @@
 		"oF": 0
 		},
 	"/layouts/content-sidebar-min.css": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/layouts/content-sidebar-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
 	"/layouts/content-sidebar.css": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
@@ -796,17 +840,17 @@
 		"oS": 3
 		},
 	"/layouts/sidebar-content-min.css": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/layouts/sidebar-content-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
 	"/layouts/sidebar-content.css": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
@@ -814,6 +858,28 @@
 		"oAP": "/layouts/sidebar-content-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/node_modules",
+		"oF": 0
+		},
+	"/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"/page.php": {
 		"cB": 0,
@@ -835,7 +901,7 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/README.html",
 		"oF": 0
 		},
@@ -860,7 +926,7 @@
 		},
 	"/sass/_normalize.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -868,12 +934,12 @@
 		"oA": 1,
 		"oAP": "/_normalize.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/elements/_elements.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -881,12 +947,12 @@
 		"oA": 1,
 		"oAP": "/_elements.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/elements/_lists.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -894,12 +960,12 @@
 		"oA": 1,
 		"oAP": "/_lists.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/elements/_tables.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -907,12 +973,12 @@
 		"oA": 1,
 		"oAP": "/_tables.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/forms/_buttons.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -920,12 +986,12 @@
 		"oA": 1,
 		"oAP": "/_buttons.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/forms/_fields.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -933,12 +999,25 @@
 		"oA": 1,
 		"oAP": "/_fields.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/sass/forms/_float-label.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_float-label.css",
+		"oF": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/forms/_forms.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -946,12 +1025,12 @@
 		"oA": 1,
 		"oAP": "/_forms.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/layout/_cards.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -959,12 +1038,12 @@
 		"oA": 1,
 		"oAP": "/_cards.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/layout/_content-sidebar.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -972,12 +1051,12 @@
 		"oA": 1,
 		"oAP": "/_content-sidebar.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/layout/_footer.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -985,12 +1064,12 @@
 		"oA": 1,
 		"oAP": "/_footer.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/layout/_header.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -998,12 +1077,12 @@
 		"oA": 1,
 		"oAP": "/_header.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/layout/_homepage.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1011,12 +1090,12 @@
 		"oA": 1,
 		"oAP": "/_homepage.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/layout/_issue-index.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1024,12 +1103,12 @@
 		"oA": 1,
 		"oAP": "/_issue-index.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/layout/_newsletter.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1037,12 +1116,12 @@
 		"oA": 1,
 		"oAP": "/_newsletter.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/layout/_no-sidebar.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1050,12 +1129,12 @@
 		"oA": 1,
 		"oAP": "/_no-sidebar.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/layout/_sidebar-content.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1063,12 +1142,12 @@
 		"oA": 1,
 		"oAP": "/_sidebar-content.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/layout/_switcher.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1076,12 +1155,12 @@
 		"oA": 1,
 		"oAP": "/_switcher.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/layout/_tooltip.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1089,12 +1168,12 @@
 		"oA": 1,
 		"oAP": "/_tooltip.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/media/_captions.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1102,12 +1181,12 @@
 		"oA": 1,
 		"oAP": "/_captions.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/media/_galleries.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1115,12 +1194,12 @@
 		"oA": 1,
 		"oAP": "/_galleries.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/media/_media.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1128,12 +1207,12 @@
 		"oA": 1,
 		"oAP": "/_media.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/mixins/_mixins-master.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1141,12 +1220,12 @@
 		"oA": 1,
 		"oAP": "/_mixins-master.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/modules/_accessibility.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1154,12 +1233,12 @@
 		"oA": 1,
 		"oAP": "/_accessibility.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/modules/_alignments.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1167,12 +1246,12 @@
 		"oA": 1,
 		"oAP": "/_alignments.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/modules/_clearings.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1180,12 +1259,12 @@
 		"oA": 1,
 		"oAP": "/_clearings.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/modules/_custom-scrollbars.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1193,12 +1272,12 @@
 		"oA": 1,
 		"oAP": "/_custom-scrollbars.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/modules/_infinite-scroll.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1206,12 +1285,12 @@
 		"oA": 1,
 		"oAP": "/_infinite-scroll.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/navigation/_links.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1219,12 +1298,12 @@
 		"oA": 1,
 		"oAP": "/_links.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/navigation/_menus.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1232,12 +1311,12 @@
 		"oA": 1,
 		"oAP": "/_menus.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/navigation/_navigation.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1245,12 +1324,12 @@
 		"oA": 1,
 		"oAP": "/_navigation.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/site/_site.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1258,12 +1337,12 @@
 		"oA": 1,
 		"oAP": "/_site.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/site/primary/_comments.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1271,12 +1350,12 @@
 		"oA": 1,
 		"oAP": "/_comments.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/site/primary/_posts-and-pages.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1284,12 +1363,12 @@
 		"oA": 1,
 		"oAP": "/_posts-and-pages.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/site/secondary/_widgets.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1297,12 +1376,12 @@
 		"oA": 1,
 		"oAP": "/_widgets.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/style.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1310,12 +1389,12 @@
 		"oA": 0,
 		"oAP": "/style.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/typography/_copy.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1323,12 +1402,12 @@
 		"oA": 1,
 		"oAP": "/_copy.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/typography/_headings.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1336,12 +1415,12 @@
 		"oA": 1,
 		"oAP": "/_headings.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/typography/_typography.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1349,12 +1428,12 @@
 		"oA": 1,
 		"oAP": "/_typography.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/variables-site/_colors.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1362,12 +1441,12 @@
 		"oA": 1,
 		"oAP": "/_colors.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/variables-site/_columns.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1375,12 +1454,12 @@
 		"oA": 1,
 		"oAP": "/_columns.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/variables-site/_structure.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1388,12 +1467,12 @@
 		"oA": 1,
 		"oAP": "/_structure.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/variables-site/_typography.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1401,12 +1480,12 @@
 		"oA": 1,
 		"oAP": "/_typography.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/sass/variables-site/_variables-site.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -1414,7 +1493,7 @@
 		"oA": 1,
 		"oAP": "/_variables-site.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/screenshot.png": {
@@ -1461,11 +1540,11 @@
 		"oF": 0
 		},
 	"/style.css": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/style-min.css",
 		"oF": 0,
 		"oS": 3
@@ -1474,7 +1553,7 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/style.css.map",
 		"oF": 0
 		},
@@ -2003,6 +2082,7 @@
 			"flagValue": -1
 			}
 		},
+	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
 	"esLintEnvironmentsMask": 1,
@@ -2107,6 +2187,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"default-param-last": {
+			"active": 0,
+			"optionString": ""
+			},
 		"dot-location": {
 			"active": 0,
 			"optionString": "'object'"
@@ -2158,6 +2242,10 @@
 		"global-require": {
 			"active": 0,
 			"optionString": ""
+			},
+		"grouped-accessor-pairs": {
+			"active": 0,
+			"optionString": "'anyOrder'"
 			},
 		"guard-for-in": {
 			"active": 0,
@@ -2335,6 +2423,10 @@
 			"active": 1,
 			"optionString": "{'checkLoops': true}"
 			},
+		"no-constructor-return": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-continue": {
 			"active": 0,
 			"optionString": ""
@@ -2360,6 +2452,10 @@
 			"optionString": ""
 			},
 		"no-dupe-class-members": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-else-if": {
 			"active": 1,
 			"optionString": ""
 			},
@@ -2453,6 +2549,10 @@
 			},
 		"no-implied-eval": {
 			"active": 0,
+			"optionString": ""
+			},
+		"no-import-assign": {
+			"active": 1,
 			"optionString": ""
 			},
 		"no-inline-comments": {
@@ -2659,6 +2759,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-setter-return": {
+			"active": 1,
+			"optionString": ""
+			},
 		"no-shadow": {
 			"active": 0,
 			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
@@ -2863,6 +2967,10 @@
 			"active": 0,
 			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
+		"prefer-exponentiation-operator": {
+			"active": 0,
+			"optionString": ""
+			},
 		"prefer-named-capture-group": {
 			"active": 0,
 			"optionString": ""
@@ -2878,6 +2986,10 @@
 		"prefer-promise-reject-errors": {
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
+			},
+		"prefer-regex-literals": {
+			"active": 0,
+			"optionString": ""
 			},
 		"prefer-rest-params": {
 			"active": 0,
@@ -3407,7 +3519,7 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0
 		},
 	"languageDefaultsGIF": {
@@ -3487,7 +3599,6 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 1,
 		"enableJavascript": 0,
-		"ieCompatibility": 1,
 		"mathStyle": 0,
 		"outputStyle": 0,
 		"rewriteURLStyle": 0,
@@ -3559,9 +3670,9 @@
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
+		"shouldRunBless": 1,
 		"useLibsass": 1
 		},
 	"languageDefaultsSLIM": {
@@ -3627,6 +3738,9 @@
 	"npmTargetDependencyListType": 1,
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
+	"rollupExternals": "",
+	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
+	"rollupTreeshakingEnabled": 1,
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
