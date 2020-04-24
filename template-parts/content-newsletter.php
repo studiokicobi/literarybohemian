@@ -9,11 +9,10 @@
 
 ?>
 
-<div class="newsletter">
-	<div class="newsletter__mask">
+<div id="newsletter" class="newsletter">
 
-		<h2 class="newsletter__heading">Join The Literary Bohemian Wanderlust Club</h2>
-		<p class="newsletter__subheading">and receive a regular missive from your journal of journeys</p>
+	<h2 class="newsletter__heading">Join The Literary Bohemian Wanderlust Club</h2>
+	<p class="newsletter__subheading">and receive a regular missive from your journal of journeys</p>
 
 		<!-- newsletter form -->
 		<div id="mc_embed_signup">
@@ -39,5 +38,4 @@
 		<!-- <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='WEBSITE';ftypes[3]='url';}(jQuery));var $mcj = jQuery.noConflict(true);</script> -->
 		<!-- /newsletter form -->
 
-	</div>
 </div> <!-- .newsletter -->

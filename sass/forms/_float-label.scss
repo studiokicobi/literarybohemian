@@ -20,8 +20,6 @@
     opacity: 1;
     transition: all 0.2s;
     @content;
-
-    // color: rgba(white, 0.6);
   }
 }
 
@@ -39,13 +37,11 @@
   &:placeholder-shown:not(:focus) + * {
     font-size: 100%;
     opacity: 1;
+
     @content;
   }
 }
 
-/* Default styling
- * https://github.com/tonystar/float-label-css/blob/master/scss/float-label.scss
- */
 .has-float-label {
   @include float-label-container;
 

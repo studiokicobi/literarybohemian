@@ -1,0 +1,1 @@
+$((function(){$(".mc-field-group").hover((function(){$(".newsletter").addClass("newsletter__focus")}),(function(){$(".newsletter").addClass("newsletter__blur")}))})),$("p").focusin((function(){$(this).find("span").css("display","inline").fadeOut(1e3)}));

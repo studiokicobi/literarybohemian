@@ -228,6 +228,28 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/img/journal-random-body/1.png": {
+		"ft": 32768,
+		"iS": 185984,
+		"oA": 0,
+		"oAP": "/img/journal-random-body/1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/journal-random-header/1.png": {
+		"ft": 32768,
+		"iS": 86486,
+		"oA": 0,
+		"oAP": "/img/journal-random-header/1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/map-bg.jpg": {
 		"ft": 16384,
 		"iS": 28075,
@@ -777,6 +799,28 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/navigation-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/js/newsletter-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/newsletter-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/js/newsletter.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/newsletter-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0

@@ -122,6 +122,12 @@ function literarybohemian_scripts()
 {
 	wp_enqueue_style('literarybohemian-style', get_stylesheet_uri());
 
+	// deregister default jQuery included with Wordpress
+	wp_deregister_script( 'jquery' );
+
+	$jquery_cdn = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
+	wp_enqueue_script( 'jquery', $jquery_cdn, array(), '3.4.1', true );
+	
 	// Enqueue global js
   wp_enqueue_script('literarybohemian-global', get_template_directory_uri() . '/js/global-min.js', array(), time(), true);
 
