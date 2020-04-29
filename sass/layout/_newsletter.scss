@@ -8,10 +8,15 @@
   transition: all linear 0.3s;
   background-blend-mode: darken;
 
+  @media (max-width: 35rem) {
+    padding: 2rem;
+  }
+
   @include on-event {
     background-blend-mode: color-burn;
     background-color: lighten($dark-brown, 40%);
     transition: all linear 0.3s;
+
     .newsletter__heading {
       color: white;
       transition: all linear 0.2s;
@@ -53,6 +58,10 @@
     flex-direction: row;
     justify-content: center;
     margin: 4rem 0 1rem 0;
+
+    @media (max-width: 35rem) {
+      flex-direction: column;
+    }
   }
 
   &__label {
@@ -70,6 +79,11 @@
     margin-right: 0.75rem;
     padding-left: 1rem;
     min-width: 18rem;
+
+    @media (max-width: 35rem) {
+      min-width: auto;
+      min-width: 100%;
+    }
   }
 
   &__alert {
@@ -82,6 +96,10 @@
 
   &__submit {
     min-height: $form-element-height;
+
+    @media (max-width: 35rem) {
+      margin-top: 0.5rem;
+    }
   }
 }
 

@@ -1,0 +1,142 @@
+// Single template
+$single-switch: 50rem;
+$meta-dark: darken($color__background-body, 3);
+
+.single-post {
+  //random image is absolute
+  position: relative;
+  //space for the random image
+  margin: 4rem 0 0 0;
+  padding: 12rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: #{$single-switch}) {
+    padding: 0;
+    justify-content: center;
+  }
+
+  &__random-header {
+    position: absolute;
+    top: 0;
+    right: calc(#{$rl-site-margin} * -1);
+    max-width: 70%;
+
+    @media (max-width: #{$single-switch}) {
+      display: none;
+    }
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: #{$single-switch}) {
+      flex-direction: column;
+    }
+  }
+
+  &__header {
+    flex: 0 0 50%;
+    padding-top: 5rem;
+    padding-right: 3vw;
+
+    @media (max-width: #{$single-switch}) {
+      flex: 0 1 50%;
+      padding-top: 0;
+      padding-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__body {
+    flex: 0 0 50%;
+    padding-left: 3vw;
+
+    > * {
+      max-width: 50ch;
+    }
+  }
+
+  &__heading {
+    font-weight: 400;
+    font-size: 220%;
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+  }
+
+  $meta-dim: 0.75rem;
+
+  &__meta {
+    border-top: 1px solid $border-grey;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    @include sans;
+    font-size: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    @media (max-width: #{$single-switch}) {
+      background-color: $meta-dark;
+    }
+
+    &--name {
+      padding-right: $meta-dim;
+      margin-right: calc(#{$meta-dim} - 1px);
+      border-right: 1px solid $border-grey;
+      text-transform: uppercase;
+      padding-top: 0.2rem;
+
+      @media (max-width: #{$single-switch}) {
+        padding-left: $meta-dim;
+      }
+    }
+
+    &--post-type {
+      padding-right: $meta-dim;
+      margin-right: calc(#{$meta-dim} - 1px);
+      border-right: 1px solid $border-grey;
+      text-transform: uppercase;
+      padding-top: 0.2rem;
+    }
+    &--taxonomy-wrapper {
+      flex-grow: 1;
+
+      @media (max-width: #{$single-switch}) {
+        padding-bottom: 1.5rem;
+      }
+    }
+    &--taxonomy {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    &--taxonomy-cat {
+      text-transform: uppercase;
+      padding: 0.2rem 0 2rem 0;
+
+      @media (max-width: #{$single-switch}) {
+        padding-right: $meta-dim;
+      }
+    }
+  }
+}
+
+.single_post__meta--taxonomy-tag {
+  background-image: url("img/list-item-dotted-line-bg.svg");
+  background-repeat: repeat-x;
+  background-position: center left;
+  background-size: auto;
+  line-height: 1.5;
+  a {
+    display: inline-block;
+    background-color: $color__background-body;
+    padding: 0 0.4rem 0.4rem 0;
+
+    @media (max-width: #{$single-switch}) {
+      background-color: $meta-dark;
+    }
+  }
+}
