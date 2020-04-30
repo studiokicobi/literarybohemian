@@ -22,7 +22,7 @@ wp_reset_query();
 
   <?php while (have_posts()) : the_post();
 
-  // Get the category (or categories: this is futureproof)
+  // Get the category (or categories: this is futureproof
   // ----------------------------------------------------------------------------
 
   // Get the post ID

@@ -64,6 +64,27 @@
     }
   }
 
+  &__fieldgroup {
+    position: relative;
+  }
+
+  &__fieldgroup::before {
+    position: absolute;
+    top: -1.6rem;
+    left: -2.7rem;
+    content: "";
+    background-image: url("img/icon-flag.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 3.5rem;
+    width: 3.5rem;
+    z-index: 10;
+
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+
   &__label {
     @include sans;
     font-size: 85%;
@@ -75,10 +96,11 @@
   input[type="url"] {
     border: none;
     border-radius: 0;
-    min-height: $form-element-height;
+    height: $form-element-height;
     margin-right: 0.75rem;
     padding-left: 1rem;
     min-width: 18rem;
+    position: relative;
 
     @media (max-width: 35rem) {
       min-width: auto;
@@ -95,7 +117,8 @@
   }
 
   &__submit {
-    min-height: $form-element-height;
+    height: $form-element-height;
+    // min-height: 3.5rem;
 
     @media (max-width: 35rem) {
       margin-top: 0.5rem;

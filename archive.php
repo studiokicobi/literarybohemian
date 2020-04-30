@@ -16,7 +16,7 @@ get_header();
 			<?php
 		  // The latest post from The Journal
 		      query_posts(array(
-		          'post_type' => 'poetry', 'postcard_prose',
+		          'post_type' => 'poetry', 'postcard_prose', 'travel_notes',
 		          'post_status' => 'publish',
 		          'orderby' => 'publish_date',
 		          'order' => 'DESC'

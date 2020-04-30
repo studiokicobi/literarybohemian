@@ -15,7 +15,7 @@ body {
   //   $color__background-body-2,
   //   $color__background-body 70%
   // );
-  font-size: calc(1rem + #{$scale-value});
+  font-size: calc(1rem + (#{$scale-value} * 3));
   //font-size: calc(16px + 6 * ((100vw - 320px) / 680));
 }
 

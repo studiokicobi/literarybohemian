@@ -18,7 +18,7 @@
 		<div id="mc_embed_signup">
 			<form action="https://literarybohemian.us3.list-manage.com/subscribe/post?u=e10427dc014f047245e843d80&amp;id=cf83fcce33" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 				<div id="mc_embed_signup_scroll" class="newsletter__form-wrapper">
-					<div class="mc-field-group has-float-label">
+					<div class="mc-field-group newsletter__fieldgroup has-float-label">
 						<input placeholder="you@email.com" type="email" value="" name="EMAIL" class="required email newsletter__input" id="mce-EMAIL">
 						<label for="mce-EMAIL" class="newsletter__label">Your email address</label>
 					</div>

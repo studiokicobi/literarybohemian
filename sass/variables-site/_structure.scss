@@ -9,3 +9,6 @@ $top-site-margin: calc(2rem + #{$scale-value});
 // Right and left side margins
 $rl-site-margin: calc(2.5rem + #{$scale-value});
 $rl-site-margin-small: calc(1.5rem + #{$scale-value});
+
+// small screen: collapse to single column, etc.
+$responsive-switch: 50rem;

@@ -17,6 +17,11 @@ h1,
 h2,
 h3 {
   line-height: $font__line-height-headings;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 200%;
 }
 
 em,
