@@ -24,20 +24,32 @@
 		// ----------------------------------------------------------------------------
 		echo '<ul class="single-post__meta">';
 
-		// The author
+		// Journal posts: the author
+		// if ( get_post_type( get_the_ID() ) == 'poetry' || 'postcard_prose' || 'travelogue') ) {
+		if ( is_singular( array( 'poetry', 'postcard_prose', 'travel_notes' ) ) ) {
+
+
+
+
 		echo '<li class="single-post__meta--name">' . get_field('name') . '</li>';
+		}
+
+		// Book reviews: the author
+		if ( get_post_type( get_the_ID() ) == 'book_reviews' ) {
+			// get the author of the book review
+			echo '<li class="single-post__meta--name">' . get_field('author_of_the_book_review') . '</li>';
+		}
 
 		// Get the custom post type for Journal posts
-		if ( get_post_type( get_the_ID() ) == 'poetry' ) {
+		if ( is_singular( 'poetry' ) ) {
 			$cpt = 'Poetry';
-		} elseif ( get_post_type( get_the_ID() ) == 'postcard_prose' ) {
+		} elseif ( is_singular( 'postcard_prose' ) ) {
 			$cpt = 'Postcard Prose';
-		} elseif ( get_post_type( get_the_ID() ) == 'travelogue' ){
+		} elseif ( is_singular( 'travel_notes' ) ) {
 			$cpt = 'Travelogue';
 		}
 
-		// The Journal section
-		if ( get_post_type( get_the_ID() ) == 'poetry' or 'postcard_prose' or 'travelogue' ) {
+		if ( is_singular( array( 'poetry', 'postcard_prose', 'travel_notes' ) ) ) {
 			echo '<li class="single-post__meta--post-type">' . $cpt . '</li>';
 		}
 
@@ -59,16 +71,31 @@
 	    $post_categories = '—'; // If we ever see this, we know there's no assigned category
 	  }
 
-		// Print category and tags
-		echo '<li class="single-post__meta--taxonomy-wrapper">';
+		// The journal: print category and tags
+		if ( is_singular( array( 'poetry', 'postcard_prose', 'travel_notes' ) ) ) {
+			echo '<li class="single-post__meta--taxonomy-wrapper">';
+				echo '<ul class="single-post__meta--taxonomy">';
+					echo '<li class="single-post__meta--taxonomy-cat">' . $post_categories . '</li>';
+				the_tags( '<li class="single_post__meta--taxonomy-tag">', '</li><li class="single_post__meta--taxonomy-tag">', '</li>' );
+				echo '</ul>';
+			echo '</li>';
+		}
 
-		echo '<ul class="single-post__meta--taxonomy">';
-		echo '<li class="single-post__meta--taxonomy-cat">' . $post_categories . '</li>';
-		the_tags( '<li class="single_post__meta--taxonomy-tag">', '</li><li class="single_post__meta--taxonomy-tag">', '</li>' );
-		echo '</ul>';
+		// Book review category
+		if ( is_singular( 'book_reviews' ) ) {
+			echo '<li class="single-post__meta--taxonomy-cat">Book Reviews</li>';
+		}
 
-		echo '</li>';
 		echo '</ul>'; // close single-post__meta
+
+		// Book review meta
+		if ( is_singular( 'book_reviews' ) ) {
+			echo '<ul class="single-post__book-review-meta">';
+				echo '<li class="single-post__book-review-meta--title">' . get_field( 'author' ) . '</li>';
+				echo '<li class="single-post__book-review-meta--title">' . get_field( 'publisher_publication_year' ) . '</li>';
+				echo '<li class="single-post__book-review-meta--title">ISBN ' . get_field( 'isbn' ) . '</li>';
+			echo '</ul>';
+		}
 
 		?>
 

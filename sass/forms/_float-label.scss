@@ -16,7 +16,7 @@
     left: 0.5rem;
     top: -1.5rem;
     cursor: text;
-    font-size: 75%;
+    font-size: 60%;
     opacity: 1;
     transition: all 0.2s;
     @content;
@@ -27,6 +27,8 @@
   &::placeholder {
     opacity: 1;
     transition: all 0.2s;
+    font-size: 75%;
+    transform: translate(2px 2px);
   }
   &:placeholder-shown:not(:focus)::placeholder {
     opacity: 0;
@@ -35,9 +37,8 @@
 
 @mixin float-label-scaled {
   &:placeholder-shown:not(:focus) + * {
-    font-size: 70%;
+    font-size: 75%;
     opacity: 1;
-
     @content;
   }
 }
@@ -50,8 +51,8 @@
   input {
     @include float-label-input;
     font-size: inherit;
-    // padding-top: 1em;
-    // margin-bottom: 2px;
+    padding-top: 0;
+    margin-bottom: 0;
     border: 0;
     border-radius: 0;
 

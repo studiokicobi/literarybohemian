@@ -34,16 +34,15 @@
 
 		</div><!-- .site-info -->
 
-		<picture>
-		  <source srcset="<?php echo get_template_directory_uri(); ?>/img/footer-landscape-640.jpg" media="(max-width: 640px)">
-		  <source srcset="<?php echo get_template_directory_uri(); ?>/img/footer-landscape-1920.jpg">
-		  <img src="<?php echo get_template_directory_uri(); ?>/img/footer-landscape-1920.jpg" alt="">
-		</picture>
 
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<div class="footer-bg"></div>
+<picture >
+	<source srcset="<?php echo get_template_directory_uri(); ?>/img/footer-landscape-640.jpg" media="(max-width: 640px)">
+	<source srcset="<?php echo get_template_directory_uri(); ?>/img/footer-landscape-1920.jpg">
+	<img class="footer-bg" src="<?php echo get_template_directory_uri(); ?>/img/footer-landscape-1920.jpg" alt="">
+</picture>
 
 <?php wp_footer(); ?>
 
