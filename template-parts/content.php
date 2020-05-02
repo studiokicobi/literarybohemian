@@ -90,10 +90,12 @@
 		if ( is_singular( 'book_reviews' ) ) {
 			echo '<li class="single-post__meta--taxonomy-wrapper">';
 				echo '<ul class="single-post__meta--taxonomy">';
+
 					echo '<li class="single-post__meta--taxonomy-cat">Book Reviews</li>';
 					echo '<li class="single_post__meta--taxonomy-tag"><span>' . get_field( 'author' ) . '</span></li>';
 					echo '<li class="single_post__meta--taxonomy-tag"><span>' . get_field( 'publisher_publication_year' ) . '</span></li>';
 					echo '<li class="single_post__meta--taxonomy-tag"><span>ISBN ' . get_field( 'isbn' ) . '</span></li>';
+
 				echo '</ul>';
 			echo '</li>';
 		}
