@@ -121,7 +121,7 @@
 					echo '<div class="poem">';
 						echo '<h2>' . get_sub_field( 'poem_title' ) . '</h2>';
 						echo get_sub_field( 'poem_content' );
-						if(get_sub_field('poem_details')) {
+						if ( get_sub_field( 'poem_details' ) ) {
 							echo '<div class="poem__poem-details">' . get_sub_field('poem_details') . '</div>';
 						}
 					echo '</div>';
