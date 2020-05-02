@@ -27,8 +27,8 @@
   &::placeholder {
     opacity: 1;
     transition: all 0.2s;
-    font-size: 75%;
-    transform: translate(2px 2px);
+    font-size: 100%;
+    // transform: translate(2px 2px);
   }
   &:placeholder-shown:not(:focus)::placeholder {
     opacity: 0;
@@ -50,7 +50,7 @@
 
   input {
     @include float-label-input;
-    font-size: inherit;
+    font-size: 70%;
     padding-top: 0;
     margin-bottom: 0;
     border: 0;

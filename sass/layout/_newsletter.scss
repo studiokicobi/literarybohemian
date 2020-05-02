@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 2rem;
-  padding: 6rem 2rem;
+  padding: 12rem 2rem;
   transition: all linear 0.3s;
   background-blend-mode: darken;
 
@@ -87,7 +87,7 @@
 
   &__label {
     @include sans;
-    font-size: 85%;
+    // font-size: 85%;
   }
 
   &__input,
