@@ -58,6 +58,7 @@ $meta-dark: darken($color__background-body, 3);
 
     @media (max-width: #{$responsive-switch}) {
       padding-left: 0;
+      padding-top: 0;
     }
 
     > * {
@@ -94,11 +95,6 @@ $meta-dark: darken($color__background-body, 3);
     @media (max-width: 500px) {
       width: auto;
     }
-
-    // @media (min-width: 1500px) {
-    //   background-color: $meta-dark;
-    //   margin-bottom: 2rem;
-    // }
 
     &--name {
       padding-right: $meta-dim;
@@ -143,12 +139,14 @@ $meta-dark: darken($color__background-body, 3);
 }
 
 .single_post__meta--taxonomy-tag {
-  background-image: url("img/list-item-dotted-line-bg.svg");
+  background-image: url("img/list-item-dotted-line-bg-2.svg");
   background-repeat: repeat-x;
   background-position: center left;
   background-size: auto;
   line-height: 1.5;
-  a {
+
+  a,
+  span {
     display: inline-block;
     background-color: $color__background-body;
     padding: 0 0.4rem 0.4rem 0;

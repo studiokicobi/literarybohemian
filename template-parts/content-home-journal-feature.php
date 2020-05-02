@@ -43,8 +43,10 @@ wp_reset_query();
   // Get the custom post type
   if ( get_post_type( get_the_ID() ) == 'poetry' ) {
     $journal_cpt = 'Poetry';
-  } else {
+  } elseif ( get_post_type( get_the_ID() ) == 'postcard_prose' ) {
     $journal_cpt = 'Postcard Prose';
+  } else {
+    $journal_cpt = 'Travel Notes';
   }
 
   // Print the custom post type and category

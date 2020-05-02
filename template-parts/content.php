@@ -13,32 +13,37 @@
 
 <article class="single-post__article">
 
+
+	<?php
+	// Build the header
+	// ----------------------------------------------------------------------------
+	?>
 	<header class="single-post__header">
 
 		<?php
 		// The title
-		// ----------------------------------------------------------------------------
+		// --------------------
 		the_title( '<h1 class="single-post__heading">', '</h1>' );
 
-		// Meta
-		// ----------------------------------------------------------------------------
+		// The metadata section
+		// --------------------
 		echo '<ul class="single-post__meta">';
 
-		// Journal posts: the author
-		// if ( get_post_type( get_the_ID() ) == 'poetry' || 'postcard_prose' || 'travelogue') ) {
+		// Meta: author name
+		// --------------------
+
+		// If this is a Journal post:
 		if ( is_singular( array( 'poetry', 'postcard_prose', 'travel_notes' ) ) ) {
-
-
-
-
-		echo '<li class="single-post__meta--name">' . get_field('name') . '</li>';
+			echo '<li class="single-post__meta--name">' . get_field('name') . '</li>';
 		}
 
-		// Book reviews: the author
-		if ( get_post_type( get_the_ID() ) == 'book_reviews' ) {
-			// get the author of the book review
+		// If this is a Book Review:
+		if ( is_singular( 'book_reviews' ) ) {
 			echo '<li class="single-post__meta--name">' . get_field('author_of_the_book_review') . '</li>';
 		}
+
+		// Meta: Custom Post Type title
+		// --------------------
 
 		// Get the custom post type for Journal posts
 		if ( is_singular( 'poetry' ) ) {
@@ -53,9 +58,9 @@
 			echo '<li class="single-post__meta--post-type">' . $cpt . '</li>';
 		}
 
+		// Meta: Category & tags
+		// --------------------
 
-		// The category & tags
-		// ----------------------------------------------------------------------------
 	  $post_id = $post->ID;
 
 		// get the category
@@ -71,7 +76,7 @@
 	    $post_categories = '—'; // If we ever see this, we know there's no assigned category
 	  }
 
-		// The journal: print category and tags
+		// If this is the Journal: print category and tags
 		if ( is_singular( array( 'poetry', 'postcard_prose', 'travel_notes' ) ) ) {
 			echo '<li class="single-post__meta--taxonomy-wrapper">';
 				echo '<ul class="single-post__meta--taxonomy">';
@@ -81,34 +86,54 @@
 			echo '</li>';
 		}
 
-		// Book review category
+		// If this is a Book Review: print section name and book info
 		if ( is_singular( 'book_reviews' ) ) {
-			echo '<li class="single-post__meta--taxonomy-cat">Book Reviews</li>';
+			echo '<li class="single-post__meta--taxonomy-wrapper">';
+				echo '<ul class="single-post__meta--taxonomy">';
+					echo '<li class="single-post__meta--taxonomy-cat">Book Reviews</li>';
+					echo '<li class="single_post__meta--taxonomy-tag"><span>' . get_field( 'author' ) . '</span></li>';
+					echo '<li class="single_post__meta--taxonomy-tag"><span>' . get_field( 'publisher_publication_year' ) . '</span></li>';
+					echo '<li class="single_post__meta--taxonomy-tag"><span>ISBN ' . get_field( 'isbn' ) . '</span></li>';
+				echo '</ul>';
+			echo '</li>';
 		}
 
 		echo '</ul>'; // close single-post__meta
-
-		// Book review meta
-		if ( is_singular( 'book_reviews' ) ) {
-			echo '<ul class="single-post__book-review-meta">';
-				echo '<li class="single-post__book-review-meta--title">' . get_field( 'author' ) . '</li>';
-				echo '<li class="single-post__book-review-meta--title">' . get_field( 'publisher_publication_year' ) . '</li>';
-				echo '<li class="single-post__book-review-meta--title">ISBN ' . get_field( 'isbn' ) . '</li>';
-			echo '</ul>';
-		}
 
 		?>
 
 	</header><!-- .entry-header -->
 
+	<?php
+	// The text
+	// ----------------------------------------------------------------------------
+	?>
+
 	<div class="single-post__body">
 
-		<?php the_content(); ?>
-		<?php the_field( 'text' ); ?>
+		<?php
+		if ( is_singular( 'poetry' ) ) {
+
+			if ( have_rows( 'poems' ) ) :
+				while ( have_rows( 'poems' ) ) : the_row();
+				if ( have_rows( 'poem' ) ) :
+					while ( have_rows( 'poem' ) ) : the_row();
+					echo '<div class="poem">';
+						echo '<h2>' . get_sub_field( 'poem_title' ) . '</h2>';
+						echo get_sub_field( 'poem_content' );
+					echo '</div>';
+					endwhile;
+				endif;
+				endwhile;
+			endif;
+
+		} elseif ( is_singular( array( 'book_reviews', 'postcard_prose', 'travel_notes' ) ) ) {
+			the_field( 'text' );
+		} else {
+			the_content();
+		}
+		?>
 
 	</div><!-- .single-post__content -->
 
-	<!-- <footer class="entry-footer"> -->
-		<?php // literarybohemian_entry_footer(); ?>
-	<!-- </footer><!-- .entry-footer -->
-</article><!-- #post-<?php //the_ID(); ?> -->
+</article>
