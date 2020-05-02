@@ -309,7 +309,7 @@ $disc-3-dim: calc(0.15rem + #{$disc-scale-dim});
     color: rgba(white, 1);
     @include sans;
     text-align: center;
-    font-size: 85%;
+    font-size: 65%;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.35);
     transition: all 0.3s;
     transition-delay: 0.3s;
