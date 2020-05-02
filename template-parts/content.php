@@ -124,7 +124,6 @@
 						if ( get_sub_field( 'poem_details' ) ) {
 							echo '<div class="poem__poem-details">' . get_sub_field('poem_details') . '</div>';
 						}
-						
 					echo '</div>';
 					endwhile;
 				endif;
