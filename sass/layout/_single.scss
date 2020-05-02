@@ -158,9 +158,14 @@ $meta-dark: darken($color__background-body, 3);
 }
 
 .poem {
-  &__title {
-    &:nth-of-type(n + 2) {
-      margin-top: 2rem;
+  &:nth-of-type(1) {
+    .poem__title {
+    }
+  }
+
+  &:nth-of-type(n + 2) {
+    .poem__title {
+      margin-top: 6rem;
     }
   }
 
