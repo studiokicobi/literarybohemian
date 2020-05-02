@@ -119,7 +119,7 @@
 				if ( have_rows( 'poem' ) ) :
 					while ( have_rows( 'poem' ) ) : the_row();
 					echo '<div class="poem">';
-						echo '<h2>' . get_sub_field( 'poem_title' ) . '</h2>';
+						echo '<h2 class="poem__title">' . get_sub_field( 'poem_title' ) . '</h2>';
 						echo get_sub_field( 'poem_content' );
 						if ( get_sub_field( 'poem_details' ) ) {
 							echo '<div class="poem__poem-details">' . get_sub_field('poem_details') . '</div>';

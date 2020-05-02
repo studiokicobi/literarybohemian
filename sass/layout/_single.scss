@@ -158,10 +158,17 @@ $meta-dark: darken($color__background-body, 3);
 }
 
 .poem {
+  &__title {
+    &:nth-of-type(n + 2) {
+      margin-top: 2rem;
+    }
+  }
+
   &__poem-details {
     color: rgba(black, 0.7);
     background-color: rgba(white, 0.6);
-    margin: 2rem;
+    margin: 2rem 0;
+    font-size: 85%;
     padding: 1.5rem;
     box-shadow: 0 0 4rem 0 rgba(0, 0, 0, 0.025);
 
