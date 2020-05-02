@@ -130,7 +130,7 @@
 				endwhile;
 			endif;
 
-		} elseif ( is_singular( array( 'book_reviews', 'postcard_prose', 'travel_notes' ) ) ) {
+		} elseif ( is_singular( array( 'postcard_prose', 'travel_notes' ) ) ) {
 			the_field( 'text' );
 		} else {
 			the_content();
