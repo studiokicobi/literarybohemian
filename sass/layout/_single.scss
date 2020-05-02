@@ -156,3 +156,9 @@ $meta-dark: darken($color__background-body, 3);
     }
   }
 }
+
+.poem {
+  &__poem-details {
+    background: red;
+  }
+}
