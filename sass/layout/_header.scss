@@ -85,12 +85,16 @@
         border: none;
         background-color: white;
         border-radius: 0;
-        font-style: italic;
+        font-style: normal;
         position: absolute;
         top: 0;
         right: calc(#{$search-dim} * 2);
         width: 20rem;
         font-size: calc(0.75rem + #{$scale-value});
+
+        &::placeholder {
+          font-style: italic;
+        }
 
         @media screen and (max-width: 420px) {
           width: auto;
