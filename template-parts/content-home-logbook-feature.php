@@ -43,7 +43,7 @@
   //
   // The category
   // echo '<strong class="card__meta">' . $post_categories . '</strong>';
-  echo '<strong class="card__meta">Latest from the Logbook</strong>';
+  echo '<strong class="card__meta">The Logbook</strong>';
 
   // Card body wrapper
   echo '<div class="card__body">';
