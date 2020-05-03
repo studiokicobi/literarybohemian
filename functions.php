@@ -165,28 +165,3 @@ require get_template_directory() . '/inc/customizer.php';
 if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
-add_action('init','destination_unknown_add_rewrite');
-function destination_unknown_add_rewrite() {
-	global $wp;
-	$wp->add_query_var('destination-unknown');
-	add_rewrite_rule('destination-unknown/?$', 'index.php?destination-unknown=1', 'top');
-}
-
-add_action('template_redirect','destination_unknown_template');
-function destination_unknown_template() {
-	if (get_query_var('destination-unknown') == 1) {
-
-		$posts = get_posts( array(
-			'post_type' => array('poetry', 'postcard_prose', 'travel_notes',),
-			'post_status' => 'publish',
-			'orderby' => 'rand',
-			'numberposts' => '1',
-		));
-		foreach($posts as $post) {
-			$link = get_permalink($post);
-		}
-		wp_redirect($link,307);
-		exit;
-	}
-}
