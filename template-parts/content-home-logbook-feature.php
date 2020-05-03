@@ -25,24 +25,25 @@
 
   // Get the category (or categories: make this futureproof)
   // ----------------------------------------------------------------------------
-
-  // Post ID
-  $post_id = $post->ID;
-
-  $cats = array();
-  foreach (get_the_category($post_id) as $c) {
-    $cat = get_category($c);
-    array_push($cats, $cat->name);
-  }
-
-  if (sizeOf($cats) > 0) {
-    $post_categories = implode(', ', $cats);
-  } else {
-    $post_categories = '—'; // If we ever see this, we know there's no assigned category
-  }
-
+  //
+  // // Post ID
+  // $post_id = $post->ID;
+  //
+  // $cats = array();
+  // foreach (get_the_category($post_id) as $c) {
+  //   $cat = get_category($c);
+  //   array_push($cats, $cat->name);
+  // }
+  //
+  // if (sizeOf($cats) > 0) {
+  //   $post_categories = implode(', ', $cats);
+  // } else {
+  //   $post_categories = '—'; // If we ever see this, we know there's no assigned category
+  // }
+  //
   // The category
-  echo '<strong class="card__meta">' . $post_categories . '</strong>';
+  // echo '<strong class="card__meta">' . $post_categories . '</strong>';
+  echo '<strong class="card__meta">Latest from the Logbook</strong>';
 
   // Card body wrapper
   echo '<div class="card__body">';
