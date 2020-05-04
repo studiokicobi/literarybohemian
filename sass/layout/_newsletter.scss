@@ -51,7 +51,7 @@
   // The form
   // ----------------------------------------------------------------------------
 
-  $form-element-height: 2.7rem;
+  $form-element-height: 3rem;
 
   &__form-wrapper {
     display: flex;
@@ -71,7 +71,7 @@
   &__fieldgroup::before {
     position: absolute;
     top: -1.6rem;
-    left: -2.7rem;
+    left: -3rem;
     content: "";
     background-image: url("img/icon-flag.svg");
     background-position: left;
@@ -96,9 +96,9 @@
   input[type="url"] {
     border: none;
     border-radius: 0;
-    height: $form-element-height;
-    margin-right: 0.75rem;
-    padding-left: 1rem;
+    min-height: $form-element-height;
+    margin: 0 0.75rem 0 0;
+    padding: 0 0 0 1rem;
     min-width: 18rem;
     position: relative;
 
@@ -117,7 +117,7 @@
   }
 
   &__submit {
-    height: $form-element-height;
+    min-height: $form-element-height;
     // min-height: 3.5rem;
 
     @media (max-width: 35rem) {
