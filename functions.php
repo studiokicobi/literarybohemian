@@ -166,7 +166,6 @@ if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-
 // add_action('init','destination_unknown_add_rewrite');
 // function destination_unknown_add_rewrite() {
 // 	global $wp;

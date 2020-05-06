@@ -1,18 +1,21 @@
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+main a.button {
   border: none;
   border-radius: 0;
   background: $hot;
-  color: rgba(white, 1);
+  color: white;
   line-height: 1;
   padding: 0.5em 1em;
   @include sans;
   font-weight: normal !important;
+  font-size: 80%;
 
   &:hover {
     background: black;
+    color: white;
   }
 
   &:active,

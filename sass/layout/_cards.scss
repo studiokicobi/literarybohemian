@@ -216,7 +216,7 @@ body.home {
         font-weight: 400;
         margin: 0;
         font-size: calc(100% + #{$scale-value});
-
+        color: black;
         @include on-event {
           color: $color__link;
         }

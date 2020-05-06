@@ -21,13 +21,16 @@ get_header();
 
 				get_template_part( 'template-parts/content', get_post_type() );
 
-			// the_post_navigation();
-
 		endwhile; // End of the loop.
 		?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php
+	<?php
+	// Journal contents
+	get_template_part( 'template-parts/content', 'journal-contents' );
+	?>
+
+	<?php
 get_footer();

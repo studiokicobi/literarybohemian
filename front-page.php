@@ -51,15 +51,10 @@ get_header();
 			</section><!-- #features-large -->
 
 
-			<section class="journal-contents">
-				<h1 class="journal-contents__heading">The Journal</h1>
-				<ul class="issue-index">
-					<?php
-					// Journal contents
-					get_template_part( 'template-parts/content', 'journal-contents' );
-					?>
-				</ul>
-			</section>
+			<?php
+			// Journal contents
+			get_template_part( 'template-parts/content', 'journal-contents' );
+			?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

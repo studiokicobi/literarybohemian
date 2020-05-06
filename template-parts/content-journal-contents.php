@@ -8,6 +8,12 @@
 wp_reset_query();
 ?>
 
+
+<section class="journal-contents">
+  <h1 class="journal-contents__heading">The Journal</h1>
+  <ul class="issue-index">
+
+
   <?php
   // The latest post from The Journal
       query_posts(array(
@@ -24,7 +30,7 @@ wp_reset_query();
   $post_id = $post->ID;
 
   echo '<li class="issue-index__item-wrapper">';
-  echo '<a class="issue-index__link" href="' . get_permalink() . '" rel="bookmark">';
+  echo '<a class="issue-index__link no-underline" href="' . get_permalink() . '" rel="bookmark">';
 
   // Get the post type
   $the_posttype = get_post_type_object(get_post_type($post));
@@ -84,4 +90,5 @@ wp_reset_query();
 
   ?>
 
-</ul>
+  </ul>
+</section>

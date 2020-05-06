@@ -677,6 +677,16 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/img/telescope.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/telescope.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/img/the-literary-bohemian-logo-2.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1676,6 +1686,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-parts/archive-author-list.php",
+		"oF": 0
+		},
+	"/template-parts/content-bio.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-parts/content-bio.php",
 		"oF": 0
 		},
 	"/template-parts/content-home-features-small.php": {

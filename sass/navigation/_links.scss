@@ -77,7 +77,8 @@ a {
 // Add Smarter Link Underlines to main links
 // ----------------------------------------------------------------------------
 
-main a {
+a.single-post__article,
+a.bio__related-text-item--link {
   // text-decoration: underline;
   // @include link-underline($color__background-body, $color__link, $pale-hot);
   //

@@ -17,9 +17,16 @@
 }
 
 .entry-summary {
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 0 0;
+}
+
+.highlight-box {
   color: rgba(black, 0.85);
   background-color: rgba(white, 0.6);
-  margin: 2rem 0 4rem 0;
   font-size: 85%;
   padding: 1.5rem;
   box-shadow: 0 0 4rem 0 rgba(0, 0, 0, 0.05);
@@ -28,9 +35,4 @@
     margin: 0 0 0.25rem 0;
     max-width: 55ch;
   }
-}
-
-.page-links {
-  clear: both;
-  margin: 0 0 0 0;
 }

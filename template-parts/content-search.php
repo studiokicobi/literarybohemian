@@ -25,7 +25,7 @@
 
 	<?php literarybohemian_post_thumbnail(); ?>
 
-	<div class="entry-summary">
+	<div class="entry-summary highlight-box">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 

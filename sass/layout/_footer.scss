@@ -26,6 +26,13 @@
       padding: 0;
     }
 
+    a {
+      color: black;
+      @include on-event {
+        color: $dark-hot;
+      }
+    }
+
     @media screen and (max-width: 35rem) {
       .menu-primary-container {
         order: 0;

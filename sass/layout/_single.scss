@@ -1,4 +1,5 @@
 // Single template
+// ----------------------------------------------------------------------------
 
 $meta-dark: darken($color__background-body, 3);
 
@@ -179,6 +180,97 @@ $meta-dark: darken($color__background-body, 3);
 
     p {
       margin: 0 0 0.25rem 0;
+    }
+  }
+}
+
+// Bios
+// ----------------------------------------------------------------------------
+
+// Bio excerpts
+.bio-excerpt {
+  margin-top: 10rem;
+  margin-bottom: 0;
+
+  &__heading {
+    @include sans;
+    position: relative;
+    margin-bottom: 1rem;
+    max-width: calc(22ch - 1vw);
+    display: inline-block;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -3ch;
+      right: -7ch;
+      background-image: url("img/telescope.svg");
+      background-position: right top;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 6ch;
+      width: 6ch;
+    }
+  }
+
+  &__content {
+    font-size: 90%;
+    max-width: 35ch;
+    font-style: italic;
+    margin-bottom: 3ch;
+  }
+
+  &__link {
+  }
+}
+
+.bio {
+  .single-post__meta--post-type {
+    border: none;
+    // background-image: url("img/telescope.svg");
+    // background-position: left center;
+    // background-size: 2rem;
+    // background-repeat: no-repeat;
+    // padding-left: 2rem;
+  }
+
+  &__related-texts-heading {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    // @include sans;
+    // font-size: 150%;
+  }
+
+  &__related-texts {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__related-text-item {
+    margin: 0 0 2rem 0;
+
+    &--heading {
+      margin: 1rem 0 0 0;
+      font-size: 140%;
+    }
+    &--link {
+      color: $dark-hot;
+      @include sans;
+      @include on-event {
+        color: black;
+      }
+    }
+    &--cpt {
+      @include sans;
+      font-size: 65%;
+      text-transform: uppercase;
+      color: lighten(black, 50%);
+      margin: 0;
+      padding: 0;
+    }
+    &--excerpt {
+      padding: 1rem 0;
     }
   }
 }

@@ -133,9 +133,44 @@
 			endif;
 
 		} elseif ( is_singular( array( 'postcard_prose', 'travel_notes' ) ) ) {
-			the_field( 'text' );
+			echo '<div class="drop-cap">';
+				the_field( 'text' );
+			echo '</div>';
 		} else {
 			the_content();
+		}
+
+
+		// Get the author bio for Journal posts
+		// ----------------------------------------------------------------------------
+		if ( is_singular( array( 'poetry', 'postcard_prose', 'travel_notes' ) ) ) {
+
+		$posts = get_field('author_bio');
+
+			// get the post using ACF relationship field
+			if( $posts ): ?>
+			  <div class="bio-excerpt">
+					<h3 class="bio-excerpt__heading">About the author</h3>
+			    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+			    <?php setup_postdata($post); ?>
+			    <p class="bio-excerpt__content">
+					<?php
+					// Custom excerpt length WordPress using wp_trim_excerpt()
+					$content = get_the_content();
+					echo wp_trim_words( $content , '24' );
+					?>
+					</p>
+
+					<?php
+					// The link to the bio page
+					?>
+					<a href="<?php the_permalink(); ?>" class="bio-excerpt__link button no-underline">Read the full bio</a>
+
+			    <?php endforeach; ?>
+				</div>
+
+			  <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+			<?php endif;
 		}
 		?>
 

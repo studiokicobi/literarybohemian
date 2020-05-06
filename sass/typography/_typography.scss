@@ -45,6 +45,26 @@ b {
   font-style: normal;
 }
 
+@mixin sans-black {
+  font-family: sofia-pro, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.drop-cap {
+  p:first-of-type:first-letter {
+    @include sans-black;
+    float: left;
+    font-size: 15rem;
+    line-height: 0;
+    padding-top: 0px;
+    padding-right: 1rem;
+    padding-bottom: 6rem;
+    margin: -0.1rem 0 0 -1rem;
+    text-indent: 0;
+  }
+}
+
 @import "headings";
 
 @import "copy";

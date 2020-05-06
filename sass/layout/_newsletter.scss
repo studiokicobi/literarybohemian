@@ -14,7 +14,7 @@
 
   @include on-event {
     background-blend-mode: color-burn;
-    background-color: lighten($dark-brown, 40%);
+    background-color: #6e6460;
     transition: all linear 0.3s;
 
     .newsletter__heading {
