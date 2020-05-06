@@ -108,7 +108,7 @@ $half-spacing-unit: $base-spacing-unit / 2;
     text-align: right;
     text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     transition: all 0.25s;
-    transform: translateX(-10rem);
+    transform: translateX(-2rem);
   }
 
   @include on-event {
@@ -182,7 +182,12 @@ body.home {
 
       .card__meta {
         background-color: $dark-warm-brown;
+        // background-color: $dark-hot;
         transition: all 0.3s;
+      }
+      a {
+        // Keep the title links from changing color
+        color: inherit;
       }
     }
 
@@ -192,6 +197,8 @@ body.home {
       padding: calc(1.5rem + #{$scale-value}) calc(2rem + #{$scale-value})
         calc(1.5rem + #{$scale-value}) calc(4.2rem + #{$scale-value});
       background-color: $orange-1;
+      // background-color: $dark-warm-brown;
+      // background-color: $dark-hot;
       color: white;
       font-size: calc(45% + #{$scale-value});
       text-transform: uppercase;
@@ -217,9 +224,6 @@ body.home {
         margin: 0;
         font-size: calc(100% + #{$scale-value});
         color: black;
-        @include on-event {
-          color: $color__link;
-        }
       }
     }
 
@@ -317,7 +321,7 @@ body.home {
           font-size: calc(80% + #{$scale-value});
 
           @include on-event {
-            color: $color__link;
+            color: inherit;
           }
         }
       }

@@ -68,7 +68,7 @@
 
   // The excerpt
   // ----------------------------------------------------------------------------
-  echo '<p>' . get_the_excerpt() . '</p>';
+  echo '<p class="card__excerpt">' . get_the_excerpt() . '</p>';
 
   // Card body bg and wrapper
   echo '</div>';

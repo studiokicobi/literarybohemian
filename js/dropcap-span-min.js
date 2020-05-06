@@ -1,0 +1,1 @@
+$(".drop-cap p:first-of-type").html((function(p,a){return a.replace(/^[^a-zA-Z]*([a-zA-Z])/g,'<span class="dropcap">$1</span>')}));

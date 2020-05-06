@@ -9,8 +9,6 @@
 
 ?>
 
-
-
 <article class="single-post__article">
 
 
