@@ -24,7 +24,7 @@ body {
   padding: 0 $rl-site-margin;
 }
 .site-content {
-  padding: 0 $rl-site-margin;
+  padding: 0 $rl-site-margin 5rem $rl-site-margin;
 }
 .site-info {
   padding: 0 calc(4.5rem + #{$scale-value});

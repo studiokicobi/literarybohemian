@@ -33,6 +33,14 @@
 		"oAP": "/archive.php",
 		"oF": 0
 		},
+	"/category.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/category.php",
+		"oF": 0
+		},
 	"/comments.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1205,6 +1213,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/_cards.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
+	"/sass/layout/_category.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_category.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1

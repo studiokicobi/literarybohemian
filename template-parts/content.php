@@ -8,7 +8,6 @@
  */
 
 ?>
-
 <article class="single-post__article">
 
 
@@ -74,11 +73,17 @@
 	    $post_categories = '—'; // If we ever see this, we know there's no assigned category
 	  }
 
+		// Get the category ID
+    $category_id = get_cat_ID( $post_categories );
+
+    // Get the cat URL
+    $category_link = get_category_link( $category_id );
+
 		// If this is the Journal: print category and tags
 		if ( is_singular( array( 'poetry', 'postcard_prose', 'travel_notes' ) ) ) {
 			echo '<li class="single-post__meta--taxonomy-wrapper">';
 				echo '<ul class="single-post__meta--taxonomy">';
-					echo '<li class="single-post__meta--taxonomy-cat">' . $post_categories . '</li>';
+					echo '<li class="single-post__meta--taxonomy-cat"><a href="' . $category_link . '">' . $post_categories . '</a></li>';
 				the_tags( '<li class="single_post__meta--taxonomy-tag">', '</li><li class="single_post__meta--taxonomy-tag">', '</li>' );
 				echo '</ul>';
 			echo '</li>';

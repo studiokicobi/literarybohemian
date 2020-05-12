@@ -31,8 +31,20 @@
   padding: 1.5rem;
   box-shadow: 0 0 4rem 0 rgba(0, 0, 0, 0.05);
 
+  h2 {
+    @include sans;
+  }
+
   p {
     margin: 0 0 0.25rem 0;
     max-width: 55ch;
   }
+}
+
+.result {
+  margin-bottom: 4rem;
+}
+
+.entry-title {
+  margin: 0 0 1rem 0;
 }

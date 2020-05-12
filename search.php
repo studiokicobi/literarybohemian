@@ -16,10 +16,15 @@ get_header();
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
+<?php
+				// <div>
+				// search &#183; s&#601;:t&#643;
+				// </div>
+?>
 				<h1 class="page-title">
 					<?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'literarybohemian' ), '<span>' . get_search_query() . '</span>' );
+					printf( esc_html__( 'You searched for: %s', 'literarybohemian' ), '<em>' . get_search_query() . '</em>' );
 					?>
 				</h1>
 			</header><!-- .page-header -->

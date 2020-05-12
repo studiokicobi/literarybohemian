@@ -54,15 +54,14 @@ b {
 .dropcap {
   @media screen and (min-width: 801px) {
     // initial-letter: 3;
-    @include sans-black;
-    line-height: $font__line-height-body;
-    margin: -1ch 0.1ch 0 -0.13ch;
+    // line-height: $font__line-height-body;
+    height: 0.7ch;
+    margin: -0.07ch 0.1ch 0 -0.13ch;
+    padding: 0ch;
     float: left;
-    padding: 0px;
     font-size: 20ch;
     line-height: 0ch;
-    margin-top: -0.07ch;
-    height: 0.7ch;
+    @include sans-black;
   }
 }
 
