@@ -15,13 +15,20 @@ wp_reset_query();
 
 
   <?php
+
+if (is_home()) {
+  $offset = 7;
+} else {
+  $offset = 0;
+}
+
   // The latest post from The Journal
       query_posts(array(
           'post_type' => array('poetry', 'postcard_prose', 'travel_notes',),
           'post_status' => 'publish',
           'orderby' => 'publish_date',
           'order' => 'DESC',
-          'offset'=> 1,
+          'offset'=> $offset,
           'showposts' => 10
       ) );
 

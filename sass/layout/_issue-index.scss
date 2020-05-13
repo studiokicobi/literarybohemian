@@ -3,13 +3,16 @@
 
 // Set the colors here
 $issue-container-bg-color-1: darken($warm-brown, 0%);
+$issue-container-bg-color-1: $dark-hot;
 $issue-container-bg-color-2: lighten($pale-hot, 15%);
 $issue-container-border-color: lighten($warm-brown, 35%);
 $issue-item-bg-hover-1: $dark-warm-brown;
 $issue-item-bg-hover-2: white;
 $line-color-1: lighten($warm-brown, 20%);
+$line-color-1: $pale-hot;
 $line-color-2: transparent;
 $disc-bg-1: $line-color-1;
+$disc-bg-1: $pale-hot;
 $disc-bg-2: lighten($pale-hot, 10%);
 
 .journal-contents {
@@ -233,10 +236,6 @@ $disc-bg-2: lighten($pale-hot, 10%);
           left: 50%;
           box-sizing: content-box;
           background: linear-gradient(90deg, $disc-bg-1 50%, $disc-bg-2 50%);
-          // opacity: 0.4;
-
-          // display: none;
-
           transform: translate(-50%, -50%);
           z-index: 18;
 
