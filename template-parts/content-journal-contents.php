@@ -10,7 +10,7 @@ wp_reset_query();
 
 
 <section class="journal-contents">
-  <h1 class="journal-contents__heading">The Journal</h1>
+  <h1 class="journal-contents__heading">More from The Journal</h1>
   <ul class="issue-index">
 
 
