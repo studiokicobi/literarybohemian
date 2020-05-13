@@ -57,12 +57,11 @@ b {
     // line-height: $font__line-height-body;
     // height: 0.7ch;
     // margin: -0.07ch 0.1ch 0 -0.13ch;
-    margin: -12% 2% 2% 0;
+    margin: -9rem 0 -2.5rem 0;
     padding: 0 1rem 0 0;
     float: left;
-    font-size: 1000%;
-    line-height: 63%;
-
+    font-size: calc(1000% + 0.5vw);
+    line-height: 100%;
     @include sans-black;
   }
 }
