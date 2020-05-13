@@ -135,7 +135,7 @@
 				endwhile;
 			endif;
 
-		} elseif ( is_singular( array( 'postcard_prose', 'travel_notes' ) ) ) {
+		} elseif ( is_singular( array( 'postcard_prose', 'travel_notes', 'logbook' ) ) ) {
 			echo '<div class="drop-cap">';
 				the_field( 'text' );
 			echo '</div>';
