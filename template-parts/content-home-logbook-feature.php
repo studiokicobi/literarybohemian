@@ -61,8 +61,9 @@
 
   if ( get_post_type( get_the_ID() ) == 'logbook' ) {
     // The author's name
+    if get_author() {
     echo '<h3 class="card__author">By ' . get_author() . '</h3>';
-  }
+  }}
 
 
 
