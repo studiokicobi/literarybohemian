@@ -61,7 +61,7 @@
 
   if ( get_post_type( get_the_ID() ) == 'logbook' ) {
     // The author's name
-    echo '<h3 class="card__author">By ' . get_the_author_meta( 'first_name', 'last_name' ) . '</h3>';
+    echo '<h3 class="card__author">By ' . get_the_author_meta( 'first_name' ) . ' ' . get_the_author_meta( 'last_name' ) . '</h3>';
   }
 
   // The excerpt
