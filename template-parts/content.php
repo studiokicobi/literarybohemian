@@ -154,6 +154,7 @@
 						// There are multiple poems – we need titles above each poem
 						echo '<h2 class="poem__title">' . get_sub_field( 'poem_title' ) . '</h2>';
 					}
+					endif;
 
 						echo get_sub_field( 'poem_content' );
 						if ( get_sub_field( 'poem_details' ) ) {
