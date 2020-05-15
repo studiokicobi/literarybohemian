@@ -32,14 +32,13 @@ address {
 }
 
 pre {
-  background: $color__background-pre;
-  font-family: $font__pre;
-  // @include font-size(0.9375);
-  line-height: $font__line-height-pre;
-  margin-bottom: 1.6em;
-  max-width: 100%;
+  background: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  margin-bottom: auto;
+  max-width: auto;
   overflow: auto;
-  padding: 1.6em;
+  padding: 0;
 }
 
 code,
