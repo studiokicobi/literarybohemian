@@ -39,7 +39,7 @@
 	    }
 	    endwhile;
 	  endif;
-		
+
 		// If this is a Journal post:
 		if ( is_singular( array( 'poetry', 'postcard_prose', 'travel_notes' ) ) ) {
 			echo '<li class="single-post__meta--name">' . $name . '</li>';
@@ -128,14 +128,74 @@
 	<div class="single-post__body">
 
 		<?php
+		// Check if this is a Poetry post type
+
+	  if ( get_post_type( get_the_ID() ) == 'poetry' ) {
+
+	    // Check if we have multiple poems
+
+	    // Get the ACF rows
+	    if ( have_rows( 'poems' ) ) :
+	      while ( have_rows( 'poems' ) ) : the_row();
+
+
+
+	      // check if content exists on these rows
+	      $poem_2 = the_row(1);
+	      $poem_3 = the_row(2);
+	      $poem_4 = the_row(3);
+	      $poem_5 = the_row(4);
+	      $poem_6 = the_row(5);
+	      $poem_7 = the_row(6);
+	      $poem_8 = the_row(7);
+	      $poem_9 = the_row(8);
+	      $poem_10 = the_row(9);
+	      $poem_11 = the_row(10);
+	      $poem_12 = the_row(11);
+
+	      if ($poem_2 || $poem_3 || $poem_4 || $poem_5 || $poem_6 || $poem_7 || $poem_8 || $poem_9 || $poem_10 || $poem_11 || $poem_12 != '') :
+	        // There are multiple poems – no name needed.
+	        echo '<h2 class="issue-index__link--title"><span class="issue-index__link--span">' . get_the_title() . '</span></h2>';
+	        else :
+	          // There's no second poem and we need to include the author name
+	          echo '<h2 class="issue-index__link--title"><span class="issue-index__link--span">' . get_the_title() . ' by ' . $name . '</span></h2>';
+	        endif;
+	      endwhile;
+	    endif;
+	  } // end get poetry post type
+
+
+
 		if ( is_singular( 'poetry' ) ) {
 
 			if ( have_rows( 'poems' ) ) :
 				while ( have_rows( 'poems' ) ) : the_row();
+
 				if ( have_rows( 'poem' ) ) :
 					while ( have_rows( 'poem' ) ) : the_row();
+
 					echo '<div class="poem">';
+
+					// Confirm multiple poems by checking if content exists on these rows:
+		      $poem_2 = the_row(1);
+		      $poem_3 = the_row(2);
+		      $poem_4 = the_row(3);
+		      $poem_5 = the_row(4);
+		      $poem_6 = the_row(5);
+		      $poem_7 = the_row(6);
+		      $poem_8 = the_row(7);
+		      $poem_9 = the_row(8);
+		      $poem_10 = the_row(9);
+		      $poem_11 = the_row(10);
+		      $poem_12 = the_row(11);
+
+					if ($poem_2 || $poem_3 || $poem_4 || $poem_5 || $poem_6 || $poem_7 || $poem_8 || $poem_9 || $poem_10 || $poem_11 || $poem_12 != '') :
+		        // There are multiple poems – we need titles above each poem
 						echo '<h2 class="poem__title">' . get_sub_field( 'poem_title' ) . '</h2>';
+		        else :
+		          // There's no second poem and we don't need a title. Only the main title in the header is used.
+		        endif;
+
 						echo get_sub_field( 'poem_content' );
 						if ( get_sub_field( 'poem_details' ) ) {
 							echo '<div class="poem__poem-details">' . get_sub_field('poem_details') . '</div>';
