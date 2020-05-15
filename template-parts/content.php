@@ -189,14 +189,13 @@
 		      $poem_11 = the_row(10);
 		      $poem_12 = the_row(11);
 
-					if ($poem_2 || $poem_3 || $poem_4 || $poem_5 || $poem_6 || $poem_7 || $poem_8 || $poem_9 || $poem_10 || $poem_11 || $poem_12 != '') :
+					if ($poem_2 || $poem_3 || $poem_4 || $poem_5 || $poem_6 || $poem_7 || $poem_8 || $poem_9 || $poem_10 || $poem_11 || $poem_12 != '') {
 		        // There are multiple poems – we need titles above each poem
 						echo '<h2 class="poem__title">' . get_sub_field( 'poem_title' ) . '</h2>';
-		        else :
-		          // There's no second poem and we don't need a title. Only the main title in the header is used.
-		        endif;
+					}
 
 						echo get_sub_field( 'poem_content' );
+
 						if ( get_sub_field( 'poem_details' ) ) {
 							echo '<div class="poem__poem-details">' . get_sub_field('poem_details') . '</div>';
 						}
