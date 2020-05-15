@@ -196,9 +196,9 @@ body.home {
       margin: 0;
       padding: calc(1.5rem + #{$scale-value}) calc(2rem + #{$scale-value})
         calc(1.5rem + #{$scale-value}) calc(4.2rem + #{$scale-value});
-      background-color: $orange-1;
+      // background-color: $orange-1;
       // background-color: $dark-warm-brown;
-      // background-color: $dark-hot;
+      background-color: $dark-hot;
       color: white;
       font-size: calc(45% + #{$scale-value});
       text-transform: uppercase;

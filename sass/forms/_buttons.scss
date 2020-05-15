@@ -23,3 +23,13 @@ main a.button {
     border-color: $color__border-button-focus;
   }
 }
+
+main a.button-reverse {
+  background: black;
+  color: white;
+
+  &:hover {
+    background: $hot;
+    color: white;
+  }
+}

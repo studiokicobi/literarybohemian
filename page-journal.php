@@ -15,6 +15,15 @@
 get_header();
 ?>
 
+<ul>
+    <?php wp_list_categories( array(
+        'orderby'    => 'name',
+        'exclude'    => array( 1 ),
+				'title_li' => '<h2>' . __( 'Issues', 'textdomain' ) . '</h2>'
+    ) ); ?>
+</ul>
+
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 

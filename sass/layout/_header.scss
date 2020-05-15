@@ -309,7 +309,7 @@ $disc-3-dim: calc(0.15rem + #{$disc-scale-dim});
     visibility: hidden;
     opacity: 0;
     width: 12rem;
-    background-color: $warm-brown;
+    background-color: $dark-hot;
     color: rgba(white, 1);
     @include sans;
     text-align: center;
@@ -335,7 +335,7 @@ $disc-3-dim: calc(0.15rem + #{$disc-scale-dim});
       margin-left: -5px;
       border-width: 5px;
       border-style: solid;
-      border-color: $warm-brown transparent transparent transparent;
+      border-color: $dark-hot transparent transparent transparent;
     }
 
     .tooltip-arrow {
@@ -392,10 +392,10 @@ $disc-3-dim: calc(0.15rem + #{$disc-scale-dim});
       }
 
       &:hover {
-        background-color: $hot;
+        background-color: black;
 
         &::after {
-          border-color: $hot transparent transparent transparent;
+          border-color: black transparent transparent transparent;
         }
       }
     }

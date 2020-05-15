@@ -10,7 +10,7 @@ wp_reset_query();
 
 
 <section class="journal-contents">
-  <h1 class="journal-contents__heading">More from The Journal</h1>
+  <h1 class="journal-contents__heading">The Journal</h1>
   <ul class="issue-index">
 
 
@@ -44,7 +44,15 @@ if (is_home()) {
   $posttype_name = esc_html($the_posttype->labels->singular_name);
 
   // Get the author name
-  $author_name = get_field('name');
+  // Use $name below to print the author's name.
+  if ( have_rows( 'index_name' ) ) :
+  	while ( have_rows( 'index_name' ) ) : the_row();
+    if(get_sub_field('last_name')) {
+      $name = get_sub_field( 'first_names' ) . ' ';
+      $name .= get_sub_field( 'last_name' );
+    }
+    endwhile;
+  endif;
 
   // Check if this is a Poetry post type
 
@@ -73,7 +81,7 @@ if (is_home()) {
         echo '<h2 class="issue-index__link--title"><span class="issue-index__link--span">' . get_the_title() . '</span></h2>';
         else :
           // There's no second poem and we need to include the author name
-          echo '<h2 class="issue-index__link--title"><span class="issue-index__link--span">' . get_the_title() . ' by ' . $author_name . '</span></h2>';
+          echo '<h2 class="issue-index__link--title"><span class="issue-index__link--span">' . get_the_title() . ' by ' . $name . '</span></h2>';
         endif;
       endwhile;
     endif;
@@ -81,7 +89,7 @@ if (is_home()) {
 
   else {
     // This is a Postcard Prose text
-    echo '<h2 class="issue-index__link--title"><span class="issue-index__link--span">' . get_the_title() . ' by ' . $author_name . '</span></h2>';
+    echo '<h2 class="issue-index__link--title"><span class="issue-index__link--span">' . get_the_title() . ' by ' . $name . '</span></h2>';
   }
 
   // Print the excerpt
@@ -99,3 +107,7 @@ if (is_home()) {
 
   </ul>
 </section>
+
+<div class="journal-more">
+  <a href="/journal" class="button button-reverse">More from The Journal</a>
+</div>

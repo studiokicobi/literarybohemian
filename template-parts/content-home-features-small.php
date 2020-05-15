@@ -47,6 +47,17 @@ wp_reset_query();
   } else {
     $journal_cpt = 'Travel Notes';
   }
+
+  // Get the author name
+  // Use $name below to print the author's name.
+  if ( have_rows( 'index_name' ) ) :
+    while ( have_rows( 'index_name' ) ) : the_row();
+    if(get_sub_field('last_name')) {
+      $name = get_sub_field( 'first_names' ) . ' ';
+      $name .= get_sub_field( 'last_name' );
+    }
+    endwhile;
+  endif;
   
   // Print the custom post type and category
   // echo '<strong class="card__meta">' . $post_categories . ' · ' . $journal_cpt . '</strong>';
@@ -86,7 +97,7 @@ wp_reset_query();
         // We have multiple poems; do nothing.
         else :
           // This is a single poem; get the author name.
-          echo '<h3 class="card__author">By ' . get_field('name') . '</h3>';
+          echo '<h3 class="card__author">By ' . $name . '</h3>';
         endif;
       endwhile;
     endif;
@@ -94,7 +105,7 @@ wp_reset_query();
 
   else {
     // This is a Postcard Prose text
-    echo '<h3 class="card__author">By ' . get_field('name') . '</h3>';
+    echo '<h3 class="card__author">By ' . $name . '</h3>';
   }
 
   // The excerpt
