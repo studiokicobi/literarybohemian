@@ -105,6 +105,9 @@
       font-weight: 400;
     }
     &--list-section-item-link {
+      &:visited {
+        color: $dark-warm-brown;
+      }
     }
   }
 }

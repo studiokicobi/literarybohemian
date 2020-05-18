@@ -79,7 +79,8 @@ a {
 
 a.single-post__article,
 a.bio__related-text-item--link,
-.archived-issue__issue-content--list-item a {
+.archived-issue__issue-content--list-item a,
+a.archived-issue__issue-content--list-section-item-link {
   // text-decoration: underline;
   // @include link-underline($color__background-body, $color__link, $pale-hot);
   //

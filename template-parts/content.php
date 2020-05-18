@@ -237,13 +237,13 @@
 		$category_id = get_cat_ID($post_categories);
 
 		// Poetry
-		$args_p = array( 'category' => $category_id, 'post_type' => array('poetry') );
+		$args_p = array( 'category' => $category_id, 'post_type' => 'poetry', 'numberposts' => '100', );
 		$postslist_p = get_posts( $args_p );
 		// Postcard Prose
-		$args_pp = array( 'category' => $category_id, 'post_type' => array('postcard_prose') );
+		$args_pp = array( 'category' => $category_id, 'post_type' => 'postcard_prose', 'numberposts' => '100', );
 		$postslist_pp = get_posts( $args_pp );
 		// Travel Notes
-		$args_t = array( 'category' => $category_id, 'post_type' => array('travel_notes') );
+		$args_t = array( 'category' => $category_id, 'post_type' => 'travel_notes', 'numberposts' => '100', );
 		$postslist_t = get_posts( $args_t );
 
 		// Poetry section
@@ -268,7 +268,6 @@
 			endforeach;
 			echo '</ul>';
 			echo '</li>';
-
 		}
 
 		// Travel Notes section
@@ -281,7 +280,6 @@
 			endforeach;
 			echo '</ul>';
 			echo '</li>';
-
 		}
 
 		echo '</ul>';
