@@ -1,6 +1,8 @@
 // Category template
 // ----------------------------------------------------------------------------
 
+// The table of contents for the Issue - the widget which follows the bios on Journal posts
+
 .archived-issue {
   margin: 0;
   padding: 0;
@@ -80,25 +82,29 @@
     &--heading-2 {
       color: $warm-brown;
       margin: 1rem 0 2rem 0;
-      padding-top: 1.4rem;
+      padding-top: 1.1rem;
       border-top: 0.4rem solid rgba($light-warm-brown, 0.5);
       text-transform: uppercase;
       font-size: 70%;
       @include sans;
     }
 
-    &--list-section-heading {
-      h4 {
-        font-size: 90%;
-        color: $dark-warm-brown;
-        margin: 1rem 0 0 0;
-        @include sans;
-      }
-    }
-
     &--list {
     }
-    &--list-item {
+    &--list-section-heading {
+      font-size: 90%;
+      color: $dark-warm-brown;
+      margin: 1rem 0 0 0;
+      @include sans;
+    }
+    &--list-section {
+      margin-left: 0.5rem;
+    }
+    &--list-section-item {
+      font-family: "Grad", serif;
+      font-weight: 400;
+    }
+    &--list-section-item-link {
     }
   }
 }

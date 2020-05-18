@@ -42,7 +42,23 @@
 
 		// If this is a Journal post:
 		if ( is_singular( array( 'poetry', 'postcard_prose', 'travel_notes' ) ) ) {
-			echo '<li class="single-post__meta--name">' . $name . '</li>';
+
+			$posts = get_field('author_bio');
+			// get the post if it exists using ACF relationship field
+			if( $posts ): foreach( $posts as $post): // variable must be called $post
+				setup_postdata($post);
+				$bio_link = get_the_permalink();
+			endforeach;
+
+			wp_reset_postdata();
+
+			// If the bio is linked, echo the link
+			echo '<li class="single-post__meta--name"><a href="' . $bio_link . '">' . $name . '</a></li>';
+
+			else :
+				// No bio link exists
+				echo '<li class="single-post__meta--name">' . $name . '</li>';
+			endif;
 		}
 
 		// If this is a Book Review:
@@ -162,8 +178,6 @@
 		}
 
 
-
-
 		// Get the author bio for Journal posts
 		// ----------------------------------------------------------------------------
 		if ( is_singular( array( 'poetry', 'postcard_prose', 'travel_notes' ) ) ) {
@@ -196,9 +210,13 @@
 			<?php endif;
 		}
 
-		// previous_post_link('&laquo; %link', '%title', true);
-		// next_post_link('%link &raquo;', '%title', true);
-		// get_template_part( 'template-parts/table-of-contents' );
+		// Issue contents
+ 	 	echo '<div class="archived-issue__issue-content highlight-box">';
+ 	 	echo '<h2 class="archived-issue__issue-content--heading">' . $post_categories . '</h2>';
+ 	 	echo '<h3 class="archived-issue__issue-content--heading-2">Table of contents</h3>';
+ 	 	echo '<ul class="archived-issue__issue-content--list">';
+ 	 	// ------------------------------
+
 
 		// Get the category title
 	  $post_id_0 = $post->ID;
@@ -213,129 +231,63 @@
 	  if (sizeOf($cats) > 0) {
 	  	$post_categories = implode(', ', $cats);
 	  } else {
-	  	$post_categories = '—'; // If we ever see this, we know there's no assigned category
+	  	$post_categories = '—';
 	  }
 
-$category_id = get_cat_ID($post_categories);
+		$category_id = get_cat_ID($post_categories);
 
- $args = array(
-	 			'category' => $category_id,
-				// 'post_type' => array('postcard_prose', 'poetry', 'travel_notes')
-				'post_type' => array('poetry')
-			 );
- $postslist = get_posts( $args );
- foreach ($postslist as $post) :  setup_postdata($post);
+		// Poetry
+		$args_p = array( 'category' => $category_id, 'post_type' => array('poetry') );
+		$postslist_p = get_posts( $args_p );
+		// Postcard Prose
+		$args_pp = array( 'category' => $category_id, 'post_type' => array('postcard_prose') );
+		$postslist_pp = get_posts( $args_pp );
+		// Travel Notes
+		$args_t = array( 'category' => $category_id, 'post_type' => array('travel_notes') );
+		$postslist_t = get_posts( $args_t );
 
- echo '<a href="' . get_the_permalink() . '">' . get_the_title() . '</a><br />';
-  endforeach;
+		// Poetry section
+		if ($postslist_p != '') {
+			echo '<li class="archived-issue__issue-content--list-section-heading">Poetry';
+			echo '<ul class="archived-issue__issue-content--list-section">';
+			// Print the linked poetry titles
+			foreach ($postslist_p as $post) :  setup_postdata($post);
+			echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
+			endforeach;
+			echo '</ul>';
+			echo '</li>';
+		}
 
-	 // // Issue contents
-	 // echo '<div class="archived-issue__issue-content highlight-box">';
-	 // echo '<h2 class="archived-issue__issue-content--heading">' . $post_categories . '</h2>';
-	 // echo '<h3 class="archived-issue__issue-content--heading-2">Table of contents</h3>';
-	 // echo '<ul class="archived-issue__issue-content--list">';
-	 //
-	 //
-	 // // Poetry section
-	 // // ------------------------------
-	 // rewind_posts(); // Rewind the loop and start over
-	 // while ( have_posts() ) : the_post();
-	 //
-	 // // Check for CPT
-	 // if ( get_post_type( get_the_ID() ) == 'poetry' ) {
-	 //
-	 //   // Loop once, then break
-	 //   static $count_p = 0;
-	 //   if ($count_p == "1") { break; }
-	 //   else {
-	 //     // CPT heading
-	 //     echo '<li class="archived-issue__issue-content--list-section-heading"><h4>Poetry</h4></li>';
-	 //     $count_p++; }
-	 //   }
-	 // endwhile;
-	 //
-	 // // Get the post links for the section
-	 // rewind_posts(); // Rewind the loop and start over
-	 // while ( have_posts() ) : the_post();
-	 //
-	 //   // Check for CPT
-	 //   if ( get_post_type( get_the_ID() ) == 'poetry' ) {
-	 //     echo '<li class="archived-issue__issue-content--list-item"><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
-	 //   }
-	 //
-	 // endwhile; // End of the loop.
-	 //
-	 //
-	 // // Postcard Prose section
-	 // // ------------------------------
-	 // rewind_posts(); // Rewind the loop and start over
-	 // while ( have_posts() ) : the_post();
-	 //
-	 // // Check for CPT
-	 // if ( get_post_type( get_the_ID() ) == 'postcard_prose' ) {
-	 //
-	 //   // Loop once, then break
-	 //   static $count_pp = 0;
-	 //   if ($count_pp == "1") { break; }
-	 //   else {
-	 //     // CPT heading
-	 //     echo '<li class="archived-issue__issue-content--list-section-heading"><h4>Postcard Prose</h4></li>';
-	 //     $count_pp++; }
-	 //   }
-	 // endwhile;
-	 //
-	 // // Get the post links for the section
-	 // rewind_posts(); // Rewind the loop and start over
-	 // while ( have_posts() ) : the_post();
-	 //
-	 //   // Check for CPT
-	 //   if ( get_post_type( get_the_ID() ) == 'postcard_prose' ) {
-	 //     echo '<li class="archived-issue__issue-content--list-item"><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
-	 //   }
-	 //
-	 // endwhile; // End of the loop.
-	 //
-	 //
-	 // // Travel Notes section
-	 // // ------------------------------
-	 // rewind_posts(); // Rewind the loop and start over
-	 // while ( have_posts() ) : the_post();
-	 //
-	 // // Check for CPT
-	 // if ( get_post_type( get_the_ID() ) == 'travel_notes' ) {
-	 //
-	 //   // Loop once, then break
-	 //   static $count_tn = 0;
-	 //   if ($count_tn == "1") { break; }
-	 //   else {
-	 //     // CPT heading
-	 //     echo '<li class="archived-issue__issue-content--list-section-heading"><h4>Travel Notes</h4></li>';
-	 //     $count_tn++; }
-	 //   }
-	 // endwhile;
-	 //
-	 // // Get the post links for the section
-	 // rewind_posts(); // Rewind the loop and start over
-	 // while ( have_posts() ) : the_post();
-	 //
-	 //   // Check for CPT
-	 //   if ( get_post_type( get_the_ID() ) == 'travel_notes' ) {
-	 //     echo '<li class="archived-issue__issue-content--list-item"><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
-	 //   }
-	 //
-	 // endwhile; // End of the loop.
-	 //
-	 //
-	 // echo '</ul>';
-	 // echo '</div>';
-	 // ?>
+		// Postcard Prose
+		if ($postslist_pp != '') {
+			echo '<li class="archived-issue__issue-content--list-section-heading">Postcard Prose';
+			echo '<ul class="archived-issue__issue-content--list-section">';
+			// Print the linked Postcard Prose titles
+			foreach ($postslist_pp as $post) :  setup_postdata($post);
+			echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
+			endforeach;
+			echo '</ul>';
+			echo '</li>';
 
+		}
 
+		// Travel Notes section
+		if ($postslist_t != '') {
+			echo '<li class="archived-issue__issue-content--list-section-heading">Travel Notes';
+			echo '<ul class="archived-issue__issue-content--list-section">';
+			// Print the linked Travel Notes titles
+			foreach ($postslist_t as $post) :  setup_postdata($post);
+			echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
+			endforeach;
+			echo '</ul>';
+			echo '</li>';
 
+		}
 
+		echo '</ul>';
+ 	 	echo '</div>';
 
-
-
+ 		?>
 
 	</div><!-- .single-post__content -->
 
