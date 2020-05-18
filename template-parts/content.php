@@ -247,7 +247,7 @@
 		$postslist_t = get_posts( $args_t );
 
 		// Poetry section
-		if ($postslist_p != '') {
+		if ( $postslist_p ) {
 			echo '<li class="archived-issue__issue-content--list-section-heading">Poetry';
 			echo '<ul class="archived-issue__issue-content--list-section">';
 			// Print the linked poetry titles
@@ -259,7 +259,7 @@
 		}
 
 		// Postcard Prose
-		if ($postslist_pp != '') {
+		if ( $postslist_pp ) {
 			echo '<li class="archived-issue__issue-content--list-section-heading">Postcard Prose';
 			echo '<ul class="archived-issue__issue-content--list-section">';
 			// Print the linked Postcard Prose titles
@@ -272,7 +272,7 @@
 		}
 
 		// Travel Notes section
-		if ($postslist_t != '') {
+		if ( $postslist_t ) {
 			echo '<li class="archived-issue__issue-content--list-section-heading">Travel Notes';
 			echo '<ul class="archived-issue__issue-content--list-section">';
 			// Print the linked Travel Notes titles
