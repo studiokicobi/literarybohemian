@@ -247,7 +247,7 @@ $arrowhead-border: calc(0.5rem + #{$arrow-scale-value});
 }
 
 // The line
-.arrow:before {
+.arrow::before {
   content: "";
   position: absolute;
   height: #{$arrow-line-height};
@@ -270,7 +270,7 @@ $arrowhead-border: calc(0.5rem + #{$arrow-scale-value});
 }
 
 // The square end
-.arrow:after {
+.arrow::after {
   content: "";
   position: absolute;
   left: calc((100vw - #{$rl-site-margin} - #{$rl-site-margin}) * -1);

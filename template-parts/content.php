@@ -170,7 +170,7 @@
 			endif;
 
 		} elseif ( is_singular( array( 'postcard_prose', 'travel_notes', 'logbook' ) ) ) {
-			echo '<div class="drop-cap">';
+			echo '<div id="dropcap-wrapper">';
 				the_field( 'text' );
 			echo '</div>';
 		} else {
@@ -215,8 +215,8 @@
  	 	echo '<h2 class="archived-issue__issue-content--heading">' . $post_categories . '</h2>';
  	 	echo '<h3 class="archived-issue__issue-content--heading-2">Table of contents</h3>';
  	 	echo '<ul class="archived-issue__issue-content--list">';
- 	 	// ------------------------------
 
+ 	 	// ------------------------------
 
 		// Get the category title
 	  $post_id_0 = $post->ID;

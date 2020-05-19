@@ -1,1 +1,1 @@
-$(".drop-cap p:first-of-type").html((function(p,a){return a.replace(/^[^a-zA-Z]*([a-zA-Z])/g,'<span class="dropcap">$1</span>')}));
+function switchsize(a){a.matches?window.Dropcap.layout(dropcap,2):window.Dropcap.layout(dropcap,3)}$("#dropcap-wrapper p:first-of-type").html((function(a,p){return p.replace(/^[^a-zA-Z]*([a-zA-Z])/g,'<span id="dropcap">$1</span>')}));var dropcap=document.getElementById("dropcap");window.Dropcap.layout(dropcap,3);var narrow=window.matchMedia("screen and (max-width: 600px)");narrow.addListener(switchsize),switchsize(narrow);
