@@ -22,7 +22,6 @@ a {
 }
 
 // Smarter Link Underlines
-// https://gist.github.com/jimmynotjim/16290a7ed59b6f3bb28d
 // ----------------------------------------------------------------------------
 
 @mixin text-underline-crop($background) {
@@ -32,11 +31,11 @@ a {
     -0.12em 0 $background, 0.15em 0 $background, -0.15em 0 $background;
 }
 
-@mixin text-underline($color-bg, $color-text) {
-  background-image: linear-gradient($color-text, $color-text);
-  background-size: 1px 1px;
+@mixin text-underline($color__background-body, $pale-hot) {
+  background-image: linear-gradient(#ded4d2, #ded4d2);
+  background-size: 0.1rem 0.1rem;
   background-repeat: repeat-x;
-  background-position: 0% 95%;
+  background-position: 0% 93%;
 }
 
 @mixin text-selection($selection) {
@@ -74,29 +73,13 @@ a {
   }
 }
 
-// Add Smarter Link Underlines to main links
-// ----------------------------------------------------------------------------
-
 a.single-post__article,
 a.bio__related-text-item--link,
+.archived-issue__intro--content a,
 .archived-issue__issue-content--list-item a,
-a.archived-issue__issue-content--list-section-item-link {
-  // text-decoration: underline;
-  // @include link-underline($color__background-body, $color__link, $pale-hot);
-  //
-  // @include on-event {
-  //   color: $color__link-hover;
-  // }
-
-  text-shadow: 0.07em 0 0 $color__background-body,
-    -0.07em 0 0 $color__background-body, 0 0.07em 0 $color__background-body,
-    0 -0.07em 0 $color__background-body, 0.07em 0 0 $color__background-body,
-    -0.07em 0 0 $color__background-body, 0 0.07em 0 $color__background-body,
-    0 -0.07em 0 $color__background-body;
-  background-image: linear-gradient($lighter-warm-brown, $lighter-warm-brown);
-  background-repeat: repeat-x;
-  background-position: bottom 0.13em center;
-  background-size: 100% 0.065em;
+a.archived-issue__issue-content--list-section-item-link,
+.site-footer a {
+  @include link-underline($color__background-body, $dark-hot, $pale-hot);
 }
 
 // No underlines on these elements

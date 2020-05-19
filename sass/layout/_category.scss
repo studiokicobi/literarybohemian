@@ -37,20 +37,37 @@
     &--heading {
       position: relative;
 
-      &::after {
-        position: absolute;
-        bottom: -6rem;
-        left: 0;
-        transform: rotate(-2deg);
-        content: "";
-        height: 2rem;
-        width: 100%;
-        background-color: black;
+      // &::after {
+      //   position: absolute;
+      //   bottom: -3rem;
+      //   left: 0;
+      //   transform: rotate(-2deg);
+      //   content: "";
+      //   height: 1rem;
+      //   width: 100%;
+      //   background-color: black;
+      //   box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.05);
+      //
+      //   @media (max-width: #{$responsive-switch}) {
+      //     display: none;
+      //   }
+      // }
 
-        @media (max-width: #{$responsive-switch}) {
-          display: none;
-        }
-      }
+      // &::before {
+      //   position: absolute;
+      //   bottom: -3rem;
+      //   left: 20%;
+      //   transform: rotate(5.2deg);
+      //   content: "";
+      //   height: 0.5rem;
+      //   width: 70%;
+      //   background-color: $pale-hot;
+      //   box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.05);
+      //
+      //   @media (max-width: #{$responsive-switch}) {
+      //     display: none;
+      //   }
+      // }
     }
 
     &--content {
@@ -84,7 +101,7 @@
       color: $warm-brown;
       margin: 1rem 0 2rem 0;
       padding-top: 1.1rem;
-      border-top: 0.4rem solid rgba($light-warm-brown, 0.5);
+      border-top: 0.4rem solid $color__background-body-darker;
       text-transform: uppercase;
       font-size: 70%;
       @include sans;

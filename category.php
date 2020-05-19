@@ -14,7 +14,6 @@
 
 get_header();
 
-
 // Get the category title
 $post_id = $post->ID;
 
@@ -60,30 +59,31 @@ if (sizeOf($cats) > 0) {
 			endwhile; // End of the loop.
 			endif;
 
+
 			// Issue contents
 			echo '<div class="archived-issue__issue-content highlight-box">';
 			echo '<h2 class="archived-issue__issue-content--heading">' . $post_categories . '</h2>';
 			echo '<h3 class="archived-issue__issue-content--heading-2">Table of contents</h3>';
 			echo '<ul class="archived-issue__issue-content--list">';
 
-
-
 			// Poetry section
 			// ------------------------------
 			rewind_posts(); // Rewind the loop and start over
+
 			while ( have_posts() ) : the_post();
 
 			// Check for CPT
-			if ( get_post_type( get_the_ID() ) == 'poetry' ) {
+			// if ( get_post_type( get_the_ID() ) == 'poetry' ) {
 
 				// Loop once, then break
 				static $count_p = 0;
 				if ($count_p == "1") { break; }
 				else {
 					// CPT heading
-					echo '<li class="archived-issue__issue-content--list-section-heading"><h4>Poetry</h4></li>';
+					echo '<li class="archived-issue__issue-content--list-section-heading">Poetry';
+					echo '<ul class="archived-issue__issue-content--list-section">';
 					$count_p++; }
-				}
+				// }
 			endwhile;
 
 			// Get the post links for the section
@@ -92,10 +92,25 @@ if (sizeOf($cats) > 0) {
 
 				// Check for CPT
 				if ( get_post_type( get_the_ID() ) == 'poetry' ) {
-					echo '<li class="archived-issue__issue-content--list-item"><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
+					echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
 				}
 
 			endwhile; // End of the loop.
+
+			// Close the tags
+			rewind_posts(); // Rewind the loop and start over
+			while ( have_posts() ) : the_post();
+			if ( get_post_type( get_the_ID() ) == 'poetry' ) {
+				// Loop once, then break
+				static $count_p1 = 0;
+				if ($count_p1 == "1") { break; }
+				else {
+					// CPT heading
+					echo '</ul>';
+					echo '</li>';
+					$count_p1++; }
+				}
+			endwhile;
 
 
 			// Postcard Prose section
@@ -111,7 +126,8 @@ if (sizeOf($cats) > 0) {
 				if ($count_pp == "1") { break; }
 				else {
 					// CPT heading
-					echo '<li class="archived-issue__issue-content--list-section-heading"><h4>Postcard Prose</h4></li>';
+					echo '<li class="archived-issue__issue-content--list-section-heading">Postcard Prose';
+					echo '<ul class="archived-issue__issue-content--list-section">';
 					$count_pp++; }
 				}
 			endwhile;
@@ -122,10 +138,25 @@ if (sizeOf($cats) > 0) {
 
 				// Check for CPT
 				if ( get_post_type( get_the_ID() ) == 'postcard_prose' ) {
-					echo '<li class="archived-issue__issue-content--list-item"><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
+					echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
 				}
 
 			endwhile; // End of the loop.
+
+			// Close the tags
+			rewind_posts(); // Rewind the loop and start over
+			while ( have_posts() ) : the_post();
+			if ( get_post_type( get_the_ID() ) == 'postcard_prose' ) {
+				// Loop once, then break
+				static $count_pp2 = 0;
+				if ($count_pp2 == "1") { break; }
+				else {
+					// CPT heading
+					echo '</ul>';
+					echo '</li>';
+					$count_pp2++; }
+				}
+			endwhile;
 
 
 			// Travel Notes section
@@ -141,7 +172,8 @@ if (sizeOf($cats) > 0) {
 				if ($count_tn == "1") { break; }
 				else {
 					// CPT heading
-					echo '<li class="archived-issue__issue-content--list-section-heading"><h4>Travel Notes</h4></li>';
+					echo '<li class="archived-issue__issue-content--list-section-heading">Travel Notes';
+					echo '<ul class="archived-issue__issue-content--list-section">';
 					$count_tn++; }
 				}
 			endwhile;
@@ -152,10 +184,25 @@ if (sizeOf($cats) > 0) {
 
 				// Check for CPT
 				if ( get_post_type( get_the_ID() ) == 'travel_notes' ) {
-					echo '<li class="archived-issue__issue-content--list-item"><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
+					echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
 				}
 
 			endwhile; // End of the loop.
+
+			// Close the tags
+			rewind_posts(); // Rewind the loop and start over
+			while ( have_posts() ) : the_post();
+			if ( get_post_type( get_the_ID() ) == 'travel_notes' ) {
+				// Loop once, then break
+				static $count_tn2 = 0;
+				if ($count_tn2 == "1") { break; }
+				else {
+					// CPT heading
+					echo '</ul>';
+					echo '</li>';
+					$count_tn2++; }
+				}
+			endwhile;
 
 
 			echo '</ul>';
