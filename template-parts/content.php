@@ -133,7 +133,9 @@
 					if ( get_field( 'isbn' ) ) {
 						echo '<li class="single_post__meta--taxonomy-tag"><span>ISBN ' . get_field( 'isbn' ) . '</span></li>';
 					}
-
+					if ( get_field( 'more_information' ) ) {
+						echo '<li class="single_post__meta--taxonomy-tag"><span><a href="' . get_field( 'more_information' ) . '">More information</a></span></li>';
+					}
 				echo '</ul>';
 			echo '</li>';
 		}
