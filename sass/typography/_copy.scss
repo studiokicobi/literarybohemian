@@ -20,6 +20,10 @@ blockquote {
     margin: 0 0 0.25rem 0;
   }
 
+  p:last-child {
+    font-style: normal;
+  }
+
   cite {
     @include sans;
     font-size: 80%;
