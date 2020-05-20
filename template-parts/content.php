@@ -127,6 +127,9 @@
 					if ( get_field( 'author' ) ) {
 						echo '<li class="single_post__meta--taxonomy-tag"><span>' . get_field( 'author' ) . '</span></li>';
 					}
+					if ( get_field( 'translator' ) ) {
+						echo '<li class="single_post__meta--taxonomy-tag"><span>Translated by ' . get_field( 'translator' ) . '</span></li>';
+					}
 					if ( get_field( 'publisher_publication_year' ) ) {
 						echo '<li class="single_post__meta--taxonomy-tag"><span>' . get_field( 'publisher_publication_year' ) . '</span></li>';
 					}
