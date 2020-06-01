@@ -27,10 +27,13 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<?php
-	// Journal contents
-	get_template_part( 'template-parts/content', 'journal-contents' );
-	?>
+	<section id="features-small" class="cards">
+		<ul>
+			<?php // Cards feature
+				get_template_part( 'template-parts/content', 'cards' );
+			?>
+		</ul>
+	</section>
 
 	<?php
 get_footer();

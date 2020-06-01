@@ -90,7 +90,7 @@ $half-spacing-unit: $base-spacing-unit / 2;
     height: 0;
     border-style: solid;
     border-width: 0;
-    border-color: transparent transparent $light-warm-brown transparent;
+    border-color: transparent transparent $dark-hot transparent;
     transition: border-width 0.3s;
   }
 
@@ -170,7 +170,8 @@ $half-spacing-unit: $base-spacing-unit / 2;
 // Homepage styles for cards
 // ----------------------------------------------------------------------------
 
-body.home {
+body.home,
+body.single {
   .card {
     transition: all ease-in 0.15s;
     position: relative;
@@ -203,7 +204,6 @@ body.home {
       font-size: calc(45% + #{$scale-value});
       text-transform: uppercase;
       transition: all 0.15s;
-      @include broadcast;
     }
 
     &__body {
@@ -260,45 +260,46 @@ body.home {
 
     .card {
       &__meta {
-        background-color: $feature-small-header-3;
+        background-color: $color__background-body;
+        color: black;
       }
 
       // Various header colours for the small cards
 
-      &:nth-of-type(1) {
-        .card__meta {
-          background-color: $feature-small-header-1;
-        }
-      }
-      &:nth-of-type(2) {
-        .card__meta {
-          background-color: $feature-small-header-2;
-        }
-      }
-      &:nth-of-type(3) {
-        .card__meta {
-          background-color: $feature-small-header-3;
-        }
-      }
-      &:nth-of-type(4) {
-        .card__meta {
-          background-color: $feature-small-header-4;
-        }
-      }
-      &:nth-of-type(5) {
-        .card__meta {
-          background-color: $feature-small-header-5;
-        }
-      }
-      &:nth-of-type(6) {
-        .card__meta {
-          background-color: $feature-small-header-6;
-        }
-      }
+      // &:nth-of-type(1) {
+      //   .card__meta {
+      //     background-color: $feature-small-header-1;
+      //   }
+      // }
+      // &:nth-of-type(2) {
+      //   .card__meta {
+      //     background-color: $feature-small-header-2;
+      //   }
+      // }
+      // &:nth-of-type(3) {
+      //   .card__meta {
+      //     background-color: $feature-small-header-3;
+      //   }
+      // }
+      // &:nth-of-type(4) {
+      //   .card__meta {
+      //     background-color: $feature-small-header-4;
+      //   }
+      // }
+      // &:nth-of-type(5) {
+      //   .card__meta {
+      //     background-color: $feature-small-header-5;
+      //   }
+      // }
+      // &:nth-of-type(6) {
+      //   .card__meta {
+      //     background-color: $feature-small-header-6;
+      //   }
+      // }
 
       @include on-event {
         .card__meta {
-          background-color: $dark-warm-brown;
+          background-color: darken($color__background-body, 5);
         }
       }
 
@@ -306,9 +307,25 @@ body.home {
         font-size: calc(40% + #{$scale-value});
       }
 
-      // Decrease the bottom padding
-      &__body {
-        // padding-bottom: calc(8rem + (#{$scale-value} * 5));
+      &__meta-icon {
+        background-position: calc(2rem + #{$scale-value}) center;
+        background-repeat: no-repeat;
+
+        &--poetry {
+          background-image: url("img/icon-poetry.svg");
+          background-size: calc(1.5rem + #{$scale-value});
+        }
+
+        &--postcard {
+          background-image: url("img/icon-postcard.svg");
+          background-size: calc(1.4rem + #{$scale-value});
+        }
+
+        &--travel {
+          background-image: url("img/icon-travel.svg");
+          background-position: calc(2rem + #{$scale-value}) 47%;
+          background-size: calc(1.3rem + #{$scale-value});
+        }
       }
 
       &__title {

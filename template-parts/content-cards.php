@@ -10,7 +10,10 @@ wp_reset_query();
 
 
   // The latest post from The Journal
-      query_posts(array(
+
+
+    if (is_home()) {
+        query_posts(array(
           'post_type' => array('poetry', 'postcard_prose', 'travel_notes',),
           'post_status' => 'publish',
           'orderby' => 'publish_date',
@@ -18,6 +21,18 @@ wp_reset_query();
           'showposts' => 6,
           'offset' => 1
       ) );
+
+    } else {
+        query_posts(array(
+          'post_type' => array('poetry', 'postcard_prose', 'travel_notes',),
+          'post_status' => 'publish',
+          'orderby' => 'publish_date',
+          'order' => 'DESC',
+          'showposts' => 6,
+          'offset' => 0
+      ) );
+    }
+
 
   while (have_posts()) : the_post();
 
@@ -42,10 +57,13 @@ wp_reset_query();
   // Get the custom post type
   if ( get_post_type( get_the_ID() ) == 'poetry' ) {
     $journal_cpt = 'Poetry';
+    $cpt_class = 'card__meta-icon card__meta-icon--poetry';
   } elseif ( get_post_type( get_the_ID() ) == 'postcard_prose' ) {
     $journal_cpt = 'Postcard Prose';
-  } else {
+    $cpt_class = 'card__meta-icon card__meta-icon--postcard';
+  } elseif ( get_post_type( get_the_ID() ) == 'travel_notes' ) {
     $journal_cpt = 'Travel Notes';
+    $cpt_class = 'card__meta-icon card__meta-icon--travel';
   }
 
   // Get the author name
@@ -58,10 +76,10 @@ wp_reset_query();
     }
     endwhile;
   endif;
-  
+
   // Print the custom post type and category
   // echo '<strong class="card__meta">' . $post_categories . ' · ' . $journal_cpt . '</strong>';
-  echo '<strong class="card__meta">' . $journal_cpt . '</strong>';
+  echo '<strong class="card__meta ' . $cpt_class . '">' . $journal_cpt . '</strong>';
 
   // Card body wrapper
   echo '<div class="card__body">';
@@ -80,20 +98,7 @@ wp_reset_query();
     // Get the ACF rows
     if ( have_rows( 'poems' ) ) :
       while ( have_rows( 'poems' ) ) : the_row();
-      // check if content exists on these rows
-      $poem_2 = the_row(1);
-      $poem_3 = the_row(2);
-      $poem_4 = the_row(3);
-      $poem_5 = the_row(4);
-      $poem_6 = the_row(5);
-      $poem_7 = the_row(6);
-      $poem_8 = the_row(7);
-      $poem_9 = the_row(8);
-      $poem_10 = the_row(9);
-      $poem_11 = the_row(10);
-      $poem_12 = the_row(11);
-
-      if ($poem_2 || $poem_3 || $poem_4 || $poem_5 || $poem_6 || $poem_7 || $poem_8 || $poem_9 || $poem_10 || $poem_11 || $poem_12 != '') :
+      if ( get_field( 'multiple_poems' ) == 1 ) :
         // We have multiple poems; do nothing.
         else :
           // This is a single poem; get the author name.

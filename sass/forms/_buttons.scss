@@ -9,10 +9,11 @@ main a.button,
   background: $hot;
   color: white;
   line-height: 1;
-  padding: 0.5em 1em;
+  padding: 0.75rem 1rem 1rem 1rem;
+  text-align: center;
   @include sans;
   font-weight: normal !important;
-  font-size: 80%;
+  font-size: 70%;
 
   &:hover {
     background: black;

@@ -9,7 +9,155 @@ body.home {
       margin-bottom: calc(0.5rem + #{$scale-value});
     }
   }
+}
 
-  #features-large {
+// Meta area for Home featured text
+.icon-broadcast-home {
+  background-image: url("img/icon-broadcast.svg");
+  background-position: 0 62%;
+  background-repeat: no-repeat;
+  background-size: 1.2rem;
+  margin-left: 0.2rem;
+  padding-left: 1.8rem;
+}
+
+.icon-poetry-home {
+  background-image: url("img/icon-poetry.svg");
+  background-position: 0 65%;
+  background-repeat: no-repeat;
+  background-size: 1.7rem;
+  margin-left: 0;
+  padding-left: 2.1rem;
+}
+.icon-postcard-home {
+  background-image: url("img/icon-postcard.svg");
+  background-position: 0 62%;
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  padding-left: 1.9rem;
+}
+.icon-travel-home {
+  background-image: url("img/icon-travel.svg");
+  background-position: 0 56%;
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+  margin-left: 0.1rem;
+  padding-left: 1.8rem;
+}
+
+// Latest work layout
+.latest {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__1 {
+    flex-basis: 50%;
+    margin-left: calc(1rem + #{$scale-value});
+    margin-right: calc(3rem + #{$scale-value});
+  }
+
+  &__2 {
+    flex-basis: 50%;
+    margin-left: calc(3rem + #{$scale-value});
+    margin-right: calc(1rem + #{$scale-value});
+    background-image: url("img/plane.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 3rem;
+    padding-top: 10rem;
+  }
+}
+
+.latest-list {
+  &__item {
+    font-size: 85%;
+    border-bottom: 0.1rem solid rgba($border-grey, 0.15);
+    padding: 0 0 1rem 0;
+    margin: 0.5rem 0 0.75rem 0;
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  &__cat {
+    @include sans;
+    font-size: 50%;
+    text-transform: uppercase;
+    color: black;
+    background-position: left center;
+    background-repeat: no-repeat;
+    margin-left: 0rem;
+    padding: 2rem 0 2rem 1.8rem;
+
+    &--poetry {
+      background-image: url("img/icon-poetry.svg");
+      background-size: 1.5rem;
+    }
+
+    &--postcard {
+      background-image: url("img/icon-postcard.svg");
+      background-size: 1.4rem;
+    }
+
+    &--travel {
+      background-image: url("img/icon-travel.svg");
+      background-size: 1.2rem;
+      background-position: 0.1rem center;
+    }
+
+    &--review {
+      background-image: url("img/icon-review.svg");
+      background-size: 1.2rem;
+      background-position: 0.1rem center;
+    }
+
+    &--logbook {
+      background-image: url("img/icon-logbook.svg");
+      background-size: 0.9rem;
+      background-position: 0.2rem center;
+    }
+  }
+
+  &__link {
+    margin-left: 0.1rem;
+  }
+
+  &__author {
+    color: $warm-brown-3;
+    opacity: 80%;
+  }
+}
+
+// Home feature
+// --------------------
+
+.home-feature {
+  &__title {
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    font-size: 175%;
+  }
+
+  &__byline {
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    font-size: 85%;
+  }
+
+  &__meta {
+  }
+
+  &__excerpt {
+    margin-top: 1rem;
+    font-size: 70%;
+  }
+
+  &__more {
+    margin: 1.5rem 0 2rem 0;
+    display: inline-block;
+    // padding-bottom: 1.1rem !important;
   }
 }

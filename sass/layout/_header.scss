@@ -6,8 +6,8 @@
 .site-header {
   display: grid;
   grid-template-areas:
-    "search search search search"
-    "logo x x x"
+    // "search search search search"
+    "logo x x search"
     "arrow arrow arrow arrow"
     "nav nav nav nav";
   grid-gap: 0;
@@ -30,6 +30,7 @@
   // -----------–-----------–-----------–
   .site-branding {
     grid-area: logo;
+    margin-top: 1rem;
     margin-left: 0.9vw;
 
     img {
@@ -41,16 +42,17 @@
   // Search
   // -----------–-----------–-----------–
   // Our variable for search
-  $search-dim: calc(2.5rem + #{$scale-value});
+  $search-dim: calc(2.25rem + #{$scale-value});
 
   .search-wrapper {
     grid-area: search;
     height: $search-dim;
-    width: calc(100% + (#{$rl-site-margin} * 2));
+    // width: calc(100% + (#{$rl-site-margin} * 2));
+    width: auto;
     margin: 0 calc(#{$rl-site-margin} * -1);
     margin-bottom: calc(1rem + #{$scale-value});
-    background-color: $light-warm-brown;
-    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+    // background-color: $light-warm-brown;
+    background-color: none;
     transition: all 0.15s linear;
 
     @media screen and (max-width: 420px) {
@@ -62,6 +64,7 @@
       width: calc(20rem + (#{$search-dim} * 2));
       position: relative;
       transition: all 0.2s linear;
+      box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.15);
 
       @media screen and (max-width: 420px) {
         width: 100vw;
@@ -83,7 +86,7 @@
         padding: 0 1rem;
         clear: both;
         border: none;
-        background-color: white;
+        background-color: rgba(256, 256, 256, 0.7);
         border-radius: 0;
         font-style: normal;
         position: absolute;
@@ -122,7 +125,8 @@
         border: none;
         height: $search-dim;
         width: calc(#{$search-dim} * 2);
-        background: $pale-hot;
+        // background: $pale-hot;
+        background-color: #d7c9be;
         color: rgba(0, 0, 0, 0);
         line-height: $search-dim;
         padding: 0;
@@ -145,6 +149,7 @@
           background-size: calc(1.75rem + #{$scale-value});
           background-repeat: no-repeat;
           display: block;
+          transform: translateX(0.2rem); // center the icon visually
         }
       }
     }

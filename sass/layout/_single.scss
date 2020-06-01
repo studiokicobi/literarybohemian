@@ -73,73 +73,72 @@ $meta-dark: darken($color__background-body, 3);
     margin: 0 0 0.5rem 0;
     padding: 0;
   }
+}
 
-  $meta-dim: 0.75rem;
+// Meta
+// ----------------------------------------------------------------------------
+$meta-dim: 0.75rem;
 
-  &__meta {
-    border-top: 1px solid $border-grey;
+.meta {
+  border-top: 1px solid $border-grey;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  @include sans;
+  font-size: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  @media (max-width: #{$responsive-switch}) {
+    background-color: $meta-dark;
+    width: calc(100vw - (#{$rl-site-margin} * 2));
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 500px) {
+    width: auto;
+  }
+
+  &__item {
+    text-transform: uppercase;
+    padding-top: 0.2rem;
+
+    @media (max-width: #{$responsive-switch}) {
+      padding-left: $meta-dim;
+    }
+
+    &--border {
+      padding-right: $meta-dim;
+      margin-right: calc(#{$meta-dim} - 1px);
+      border-right: 1px solid $border-grey;
+    }
+  }
+
+  &__taxonomy-wrapper {
+    flex-grow: 1;
+
+    @media (max-width: #{$responsive-switch}) {
+      padding-bottom: 1.5rem;
+    }
+  }
+  &__taxonomy {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    @include sans;
-    font-size: 65%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+  }
+
+  &__taxonomy-cat {
+    text-transform: uppercase;
+    padding: 0.2rem 0 2rem 0;
 
     @media (max-width: #{$responsive-switch}) {
-      background-color: $meta-dark;
-      width: calc(100vw - (#{$rl-site-margin} * 2));
-      margin-bottom: 2rem;
-    }
-
-    @media (max-width: 500px) {
-      width: auto;
-    }
-
-    &--name {
       padding-right: $meta-dim;
-      margin-right: calc(#{$meta-dim} - 1px);
-      border-right: 1px solid $border-grey;
-      text-transform: uppercase;
-      padding-top: 0.2rem;
-
-      @media (max-width: #{$responsive-switch}) {
-        padding-left: $meta-dim;
-      }
-    }
-
-    &--post-type {
-      padding-right: $meta-dim;
-      margin-right: calc(#{$meta-dim} - 1px);
-      border-right: 1px solid $border-grey;
-      text-transform: uppercase;
-      padding-top: 0.2rem;
-    }
-    &--taxonomy-wrapper {
-      flex-grow: 1;
-
-      @media (max-width: #{$responsive-switch}) {
-        padding-bottom: 1.5rem;
-      }
-    }
-    &--taxonomy {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-    }
-    &--taxonomy-cat {
-      text-transform: uppercase;
-      padding: 0.2rem 0 2rem 0;
-
-      @media (max-width: #{$responsive-switch}) {
-        padding-right: $meta-dim;
-      }
     }
   }
 }
 
-.single_post__meta--taxonomy-tag {
+.meta__taxonomy-tag {
   background-image: url("img/list-item-dotted-line-bg-2.svg");
   background-repeat: repeat-x;
   background-position: center left;
@@ -153,7 +152,7 @@ $meta-dark: darken($color__background-body, 3);
     padding: 0 0.4rem 0.4rem 0;
 
     @media (max-width: #{$responsive-switch}) {
-      background-color: $meta-dark;
+      // background-color: $meta-dark;
     }
   }
 }

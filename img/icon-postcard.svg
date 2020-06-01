@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="19px" viewBox="0 0 24 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>icon-postcards</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.796898251">
+        <g id="Artboard" transform="translate(-708.000000, -564.000000)">
+            <g id="Group-2" transform="translate(708.000000, 564.000000)">
+                <g id="icon-postcards">
+                    <g id="Group-5" transform="translate(0.000000, 0.238800)" stroke="#000000" stroke-width="0.83">
+                        <polygon id="Stroke-1" points="3.1989 4.5178 19.7769 3.4428 19.2339 0.2398 0.4789 3.4198 2.6629 16.3038 3.9489 16.0858 3.9389 15.9358"></polygon>
+                        <polyline id="Stroke-3" points="3.9484 16.0862 4.0444 17.5592 23.0274 16.3282 22.1824 3.2872 19.7774 3.4422 19.7774 3.4422"></polyline>
+                    </g>
+                    <polygon id="Fill-6" fill="#000000" points="18.5304 8.1297 21.0804 7.8987 20.7944 4.7597 18.2454 4.9907"></polygon>
+                    <line x1="12.8356" y1="6.4495" x2="13.3896" y2="15.0235" id="Stroke-7" stroke="#000000"></line>
+                    <line x1="15.38" y1="10.511" x2="20.547" y2="10.177" id="Stroke-8" stroke="#000000"></line>
+                    <line x1="15.5211" y1="12.6951" x2="19.7851" y2="12.4201" id="Stroke-9" stroke="#000000"></line>
+                    <line x1="5.38" y1="8.511" x2="10.302" y2="8.193" id="Stroke-10" stroke="#000000"></line>
+                    <line x1="5.5089" y1="10.5071" x2="10.4309" y2="10.1891" id="Stroke-11" stroke="#000000"></line>
+                    <line x1="5.6378" y1="12.5027" x2="10.5598" y2="12.1847" id="Stroke-12" stroke="#000000"></line>
+                    <line x1="5.7668" y1="14.4988" x2="10.6888" y2="14.1808" id="Stroke-13" stroke="#000000"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

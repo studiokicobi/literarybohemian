@@ -1,12 +1,41 @@
+.newsletter-wrapper {
+  position: relative;
+  margin-top: 13vw;
+
+  // Tea label building
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -25vw;
+    left: 0;
+    height: 30vw;
+    width: 100%;
+    background-image: url("img/tea-label.svg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 56%;
+    background-blend-mode: darken;
+    opacity: 0.55;
+
+    // Small screen: hide the bg image so it doesn't conflict with the heading
+    @media screen and (max-width: 600px) {
+      background-image: none;
+    }
+  }
+}
+
 .newsletter {
   background-image: url("img/map-bg@2x.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 2rem;
-  padding: 12rem 2rem;
+  padding: 6rem 2rem;
   transition: all linear 0.3s;
   background-blend-mode: darken;
+  border: 0.8rem solid white;
+  position: relative;
 
   @media (max-width: 35rem) {
     padding: 2rem;
@@ -36,14 +65,14 @@
   &__heading {
     text-align: center;
     @include sans;
-    font-size: 200%;
-    margin: 0;
+    font-size: 170%;
+    margin: 1rem 0 1rem 0;
     padding: 0;
   }
 
   &__subheading {
     text-align: center;
-    font-size: 150%;
+    font-size: 120%;
     margin: 0;
     padding: 0;
     // color: white;

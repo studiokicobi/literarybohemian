@@ -24,7 +24,7 @@
 
 		// The metadata section
 		// --------------------
-		echo '<ul class="single-post__meta">';
+		echo '<ul class="meta">';
 
 		// Meta: author name
 		// --------------------
@@ -53,18 +53,18 @@
 			wp_reset_postdata();
 
 			// If the bio is linked, echo the link
-			echo '<li class="single-post__meta--name"><a href="' . $bio_link . '">' . $name . '</a></li>';
+			echo '<li class="meta__item meta__item--border"><a href="' . $bio_link . '">' . $name . '</a></li>';
 
 			else :
 				// No bio link exists
-				echo '<li class="single-post__meta--name">' . $name . '</li>';
+				echo '<li class="meta__item meta__item--border">' . $name . '</li>';
 			endif;
 		}
 
 		// If this is a Book Review:
 		if ( is_singular( 'book_reviews' ) ) {
 			if ( get_field( 'author_of_the_book_review' )) {
-			echo '<li class="single-post__meta--name">' . get_field('author_of_the_book_review') . '</li>';
+			echo '<li class="meta__item meta__item--border">' . get_field('author_of_the_book_review') . '</li>';
 			}
 		}
 
@@ -81,7 +81,7 @@
 		}
 
 		if ( is_singular( array( 'poetry', 'postcard_prose', 'travel_notes' ) ) ) {
-			echo '<li class="single-post__meta--post-type">' . $cpt . '</li>';
+			echo '<li class="meta__item meta__item--border">' . $cpt . '</li>';
 		}
 
 		// Meta: Category & tags
@@ -110,40 +110,40 @@
 
 		// If this is the Journal: print category and tags
 		if ( is_singular( array( 'poetry', 'postcard_prose', 'travel_notes' ) ) ) {
-			echo '<li class="single-post__meta--taxonomy-wrapper">';
-				echo '<ul class="single-post__meta--taxonomy">';
-					echo '<li class="single-post__meta--taxonomy-cat"><a href="' . $category_link . '">' . $post_categories . '</a></li>';
-				the_tags( '<li class="single_post__meta--taxonomy-tag">', '</li><li class="single_post__meta--taxonomy-tag">', '</li>' );
+			echo '<li class="meta__taxonomy-wrapper">';
+				echo '<ul class="meta__taxonomy">';
+					echo '<li class="meta__taxonomy-cat"><a href="' . $category_link . '">' . $post_categories . '</a></li>';
+				the_tags( '<li class="meta__taxonomy-tag">', '</li><li class="meta__taxonomy-tag">', '</li>' );
 				echo '</ul>';
 			echo '</li>';
 		}
 
 		// If this is a Book Review: print section name and book info
 		if ( is_singular( 'book_reviews' ) ) {
-			echo '<li class="single-post__meta--taxonomy-wrapper">';
-				echo '<ul class="single-post__meta--taxonomy">';
+			echo '<li class="meta__taxonomy-wrapper">';
+				echo '<ul class="meta__taxonomy">';
 
-					echo '<li class="single-post__meta--taxonomy-cat">Book Reviews</li>';
+					echo '<li class="meta__taxonomy-cat">Book Reviews</li>';
 					if ( get_field( 'author' ) ) {
-						echo '<li class="single_post__meta--taxonomy-tag"><span>' . get_field( 'author' ) . '</span></li>';
+						echo '<li class="meta__taxonomy-tag"><span>' . get_field( 'author' ) . '</span></li>';
 					}
 					if ( get_field( 'translator' ) ) {
-						echo '<li class="single_post__meta--taxonomy-tag"><span>Translated by ' . get_field( 'translator' ) . '</span></li>';
+						echo '<li class="meta__taxonomy-tag"><span>Translated by ' . get_field( 'translator' ) . '</span></li>';
 					}
 					if ( get_field( 'publisher_publication_year' ) ) {
-						echo '<li class="single_post__meta--taxonomy-tag"><span>' . get_field( 'publisher_publication_year' ) . '</span></li>';
+						echo '<li class="meta__taxonomy-tag"><span>' . get_field( 'publisher_publication_year' ) . '</span></li>';
 					}
 					if ( get_field( 'isbn' ) ) {
-						echo '<li class="single_post__meta--taxonomy-tag"><span>ISBN ' . get_field( 'isbn' ) . '</span></li>';
+						echo '<li class="meta__taxonomy-tag"><span>ISBN ' . get_field( 'isbn' ) . '</span></li>';
 					}
 					if ( get_field( 'more_information' ) ) {
-						echo '<li class="single_post__meta--taxonomy-tag"><span><a href="' . get_field( 'more_information' ) . '">More information</a></span></li>';
+						echo '<li class="meta__taxonomy-tag"><span><a href="' . get_field( 'more_information' ) . '">More information</a></span></li>';
 					}
 				echo '</ul>';
 			echo '</li>';
 		}
 
-		echo '</ul>'; // close single-post__meta
+		echo '</ul>'; // close meta
 
 		?>
 
@@ -225,79 +225,82 @@
 
 			// Issue contents
 			if ( is_singular( array( 'poetry', 'postcard_prose', 'travel_notes' ) ) ) {
-		 	 	echo '<div class="archived-issue__issue-content highlight-box">';
-		 	 	echo '<h2 class="archived-issue__issue-content--heading">' . $post_categories . '</h2>';
-		 	 	echo '<h3 class="archived-issue__issue-content--heading-2">Table of contents</h3>';
-		 	 	echo '<ul class="archived-issue__issue-content--list">';
 
-		 	 	// ------------------------------
+				if ($post_categories != "—") {
+			 	 	echo '<div class="archived-issue__issue-content highlight-box">';
+			 	 	echo '<h2 class="archived-issue__issue-content--heading">' . $post_categories . '</h2>';
+			 	 	echo '<h3 class="archived-issue__issue-content--heading-2">Table of contents</h3>';
+			 	 	echo '<ul class="archived-issue__issue-content--list">';
 
-				// Get the category title
-			  $post_id_0 = $post->ID;
+			 	 	// ------------------------------
 
-			  // get the category
-			  $cats = array();
-			  foreach (get_the_category($post_id_0) as $c) {
-			  	$cat = get_category($c);
-			  	array_push($cats, $cat->name);
-			  }
+					// Get the category title
+				  $post_id_0 = $post->ID;
 
-			  if (sizeOf($cats) > 0) {
-			  	$post_categories = implode(', ', $cats);
-			  } else {
-			  	$post_categories = '—';
-			  }
+				  // get the category
+				  $cats = array();
+				  foreach (get_the_category($post_id_0) as $c) {
+				  	$cat = get_category($c);
+				  	array_push($cats, $cat->name);
+				  }
 
-				$category_id = get_cat_ID($post_categories);
+				  if (sizeOf($cats) > 0) {
+				  	$post_categories = implode(', ', $cats);
+				  } else {
+				  	$post_categories = '—';
+				  }
 
-				// Poetry
-				$args_p = array( 'category' => $category_id, 'post_type' => 'poetry', 'numberposts' => '100', );
-				$postslist_p = get_posts( $args_p );
-				// Postcard Prose
-				$args_pp = array( 'category' => $category_id, 'post_type' => 'postcard_prose', 'numberposts' => '100', );
-				$postslist_pp = get_posts( $args_pp );
-				// Travel Notes
-				$args_t = array( 'category' => $category_id, 'post_type' => 'travel_notes', 'numberposts' => '100', );
-				$postslist_t = get_posts( $args_t );
+					$category_id = get_cat_ID($post_categories);
 
-				// Poetry section
-				if ( $postslist_p ) {
-					echo '<li class="archived-issue__issue-content--list-section-heading">Poetry';
-					echo '<ul class="archived-issue__issue-content--list-section">';
-					// Print the linked poetry titles
-					foreach ($postslist_p as $post) :  setup_postdata($post);
-					echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
-					endforeach;
+					// Poetry
+					$args_p = array( 'category' => $category_id, 'post_type' => 'poetry', 'numberposts' => '100', );
+					$postslist_p = get_posts( $args_p );
+					// Postcard Prose
+					$args_pp = array( 'category' => $category_id, 'post_type' => 'postcard_prose', 'numberposts' => '100', );
+					$postslist_pp = get_posts( $args_pp );
+					// Travel Notes
+					$args_t = array( 'category' => $category_id, 'post_type' => 'travel_notes', 'numberposts' => '100', );
+					$postslist_t = get_posts( $args_t );
+
+					// Poetry section
+					if ( $postslist_p ) {
+						echo '<li class="archived-issue__issue-content--list-section-heading">Poetry';
+						echo '<ul class="archived-issue__issue-content--list-section">';
+						// Print the linked poetry titles
+						foreach ($postslist_p as $post) :  setup_postdata($post);
+						echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
+						endforeach;
+						echo '</ul>';
+						echo '</li>';
+					}
+
+					// Postcard Prose
+					if ( $postslist_pp ) {
+						echo '<li class="archived-issue__issue-content--list-section-heading">Postcard Prose';
+						echo '<ul class="archived-issue__issue-content--list-section">';
+						// Print the linked Postcard Prose titles
+						foreach ($postslist_pp as $post) :  setup_postdata($post);
+						echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
+						endforeach;
+						echo '</ul>';
+						echo '</li>';
+					}
+
+					// Travel Notes section
+					if ( $postslist_t ) {
+						echo '<li class="archived-issue__issue-content--list-section-heading">Travel Notes';
+						echo '<ul class="archived-issue__issue-content--list-section">';
+						// Print the linked Travel Notes titles
+						foreach ($postslist_t as $post) :  setup_postdata($post);
+						echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
+						endforeach;
+						echo '</ul>';
+						echo '</li>';
+					}
+
 					echo '</ul>';
-					echo '</li>';
+			 	 	echo '</div>';
 				}
-
-				// Postcard Prose
-				if ( $postslist_pp ) {
-					echo '<li class="archived-issue__issue-content--list-section-heading">Postcard Prose';
-					echo '<ul class="archived-issue__issue-content--list-section">';
-					// Print the linked Postcard Prose titles
-					foreach ($postslist_pp as $post) :  setup_postdata($post);
-					echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
-					endforeach;
-					echo '</ul>';
-					echo '</li>';
-				}
-
-				// Travel Notes section
-				if ( $postslist_t ) {
-					echo '<li class="archived-issue__issue-content--list-section-heading">Travel Notes';
-					echo '<ul class="archived-issue__issue-content--list-section">';
-					// Print the linked Travel Notes titles
-					foreach ($postslist_t as $post) :  setup_postdata($post);
-					echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
-					endforeach;
-					echo '</ul>';
-					echo '</li>';
-				}
-
-				echo '</ul>';
-		 	 	echo '</div>';
 			}
  		?>
 

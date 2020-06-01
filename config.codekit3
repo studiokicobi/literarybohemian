@@ -7,7 +7,7 @@
 		"uuidString": "FD7CC8E3-4A0E-49F4-BB1A-8DBC93B7F011"
 		}
 	],
-"creatorBuild": "32147",
+"creatorBuild": "32186",
 "files": {
 	"/.gitignore": {
 		"cB": 0,
@@ -226,6 +226,36 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/img/icon-poetry.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/icon-poetry.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/icon-postcard.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/icon-postcard.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/icon-review.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/icon-review.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/img/icon-search.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -245,6 +275,27 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/img/icon-travel.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/icon-travel.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/landscape-01.jpg": {
+		"ft": 16384,
+		"iS": 52865,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/landscape-01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/img/list-item-dotted-line-bg-2.svg": {
 		"ft": 2097152,
@@ -916,6 +967,28 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"/js/jQuery.succinct-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/js/jQuery.succinct-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/js/jQuery.succinct.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/jQuery.succinct-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"/js/navigation-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -978,6 +1051,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/skip-link-focus-fix-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/js/smart-underline-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/smart-underline-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1395,6 +1479,19 @@
 		"oS": 3,
 		"sct": 1
 		},
+	"/sass/layout/_truncate-overflow.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_truncate-overflow.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
 	"/sass/media/_captions.scss": {
 		"aP": 1,
 		"bl": 1,
@@ -1805,28 +1902,28 @@
 		"oAP": "/template-parts/content-bio.php",
 		"oF": 0
 		},
-	"/template-parts/content-home-features-small.php": {
+	"/template-parts/content-cards.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/template-parts/content-home-features-small.php",
+		"oAP": "/template-parts/content-cards.php",
 		"oF": 0
 		},
-	"/template-parts/content-home-journal-feature.php": {
+	"/template-parts/content-home-feature.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/template-parts/content-home-journal-feature.php",
+		"oAP": "/template-parts/content-home-feature.php",
 		"oF": 0
 		},
-	"/template-parts/content-home-logbook-feature.php": {
+	"/template-parts/content-home-latest-list.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/template-parts/content-home-logbook-feature.php",
+		"oAP": "/template-parts/content-home-latest-list.php",
 		"oF": 0
 		},
 	"/template-parts/content-journal-contents.php": {
@@ -2435,6 +2532,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"default-case-last": {
+			"active": 0,
+			"optionString": ""
+			},
 		"default-param-last": {
 			"active": 0,
 			"optionString": ""
@@ -2847,6 +2948,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-loss-of-precision": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-magic-numbers": {
 			"active": 0,
 			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
@@ -2962,6 +3067,10 @@
 		"no-regex-spaces": {
 			"active": 1,
 			"optionString": ""
+			},
+		"no-restricted-exports": {
+			"active": 0,
+			"optionString": "{'restrictedNamedExports': []}"
 			},
 		"no-restricted-globals": {
 			"active": 0,
@@ -3106,6 +3215,10 @@
 		"no-use-before-define": {
 			"active": 0,
 			"optionString": "{'functions': true, 'classes': true, 'variables': true}"
+			},
+		"no-useless-backreference": {
+			"active": 0,
+			"optionString": ""
 			},
 		"no-useless-call": {
 			"active": 0,
