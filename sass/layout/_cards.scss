@@ -392,6 +392,7 @@ body.single,
       &__excerpt {
         max-width: 40rem;
         font-size: calc(50% + #{$scale-value});
+        padding-bottom: 11rem;
       }
     }
   }
