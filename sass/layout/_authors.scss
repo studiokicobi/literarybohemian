@@ -14,7 +14,8 @@
   color: $warm-brown-3 !important;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start !important;
+  max-width: 50ch;
 }
 
 // A-Z index at top: links
