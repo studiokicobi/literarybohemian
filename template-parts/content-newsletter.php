@@ -29,15 +29,15 @@
 			    	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button newsletter__submit"></div>
 					</div>
 
-					<div id="mce-responses" class="clear newsletter__alert">
+					<!-- <div id="mce-responses" class="clear newsletter__alert">
 						<div class="response newsletter__alert--error" id="mce-error-response" style="display:none"></div>
 						<div class="response newsletter__alert--success" id="mce-success-response" style="display:none"></div>
-					</div>
+					</div> -->
 
 				</form>
 			</div>
 
-			<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='WEBSITE';ftypes[3]='url';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+			<!-- <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='WEBSITE';ftypes[3]='url';}(jQuery));var $mcj = jQuery.noConflict(true);</script> -->
 			<!-- /newsletter form -->
 	</div>
 </div> <!-- .newsletter -->

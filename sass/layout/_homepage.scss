@@ -1,27 +1,24 @@
 // Homepage
 // ------------------------------------------------------------------------------------------------------
 
-body.home {
-  .site-header {
-    margin-bottom: calc(3rem + #{$scale-value});
-
-    @media screen and (max-width: 500px) {
-      margin-bottom: calc(0.5rem + #{$scale-value});
-    }
-  }
-}
-
 // Meta area for Home featured text
-.icon-broadcast-home {
+.icon-broadcast-home,
+.icon-broadcast {
   background-image: url("img/icon-broadcast.svg");
   background-position: 0 62%;
   background-repeat: no-repeat;
   background-size: 1.2rem;
   margin-left: 0.2rem;
-  padding-left: 1.8rem;
+  padding-left: 1.5rem;
 }
 
-.icon-poetry-home {
+.icon-broadcast-bio {
+  // transform: translateX(0.75rem);
+  // display: inline-block;
+}
+
+.icon-poetry-home,
+.icon-poetry {
   background-image: url("img/icon-poetry.svg");
   background-position: 0 65%;
   background-repeat: no-repeat;
@@ -29,20 +26,32 @@ body.home {
   margin-left: 0;
   padding-left: 2.1rem;
 }
-.icon-postcard-home {
+.icon-postcard-home,
+.icon-postcard_prose {
   background-image: url("img/icon-postcard.svg");
   background-position: 0 62%;
   background-repeat: no-repeat;
   background-size: 1.5rem;
   padding-left: 1.9rem;
 }
-.icon-travel-home {
+.icon-travel-home,
+.icon-travel_notes {
   background-image: url("img/icon-travel.svg");
   background-position: 0 56%;
   background-repeat: no-repeat;
   background-size: 1.3rem;
   margin-left: 0.1rem;
   padding-left: 1.8rem;
+}
+
+// Bio icon
+.icon-bio {
+  background-image: url("img/icon-bio.svg");
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 1.2rem;
+  margin-left: 0;
+  padding-left: 1.5rem;
 }
 
 // Latest work layout
@@ -61,7 +70,7 @@ body.home {
     flex-basis: 50%;
     margin-left: calc(3rem + #{$scale-value});
     margin-right: calc(1rem + #{$scale-value});
-    background-image: url("img/plane.jpg");
+    background-image: url("img/plane2.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: contain;
@@ -72,13 +81,25 @@ body.home {
 
 .latest-list {
   &__item {
-    font-size: 85%;
-    border-bottom: 0.1rem solid rgba($border-grey, 0.15);
-    padding: 0 0 1rem 0;
-    margin: 0.5rem 0 0.75rem 0;
+    font-size: 80%;
+    // border-bottom: 0.1rem solid rgba($border-grey, 0.15);
+    padding: 0;
+    margin: 0 0 1.25rem 0;
+
+    &::after {
+      // content: "";
+      // font-size: 50%;
+      // display: block;
+      // margin: 0.5rem 0 0.5rem 0;
+      // width: 13%;
+      // padding: 0.5rem 0 0 0;
+      // // border-bottom: 0.1rem solid $border-grey;
+    }
 
     &:last-child {
-      border: 0;
+      &::after {
+        border: 0;
+      }
     }
   }
 
@@ -86,11 +107,12 @@ body.home {
     @include sans;
     font-size: 50%;
     text-transform: uppercase;
-    color: black;
+    color: rgba(black, 0.8);
     background-position: left center;
     background-repeat: no-repeat;
     margin-left: 0rem;
     padding: 2rem 0 2rem 1.8rem;
+    filter: opacity(70%);
 
     &--poetry {
       background-image: url("img/icon-poetry.svg");
@@ -127,6 +149,7 @@ body.home {
 
   &__author {
     color: $warm-brown-3;
+    // color: rgba(0, 0, 0, 0.5);
     opacity: 80%;
   }
 }
@@ -152,7 +175,7 @@ body.home {
 
   &__excerpt {
     margin-top: 1rem;
-    font-size: 70%;
+    font-size: 80%;
   }
 
   &__more {

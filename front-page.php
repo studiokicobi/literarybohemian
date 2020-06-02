@@ -28,29 +28,12 @@ get_header();
 				</section>
 			</div>
 
-			<section id="features-small" class="cards">
-				<ul>
-					<?php // Cards feature
-						get_template_part( 'template-parts/content', 'cards' );
-					?>
-				</ul>
-			</section>
+			<?php // Cards feature
+				get_template_part( 'template-parts/content', 'cards' );
+			?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-
-
-	<?php // Journal contents
-		// get_template_part( 'template-parts/content', 'journal-contents' );
-	?>
-
-	<!-- <picture class=""> -->
-		<!-- <source srcset="<?php //echo get_template_directory_uri(); ?>/img/plane2.webp" type="image/webp"> -->
-		<!-- <source srcset="<?php //echo get_template_directory_uri(); ?>/img/plane2.svg" type="image/svg"> -->
-		<!-- <img src="<?php //echo get_template_directory_uri(); ?>/img/plane2.svg" alt=""> -->
-	<!-- </picture> -->
-
 
 <?php
 get_footer();

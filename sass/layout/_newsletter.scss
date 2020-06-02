@@ -7,9 +7,9 @@
     content: "";
     position: absolute;
     display: block;
-    top: -25vw;
+    top: calc((20rem + #{$scale-value}) * -1);
     left: 0;
-    height: 30vw;
+    height: calc(22rem + #{$scale-value});
     width: 100%;
     background-image: url("img/tea-label.svg");
     background-position: center bottom;
@@ -36,6 +36,7 @@
   background-blend-mode: darken;
   border: 0.8rem solid white;
   position: relative;
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1);
 
   @media (max-width: 35rem) {
     padding: 2rem;
@@ -43,22 +44,24 @@
 
   @include on-event {
     background-blend-mode: color-burn;
-    // background-color: #6e6460;
-    background-color: #957d75;
-    transition: all linear 0.3s;
+    background-color: #999492;
+    transition: all ease 0.3s;
 
     .newsletter__heading {
       color: white;
-      transition: all linear 0.2s;
+      transition: all ease 0.2s;
     }
+
     .newsletter__subheading {
       color: rgba(white, 0.85);
-      transition: all linear 0.2s;
+      transition: all ease 0.2s;
     }
 
     .newsletter__label {
       color: rgba(white, 0.85);
-      // transition: all linear 0.65s;
+    }
+
+    input {
     }
   }
 

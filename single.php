@@ -27,13 +27,9 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<section id="features-small" class="cards">
-		<ul>
-			<?php // Cards feature
-				get_template_part( 'template-parts/content', 'cards' );
-			?>
-		</ul>
-	</section>
+	<?php // Cards feature
+		get_template_part( 'template-parts/content', 'cards' );
+	?>
 
 	<?php
 get_footer();

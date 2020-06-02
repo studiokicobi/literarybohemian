@@ -79,8 +79,13 @@ a.single-post__article,
 a.bio__related-text-item--link,
 .archived-issue__intro--content a,
 .archived-issue__issue-content--list-item a,
-a.archived-issue__issue-content--list-section-item-link {
+a.archived-issue__issue-content--list-section-item-link,
+a.latest-list__link {
   @include link-underline($color__background-body, $dark-hot, $pale-hot);
+
+  @include on-event {
+    color: black;
+  }
 }
 
 // No underlines on these elements

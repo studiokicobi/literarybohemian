@@ -186,6 +186,16 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/img/icon-bio.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/icon-bio.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/img/icon-broadcast.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -297,6 +307,50 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/landscape-01.png": {
+		"ft": 32768,
+		"iS": 110892,
+		"oA": 0,
+		"oAP": "/img/landscape-01.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/landscape-02.jpg": {
+		"ft": 16384,
+		"iS": 48894,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/landscape-02.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/landscape-02.png": {
+		"ft": 32768,
+		"iS": 123282,
+		"oA": 0,
+		"oAP": "/img/landscape-02.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/landscape-03.png": {
+		"ft": 32768,
+		"iS": 114196,
+		"oA": 0,
+		"oAP": "/img/landscape-03.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/list-item-dotted-line-bg-2.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -369,6 +423,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/img/map-border-01.jpg": {
+		"ft": 16384,
+		"iS": 16787,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/map-border-01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/img/plane.jpg": {

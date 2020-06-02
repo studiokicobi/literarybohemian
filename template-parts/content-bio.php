@@ -25,11 +25,11 @@
 
 		// The metadata section
 		// --------------------
-		echo '<ul class="single-post__meta">';
+		echo '<ul class="meta">';
 
 		// Meta: Custom Post Type title
 		// --------------------
-		echo '<li class="single-post__meta--post-type">Biography</li>';
+		echo '<li class="meta__item icon-xbio">Biography</li>';
 
 		echo '</ul>'; // close single-post__meta
 
@@ -44,8 +44,8 @@
 
 	<div class="single-post__body">
 
-		<div class="drop-cap">
-    <?php the_content(); ?>
+		<div id="dropcap-wrapper">
+    	<?php the_content(); ?>
     </div>
 
     <?php
@@ -81,9 +81,26 @@
         // Get the custom post type for Journal posts
         $cpt = get_post_type_object(get_post_type( $author_text->ID ));
 
-        echo '<strong class="bio__related-text-item--cpt">' . esc_html($cpt->labels->singular_name) . '</strong>';
-        echo '<h2 class="bio__related-text-item--heading"><a class="bio__related-text-item--link" href="' . get_permalink( $author_text->ID ). '">' . get_the_title( $author_text->ID ) . '</a></h2>';
-        echo '<p class="bio__related-text-item--excerpt">' . get_the_excerpt( $author_text->ID ) . '</p>';
+				// Get the categories array
+				$categories = get_the_category($author_text->ID);
+
+				// Get the first item
+				if ( ! empty( $categories ) ) {
+						// The category
+						$cat = esc_html( $categories[0]->name );
+						$cat_item = ' <strong class="bio__related-text-item--cpt icon-broadcast icon-broadcast-bio">' . $cat . '</strong>';
+				}
+
+				echo '<h2 class="bio__related-text-item--heading"><a class="bio__related-text-item--link" href="' . get_permalink( $author_text->ID ). '">' . get_the_title( $author_text->ID ) . '</a></h2>';
+	      echo '<p class="bio__related-text-item--excerpt">' . get_the_excerpt( $author_text->ID ) . '</p>';
+
+				echo '<div class="bio__related-text-item--footer">';
+
+	        if ($cat_item != '') { echo $cat_item; }
+					echo '&nbsp; · &nbsp;<strong class="bio__related-text-item--cpt icon-' . esc_html($cpt->name) . '">' . esc_html($cpt->labels->singular_name) . '</strong>';
+
+				echo '</div>';
+
         // Maybe include the dates later, but the dates need to be checked and edited as necessary
         // echo '<p class="">' . get_the_date( 'F j, Y', $author_text->ID ) . '</p>';
         // echo '<a class="button" href="' . get_permalink( $author_text->ID ). '">Read</a>';

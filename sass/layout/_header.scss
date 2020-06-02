@@ -1,6 +1,14 @@
 // Header Layout
 // ------------------------------------------------------------------------------------------------------
 
+.site-header {
+  margin-bottom: calc(3rem + #{$scale-value});
+
+  @media screen and (max-width: 500px) {
+    margin-bottom: calc(0.5rem + #{$scale-value});
+  }
+}
+
 // Build the header grid layout
 // -----------–-----------–-----------–
 .site-header {

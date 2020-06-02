@@ -61,21 +61,21 @@ $half-spacing-unit: $base-spacing-unit / 2;
   position: relative;
   box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.12);
   transition: all 0.3s linear;
+  padding-bottom: 3rem;
 
   // Random bg image
   &__bg {
     content: "";
     position: absolute;
-    top: 0;
+    top: calc(100% - 11rem;);
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: -1;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
     background-blend-mode: multiply;
-    background-color: $color__card-body;
+    background-color: #eed2b9;
     filter: grayscale(60%);
     opacity: 0.75;
   }
@@ -90,7 +90,7 @@ $half-spacing-unit: $base-spacing-unit / 2;
     height: 0;
     border-style: solid;
     border-width: 0;
-    border-color: transparent transparent $dark-hot transparent;
+    border-color: transparent transparent $dark-warm-brown transparent;
     transition: border-width 0.3s;
   }
 
@@ -171,7 +171,8 @@ $half-spacing-unit: $base-spacing-unit / 2;
 // ----------------------------------------------------------------------------
 
 body.home,
-body.single {
+body.single,
+* {
   .card {
     transition: all ease-in 0.15s;
     position: relative;
@@ -207,7 +208,8 @@ body.single {
     }
 
     &__body {
-      padding: 0 calc(2rem + #{$scale-value}) 15vw calc(2rem + #{$scale-value});
+      // padding: 0 calc(2rem + #{$scale-value}) 15vw calc(2rem + #{$scale-value});
+      padding: 0 calc(2rem + #{$scale-value}) 9rem calc(2rem + #{$scale-value});
 
       @media screen and (max-width: 55rem) {
         padding-bottom: 33vw;
@@ -217,7 +219,7 @@ body.single {
     &__title {
       @include sans;
       margin: calc(1.5rem + #{$scale-value}) 0 calc(0.25rem + #{$scale-value}) 0;
-      font-size: 130%;
+      font-size: 125%;
 
       a {
         font-weight: 400;
@@ -229,6 +231,7 @@ body.single {
 
     &__author {
       font-size: calc(70% + 0.333vw);
+      color: $warm-brown-3;
       font-weight: 400;
       margin: 0 0 1rem 0;
       opacity: 85%;
@@ -256,12 +259,45 @@ body.single {
   // Features small styles
   // ----------------------------------------------------------------------------
   #features-small {
-    margin-bottom: 5rem;
+    background: rgb(154, 145, 140);
+    background: linear-gradient(
+      180deg,
+      #d0c8c4 0%,
+      rgba(246, 241, 238, 1) 100%
+    );
+    position: relative;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   display: block;
+    //   top: 0;
+    //   left: 0;
+    //   height: 15rem;
+    //   width: 100vw;
+    //   transform: translateY(-83%);
+    //   background-image: url("img/landscape-03.png");
+    //   background-position: center top;
+    //   background-repeat: no-repeat;
+    //   background-size: cover;
+    //   filter: grayscale(60%);
+    //   // opacity: 0.25;
+    // }
+  }
+
+  #features-small {
+    width: 100vw;
+    margin: 0 0 5rem 0;
+    padding: 5rem $rl-site-margin;
+    transform: translateX($full-bleed);
 
     .card {
+      background-color: $color__background-body;
+
       &__meta {
-        background-color: $color__background-body;
-        color: black;
+        z-index: 100;
+        background-color: $color__background-body-3;
+        color: $warm-brown-3;
       }
 
       // Various header colours for the small cards
@@ -299,7 +335,10 @@ body.single {
 
       @include on-event {
         .card__meta {
-          background-color: darken($color__background-body, 5);
+          // background-color: darken($color__card-body, 10%);
+          // filter: grayscale(40%);
+          background-color: $pale-hot;
+          color: black;
         }
       }
 
@@ -331,11 +370,11 @@ body.single {
       &__title {
         margin: calc(1.5rem + #{$scale-value}) 0 calc(0.25rem + #{$scale-value})
           0;
-        line-height: 1.1;
+        line-height: 1;
         a {
           font-weight: 400;
           margin: 0;
-          font-size: calc(80% + #{$scale-value});
+          font-size: calc(70% + #{$scale-value});
 
           @include on-event {
             color: inherit;
@@ -352,8 +391,33 @@ body.single {
 
       &__excerpt {
         max-width: 40rem;
-        font-size: calc(80% + #{$scale-value});
+        font-size: calc(50% + #{$scale-value});
       }
     }
   }
+}
+
+.map-border {
+  color: white;
+  height: 16rem;
+  width: 100vw;
+  margin-top: 2rem;
+  background-image: url("img/map-bg@2x.jpg");
+  background-size: cover;
+  background-position: top;
+  background-blend-mode: color-burn;
+  background-color: #6a4f44;
+
+  &__heading {
+    @include sans;
+    font-size: 150%;
+    text-align: center;
+    line-height: 16rem;
+  }
+}
+
+.journal-more {
+  margin: 3rem 0 0 50%;
+  display: inline-block;
+  transform: translateX(-50%);
 }

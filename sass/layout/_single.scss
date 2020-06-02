@@ -234,7 +234,7 @@ $meta-dim: 0.75rem;
   }
 
   &__related-texts-heading {
-    margin-top: 4rem;
+    margin-top: 5rem;
     margin-bottom: 1rem;
     // @include sans;
     // font-size: 150%;
@@ -250,7 +250,7 @@ $meta-dim: 0.75rem;
     margin: 0 0 2rem 0;
 
     &--heading {
-      margin: 1rem 0 0 0;
+      margin: 0;
       font-size: 140%;
     }
     &--link {
@@ -264,12 +264,22 @@ $meta-dim: 0.75rem;
       @include sans;
       font-size: 65%;
       text-transform: uppercase;
-      color: lighten(black, 50%);
+      color: rgba(0, 0, 0, 0.85);
       margin: 0;
-      padding: 0;
     }
+
     &--excerpt {
       padding: 1rem 0;
+    }
+
+    &--footer {
+      margin: 0;
+      padding: 1.5rem;
+      transform: translate(-1.5rem, 1.5rem);
+      width: calc(100% + 3rem);
+      color: black;
+      background-color: darken($color__background-body, 5%);
+      filter: grayscale(10%);
     }
   }
 }

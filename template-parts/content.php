@@ -74,14 +74,17 @@
 		// Get the custom post type for Journal posts
 		if ( is_singular( 'poetry' ) ) {
 			$cpt = 'Poetry';
+			$cpt_class = 'icon-poetry-home';
 		} elseif ( is_singular( 'postcard_prose' ) ) {
 			$cpt = 'Postcard Prose';
+			$cpt_class = 'icon-postcard-home';
 		} elseif ( is_singular( 'travel_notes' ) ) {
 			$cpt = 'Travelogue';
+			$cpt_class = 'icon-travel-home';
 		}
 
 		if ( is_singular( array( 'poetry', 'postcard_prose', 'travel_notes' ) ) ) {
-			echo '<li class="meta__item meta__item--border">' . $cpt . '</li>';
+			echo '<li class="meta__item meta__item--border ' . $cpt_class . '">' . $cpt . '</li>';
 		}
 
 		// Meta: Category & tags

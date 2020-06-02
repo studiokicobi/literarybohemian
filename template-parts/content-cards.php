@@ -7,7 +7,16 @@
 
 // Reset the query
 wp_reset_query();
+?>
 
+<div class="map-border full-bleed">
+  <h1 class="map-border__heading">More from The Journal</h1>
+</div>
+
+<section id="features-small" class="cards">
+  <ul>
+
+<?
 
   // The latest post from The Journal
 
@@ -133,3 +142,8 @@ wp_reset_query();
   wp_reset_query();
 
   ?>
+
+  </ul>
+
+  <a href="" class="button journal-more">Open The Journal</a>
+</section>
