@@ -1,3 +1,6 @@
+// Adjust styles for A-Z listing plugin used on Authors page
+
+// A-Z index at top: layout
 .az-letters > ul.az-links > li,
 .a-z-listing-widget .az-letters > ul.az-links > li,
 .a-z-listing-widget.widget .az-letters > ul.az-links > li {
@@ -14,6 +17,7 @@
   justify-content: center;
 }
 
+// A-Z index at top: links
 .az-letters > ul.az-links > li a,
 .a-z-listing-widget .az-letters > ul.az-links > li a,
 .a-z-listing-widget.widget .az-letters > ul.az-links > li a {
@@ -25,4 +29,22 @@
   @include on-event {
     color: black;
   }
+}
+
+// Back to top link
+.letter-section div.back-to-top a::before,
+.letter-section div.back-to-top a::after {
+  content: "";
+  padding: 0;
+}
+
+.letter-section div.back-to-top a::before {
+  content: "\f342";
+  display: block;
+}
+
+.letter-section div.back-to-top a {
+  text-transform: none;
+  font-size: 0.7em;
+  font-style: italic;
 }
