@@ -21,15 +21,21 @@
 		<?php
 		// The title
 		// --------------------
-		the_title( '<h1 class="single-post__heading">', '</h1>' );
+		// the_title( '<h1 class="single-post__heading">', '</h1>' );
+
+		if( get_field('first_names') ) {
+			$first_names = get_field('first_names');
+			echo '<h1 class="single-post__heading">' . $first_names . ' ';
+			if( get_field('last_name') ) {
+				echo get_field('last_name');
+			}
+			echo '</h1>';
+		}
 
 		// The metadata section
 		// --------------------
 		echo '<ul class="meta">';
-
-		// Meta: Custom Post Type title
-		// --------------------
-		echo '<li class="meta__item icon-xbio">Biography</li>';
+		echo '<li class="meta__item">Biography</li>';
 
 		echo '</ul>'; // close single-post__meta
 
