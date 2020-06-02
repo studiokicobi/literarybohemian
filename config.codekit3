@@ -25,12 +25,20 @@
 		"oAP": "/404.php",
 		"oF": 0
 		},
-	"/archive.php": {
+	"/_archive.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/archive.php",
+		"oAP": "/_archive.php",
+		"oF": 0
+		},
+	"/archive-postcard-prose.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/archive-postcard-prose.php",
 		"oF": 0
 		},
 	"/category.php": {
@@ -1226,6 +1234,22 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/page-journal.php",
+		"oF": 0
+		},
+	"/page-poetry.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-poetry.php",
+		"oF": 0
+		},
+	"/page-prose.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-prose.php",
 		"oF": 0
 		},
 	"/page.php": {
