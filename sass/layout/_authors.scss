@@ -1,11 +1,28 @@
-.az-links {
-  @include sans;
+.az-letters > ul.az-links > li,
+.a-z-listing-widget .az-letters > ul.az-links > li,
+.a-z-listing-widget.widget .az-letters > ul.az-links > li {
+  list-style: none;
+  width: 2em;
+  height: 2em;
+  box-sizing: border-box;
+  margin: 0 0 0.6em;
+  border: none;
+  background: transparent;
+  color: $warm-brown-3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  a {
-    color: $dark-hot;
+.az-letters > ul.az-links > li a,
+.a-z-listing-widget .az-letters > ul.az-links > li a,
+.a-z-listing-widget.widget .az-letters > ul.az-links > li a {
+  color: $dark-hot;
+  text-decoration: none;
+  border: 0;
+  box-shadow: none;
 
-    @include on-event {
-      color: black;
-    }
+  @include on-event {
+    color: black;
   }
 }
