@@ -32,15 +32,14 @@
 }
 
 // Back to top link
-.letter-section div.back-to-top a::before,
-.letter-section div.back-to-top a::after {
-  content: "";
-  padding: 0;
-}
-
 .letter-section div.back-to-top a::before {
   content: "\f342";
   display: block;
+  padding: 0;
+}
+
+.letter-section div.back-to-top a::after {
+  display: none;
 }
 
 .letter-section div.back-to-top a {
