@@ -11,7 +11,7 @@
   margin: 0 0 0.6em;
   border: none;
   background: transparent;
-  color: $warm-brown-3;
+  color: $warm-brown-3 !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,29 +21,20 @@
 .az-letters > ul.az-links > li a,
 .a-z-listing-widget .az-letters > ul.az-links > li a,
 .a-z-listing-widget.widget .az-letters > ul.az-links > li a {
-  color: $dark-hot;
-  text-decoration: none;
-  border: 0;
-  box-shadow: none;
+  color: $dark-hot !important;
 
   @include on-event {
-    color: black;
+    color: black !important;
   }
 }
 
 // Back to top link
-.letter-section div.back-to-top a::before {
-  content: "\f342" !important;
-  display: block;
-  padding: 0;
-}
-
+.letter-section div.back-to-top a::before,
 .letter-section div.back-to-top a::after {
   display: none;
 }
 
 .letter-section div.back-to-top a {
   text-transform: none !important;
-  font-size: 0.7em;
   font-style: italic;
 }
