@@ -383,10 +383,10 @@ $disc-3-dim: calc(0.15rem + #{$disc-scale-dim});
   cursor: pointer;
 
   @include on-event {
-    background-color: $hot !important;
-    border-color: $hot;
-    transition: all 0.3s;
-    box-shadow: 0 0 0 3px rgba($hot, 1);
+    background-color: $dark-hot !important;
+    border-color: $dark-hot;
+    transition: all 0.2s;
+    box-shadow: 0 0 0 3px rgba(black, 1);
 
     .tooltiptext {
       visibility: visible;
