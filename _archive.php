@@ -9,14 +9,15 @@
 
 get_header();
 ?>
-mnbmnbmnb
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
 			<?php
 		  // The latest post from The Journal
 		      query_posts(array(
-		          'post_type' => 'poetry', 'postcard_prose', 'travel_notes',
+						// 'post_type' => 'poetry', 'postcard_prose', 'travel_notes',
+						'post_type' => 'postcard_prose',
 		          'post_status' => 'publish',
 		          'orderby' => 'publish_date',
 		          'order' => 'DESC'
