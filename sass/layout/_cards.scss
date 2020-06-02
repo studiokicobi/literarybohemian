@@ -421,3 +421,10 @@ body.single,
   display: inline-block;
   transform: translateX(-50%);
 }
+
+.read-more {
+  color: $dark-warm-brown;
+  font-size: 150%;
+  margin: 5rem 0 0 0;
+  text-align: center;
+}
