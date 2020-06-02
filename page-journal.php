@@ -15,14 +15,74 @@
 get_header();
 ?>
 
-<ul>
-    <?php wp_list_categories( array(
-        'orderby'    => 'name',
-        'exclude'    => array( 1 ),
-				'title_li' => '<h2>' . __( 'Issues', 'textdomain' ) . '</h2>'
-    ) ); ?>
-</ul>
+<?php
+  // List the issues
+?>
 
+<!-- <ul>
+    <?php //wp_list_categories( array(
+    //     'orderby'    => 'name',
+    //     'exclude'    => array( 1 ),
+		// 		'title_li' => '<h2>' . __( 'Issues', 'textdomain' ) . '</h2>'
+    // ) ); ?>
+</ul> -->
+
+
+
+
+
+
+<?php
+
+
+
+// The latest post from The Journal
+$authors_query = new WP_Query(array(
+        'post_type' => 'bio',
+        'post_status' => 'publish',
+        'meta_key'			=> 'last_name',
+      	'orderby'			=> 'meta_value',
+      	'order'				=> 'ASC',
+        'showposts' => 5
+    ) );
+
+
+    //Get the first character.
+    // $firstCharacter = $string[0];
+    //
+    // //Get the first character using substr.
+    // $firstCharacter = substr($string, 0, 1);
+    $author = get_field('last_name');
+    echo $author;
+?>
+
+<?php while (have_posts()) : the_post();
+
+the_a_z_listing( $authors_query );
+
+// echo do_shortcode("[a-z-listing display='posts' post-type='bio' meta-key='last_name']");
+
+echo '<hr />';
+
+the_title( '<h6>', '</h6>' );
+
+?>
+
+<?
+endwhile;
+
+// Reset the query
+wp_reset_query();
+
+?>
+
+
+
+
+
+
+
+<hr>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
@@ -40,6 +100,8 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
+
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
