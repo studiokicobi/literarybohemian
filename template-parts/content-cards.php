@@ -145,5 +145,6 @@ wp_reset_query();
 
   </ul>
 
-  <a href="" class="button journal-more">Open The Journal</a>
+  <p class="read-more"><em>Read more</em> <a href="" class="">Poetry</a> <em>or</em> <a href="" class="">Postcard Prose</a></p>
+
 </section>
