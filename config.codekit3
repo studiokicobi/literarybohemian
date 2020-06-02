@@ -1399,6 +1399,19 @@
 		"oS": 3,
 		"sct": 1
 		},
+	"/sass/layout/_authors.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_authors.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
 	"/sass/layout/_cards.scss": {
 		"aP": 1,
 		"bl": 1,

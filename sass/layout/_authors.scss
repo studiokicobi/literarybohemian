@@ -1,0 +1,11 @@
+.az-links {
+  @include sans;
+
+  a {
+    color: $dark-hot;
+
+    @include on-event {
+      color: black;
+    }
+  }
+}
