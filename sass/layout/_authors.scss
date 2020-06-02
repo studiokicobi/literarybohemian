@@ -33,7 +33,7 @@
 
 // Back to top link
 .letter-section div.back-to-top a::before {
-  content: "\f342";
+  content: "\f342" !important;
   display: block;
   padding: 0;
 }
@@ -43,7 +43,7 @@
 }
 
 .letter-section div.back-to-top a {
-  text-transform: none;
+  text-transform: none !important;
   font-size: 0.7em;
   font-style: italic;
 }
