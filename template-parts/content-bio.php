@@ -19,7 +19,7 @@
 	<header class="single-post__header">
 
 		<?php
-		// The title
+		// The author name
 		// --------------------
 		// the_title( '<h1 class="single-post__heading">', '</h1>' );
 
