@@ -127,7 +127,7 @@
   echo '</div>';
   ?>
 
-  <!-- <div class="card__bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/random/<?php echo rand(1,9)?>.jpg');"></div> -->
+  <!-- <div class="card__bg" style="background-image: url('<?php //echo get_template_directory_uri(); ?>/img/random/<?php //echo rand(1,9)?>.jpg');"></div> -->
 
   <?
   endwhile;
