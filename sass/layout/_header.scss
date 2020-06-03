@@ -19,7 +19,6 @@
     "arrow arrow arrow arrow"
     "nav nav nav nav";
   grid-gap: 0;
-  overflow: hidden; // need this if we are scaling the search field on hover
 
   // //IE grid fix
   // @media all and (-ms-high-contrast: none) {
@@ -183,7 +182,7 @@
     display: block;
     float: left;
     position: relative;
-    background-position: left 50%;
+    background-position: left calc(50% - 0.25rem);
     background-repeat: no-repeat;
     margin-right: 1.5rem;
 
