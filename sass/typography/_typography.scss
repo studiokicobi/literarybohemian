@@ -37,6 +37,10 @@ b {
   font-style: normal;
 }
 
+p {
+  max-width: 55ch;
+}
+
 // Sans = Sofia Pro Semi Bold
 @mixin sans {
   font-family: sofia-pro, sans-serif;
