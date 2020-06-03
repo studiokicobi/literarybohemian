@@ -2,9 +2,13 @@ main article {
   min-height: 30rem;
 }
 
-.search main article,
+.search main article {
+  min-height: auto;
+}
+
 .archive article {
   min-height: auto;
+  margin-bottom: 4rem;
 }
 
 .sticky {
