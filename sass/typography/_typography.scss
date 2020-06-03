@@ -100,8 +100,8 @@ b {
   margin-bottom: 10rem;
 }
 
-.ajax-load-more {
-  p {
-    max-width: 55ch;
-  }
+.alm-listing .alm-paging-content > li p,
+.alm-listing .alm-reveal > li p,
+.alm-listing > li p {
+  max-width: 55ch;
 }
