@@ -94,7 +94,7 @@
   // The metadata section
   // --------------------
   echo '<ul class="meta home-feature__meta">';
-  echo '<li class="meta__item meta__item--border icon icon-broadcast-home">The Latest</li>';
+  echo '<li class="meta__item meta__item--border icon icon-broadcast-home">' . the_date() . '</li>';
   echo '<li class="meta__item ' . $cpt_class . '">' . $journal_cpt . '</li>';
   echo '</ul>';
 
