@@ -49,14 +49,6 @@
 		"oAP": "/category.php",
 		"oF": 0
 		},
-	"/comments.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/comments.php",
-		"oF": 0
-		},
 	"/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1234,22 +1226,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/page-issues.php",
-		"oF": 0
-		},
-	"/page-poetry.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-poetry.php",
-		"oF": 0
-		},
-	"/page-prose.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-prose.php",
 		"oF": 0
 		},
 	"/page.php": {
