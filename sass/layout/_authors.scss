@@ -22,6 +22,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   max-width: 53ch;
+  @include sans;
 }
 .az-letters > ul.az-links > li,
 .a-z-listing-widget .az-letters > ul.az-links > li,
