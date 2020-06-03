@@ -145,6 +145,6 @@ wp_reset_query();
 
   </ul>
 
-  <p class="read-more"><em>Read more</em> <a href="" class="">Poetry</a> <em>or</em> <a href="" class="">Postcard Prose</a></p>
+  <p class="read-more"><em>Read more</em> <a href="<?php echo site_url( '/poetry/', 'https' ); ?>" class="">Poetry</a> <em>or</em> <a href="<?php echo site_url( '/postcard-prose/', 'https' ); ?>" class="">Postcard Prose</a></p>
 
 </section>
