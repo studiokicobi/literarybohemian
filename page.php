@@ -27,12 +27,12 @@ get_header();
 		endwhile; // End of the loop.
 		?>
 
+		<?php // Cards feature
+			get_template_part( 'template-parts/content', 'cards' );
+		?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-	<?php // Cards feature
-		get_template_part( 'template-parts/content', 'cards' );
-	?>
 
 <?php
 get_footer();
