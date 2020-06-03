@@ -9,6 +9,7 @@
     font-size: calc(0.65rem + 0.333vw);
     margin-bottom: 4rem; // room for the footer landscape image
 
+    .menu-footer-primary-container,
     .menu-primary-container,
     .menu-secondary-container,
     .menu-tertiary-container,
@@ -36,6 +37,7 @@
     }
 
     @media screen and (max-width: 35rem) {
+      .menu-footer-primary-container,
       .menu-primary-container {
         order: 0;
         flex-basis: 50%;
@@ -60,6 +62,7 @@
     }
 
     @media screen and (max-width: 20em) {
+      .menu-footer-primary-container,
       .menu-primary-container {
         order: 0;
       }
