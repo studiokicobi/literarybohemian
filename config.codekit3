@@ -25,20 +25,20 @@
 		"oAP": "/404.php",
 		"oF": 0
 		},
-	"/_archive.php": {
+	"/_archive-postcard-prose.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/_archive.php",
+		"oAP": "/_archive-postcard-prose.php",
 		"oF": 0
 		},
-	"/archive-postcard-prose.php": {
+	"/archive.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/archive-postcard-prose.php",
+		"oAP": "/archive.php",
 		"oF": 0
 		},
 	"/category.php": {
