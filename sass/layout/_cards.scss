@@ -172,7 +172,7 @@ $half-spacing-unit: $base-spacing-unit / 2;
 
 body.home,
 body.single,
-* {
+body.page {
   .card {
     transition: all ease-in 0.15s;
     position: relative;
