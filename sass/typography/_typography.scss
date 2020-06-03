@@ -105,3 +105,8 @@ b {
 .alm-listing > li p {
   max-width: 55ch;
 }
+
+.archive-result-category {
+  @include sans;
+  font-size: 50%;
+}
