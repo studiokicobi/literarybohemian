@@ -22,7 +22,7 @@
 		<div class="site-info">
 
 				<!-- Footer navigation & copyright -->
-				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_class'      => 'footer-menu' ) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'menu-0', 'menu_class'      => 'footer-menu' ) ); ?>
 				<?php wp_nav_menu( array( 'theme_location' => 'menu-2', 'menu_class'      => 'footer-menu' ) ); ?>
 				<?php wp_nav_menu( array( 'theme_location' => 'menu-3', 'menu_class'      => 'footer-menu' ) ); ?>
 				<?php wp_nav_menu( array( 'theme_location' => 'menu-4', 'menu_class'      => 'footer-menu' ) ); ?>
