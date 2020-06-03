@@ -1,6 +1,11 @@
 main article {
   min-height: 30rem;
 }
+
+.search main article {
+  min-height: auto;
+}
+
 .sticky {
   display: block;
 }
