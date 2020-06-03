@@ -1228,12 +1228,12 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"/page-journal.php": {
+	"/page-issues.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-journal.php",
+		"oAP": "/page-issues.php",
 		"oF": 0
 		},
 	"/page-poetry.php": {
