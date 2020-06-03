@@ -9,16 +9,8 @@ get_header();
 ?>
 
 <?php
-  // List the issues
+  // List the issues (categories)
 ?>
-
-<style media="screen">
-  .issues-list {
-    column-count: 3;
-    column-gap: 2rem;
-    margin-bottom: 10rem;
-  }
-</style>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
