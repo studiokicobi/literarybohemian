@@ -112,3 +112,13 @@ b {
   margin-left: 1.5rem;
   color: $dark-warm-brown;
 }
+
+.archive-result-title {
+  margin-left: 1.5rem;
+
+  span {
+    // same as .latest-list-author, need to consolidate styles
+    color: #92776d;
+    opacity: 80%;
+  }
+}
