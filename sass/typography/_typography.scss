@@ -108,5 +108,7 @@ b {
 
 .archive-result-category {
   @include sans;
-  font-size: 50%;
+  font-size: 70%;
+  margin-left: 1.5rem;
+  color: $dark-warm-brown;
 }
