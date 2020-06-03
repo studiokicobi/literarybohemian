@@ -172,88 +172,89 @@ $half-spacing-unit: $base-spacing-unit / 2;
 
 // The following was originally only for home. Need to clean up these styles.
 
-// body.home,
-// body.single,
-// body.page {
-.card {
-  transition: all ease-in 0.15s;
-  position: relative;
+body.home,
+body.single,
+body.page {
+  .card {
+    transition: all ease-in 0.15s;
+    position: relative;
 
-  @include on-event {
-    transition: all 0.3s;
-    cursor: pointer;
-    background-color: white;
-
-    .card__meta {
-      background-color: $dark-warm-brown;
-      // background-color: $dark-hot;
+    @include on-event {
       transition: all 0.3s;
+      cursor: pointer;
+      background-color: white;
+
+      .card__meta {
+        background-color: $dark-warm-brown;
+        // background-color: $dark-hot;
+        transition: all 0.3s;
+      }
+      a {
+        // Keep the title links from changing color
+        color: inherit;
+      }
     }
-    a {
-      // Keep the title links from changing color
-      color: inherit;
-    }
-  }
 
-  &__meta {
-    @include sans;
-    margin: 0;
-    padding: calc(1.5rem + #{$scale-value}) calc(2rem + #{$scale-value})
-      calc(1.5rem + #{$scale-value}) calc(4.2rem + #{$scale-value});
-    // background-color: $orange-1;
-    // background-color: $dark-warm-brown;
-    background-color: $dark-hot;
-    color: white;
-    font-size: calc(45% + #{$scale-value});
-    text-transform: uppercase;
-    transition: all 0.15s;
-  }
-
-  &__body {
-    // padding: 0 calc(2rem + #{$scale-value}) 15vw calc(2rem + #{$scale-value});
-    padding: 0 calc(2rem + #{$scale-value}) 9rem calc(2rem + #{$scale-value});
-
-    @media screen and (max-width: 55rem) {
-      padding-bottom: 33vw;
-    }
-  }
-
-  &__title {
-    @include sans;
-    margin: calc(1.5rem + #{$scale-value}) 0 calc(0.25rem + #{$scale-value}) 0;
-    font-size: 125%;
-
-    a {
-      font-weight: 400;
+    &__meta {
+      @include sans;
       margin: 0;
-      font-size: calc(100% + #{$scale-value});
-      color: black;
+      padding: calc(1.5rem + #{$scale-value}) calc(2rem + #{$scale-value})
+        calc(1.5rem + #{$scale-value}) calc(4.2rem + #{$scale-value});
+      // background-color: $orange-1;
+      // background-color: $dark-warm-brown;
+      background-color: $dark-hot;
+      color: white;
+      font-size: calc(45% + #{$scale-value});
+      text-transform: uppercase;
+      transition: all 0.15s;
     }
-  }
 
-  &__author {
-    font-size: calc(70% + 0.333vw);
-    color: $warm-brown-3;
-    font-weight: 400;
-    margin: 0 0 1rem 0;
-    opacity: 85%;
-  }
+    &__body {
+      // padding: 0 calc(2rem + #{$scale-value}) 15vw calc(2rem + #{$scale-value});
+      padding: 0 calc(2rem + #{$scale-value}) 9rem calc(2rem + #{$scale-value});
 
-  &__excerpt {
-    max-width: 40rem;
-    font-size: calc(80% + #{$scale-value});
-  }
+      @media screen and (max-width: 55rem) {
+        padding-bottom: 33vw;
+      }
+    }
 
-  &__divider {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: flex-end;
-    margin: calc(13vh + #{$scale-value}) 10vw calc(13vh + #{$scale-value}) 0;
+    &__title {
+      @include sans;
+      margin: calc(1.5rem + #{$scale-value}) 0 calc(0.25rem + #{$scale-value}) 0;
+      font-size: 125%;
 
-    img {
-      max-height: calc(6vw + #{$scale-value});
-      min-height: 100px;
+      a {
+        font-weight: 400;
+        margin: 0;
+        font-size: calc(100% + #{$scale-value});
+        color: black;
+      }
+    }
+
+    &__author {
+      font-size: calc(70% + 0.333vw);
+      color: $warm-brown-3;
+      font-weight: 400;
+      margin: 0 0 1rem 0;
+      opacity: 85%;
+    }
+
+    &__excerpt {
+      max-width: 40rem;
+      font-size: calc(80% + #{$scale-value});
+    }
+
+    &__divider {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-content: flex-end;
+      margin: calc(13vh + #{$scale-value}) 10vw calc(13vh + #{$scale-value}) 0;
+
+      img {
+        max-height: calc(6vw + #{$scale-value});
+        min-height: 100px;
+      }
     }
   }
 
