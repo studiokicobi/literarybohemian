@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying archive pages
  *
@@ -10,31 +11,36 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div id="primary" class="content-area">
+	<main id="main" class="site-main">
 
-			<?php
-			// get the URL segments
-			$uriSegments = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
+		<?php
 
-			// Check the first URL segment and load the Ajax Load More shortcode
+		// Get the URL segments
+		$uriSegments = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 
-			if ( $uriSegments[1] == 'poetry' ) {
+		// Set the custom post type according to the URL segment
+		if ($uriSegments[1] == 'poetry') {
+			$cpt = 'poetry';
+		} elseif ($uriSegments[1] == 'postcard-prose') {
+			$cpt = 'postcard_prose';
+		} elseif ($uriSegments[1] == 'travel-notes') {
+			$cpt = 'travel-notes';
+		} elseif ($uriSegments[1] == 'book-reviews') {
+			$cpt = 'book-reviews';
+		} elseif ($uriSegments[1] == 'interviews') {
+			$cpt = 'interviews';
+		} else {
+			// nada
+		}
 
-				// echo do_shortcode('[ajax_load_more id="4985713627" loading_style="infinite fading-circles" container_type="ul" post_type="poetry" posts_per_page="6" button_label="More"]');
+		// Load the Ajax Load More shortcode
+		echo do_shortcode('[ajax_load_more loading_style="infinite fading-circles" post_type="poetry" scroll_distance="-200" progress_bar="true" progress_bar_color="cd2c00" button_label="More Poetry" no_results_text="&lt;p&gt;That’s all we have for now.&lt;/p&gt;"]');
 
-			} elseif ( $uriSegments[1] == 'postcard-prose' ) {
+		?>
 
-			} elseif ( $uriSegments[1] == 'travel-notes' ) {
-
-			} else ( $uriSegments[1] == 'book-reviews' ) {
-
-			}
-			?>
-
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php
 get_footer();
