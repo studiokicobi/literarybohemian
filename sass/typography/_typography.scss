@@ -113,12 +113,11 @@ b {
   color: $dark-warm-brown;
 }
 
-.entry-title.archive-result-title {
+.archive-result-title {
   margin: 0 0 1rem 1.5rem;
-
-  span {
-    // same as .latest-list-author, need to consolidate styles
-    color: #92776d;
-    opacity: 80%;
-  }
+}
+.archive-result-title-span {
+  // same as .latest-list-author, need to consolidate styles
+  color: #92776d;
+  opacity: 80%;
 }
