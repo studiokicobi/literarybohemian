@@ -9,7 +9,6 @@ textarea {
   font-weight: 400;
   font-style: normal;
   font-size: calc(1rem + #{$scale-value});
-  // @include font-size(1);
   line-height: $font__line-height-body;
 }
 
@@ -102,7 +101,8 @@ b {
 
 .alm-listing .alm-paging-content > li p,
 .alm-listing .alm-reveal > li p,
-.alm-listing > li p {
+.alm-listing > li p,
+.alm-listing > p {
   max-width: 55ch;
 }
 
@@ -119,6 +119,6 @@ b {
 
 .archive-result-title-span {
   // same as .latest-list-author, need to consolidate styles
-  color: #92776d;
+  color: $warm-brown-3;
   opacity: 80%;
 }
