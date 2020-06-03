@@ -43,7 +43,7 @@ get_header();
 		echo '<h1>' . $heading . '</h1>';
 
 		// Load the Ajax Load More shortcode
-		echo do_shortcode('[ajax_load_more loading_style="infinite fading-circles" post_type="poetry" scroll_distance="-200" progress_bar="true" progress_bar_color="cd2c00" button_label="More Poetry" no_results_text="&lt;p&gt;That’s all we have for now.&lt;/p&gt;"]');
+		echo do_shortcode('[ajax_load_more loading_style="infinite fading-circles" post_type="' . $cpt . '" scroll_distance="-200" progress_bar="true" progress_bar_color="cd2c00" button_label="More Poetry" no_results_text="&lt;p&gt;That’s all we have for now.&lt;/p&gt;"]');
 
 		?>
 
