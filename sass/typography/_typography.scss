@@ -93,3 +93,15 @@ b {
 // font-family: grad, serif;
 // font-weight: 700;
 // font-style: normal;
+
+.issues-list {
+  column-count: 3;
+  column-gap: 2rem;
+  margin-bottom: 10rem;
+}
+
+.ajax-load-more {
+  p {
+    max-width: 55ch;
+  }
+}
