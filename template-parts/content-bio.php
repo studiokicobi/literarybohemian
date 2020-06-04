@@ -22,16 +22,6 @@
 		<?php
 		// The author name
 		// --------------------
-		// the_title( '<h1 class="single-post__heading">', '</h1>' );
-
-		// if( get_field('first_names') ) {
-		// 	$first_names = get_field('first_names');
-		// 	echo '<h1 class="single-post__heading">' . $first_names . ' ';
-		// 	if( get_field('last_name') ) {
-		// 		echo get_field('last_name');
-		// 	}
-		// 	echo '</h1>';
-		// }
 
 		// Get the title name which is in the format Last name, First names – always with the comma delineator
 		$title_name = get_the_title();

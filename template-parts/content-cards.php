@@ -20,7 +20,6 @@ wp_reset_query();
 
   // The latest post from The Journal
 
-
     if (is_home()) {
         query_posts(array(
           'post_type' => array('poetry', 'postcard_prose', 'travel_notes',),
@@ -77,18 +76,8 @@ wp_reset_query();
 
   // Get the author name
   $name = get_field('name');
-    
-  // if ( have_rows( 'index_name' ) ) :
-  //   while ( have_rows( 'index_name' ) ) : the_row();
-  //   if(get_sub_field('last_name')) {
-  //     $name = get_sub_field( 'first_names' ) . ' ';
-  //     $name .= get_sub_field( 'last_name' );
-  //   }
-  //   endwhile;
-  // endif;
 
   // Print the custom post type and category
-  // echo '<strong class="card__meta">' . $post_categories . ' · ' . $journal_cpt . '</strong>';
   echo '<strong class="card__meta ' . $cpt_class . '">' . $journal_cpt . '</strong>';
 
   // Card body wrapper

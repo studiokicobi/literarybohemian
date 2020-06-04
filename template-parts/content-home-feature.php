@@ -52,20 +52,10 @@
   // Get the author name
   $name = get_field('name');
 
-  // if ( have_rows( 'index_name' ) ) :
-  // 	while ( have_rows( 'index_name' ) ) : the_row();
-  //   if(get_sub_field('last_name')) {
-  //     $name = get_sub_field( 'first_names' ) . ' ';
-  //     $name .= get_sub_field( 'last_name' );
-  //   }
-  //   endwhile;
-  // endif;
-
   echo '<div class="home-feature">';
 
   // The title
   // --------------------
-  // the_title( sprintf( '<h2 class="home-feature__title"><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' );
   the_title( '<h2 class="home-feature__title">', '</h2>' );
 
   // Byline

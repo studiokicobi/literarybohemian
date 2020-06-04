@@ -46,15 +46,6 @@ if (is_home()) {
   // Get the author name
   $name = get_field('name');
 
-  // if ( have_rows( 'index_name' ) ) :
-  // 	while ( have_rows( 'index_name' ) ) : the_row();
-  //   if(get_sub_field('last_name')) {
-  //     $name = get_sub_field( 'first_names' ) . ' ';
-  //     $name .= get_sub_field( 'last_name' );
-  //   }
-  //   endwhile;
-  // endif;
-
   // Check if this is a Poetry post type
 
   if ( get_post_type( get_the_ID() ) == 'poetry' ) {
