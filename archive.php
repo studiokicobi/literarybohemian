@@ -27,7 +27,7 @@ get_header();
 			$cpt = 'postcard_prose';
 			$heading = 'Postcard Prose';
 		} elseif ($uriSegments[1] == 'travel-notes') {
-			$cpt = 'travel-notes';
+			$cpt = 'travel_notes';
 			$heading = 'Travel Notes';
 		} elseif ($uriSegments[1] == 'book-reviews') {
 			$cpt = 'book-reviews';
