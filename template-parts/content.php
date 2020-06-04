@@ -74,7 +74,7 @@
 			$cpt_class = 'icon-postcard-home';
 			$uri_segment = 'postcard-prose';
 		} elseif (is_singular('travel_notes')) {
-			$cpt = 'Travelogue';
+			$cpt = 'Travel Notes';
 			$cpt_class = 'icon-travel-home';
 			$uri_segment = 'travel-notes';
 		}
