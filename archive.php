@@ -30,7 +30,7 @@ get_header();
 			$cpt = 'travel_notes';
 			$heading = 'Travel Notes';
 		} elseif ($uriSegments[1] == 'book-reviews') {
-			$cpt = 'book-reviews';
+			$cpt = 'book_reviews';
 			$heading = 'Book Reviews';
 		} elseif ($uriSegments[1] == 'interviews') {
 			$cpt = 'interviews';
