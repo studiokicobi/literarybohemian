@@ -55,7 +55,7 @@ if (sizeOf($cats) > 0) {
 
 			// Issue contents
 			echo '<div class="archived-issue__issue-content highlight-box">';
-			echo '<h2 class="archived-issue__issue-content--heading">' . $post_categories . '</h2>';
+			echo '<h2 class="archived-issue__issue-content--heading">X' . $post_categories . '</h2>';
 			echo '<h3 class="archived-issue__issue-content--heading-2">Table of contents</h3>';
 			echo '<ul class="archived-issue__issue-content--list">';
 
