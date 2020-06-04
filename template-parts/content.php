@@ -68,19 +68,19 @@
 		if (is_singular('poetry')) {
 			$cpt = 'Poetry';
 			$cpt_class = 'icon-poetry-home';
-			$uri_segment = 'poetry';
+			$link = '<a href="' . get_site_url() . '/poetry">' . $cpt . '</a>';
 		} elseif (is_singular('postcard_prose')) {
 			$cpt = 'Postcard Prose';
 			$cpt_class = 'icon-postcard-home';
-			$uri_segment = 'postcard-prose';
+			$link = '<a href="' . get_site_url() . '/postcard-prose">' . $cpt . '</a>';
 		} elseif (is_singular('travel_notes')) {
 			$cpt = 'Travel Notes';
 			$cpt_class = 'icon-travel-home';
-			$uri_segment = 'travel-notes';
+			$link = $cpt;
 		}
 
 		if (is_singular(array('poetry', 'postcard_prose', 'travel_notes'))) {
-			echo '<li class="meta__item meta__item--border ' . $cpt_class . '"><a href="' . get_site_url() . '/' . $uri_segment . '">' . $cpt . '</a></li>';
+			echo '<li class="meta__item meta__item--border ' . $cpt_class . '">' . $link . '</li>';
 		}
 
 		// Meta: Category & tags
