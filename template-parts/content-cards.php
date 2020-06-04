@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template part for displaying the latest Journal posts (small cards)
  * *
@@ -16,9 +17,10 @@ wp_reset_query();
 <section id="features-small" class="cards">
   <ul>
 
-<?
+    <?
 
   // The latest post from The Journal
+
 
     if (is_home()) {
         query_posts(array(
@@ -27,7 +29,7 @@ wp_reset_query();
           'orderby' => 'publish_date',
           'order' => 'DESC',
           'showposts' => 6,
-          'offset' => 1
+          'offset' => 5
       ) );
 
     } else {
@@ -120,9 +122,9 @@ wp_reset_query();
   echo '</div>';
   ?>
 
-  <div class="card__bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/random/<?php echo rand(1,9)?>.jpg');"></div>
+    <div class="card__bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/random/<?php echo rand(1, 9) ?>.jpg');"></div>
 
-  <?
+    <?
 
   echo '</li>';
 
@@ -135,6 +137,6 @@ wp_reset_query();
 
   </ul>
 
-  <p class="read-more"><em>Read more</em> <a href="<?php echo site_url( '/poetry/', 'https' ); ?>" class="">Poetry</a> <em>or</em> <a href="<?php echo site_url( '/postcard-prose/', 'https' ); ?>" class="">Postcard Prose</a></p>
+  <p class="read-more"><em>Read more</em> <a href="<?php echo site_url('/poetry/', 'https'); ?>" class="">Poetry</a> <em>or</em> <a href="<?php echo site_url('/postcard-prose/', 'https'); ?>" class="">Postcard Prose</a></p>
 
 </section>
