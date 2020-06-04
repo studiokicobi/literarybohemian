@@ -14,7 +14,7 @@
           'orderby' => 'publish_date',
           'order' => 'DESC',
           'showposts' => 5,
-          'offset' => 1
+          'offset' => 2
       ) );
 
       while (have_posts()) : the_post();
