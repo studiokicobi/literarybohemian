@@ -56,15 +56,16 @@
       }
 
       // Get the author name
-      // Use $name below to print the author's name.
-      if ( have_rows( 'index_name' ) ) :
-        while ( have_rows( 'index_name' ) ) : the_row();
-        if(get_sub_field('last_name')) {
-          $name = get_sub_field( 'first_names' ) . ' ';
-          $name .= get_sub_field( 'last_name' );
-        }
-        endwhile;
-      endif;
+      $name = get_field('name');
+
+      // if ( have_rows( 'index_name' ) ) :
+      //   while ( have_rows( 'index_name' ) ) : the_row();
+      //   if(get_sub_field('last_name')) {
+      //     $name = get_sub_field( 'first_names' ) . ' ';
+      //     $name .= get_sub_field( 'last_name' );
+      //   }
+      //   endwhile;
+      // endif;
 
       // Print the custom post type and icon class
       echo '<li class="latest-list__item">';

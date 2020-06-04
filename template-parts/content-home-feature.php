@@ -50,14 +50,16 @@
   }
 
   // Get the author name
-  if ( have_rows( 'index_name' ) ) :
-  	while ( have_rows( 'index_name' ) ) : the_row();
-    if(get_sub_field('last_name')) {
-      $name = get_sub_field( 'first_names' ) . ' ';
-      $name .= get_sub_field( 'last_name' );
-    }
-    endwhile;
-  endif;
+  $name = get_field('name');
+
+  // if ( have_rows( 'index_name' ) ) :
+  // 	while ( have_rows( 'index_name' ) ) : the_row();
+  //   if(get_sub_field('last_name')) {
+  //     $name = get_sub_field( 'first_names' ) . ' ';
+  //     $name .= get_sub_field( 'last_name' );
+  //   }
+  //   endwhile;
+  // endif;
 
   echo '<div class="home-feature">';
 
@@ -94,7 +96,7 @@
   // The metadata section
   // --------------------
   echo '<ul class="meta home-feature__meta">';
-  echo '<li class="meta__item meta__item--border icon icon-broadcast-home">' . echo get_the_date(j M Y) . '</li>';
+  echo '<li class="meta__item meta__item--border icon icon-broadcast-home">' . get_the_date() . '</li>';
   echo '<li class="meta__item ' . $cpt_class . '">' . $journal_cpt . '</li>';
   echo '</ul>';
 

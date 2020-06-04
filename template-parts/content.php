@@ -30,15 +30,16 @@
 		// --------------------
 
 		// Get the author name
-	  // Use $name below to print the author's name.
-	  if ( have_rows( 'index_name' ) ) :
-	  	while ( have_rows( 'index_name' ) ) : the_row();
-	    if(get_sub_field('last_name')) {
-	      $name = get_sub_field( 'first_names' ) . ' ';
-	      $name .= get_sub_field( 'last_name' );
-	    }
-	    endwhile;
-	  endif;
+		$name = get_field('name');
+
+	  // if ( have_rows( 'index_name' ) ) :
+	  // 	while ( have_rows( 'index_name' ) ) : the_row();
+	  //   if(get_sub_field('last_name')) {
+	  //     $name = get_sub_field( 'first_names' ) . ' ';
+	  //     $name .= get_sub_field( 'last_name' );
+	  //   }
+	  //   endwhile;
+	  // endif;
 
 		// If this is a Journal post:
 		if ( is_singular( array( 'poetry', 'postcard_prose', 'travel_notes' ) ) ) {
