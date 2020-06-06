@@ -263,6 +263,8 @@
 				$args_t = array('category' => $category_id, 'post_type' => 'travel_notes', 'numberposts' => '100',);
 				$postslist_t = get_posts($args_t);
 
+				// Issue Introduction
+				echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . $category_link . '">About this issue</a></li>';
 
 				// Poetry section
 				if ($postslist_p) {
