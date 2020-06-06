@@ -30,7 +30,7 @@ if (sizeOf($cats) > 0) {
 			<?php
 			if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-				if ( get_post_type( get_the_ID() ) == 'logbook' ) {
+				if ( get_post_type( get_the_ID() ) == 'issue_introductions' ) {
 					?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class('archived-issue__intro'); ?>>
