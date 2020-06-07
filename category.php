@@ -42,6 +42,12 @@ $cat_slug = $cat->slug;
 							<?php
 							// Because cpt = logbook, this is the issue intro. No permalink.
 							the_title('<h1 class="single-post__heading">', '</h1>');
+							// The metadata section
+							// --------------------
+							echo '<ul class="meta">';
+							echo '<li class="meta__item">Issue introduction</li>';
+							echo '</ul>'; // close meta
+
 							?>
 						</header><!-- .entry-header -->
 
