@@ -82,7 +82,7 @@
             // We have multiple poems; do nothing.
             else :
               // This is a single poem; get the author name.
-              echo 'By ' . $name;
+              echo 'by ' . $name;
             endif;
           endwhile;
         endif;
@@ -90,21 +90,21 @@
 
       // Postcard Prose
       elseif ( get_post_type( get_the_ID() ) == 'postcard_prose' ) {
-        echo 'By ' . $name;
+        echo 'by ' . $name;
 
       // Travel Notes
       } elseif ( get_post_type( get_the_ID() ) == 'travel_notes' ) {
-        echo 'By ' . $name;
+        echo 'by ' . $name;
 
       // Book Review
       } elseif ( get_post_type( get_the_ID() ) == 'book_reviews' ) {
         if ( get_field( 'author_of_the_book_review' )) {
-          echo 'By ' . get_field( 'author_of_the_book_review' );
+          echo 'by ' . get_field( 'author_of_the_book_review' );
         }
 
       // Logbook
       } else {
-          echo 'By ' . get_the_author_meta( 'first_name' ) . ' ' . get_the_author_meta( 'last_name' );
+          echo 'by ' . get_the_author_meta( 'first_name' ) . ' ' . get_the_author_meta( 'last_name' );
       }
 
       echo '</span></li>';

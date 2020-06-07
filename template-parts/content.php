@@ -279,7 +279,7 @@
 							echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
 						else :
 							$p_name = get_field('name');
-							echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a> <span class="inline-byline">By ' . $p_name . '</span></li>';
+							echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a> <span class="inline-byline">by ' . $p_name . '</span></li>';
 						endif;
 
 					endforeach;
@@ -295,7 +295,7 @@
 					foreach ($postslist_pp as $post) :  setup_postdata($post);
 						// Get the author name
 						$pp_name = get_field('name');
-						echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a> <span class="inline-byline">By ' . $pp_name . '</span></li>';
+						echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a> <span class="inline-byline">by ' . $pp_name . '</span></li>';
 					endforeach;
 					echo '</ul>';
 					echo '</li>';
@@ -309,7 +309,7 @@
 					foreach ($postslist_t as $post) :  setup_postdata($post);
 						// Get the author name
 						$t_name = get_field('name');
-						echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a> <span class="inline-byline">By ' . $t_name . '</span></li>';
+						echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a> <span class="inline-byline">by ' . $t_name . '</span></li>';
 					endforeach;
 					echo '</ul>';
 					echo '</li>';
