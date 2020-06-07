@@ -63,7 +63,7 @@ p {
     padding: 0 0.01ch;
     float: left;
     font-size: calc(1000% + #{$scale-value});
-    line-height: 2ch;
+    line-height: 0;
     @include sans-black;
   }
 }
