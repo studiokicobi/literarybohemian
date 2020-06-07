@@ -264,7 +264,7 @@
 				$postslist_t = get_posts($args_t);
 
 				// Issue Introduction
-				echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . $category_link . '"><em>Introduction</em></a></li>';
+				echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . $category_link . '"><em>From the editors</em></a></li>';
 
 				// Poetry section
 				if ($postslist_p) {

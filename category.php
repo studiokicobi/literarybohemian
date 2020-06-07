@@ -45,7 +45,7 @@ $cat_slug = $cat->slug;
 							// The metadata section
 							// --------------------
 							echo '<ul class="meta">';
-							echo '<li class="meta__item">Issue introduction</li>';
+							echo '<li class="meta__item">From the editors</li>';
 							echo '</ul>'; // close meta
 
 							?>
