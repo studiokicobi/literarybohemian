@@ -401,7 +401,7 @@ body.page {
 
 .map-border {
   color: white;
-  height: 16rem;
+  height: 18rem;
   width: 100vw;
   margin-top: 4rem;
   background-image: url("img/map-bg@2x.jpg");
@@ -410,8 +410,8 @@ body.page {
   background-blend-mode: color-burn;
   background-color: #6a4f44;
   position: relative;
-  border-bottom: 0.4rem solid rgb(71, 41, 15);
-  border-bottom: 0.4rem solid rgb(71, 41, 15);
+  border-top: 0.4rem solid #47290f;
+  border-bottom: 1rem solid #a19185;
 
   &::before {
     top: -2.4rem;
