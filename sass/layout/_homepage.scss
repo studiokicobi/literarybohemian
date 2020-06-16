@@ -87,7 +87,7 @@
     // padding-top: 10rem;
 
     @media screen and (max-width: 899px) {
-      margin-right: calc(1rem + #{$scale-value});
+      margin-left: calc(1rem + #{$scale-value});
     }
   }
 }
