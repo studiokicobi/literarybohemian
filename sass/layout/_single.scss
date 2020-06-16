@@ -1,8 +1,6 @@
 // Single template
 // ----------------------------------------------------------------------------
 
-$meta-dark: darken($color__background-body, 3);
-
 .single-post {
   //random image is absolute
   position: relative;
@@ -78,6 +76,7 @@ $meta-dark: darken($color__background-body, 3);
 // Meta
 // ----------------------------------------------------------------------------
 $meta-dim: 0.75rem;
+$meta-dark: darken($color__background-body, 3);
 
 .meta {
   border-top: 1px solid $border-grey;

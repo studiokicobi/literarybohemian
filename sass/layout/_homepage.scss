@@ -204,4 +204,44 @@
     display: inline-block;
     // padding-bottom: 1.1rem !important;
   }
+
+  // Meta
+  // ----------------------------------------------------------------------------
+  $meta-dim: 0.75rem;
+
+  .meta {
+    border-top: 1px solid $border-grey;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    @include sans;
+    font-size: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    @media (max-width: #{$responsive-switch}) {
+      background-color: transparent;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 900px) {
+      width: auto;
+    }
+
+    &__item {
+      text-transform: uppercase;
+      padding-top: 0.2rem;
+
+      @media (max-width: #{$responsive-switch}) {
+        padding-left: auto;
+      }
+
+      &--border {
+        padding-right: $meta-dim;
+        margin-right: calc(#{$meta-dim} - 1px);
+        border-right: 1px solid $border-grey;
+      }
+    }
+  }
 }
