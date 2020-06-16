@@ -103,9 +103,9 @@ $meta-dark: darken($color__background-body, 3);
     text-transform: uppercase;
     padding-top: 0.2rem;
 
-    @media (max-width: #{$responsive-switch}) {
-      padding-left: $meta-dim;
-    }
+    // @media (max-width: #{$responsive-switch}) {
+    //   padding-left: $meta-dim;
+    // }
 
     &--border {
       padding-right: $meta-dim;

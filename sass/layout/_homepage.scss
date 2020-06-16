@@ -10,6 +10,11 @@
   background-size: 1.2rem;
   margin-left: 0.2rem;
   padding-left: 1.5rem;
+
+  @media screen and (max-width: 800px) {
+    padding-left: 0;
+    background: none;
+  }
 }
 
 .icon-broadcast-bio {
@@ -25,7 +30,13 @@
   background-size: 1.7rem;
   margin-left: 0;
   padding-left: 2.1rem;
+
+  @media screen and (max-width: 800px) {
+    padding-left: 0;
+    background: none;
+  }
 }
+
 .icon-postcard-home,
 .icon-postcard_prose {
   background-image: url("img/icon-postcard.svg");
@@ -33,7 +44,13 @@
   background-repeat: no-repeat;
   background-size: 1.5rem;
   padding-left: 1.9rem;
+
+  @media screen and (max-width: 800px) {
+    padding-left: 0;
+    background: none;
+  }
 }
+
 .icon-travel-home,
 .icon-travel_notes {
   background-image: url("img/icon-travel.svg");
@@ -42,6 +59,11 @@
   background-size: 1.3rem;
   margin-left: 0.1rem;
   padding-left: 1.8rem;
+
+  @media screen and (max-width: 800px) {
+    padding-left: 0;
+    background: none;
+  }
 }
 
 // Bio icon
