@@ -1,6 +1,10 @@
 .newsletter-wrapper {
   position: relative;
-  margin-top: 13vw;
+  margin-top: 10rem;
+
+  @media screen and (max-width: 1000px) {
+    margin-top: 0;
+  }
 
   // Tea label building
   &::before {
@@ -14,9 +18,13 @@
     background-image: url("img/tea-label.svg");
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: 56%;
+    background-size: 50rem;
     background-blend-mode: darken;
     opacity: 0.55;
+
+    @media screen and (max-width: 1000px) {
+      background-size: 30rem;
+    }
 
     // Small screen: hide the bg image so it doesn't conflict with the heading
     @media screen and (max-width: 600px) {
