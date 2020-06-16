@@ -403,33 +403,51 @@ body.page {
   color: white;
   height: 16rem;
   width: 100vw;
-  margin-top: 2rem;
+  margin-top: 4rem;
   background-image: url("img/map-bg@2x.jpg");
   background-size: cover;
   background-position: top;
   background-blend-mode: color-burn;
   background-color: #6a4f44;
+  position: relative;
+  border-bottom: 0.4rem solid rgb(71, 41, 15);
+  border-bottom: 0.4rem solid rgb(71, 41, 15);
 
   &::before {
-    // ziz-zag border
-    top: -90px;
-    background-image: -webkit-gradient(
-      linear,
-      0 0,
-      300% 100%,
-      color-stop(0.25, transparent),
-      color-stop(0.25, #3498db)
-    );
-    background-image: linear-gradient(315deg, #3093d5 25%, transparent 25%),
-      linear-gradient(45deg, #3498db 25%, transparent 25%);
-    background-position: 50%;
+    top: -2.4rem;
+    background: linear-gradient(-45deg, #6a4f44 1.2rem, transparent 0),
+      linear-gradient(45deg, #513f44 1.2rem, transparent 0);
+    background-repeat: repeat-x;
+    background-size: 2rem 2rem;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2rem;
+  }
+
+  &::after {
+    background: linear-gradient(-45deg, #ffffff 16px, transparent 0),
+      linear-gradient(45deg, #ffffff 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
   }
 
   &__heading {
     @include sans;
     font-size: 150%;
     text-align: center;
-    line-height: 16rem;
+    line-height: 10rem;
   }
 }
 
