@@ -410,6 +410,21 @@ body.page {
   background-blend-mode: color-burn;
   background-color: #6a4f44;
 
+  &::before {
+    // ziz-zag border
+    top: -90px;
+    background-image: -webkit-gradient(
+      linear,
+      0 0,
+      300% 100%,
+      color-stop(0.25, transparent),
+      color-stop(0.25, #3498db)
+    );
+    background-image: linear-gradient(315deg, #3093d5 25%, transparent 25%),
+      linear-gradient(45deg, #3498db 25%, transparent 25%);
+    background-position: 50%;
+  }
+
   &__heading {
     @include sans;
     font-size: 150%;
