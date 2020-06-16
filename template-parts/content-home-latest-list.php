@@ -19,7 +19,7 @@
       ) );
 
       // Illustration
-      echo '<img src="' . get_template_directory_uri(). '/img/plane2.jpg" alt="" class="latest__image">';
+      echo '<img src="' . get_stylesheet_directory_uri(). '/img/plane2.jpg" alt="" class="latest__image">';
 
       echo '<ul class="latest-list highlight-box">';
 
