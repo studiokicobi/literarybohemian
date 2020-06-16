@@ -17,9 +17,9 @@
           'offset' => 2
       ) );
 
-      while (have_posts()) : the_post();
-
       echo '<ul class="latest-list highlight-box">';
+
+      while (have_posts()) : the_post();
 
       // Get the category (or categories: this is futureproof)
       // ----------------------------------------------------------------------------
