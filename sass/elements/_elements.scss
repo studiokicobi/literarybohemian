@@ -46,7 +46,7 @@ body {
     padding: 0 $rl-site-margin-small;
   }
   .site-content {
-    padding: 0 $rl-site-margin-small;
+    padding: $rl-site-margin-small;
   }
   .site-info {
     padding: 0 calc(4.5rem + #{$scale-value});
