@@ -19,7 +19,7 @@
 
       while (have_posts()) : the_post();
 
-      echo '<ul class="latest-list">';
+      echo '<ul class="latest-list highlight-box">';
 
       // Get the category (or categories: this is futureproof)
       // ----------------------------------------------------------------------------
