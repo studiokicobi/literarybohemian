@@ -6,6 +6,10 @@
  */
  ?>
 
+
+<img src="<?php get_template_directory_uri()?>/img/plane.jpg" alt="" class="latest__image">
+
+
   <?php
   // The latest post from The Journal
       query_posts(array(
