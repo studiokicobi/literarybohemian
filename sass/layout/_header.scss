@@ -132,8 +132,9 @@
         border: none;
         height: $search-dim;
         width: calc(#{$search-dim} * 2);
-        background: $pale-hot;
+        // background: $pale-hot;
         // background-color: #d7c9be;
+        background-color: #dbd1c8;
         color: rgba(0, 0, 0, 0);
         line-height: $search-dim;
         padding: 0;
