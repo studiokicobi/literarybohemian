@@ -7,9 +7,6 @@
  ?>
 
 
-<img src="<?php get_template_directory_uri()?>/img/plane.jpg" alt="" class="latest__image">
-
-
   <?php
   // The latest post from The Journal
       query_posts(array(
@@ -20,6 +17,9 @@
           'showposts' => 5,
           'offset' => 2
       ) );
+
+      // Illustration
+      echo '<img src="' . get_template_directory_uri(). '/img/plane2.jpg" alt="" class="latest__image">';
 
       echo '<ul class="latest-list highlight-box">';
 
