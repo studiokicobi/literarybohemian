@@ -261,7 +261,7 @@ body.page {
   // Features small styles
   // ----------------------------------------------------------------------------
   #features-small {
-    background: rgb(154, 145, 140);
+    // background: rgb(154, 145, 140);
     background: linear-gradient(
       180deg,
       #d0c8c4 0%,
@@ -410,44 +410,44 @@ body.page {
   background-blend-mode: color-burn;
   background-color: #6a4f44;
   position: relative;
-  border-top: 0.4rem solid #47290f;
   border-bottom: 1rem solid #a19185;
+  box-shadow: 0 0 5rem 0 rgba(0, 0, 0, 0.1);
 
-  &::before {
-    top: -2.4rem;
-    background: linear-gradient(-45deg, #6a4f44 1.2rem, transparent 0),
-      linear-gradient(45deg, #513f44 1.2rem, transparent 0);
-    background-repeat: repeat-x;
-    background-size: 2rem 2rem;
-    content: " ";
-    display: block;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 2rem;
-  }
-
-  &::after {
-    background: linear-gradient(-45deg, #ffffff 16px, transparent 0),
-      linear-gradient(45deg, #ffffff 16px, transparent 0);
-    background-position: left-bottom;
-    background-repeat: repeat-x;
-    background-size: 32px 32px;
-    content: " ";
-    display: block;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 32px;
-  }
+  // &::before {
+  //   top: -2.4rem;
+  //   background: linear-gradient(-45deg, #6a4f44 1.2rem, transparent 0),
+  //     linear-gradient(45deg, #513f44 1.2rem, transparent 0);
+  //   background-repeat: repeat-x;
+  //   background-size: 2rem 2rem;
+  //   content: " ";
+  //   display: block;
+  //   position: absolute;
+  //   bottom: 0px;
+  //   left: 0px;
+  //   width: 100%;
+  //   height: 2rem;
+  // }
+  //
+  // &::after {
+  //   background: linear-gradient(-45deg, #d0c8c4 16px, transparent 0),
+  //     linear-gradient(45deg, #e1d6cc 16px, transparent 0);
+  //   background-position: left-bottom;
+  //   background-repeat: repeat-x;
+  //   background-size: 32px 32px;
+  //   content: " ";
+  //   display: block;
+  //   position: absolute;
+  //   bottom: 0px;
+  //   left: 0px;
+  //   width: 100%;
+  //   height: 32px;
+  // }
 
   &__heading {
     @include sans;
     font-size: 150%;
     text-align: center;
-    line-height: 10rem;
+    line-height: 15rem;
   }
 }
 
