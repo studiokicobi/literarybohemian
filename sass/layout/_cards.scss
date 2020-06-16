@@ -293,6 +293,10 @@ body.page {
     padding: 5rem $rl-site-margin;
     transform: translateX($full-bleed);
 
+    @media screen and (max-width: 600px) {
+      padding-bottom: 0;
+    }
+
     .card {
       background-color: $color__background-body;
 

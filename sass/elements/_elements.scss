@@ -23,9 +23,15 @@ body {
 .site-header {
   padding: 0 $rl-site-margin;
 }
+
 .site-content {
   padding: 0 $rl-site-margin 5rem $rl-site-margin;
+
+  @media screen and (max-width: 1024px) {
+    padding-bottom: 0;
+  }
 }
+
 .site-info {
   padding: 0 calc(4.5rem + #{$scale-value});
 }
