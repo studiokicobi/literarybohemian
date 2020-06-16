@@ -417,6 +417,10 @@ body.page {
   border-bottom: 1rem solid #a19185;
   box-shadow: 0 0 5rem 0 rgba(0, 0, 0, 0.1);
 
+  @media screen and (max-width: 900px) {
+    margin-top: 0;
+  }
+
   // &::before {
   //   top: -2.4rem;
   //   background: linear-gradient(-45deg, #6a4f44 1.2rem, transparent 0),
