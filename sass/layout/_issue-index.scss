@@ -269,3 +269,13 @@ $disc-bg-2: lighten($pale-hot, 10%);
     }
   }
 }
+
+// add margin between content and feature for these pages
+body.archive .site-main,
+body.search-results .site-main {
+  padding-bottom: 12rem;
+
+  @media screen and (max-width: 1024px) {
+    padding-bottom: 0;
+  }
+}
