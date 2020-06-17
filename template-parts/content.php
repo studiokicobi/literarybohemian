@@ -12,8 +12,6 @@
 
 <article class="single-post__article">
 
-	<img class="single-post__random-header" src="<?php echo get_template_directory_uri(); ?>/img/single-random-header/1.png" alt="">
-
 	<?php
 	// Build the header
 	// ----------------------------------------------------------------------------
@@ -156,6 +154,8 @@
 	?>
 
 	<div class="single-post__body">
+
+		<img class="single-post__random-header" src="<?php echo get_template_directory_uri(); ?>/img/single-random-header/1.png" alt="">
 
 		<?php
 		if (is_singular('poetry')) {
