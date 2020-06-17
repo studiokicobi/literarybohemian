@@ -103,6 +103,14 @@ p {
   column-count: 3;
   column-gap: 2rem;
   margin-bottom: 10rem;
+
+  @media screen and (max-width: 1050px) {
+    column-count: 2;
+  }
+
+  @media screen and (max-width: 650px) {
+    column-count: 1;
+  }
 }
 
 .alm-listing .alm-paging-content > li p,
