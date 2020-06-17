@@ -297,6 +297,10 @@ body.page {
       padding-bottom: 0;
     }
 
+    @media screen and (max-width: 500px) {
+      transform: translateX(calc((0.5rem + 0.333vw) * -1));
+    }
+
     .card {
       background-color: $color__background-body;
 
