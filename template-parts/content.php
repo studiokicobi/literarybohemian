@@ -164,7 +164,7 @@
 				while (have_rows('poems')) : the_row();
 					if (have_rows('poem')) :
 						while (have_rows('poem')) : the_row();
-							echo '<div class="poem">';
+							echo '<div class="poem single-post__lead">';
 
 							// Check for multiple poems
 							if (get_field('multiple_poems') == 1) :
@@ -183,7 +183,7 @@
 				endwhile;
 			endif;
 		} elseif (is_singular(array('postcard_prose', 'travel_notes', 'logbook'))) {
-			echo '<div id="dropcap-wrapper">';
+			echo '<div id="dropcap-wrapper" class="single-post__lead">';
 			the_field('text');
 			echo '</div>';
 		} else {
