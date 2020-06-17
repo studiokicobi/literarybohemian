@@ -54,7 +54,7 @@
   &__body {
     flex: 0 0 50%;
     padding-left: 3vw;
-    padding-top: 5em;
+    padding-top: 3em;
     font-size: calc(1rem + (#{$scale-value} * 2));
 
     @media (max-width: #{$responsive-switch}) {
