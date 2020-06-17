@@ -78,6 +78,10 @@ $half-spacing-unit: $base-spacing-unit / 2;
     background-color: #eed2b9;
     filter: grayscale(60%);
     opacity: 0.75;
+
+    @media screen and (max-width: 55rem) {
+      top: calc(100% - 5rem;);
+    }
   }
 
   // Triangular corner + arrow on hover
@@ -214,7 +218,7 @@ body.page {
       padding: 0 calc(2rem + #{$scale-value}) 9rem calc(2rem + #{$scale-value});
 
       @media screen and (max-width: 55rem) {
-        padding-bottom: 33vw;
+        padding-bottom: calc(1rem + 7vw);
       }
     }
 
