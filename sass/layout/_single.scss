@@ -76,7 +76,9 @@
   }
 
   &__lead {
-    margin-top: 13em;
+    @media screen and (min-width: 800px) {
+      margin-top: 13em;
+    }
   }
 }
 
