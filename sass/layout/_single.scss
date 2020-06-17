@@ -34,6 +34,7 @@
 
     @media (max-width: #{$responsive-switch}) {
       flex-direction: column;
+      padding-bottom: 2rem;
     }
   }
 
@@ -191,6 +192,10 @@ $meta-dark: darken($color__background-body, 3);
 .bio-excerpt {
   margin-top: 10rem;
   margin-bottom: 0;
+
+  @media screen and (max-width: 800px) {
+    margin-top: 5rem;
+  }
 
   &__heading {
     @include sans;
