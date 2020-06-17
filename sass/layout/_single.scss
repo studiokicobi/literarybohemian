@@ -77,9 +77,14 @@
 
   &__lead {
     @media screen and (min-width: 800px) {
-      margin-top: 13em;
+      margin-top: 9em;
     }
   }
+}
+
+// If there's a dropcap we need more margin
+#dropcap-wrapper.single-post__lead {
+  margin-top: 13em;
 }
 
 // Meta
