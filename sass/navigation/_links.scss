@@ -81,7 +81,8 @@ a.bio__related-text-item--link,
 .archived-issue__issue-content--list-item a,
 a.archived-issue__issue-content--list-section-item-link,
 a.latest-list__link,
-.read-more a {
+.read-more a,
+.letter-section div.back-to-top a {
   @include link-underline($color__background-body, $dark-hot, $pale-hot);
 
   @include on-event {
