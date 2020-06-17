@@ -73,7 +73,7 @@ $half-spacing-unit: $base-spacing-unit / 2;
     right: 0;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-blend-mode: multiply;
     background-color: #eed2b9;
     filter: grayscale(60%);
