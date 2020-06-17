@@ -54,7 +54,7 @@
   &__body {
     flex: 0 0 50%;
     padding-left: 3vw;
-    padding-top: 3em;
+    padding-top: 12em;
     font-size: calc(1rem + (#{$scale-value} * 2));
 
     @media (max-width: #{$responsive-switch}) {
@@ -77,14 +77,14 @@
 
   &__lead {
     @media screen and (min-width: 800px) {
-      margin-top: 9em;
+      // margin-top: 9em;
     }
   }
 }
 
 // If there's a dropcap we need more margin
 #dropcap-wrapper.single-post__lead {
-  margin-top: 13em;
+  // margin-top: 13em;
 }
 
 // Meta
