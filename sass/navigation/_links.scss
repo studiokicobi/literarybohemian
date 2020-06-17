@@ -89,14 +89,6 @@ a.latest-list__link,
   }
 }
 
-.letter-section div.back-to-top a {
-  @include link-underline($color__background-body, black, $pale-hot);
-
-  @include on-event {
-    color: $dark-hot;
-  }
-}
-
 // No underlines on these elements
 .card a,
 .single_post__meta--taxonomy-tag a,

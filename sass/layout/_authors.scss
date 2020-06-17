@@ -148,6 +148,12 @@
 .letter-section div.back-to-top a {
   font-style: italic;
   font-size: 0.7em;
+  text-decoration: none;
+  color: #222;
+
+  @include on-event {
+    color: $dark-hot;
+  }
 }
 .letter-section div.back-to-top a:before,
 .letter-section div.back-to-top a:after {
