@@ -100,7 +100,7 @@ $half-spacing-unit: $base-spacing-unit / 2;
 
   &::before {
     content: "→"; // TEMP: replace this with svg arrow
-    font-size: 150%;
+    font-size: 130%;
     opacity: 0;
     color: #fff;
     position: absolute;
