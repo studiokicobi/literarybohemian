@@ -13,7 +13,7 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main id="main" class="site-main issues-list-wrapper">
 
       <h1 class="issue-list__heading"><?php the_title(); ?></h1>
 

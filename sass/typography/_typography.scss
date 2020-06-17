@@ -99,17 +99,21 @@ p {
 // font-weight: 700;
 // font-style: normal;
 
-.issues-list {
-  column-count: 3;
-  column-gap: 2rem;
-  margin-bottom: 10rem;
+.issues-list-wrapper {
+  .issues-list {
+    column-count: 3;
+    column-gap: 2rem;
 
-  @media screen and (max-width: 1050px) {
-    column-count: 2;
-  }
+    @media screen and (max-width: 1050px) {
+      column-count: 2;
+    }
 
-  @media screen and (max-width: 650px) {
-    column-count: 1;
+    @media screen and (max-width: 650px) {
+      column-count: 1;
+    }
+    &::after {
+      @include clearfix-after;
+    }
   }
 }
 
