@@ -81,12 +81,19 @@ a.bio__related-text-item--link,
 .archived-issue__issue-content--list-item a,
 a.archived-issue__issue-content--list-section-item-link,
 a.latest-list__link,
-.read-more a,
-.letter-section div.back-to-top a {
+.read-more a {
   @include link-underline($color__background-body, $dark-hot, $pale-hot);
 
   @include on-event {
     color: black;
+  }
+}
+
+.letter-section div.back-to-top a {
+  @include link-underline($color__background-body, black, $pale-hot);
+
+  @include on-event {
+    color: $dark-hot;
   }
 }
 
