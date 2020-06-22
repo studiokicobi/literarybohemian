@@ -132,6 +132,10 @@
     white 6px,
     white
   );
+  // Reduce the gradient size
+  background-size: 20px 20px;
+  // Offset to move the holes to the edge
+  background-position: -10px -10px;
 
   &__item {
     font-size: 90%;
