@@ -110,3 +110,16 @@ figure {
 .fade-img-50 {
   opacity: 50%;
 }
+
+.bg {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-blend-mode: darken;
+  background-color: $color__background-body;
+  width: 100%;
+  height: auto;
+
+  &__contact {
+    background-image: url("img/rooster.jpg");
+  }
+}
