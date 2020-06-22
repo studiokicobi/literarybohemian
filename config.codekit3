@@ -712,6 +712,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/rooster.jpg": {
+		"ft": 16384,
+		"iS": 98159,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/rooster.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/rooster@2x.jpg": {
+		"ft": 16384,
+		"iS": 334544,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/rooster@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/img/single-random-body/1.png": {
 		"ft": 32768,
 		"iS": 185984,
