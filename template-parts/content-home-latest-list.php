@@ -18,8 +18,8 @@
           'offset' => 2
       ) );
 
-      echo '<div class="latest-list-illustration"><img src="' . get_template_directory() . '/img/mountains.svg" /></div>';
-      
+      echo '<div class="latest-list-illustration"><img src="' . get_stylesheet_directory_uri() . '/img/mountains.svg" /></div>';
+
       echo '<ul class="latest-list highlight-box">';
 
       while (have_posts()) : the_post();
