@@ -428,6 +428,26 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/mountains-orig.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/mountains-orig.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/mountains.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/assets/svg/mountains.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/img/plane.jpg": {
 		"ft": 16384,
 		"iS": 23690,
