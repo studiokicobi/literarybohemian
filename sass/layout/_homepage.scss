@@ -127,6 +127,7 @@
 .latest-list.highlight-box {
   background-color: #fbf9f7;
   margin-top: -1rem;
+  box-shadow: 0 0 10rem 0 rgba(0, 0, 0, 0.065);
 }
 
 .latest-list {
@@ -146,7 +147,7 @@
     // }
 
     &:last-child {
-      margin-bottom: 0;
+      // margin-bottom: 0;
       &::after {
         border: 0;
       }
