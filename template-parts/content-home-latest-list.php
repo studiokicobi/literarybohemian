@@ -18,7 +18,7 @@
           'offset' => 2
       ) );
 
-
+      echo '<div class="latest-list-illustration"><img src="' . site_url() . '/img/mountains.svg" /></div>';
       echo '<ul class="latest-list highlight-box">';
 
       while (have_posts()) : the_post();
