@@ -101,12 +101,12 @@
     flex-basis: 50%;
     margin-left: calc(3rem + #{$scale-value});
     margin-right: calc(1rem + #{$scale-value});
-    // background-image: url("img/plane2.jpg");
-    // background-position: center top;
-    // background-repeat: no-repeat;
-    // background-size: contain;
-    // margin-top: 3rem;
-    // padding-top: 10rem;
+    background-image: url("img/plane2.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 3rem;
+    padding-top: 10rem;
 
     @media screen and (max-width: 899px) {
       margin-right: calc(1rem + #{$scale-value});
