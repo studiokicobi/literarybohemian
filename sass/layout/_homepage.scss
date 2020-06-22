@@ -101,10 +101,13 @@
     flex-basis: 50%;
     margin-left: calc(3rem + #{$scale-value});
     margin-right: calc(1rem + #{$scale-value});
-    background-image: url("img/plane2.jpg");
+    background-image: url("img/plane.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: contain;
+    background-size: 90%;
+    background-blend-mode: darken;
+    background-color: $color__background-body;
     margin-top: 3rem;
     padding-top: 10rem;
 
@@ -128,7 +131,12 @@
     // border-bottom: 0.1rem solid rgba($border-grey, 0.15);
     padding: 0;
     margin: 0 0 1.25rem 0;
-
+    background: radial-gradient(
+      transparent 0px,
+      transparent 6px,
+      white 6px,
+      white
+    );
     // &::after {
     // content: "";
     // font-size: 50%;
