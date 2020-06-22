@@ -19,6 +19,7 @@
       ) );
 
       echo '<div class="latest-list-wrapper">';
+      
       echo '<ul class="latest-list">';
 
       while (have_posts()) : the_post();
