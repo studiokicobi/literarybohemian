@@ -18,6 +18,7 @@
           'offset' => 2
       ) );
 
+
       echo '<ul class="latest-list highlight-box">';
 
       while (have_posts()) : the_post();
