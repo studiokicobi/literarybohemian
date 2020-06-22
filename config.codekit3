@@ -439,107 +439,26 @@
 		"opt": 1,
 		"q": 100
 		},
-	"/img/plane.webp": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/img/plane.webp",
-		"oF": 0
-		},
-	"/img/plane2.jpg": {
+	"/img/plane@0.5x.jpg": {
 		"ft": 16384,
-		"iS": 45846,
+		"iS": 21800,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/plane2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/plane2.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 1,
-		"oAP": "/assets/svg/plane2.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/plane2.webp": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/img/plane2.webp",
-		"oF": 0
-		},
-	"/img/plane2@0.1x.jpg": {
-		"ft": 16384,
-		"iS": 1220,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/plane2@0.1x.jpg",
+		"oAP": "/img/plane@0.5x.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/plane2@0.25x.jpg": {
+	"/img/plane@2x.jpg": {
 		"ft": 16384,
-		"iS": 4030,
+		"iS": 266842,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/plane2@0.25x.jpg",
+		"oAP": "/img/plane@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"q": 100
-		},
-	"/img/plane2@0.5x.jpg": {
-		"ft": 16384,
-		"iS": 13800,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/plane2@0.5x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/plane2@0.75x.jpg": {
-		"ft": 16384,
-		"iS": 27766,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/plane2@0.75x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/plane2@1.5x.jpg": {
-		"ft": 16384,
-		"iS": 98487,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/plane2@1.5x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/plane2@2x.jpg": {
-		"ft": 16384,
-		"iS": 170350,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/plane2@2x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
 		"q": 100
 		},
 	"/img/random/1.jpg": {
