@@ -117,7 +117,7 @@ figure {
   background-blend-mode: darken;
   background-color: $color__background-body;
   width: 100%;
-  height: auto;
+  height: 100vh;
 
   &__contact {
     background-image: url("img/rooster.jpg");
