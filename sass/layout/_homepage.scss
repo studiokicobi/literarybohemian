@@ -124,15 +124,17 @@
   }
 }
 
-.latest-list {
+.latest-list.highlight-box {
   background-color: #fbf9f7;
   margin-top: -1rem;
+}
 
+.latest-list {
   &__item {
     font-size: 90%;
     // border-bottom: 0.1rem solid rgba($border-grey, 0.15);
     padding: 0;
-    margin: 0 0 1.25rem 0;
+    margin-bottom: 1.25rem;
     // &::after {
     // content: "";
     // font-size: 50%;
