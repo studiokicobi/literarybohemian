@@ -18,8 +18,6 @@
           'offset' => 2
       ) );
 
-      echo '<div class="latest-list-wrapper">';
-      
       echo '<ul class="latest-list">';
 
       while (have_posts()) : the_post();
@@ -115,7 +113,6 @@
       endwhile;
 
       echo '</ul>';
-      echo '</div>';
 
       // Reset the query
       wp_reset_query();

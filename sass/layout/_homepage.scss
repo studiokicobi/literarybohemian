@@ -125,26 +125,12 @@
   }
 }
 
-.latest-list-wrapper {
-  background: radial-gradient(
-    transparent 0px,
-    transparent 7px,
-    white 7px,
-    white
-  );
-  // Reduce the gradient size
-  background-size: 19px 19px;
-  // Offset to move the holes to the edge
-  background-position: -9px -9px;
-  color: rgba(0, 0, 0, 0.85);
-  // background-color: rgba(255,255,255,0.6);
-  font-size: 85%;
-  padding: 1.5rem;
-  // box-shadow: 0 0 5rem 0 rgba(0,0,0,0.05);
-}
-
 .latest-list {
-  background-color: #fff;
+  background-color: $color__background-body;
+  margin: 0;
+  padding: 1.5rem;
+  box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.05);
+
   &__item {
     font-size: 90%;
     // border-bottom: 0.1rem solid rgba($border-grey, 0.15);
@@ -161,6 +147,7 @@
     // }
 
     &:last-child {
+      margin-bottom: 0;
       &::after {
         border: 0;
       }
