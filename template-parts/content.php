@@ -10,6 +10,8 @@
 
 ?>
 
+<div class="single-post__random-header" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-header/<?php echo rand(1,14) ?>.jpg')"></div>
+
 <article class="single-post__article">
 
 	<?php
@@ -154,10 +156,6 @@
 	?>
 
 	<div class="single-post__body">
-
-		<div class="single-post__random-header" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-header/<?php echo rand(1,14) ?>.jpg')"></div>
-
-		<!-- <img class="single-post__random-header" src="<?php echo get_template_directory_uri(); ?>/img/single-random-header/<?php echo rand(1, 2) ?>.png" alt=""> -->
 
 		<?php
 		if (is_singular('poetry')) {
