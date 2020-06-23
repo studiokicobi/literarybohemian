@@ -155,7 +155,7 @@
 
 	<div class="single-post__body">
 
-		<img class="single-post__random-header" src="<?php echo get_template_directory_uri(); ?>/img/single-random-header/1.png" alt="">
+		<img class="single-post__random-header" src="<?php echo get_template_directory_uri(); ?>/img/single-random-header/<?php echo rand(1, 2) ?>.png" alt="">
 
 		<?php
 		if (is_singular('poetry')) {
