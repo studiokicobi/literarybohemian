@@ -1374,7 +1374,7 @@
 		},
 	"/img/single-random-header/11.jpg": {
 		"ft": 16384,
-		"iS": 406406,
+		"iS": 365493,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/single-random-header/11.jpg",
@@ -1385,10 +1385,10 @@
 		},
 	"/img/single-random-header/12.jpg": {
 		"ft": 16384,
-		"iS": 90712,
+		"iS": 81848,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/single-random-header/12.jpg",
+		"oAP": "/img/single-random-header/.12~imageoptim.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
