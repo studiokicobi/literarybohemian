@@ -123,10 +123,6 @@ $meta-dark: darken($color__background-body, 3);
     text-transform: uppercase;
     padding-top: 0.2rem;
 
-    // @media (max-width: #{$responsive-switch}) {
-    //   padding-left: $meta-dim;
-    // }
-
     &--border {
       padding-right: $meta-dim;
       margin-right: calc(#{$meta-dim} - 1px);
@@ -136,11 +132,8 @@ $meta-dark: darken($color__background-body, 3);
 
   &__taxonomy-wrapper {
     flex-grow: 1;
-
-    // @media (max-width: #{$responsive-switch}) {
-    //   padding-bottom: 1.5rem;
-    // }
   }
+
   &__taxonomy {
     margin: 0;
     padding: 0;
