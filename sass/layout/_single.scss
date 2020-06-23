@@ -21,12 +21,12 @@
     right: calc(#{$rl-site-margin} * -1);
     height: 15rem;
     width: 100vw;
+    // background-image = inline style in content.php
     background-color: #f7f2ee;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
     background-blend-mode: darken;
-    // background-image = inline style in content.php
 
     @media (max-width: #{$responsive-switch}) {
       display: none;
