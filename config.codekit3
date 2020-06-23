@@ -692,7 +692,7 @@
 		},
 	"/img/random/2.jpg": {
 		"ft": 16384,
-		"iS": 20011,
+		"iS": 18569,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/random/.2~imageoptim.jpg",
@@ -1606,7 +1606,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/js/dropcap-span-min.js",
 		"oF": 0,
 		"sC": 1,
