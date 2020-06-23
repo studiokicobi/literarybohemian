@@ -58,7 +58,7 @@
   }
 
   &__random-body {
-    left: calc(#{$rl-site-margin} * -1);
+    margin-left: calc(#{$rl-site-margin} * -1);
     height: 55vh;
     width: 100%;
     // background-image = inline style in content.php
