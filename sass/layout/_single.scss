@@ -58,16 +58,14 @@
   }
 
   &__random-body {
-    position: absolute;
-    bottom: 0;
     left: calc(#{$rl-site-margin} * -1);
-    height: 32vh;
-    width: 50vw;
+    height: 55vh;
+    width: 100%;
     // background-image = inline style in content.php
     background-color: #f7f2ee;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
+    background-position: left;
     background-blend-mode: darken;
 
     @media (max-width: #{$responsive-switch}) {
@@ -118,7 +116,7 @@ $meta-dark: darken($color__background-body, 3);
 
 .meta {
   border-top: 1px solid $border-grey;
-  margin: 0;
+  margin: 0 0 15rem 0; // margin for the random image that follows
   padding: 0;
   list-style-type: none;
   @include sans;
