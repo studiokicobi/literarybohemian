@@ -310,3 +310,7 @@ $meta-dark: darken($color__background-body, 3);
 .inline-byline {
   color: $warm-brown-3;
 }
+
+.toc-graphic {
+  fill: rgba(255, 255, 255, 0.6);
+}
