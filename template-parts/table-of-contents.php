@@ -26,6 +26,7 @@
 
 
 // Issue contents
+echo '<div class="latest-list-illustration"><img src="' . get_stylesheet_directory_uri() . '/img/mountains-2.svg" /></div>';
 echo '<div class="archived-issue__issue-content highlight-box">';
 echo '<h2 class="archived-issue__issue-content--heading">' . $post_categories . '</h2>';
 echo '<h3 class="archived-issue__issue-content--heading-2">Table of contents</h3>';
