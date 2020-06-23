@@ -1350,15 +1350,15 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/img/single-random-header/1.png": {
-		"ft": 32768,
-		"iS": 86486,
+	"/img/single-random-header/1.jpg": {
+		"ft": 16384,
+		"iS": 141208,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/single-random-header/1.png",
+		"oAP": "/img/single-random-header/1.jpg",
 		"oF": 0,
-		"oIPL": 1,
+		"oIPL": 0,
 		"opt": 1,
-		"oT": 1,
 		"q": 100
 		},
 	"/img/single-random-header/2.jpg": {
@@ -1369,7 +1369,7 @@
 		"oAP": "/img/single-random-header/2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/single-random-header/3.jpg": {
