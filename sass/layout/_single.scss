@@ -304,7 +304,10 @@ $meta-dark: darken($color__background-body, 3);
   color: $warm-brown-3;
 }
 
+.toc-svg {
+  margin-top: 5rem;
+}
+
 .toc-graphic {
   fill: rgb(208, 197, 188);
-  margin-top: 5rem;
 }
