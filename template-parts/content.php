@@ -190,7 +190,6 @@
 			the_content();
 		}
 
-
 		// Get the author bio for Journal posts
 		// ----------------------------------------------------------------------------
 		if (is_singular(array('poetry', 'postcard_prose', 'travel_notes'))) {
