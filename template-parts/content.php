@@ -148,7 +148,7 @@
 
 		?>
 
-		<div class="single-post__random-body" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-body/<?php echo rand(1,1) ?>.jpg')"></div>
+		<div class="single-post__random-body" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-body/<?php echo rand(1,13) ?>.jpg')"></div>
 
 	</header><!-- .entry-header -->
 
