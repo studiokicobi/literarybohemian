@@ -155,7 +155,7 @@
 
 	<div class="single-post__body">
 
-		<div class="single-post__random-header" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-header/<?php echo rand(3,3) ?>.jpg')"></div>
+		<div class="single-post__random-header" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-header/<?php echo rand(1,5) ?>.jpg')"></div>
 
 		<!-- <img class="single-post__random-header" src="<?php echo get_template_directory_uri(); ?>/img/single-random-header/<?php echo rand(1, 2) ?>.png" alt=""> -->
 
