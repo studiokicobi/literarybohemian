@@ -57,6 +57,24 @@
     }
   }
 
+  &__random-body {
+    position: absolute;
+    bottom: 0;
+    left: calc(#{$rl-site-margin} * -1);
+    height: 32vh;
+    width: 50vw;
+    // background-image = inline style in content.php
+    background-color: #f7f2ee;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-blend-mode: darken;
+
+    @media (max-width: #{$responsive-switch}) {
+      display: none;
+    }
+  }
+
   &__body {
     flex: 0 0 50%;
     padding-left: 3vw;
