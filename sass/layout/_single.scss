@@ -128,7 +128,7 @@ $meta-dark: darken($color__background-body, 3);
   @media (max-width: #{$responsive-switch}) {
     // background-color: $meta-dark;
     width: calc(100vw - (#{$rl-site-margin} * 2));
-    // margin-bottom: 2rem;
+    margin-bottom: 0;
   }
 
   @media (max-width: 500px) {
