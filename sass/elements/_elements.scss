@@ -27,6 +27,7 @@ body {
 
 .site-content {
   padding: 0 $rl-site-margin 5rem $rl-site-margin;
+  overflow-x: hidden; // prevent scrollbars on search form hover
 
   @media screen and (max-width: 1024px) {
     padding-bottom: 0;
