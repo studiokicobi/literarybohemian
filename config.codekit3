@@ -3198,7 +3198,7 @@
 		"oA": 0,
 		"oAP": "/style.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/typography/_copy.scss": {
