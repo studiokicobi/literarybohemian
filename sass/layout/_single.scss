@@ -57,7 +57,7 @@
     }
   }
 
-  &__random-body {
+  &__random-body-isolated-illos {
     margin-left: calc(#{$rl-site-margin} * -1);
     height: 55vh;
     width: 100%;
@@ -67,6 +67,24 @@
     background-size: contain;
     background-position: left;
     background-blend-mode: darken;
+
+    @media (max-width: #{$responsive-switch}) {
+      display: none;
+    }
+  }
+
+  &__random-body-photos {
+    height: 55vh;
+    width: 100%;
+    // background-image = inline style in content.php
+    background-color: #f7f2ee;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    background-blend-mode: darken;
+    border: 1rem solid #fff;
+    transform: rotate(-3deg);
+    box-shadow: 0 0 5rem 0 rgba(0, 0, 0, 0.05);
 
     @media (max-width: #{$responsive-switch}) {
       display: none;
