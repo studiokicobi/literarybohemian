@@ -184,6 +184,7 @@
   width: calc(100% - 1vw);
   transform: translateY(calc(-1rem - #{$scale-value-2}));
   margin-left: 1vw;
+  z-index: 100; // make sure submenus are on top of site-content
 
   li {
     display: block;
