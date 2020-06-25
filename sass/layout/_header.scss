@@ -19,7 +19,7 @@
     "arrow arrow arrow arrow"
     "nav nav nav nav";
   grid-gap: 0;
-  overflow: hidden; /* prevent scrollbars on search form hover */
+  // overflow: hidden; /* prevent scrollbars on search form hover */
 
   // //IE grid fix
   // @media all and (-ms-high-contrast: none) {
@@ -63,7 +63,7 @@
     height: $search-dim;
     // width: calc(100% + (#{$rl-site-margin} * 2));
     width: auto;
-    margin: 0 calc(#{$rl-site-margin} * -1);
+    margin: 0 calc(#{$search-dim} * -1);
     margin-bottom: calc(1rem + #{$scale-value});
     background-color: none;
     transition: all 0.15s linear;
