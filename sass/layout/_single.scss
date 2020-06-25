@@ -48,6 +48,7 @@
     flex: 0 0 calc(50vw - #{$rl-site-margin});
     padding-top: 51vh;
     padding-right: 3vw;
+    position: relative;
 
     @media (max-width: #{$responsive-switch}) {
       flex: 0 1 50%;
@@ -74,8 +75,8 @@
   }
 
   &__random-body-photos {
-    height: 55vh;
-    width: 100%;
+    height: 35vw;
+    width: 35vw;
     // background-image = inline style in content.php
     background-color: #f7f2ee;
     background-repeat: no-repeat;
@@ -85,6 +86,9 @@
     border: 1rem solid #fff;
     transform: rotate(-3deg);
     box-shadow: 0 0 5rem 0 rgba(0, 0, 0, 0.05);
+    position: absolute;
+    bottom: 15rem;
+    left: 3rem;
 
     @media (max-width: #{$responsive-switch}) {
       display: none;
