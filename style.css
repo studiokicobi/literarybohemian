@@ -610,7 +610,7 @@ body.home #features-small .card__excerpt, body.single #features-small .card__exc
 
 @media screen and (max-width: 500px) { .site-header { margin-bottom: calc(0.5rem + 0.333vw); } }
 
-.site-header { display: grid; grid-template-areas: "logo x x search" "arrow arrow arrow arrow" "nav nav nav nav"; grid-gap: 0; }
+.site-header { display: grid; grid-template-areas: "logo x x search" "arrow arrow arrow arrow" "nav nav nav nav"; grid-gap: 0; position: relative; }
 
 @media (max-width: 50rem) { .site-header { box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.09); overflow: visible; } }
 
@@ -622,7 +622,7 @@ body.home #features-small .card__excerpt, body.single #features-small .card__exc
 
 .site-header .search-wrapper { grid-area: search; height: calc(2.25rem + 0.333vw); width: auto; margin: 0 calc(calc(2.25rem + 0.333vw) * -1); margin-bottom: calc(1rem + 0.333vw); background-color: none; transition: all 0.15s linear; }
 
-@media screen and (max-width: 600px) { .site-header .search-wrapper { position: absolute; top: 0; } }
+@media screen and (max-width: 600px) { .site-header .search-wrapper { position: absolute; top: 0; right: 0; } }
 
 .site-header .search-wrapper .search-form { height: calc(2.25rem + 0.333vw); float: right; width: calc(20rem + (calc(2.25rem + 0.333vw) * 2)); position: relative; transition: all 0.2s linear; box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.15); }
 
@@ -636,7 +636,7 @@ body.home #features-small .card__excerpt, body.single #features-small .card__exc
 
 .site-header .search-wrapper .search-form .search-field::placeholder { font-style: italic; }
 
-@media screen and (max-width: 600px) { .site-header .search-wrapper .search-form .search-field { width: calc(100vw - ((2.25rem + 0.333vw) * 2.5)); } }
+@media screen and (max-width: 600px) { .site-header .search-wrapper .search-form .search-field { width: calc(100vw - ((2.25rem + 0.333vw) * 2.25)); } }
 
 .site-header .search-wrapper .search-form .search-field:hover, .site-header .search-wrapper .search-form .search-field:active, .site-header .search-wrapper .search-form .search-field:focus { background-color: white; color: #111; transition: all 0.15s linear; }
 
