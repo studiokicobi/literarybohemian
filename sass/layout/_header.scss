@@ -119,7 +119,7 @@
         }
 
         @media screen and (max-width: 600px) {
-          width: calc(100vw - ((2.25rem + 0.333vw) * 2.25));
+          width: calc(100vw - ((2.25rem + 0.333vw) * 2));
         }
 
         @include on-event {
