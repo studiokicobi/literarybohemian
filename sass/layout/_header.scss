@@ -19,6 +19,8 @@
     "arrow arrow arrow arrow"
     "nav nav nav nav";
   grid-gap: 0;
+  position: relative;
+
   // overflow: hidden; /* prevent scrollbars on search form hover */
 
   // //IE grid fix
@@ -71,6 +73,7 @@
     @media screen and (max-width: 600px) {
       position: absolute;
       top: 0;
+      right: 0;
     }
 
     .search-form {
@@ -116,7 +119,7 @@
         }
 
         @media screen and (max-width: 600px) {
-          width: calc(100vw - ((2.25rem + 0.333vw) * 2.5));
+          width: calc(100vw - ((2.25rem + 0.333vw) * 2.25));
         }
 
         @include on-event {
