@@ -849,7 +849,7 @@ body.archive .site-main, body.search-results .site-main { padding-bottom: 12rem;
 
 @media screen and (max-width: 1000px) { .newsletter-wrapper::before { background-size: 30rem; } }
 
-@media screen and (max-width: 600px) { .newsletter-wrapper::before { background-image: none; } }
+@media screen and (max-width: 600px) { .newsletter-wrapper::before { background-image: none; display: none; } }
 
 .newsletter { background-image: url("img/map-bg@2x.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover; margin-bottom: 2rem; padding: 6rem 2rem; transition: all linear 0.3s; background-blend-mode: darken; border: 0.8rem solid white; position: relative; box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1); }
 

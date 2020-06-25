@@ -29,6 +29,7 @@
     // Small screen: hide the bg image so it doesn't conflict with the heading
     @media screen and (max-width: 600px) {
       background-image: none;
+      display: none;
     }
   }
 }
