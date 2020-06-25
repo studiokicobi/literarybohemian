@@ -148,7 +148,9 @@
 
 		?>
 
-		<div class="single-post__random-body" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-body/<?php echo rand(1,13) ?>.jpg')"></div>
+		<div class="single-post__random-body-isolated-illos" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-body-isolated-illos/<?php echo rand(1,4) ?>.jpg')"></div>
+
+		<div class="single-post__random-body-photos" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-body-photos/<?php echo rand(1,9) ?>.jpg')"></div>
 
 	</header><!-- .entry-header -->
 
