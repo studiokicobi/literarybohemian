@@ -188,6 +188,8 @@ big { font-size: 125%; }
 --------------------------------------------------------------*/
 html { box-sizing: border-box; scroll-behavior: smooth; }
 
+@media screen and (max-width: 55rem) { html { overflow-x: hidden; } }
+
 *, *:before, *:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */ box-sizing: inherit; }
 
 body { background: #f7f2ee; font-size: calc(1rem + (0.333vw * 3)); }
@@ -510,7 +512,7 @@ body.home #features-small, body.single #features-small, body.page #features-smal
 
 body.home #features-small, body.single #features-small, body.page #features-small { width: 100vw; margin: 0 0 5rem 0; padding: 5rem calc(2.5rem + 0.333vw); transform: translateX(calc((2.5rem + 0.333vw) * -1)); }
 
-@media screen and (max-width: 600px) { body.home #features-small, body.single #features-small, body.page #features-small { padding-bottom: 0; } }
+@media screen and (max-width: 600px) { body.home #features-small, body.single #features-small, body.page #features-small { padding: 1rem 1rem 0 1rem; } }
 
 @media screen and (max-width: 500px) { body.home #features-small, body.single #features-small, body.page #features-small { transform: translateX(calc((1rem + 0.333vw) * -1)); } }
 
@@ -543,6 +545,8 @@ body.home #features-small .card__excerpt, body.single #features-small .card__exc
 .map-border { color: white; width: 100vw; margin-top: 4rem; background-image: url("img/map-bg@2x.jpg"); background-size: cover; background-position: top; background-blend-mode: color-burn; background-color: #6a4f44; position: relative; border-bottom: 1rem solid #a19185; box-shadow: 0 0 5rem 0 rgba(0, 0, 0, 0.1); box-sizing: content-box; }
 
 @media screen and (max-width: 900px) { .map-border { margin-top: 0; } }
+
+@media screen and (max-width: 55ch) { .map-border { background-image: none; } }
 
 .map-border__heading { font-family: sofia-pro, sans-serif; font-weight: 600; font-style: normal; font-size: 150%; text-align: center; padding: 6rem 1rem 5rem 1rem; }
 
