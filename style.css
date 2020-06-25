@@ -622,7 +622,7 @@ body.home #features-small .card__excerpt, body.single #features-small .card__exc
 
 .site-header .search-wrapper { grid-area: search; height: calc(2.25rem + 0.333vw); width: auto; margin: 0 calc(calc(2.25rem + 0.333vw) * -1); margin-bottom: calc(1rem + 0.333vw); background-color: none; transition: all 0.15s linear; }
 
-@media screen and (max-width: 600px) { .site-header .search-wrapper { position: absolute; top: 0; right: 0; margin: 0 calc(calc(1.5rem + 0.333vw) * -1); } }
+@media screen and (max-width: 600px) { .site-header .search-wrapper { position: absolute; top: 0; right: 0; margin: 0 calc(calc(1.5rem + 0.333vw) * -1); background-color: white; } }
 
 .site-header .search-wrapper .search-form { height: calc(2.25rem + 0.333vw); float: right; width: calc(20rem + (calc(2.25rem + 0.333vw) * 2)); position: relative; transition: all 0.2s linear; box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.15); }
 
