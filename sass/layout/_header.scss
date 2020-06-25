@@ -69,8 +69,8 @@
     transition: all 0.15s linear;
 
     @media screen and (max-width: 600px) {
-      position: relative;
-      width: 100%;
+      position: absolute;
+      top: 0;
     }
 
     .search-form {
@@ -90,7 +90,7 @@
         transform: scale(1.05) translate(-9px, 0);
         overflow: hidden;
 
-        @media screen and (max-width: 420px) {
+        @media screen and (max-width: 600px) {
           transform: none;
           box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
         }
@@ -115,7 +115,7 @@
         }
 
         @media screen and (max-width: 600px) {
-          width: calc(100vw - ((2.25rem + 0.333vw) * 2));
+          width: calc(100vw - ((2.25rem + 0.333vw) * 2.5));
         }
 
         @include on-event {
