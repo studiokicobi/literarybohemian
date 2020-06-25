@@ -19,7 +19,7 @@
     "arrow arrow arrow arrow"
     "nav nav nav nav";
   grid-gap: 0;
-  overflow: hidden; // prevent scrollbars on search form hover
+  overflow: hidden; /* prevent scrollbars on search form hover */
 
   // //IE grid fix
   // @media all and (-ms-high-contrast: none) {
@@ -31,7 +31,7 @@
   // }
 
   @media (max-width: #{$responsive-switch}) {
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.09);
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.09);
     overflow: visible;
   }
 
@@ -65,7 +65,6 @@
     width: auto;
     margin: 0 calc(#{$rl-site-margin} * -1);
     margin-bottom: calc(1rem + #{$scale-value});
-    // background-color: $light-warm-brown;
     background-color: none;
     transition: all 0.15s linear;
 
@@ -141,8 +140,6 @@
         border: none;
         height: $search-dim;
         width: calc(#{$search-dim} * 2);
-        // background: $pale-hot;
-        // background-color: #d7c9be;
         background-color: #dbd1c8;
         color: rgba(0, 0, 0, 0);
         line-height: $search-dim;
