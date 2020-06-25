@@ -19,7 +19,7 @@
     "arrow arrow arrow arrow"
     "nav nav nav nav";
   grid-gap: 0;
-  overflow-x: hidden; // prevent scrollbars on search form hover
+  overflow: hidden; // prevent scrollbars on search form hover
 
   // //IE grid fix
   // @media all and (-ms-high-contrast: none) {
