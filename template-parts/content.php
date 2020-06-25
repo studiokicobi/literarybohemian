@@ -10,7 +10,7 @@
 
 ?>
 
-<div class="single-post__random-header" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-header/<?php echo rand(1,14) ?>.jpg')"></div>
+<div class="single-post__random-header" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-header/<?php echo rand(1,15) ?>.jpg')"></div>
 
 <article class="single-post__article">
 
@@ -148,9 +148,9 @@
 
 		?>
 
-		<div class="single-post__random-body-isolated-illos" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-body-isolated-illos/<?php echo rand(1,4) ?>.jpg')"></div>
+		<div class="single-post__random-body-isolated-illos" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-body-isolated-illos/<?php echo rand(1,33) ?>.jpg')"></div>
 
-		<div class="single-post__random-body-photos" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-body-photos/<?php echo rand(1,9) ?>.jpg')"></div>
+		<div class="single-post__random-body-photos" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-body-photos/<?php echo rand(1,19) ?>.jpg')"></div>
 
 	</header><!-- .entry-header -->
 
