@@ -302,7 +302,10 @@ body.page {
     }
 
     @media screen and (max-width: 500px) {
-      transform: translateX(calc((1rem + 0.333vw) * -1));
+      // transform: translateX(calc((1rem + 0.333vw) * -1));
+      width: 100vw;
+      margin-left: 50%;
+      transform: translateX(-50%);
     }
 
     .card {

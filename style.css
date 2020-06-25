@@ -514,7 +514,7 @@ body.home #features-small, body.single #features-small, body.page #features-smal
 
 @media screen and (max-width: 600px) { body.home #features-small, body.single #features-small, body.page #features-small { padding: 1rem 1rem 0 1rem; } }
 
-@media screen and (max-width: 500px) { body.home #features-small, body.single #features-small, body.page #features-small { transform: translateX(calc((1rem + 0.333vw) * -1)); } }
+@media screen and (max-width: 500px) { body.home #features-small, body.single #features-small, body.page #features-small { width: 100vw; margin-left: 50%; transform: translateX(-50%); } }
 
 body.home #features-small .card, body.single #features-small .card, body.page #features-small .card { background-color: #f7f2ee; }
 
