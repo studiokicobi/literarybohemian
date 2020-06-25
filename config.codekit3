@@ -1339,276 +1339,144 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/img/single-random-body/1.jpg": {
+	"/img/single-random-body-isolated-illos/1.jpg": {
 		"ft": 16384,
 		"iS": 69660,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/single-random-body/1.jpg",
+		"oAP": "/img/single-random-body-isolated-illos/1.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/single-random-body/10.jpg": {
-		"ft": 16384,
-		"iS": 98067,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/single-random-body/10.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/single-random-body/10@0.5x.jpg": {
-		"ft": 16384,
-		"iS": 25722,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/single-random-body/10@0.5x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/single-random-body/11.jpg": {
-		"ft": 16384,
-		"iS": 128643,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/single-random-body/11.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/single-random-body/11@0.5x.jpg": {
-		"ft": 16384,
-		"iS": 45918,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/single-random-body/11@0.5x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/single-random-body/12.jpg": {
-		"ft": 16384,
-		"iS": 115986,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/single-random-body/12.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/single-random-body/12@0.5x.jpg": {
-		"ft": 16384,
-		"iS": 27952,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/single-random-body/12@0.5x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/single-random-body/13.jpg": {
-		"ft": 16384,
-		"iS": 141188,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/single-random-body/13.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/single-random-body/13@0.5x.jpg": {
-		"ft": 16384,
-		"iS": 46072,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/single-random-body/13@0.5x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/single-random-body/2.jpg": {
+	"/img/single-random-body-isolated-illos/2.jpg": {
 		"ft": 16384,
 		"iS": 192274,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/single-random-body/2.jpg",
+		"oAP": "/img/single-random-body-isolated-illos/2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/single-random-body/2@0.5x.jpg": {
-		"ft": 16384,
-		"iS": 66897,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/single-random-body/2@0.5x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/single-random-body/3.jpg": {
+	"/img/single-random-body-isolated-illos/3.jpg": {
 		"ft": 16384,
 		"iS": 142933,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/single-random-body/3.jpg",
+		"oAP": "/img/single-random-body-isolated-illos/3.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/single-random-body/3@0.5x.jpg": {
-		"ft": 16384,
-		"iS": 50059,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/single-random-body/3@0.5x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/single-random-body/4.jpg": {
+	"/img/single-random-body-isolated-illos/4.jpg": {
 		"ft": 16384,
 		"iS": 100707,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/single-random-body/4.jpg",
+		"oAP": "/img/single-random-body-isolated-illos/4.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/single-random-body/4@0.5x.jpg": {
-		"ft": 16384,
-		"iS": 38972,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/single-random-body/4@0.5x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/single-random-body/5.jpg": {
+	"/img/single-random-body-photos/1.jpg": {
 		"ft": 16384,
 		"iS": 285353,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/single-random-body/5.jpg",
+		"oAP": "/img/single-random-body-photos/1.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/single-random-body/5@0.5x.jpg": {
-		"ft": 16384,
-		"iS": 114652,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/single-random-body/5@0.5x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/single-random-body/6.jpg": {
+	"/img/single-random-body-photos/2.jpg": {
 		"ft": 16384,
 		"iS": 118507,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/single-random-body/6.jpg",
+		"oAP": "/img/single-random-body-photos/2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/single-random-body/6@0.5x.jpg": {
-		"ft": 16384,
-		"iS": 26561,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/single-random-body/6@0.5x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/single-random-body/7.jpg": {
+	"/img/single-random-body-photos/3.jpg": {
 		"ft": 16384,
 		"iS": 353617,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/single-random-body/7.jpg",
+		"oAP": "/img/single-random-body-photos/3.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/single-random-body/7@0.5x.jpg": {
-		"ft": 16384,
-		"iS": 114668,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/single-random-body/7@0.5x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/single-random-body/8.jpg": {
+	"/img/single-random-body-photos/4.jpg": {
 		"ft": 16384,
 		"iS": 257561,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/single-random-body/8.jpg",
+		"oAP": "/img/single-random-body-photos/4.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/single-random-body/8@0.5x.jpg": {
-		"ft": 16384,
-		"iS": 81942,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/single-random-body/8@0.5x.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/single-random-body/9.jpg": {
+	"/img/single-random-body-photos/5.jpg": {
 		"ft": 16384,
 		"iS": 143958,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/single-random-body/9.jpg",
+		"oAP": "/img/single-random-body-photos/5.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/single-random-body/9@0.5x.jpg": {
+	"/img/single-random-body-photos/6.jpg": {
 		"ft": 16384,
-		"iS": 39621,
+		"iS": 98067,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/single-random-body/9@0.5x.jpg",
+		"oAP": "/img/single-random-body-photos/6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/single-random-body-photos/7.jpg": {
+		"ft": 16384,
+		"iS": 128643,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/single-random-body-photos/7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/single-random-body-photos/8.jpg": {
+		"ft": 16384,
+		"iS": 115986,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/single-random-body-photos/8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/single-random-body-photos/9.jpg": {
+		"ft": 16384,
+		"iS": 141188,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/single-random-body-photos/9.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
