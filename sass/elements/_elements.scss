@@ -1,10 +1,6 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-
-  @media screen and (max-width: 55rem) {
-    overflow-x: hidden; // search-wrapper is causing scrollbars at this width
-  }
 }
 
 *,
@@ -68,6 +64,10 @@ body {
 html,
 body {
   height: 100%;
+
+  @media screen and (max-width: 55rem) {
+    overflow-x: hidden; // search-wrapper is causing scrollbars at this width
+  }
 }
 
 body {

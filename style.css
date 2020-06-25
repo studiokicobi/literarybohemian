@@ -188,8 +188,6 @@ big { font-size: 125%; }
 --------------------------------------------------------------*/
 html { box-sizing: border-box; scroll-behavior: smooth; }
 
-@media screen and (max-width: 55rem) { html { overflow-x: hidden; } }
-
 *, *:before, *:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */ box-sizing: inherit; }
 
 body { background: #f7f2ee; font-size: calc(1rem + (0.333vw * 3)); }
@@ -207,6 +205,8 @@ body { background: #f7f2ee; font-size: calc(1rem + (0.333vw * 3)); }
 @media screen and (max-width: 500px) { .site-header { padding: 0 calc(1.5rem + 0.333vw); } .site-content { padding: 1rem calc(0.5rem + 0.333vw); } .site-info { padding: 0 calc(4.5rem + 0.333vw); } .newsletter { margin-left: 0; margin-right: 0; } }
 
 html, body { height: 100%; }
+
+@media screen and (max-width: 55rem) { html, body { overflow-x: hidden; } }
 
 body { display: flex; flex-direction: column; }
 
