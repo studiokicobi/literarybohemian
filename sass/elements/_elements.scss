@@ -68,6 +68,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden; // search-wrapper is causing scrollbars below 600px
 }
 #page {
   flex: 1 0 auto;
