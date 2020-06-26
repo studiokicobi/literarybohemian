@@ -67,7 +67,7 @@
 		<div class="site-branding">
 			<div class="logo-container">
 				<a href="/" rel="home">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/the-literary-bohemian-logo.svg" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/the-literary-bohemian-logo-4.svg" alt="">
 					<!-- screen reader text -->
 					<span class="screen-reader-text">The Literary Bohemian</span>
 				</a>

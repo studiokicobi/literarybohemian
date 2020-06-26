@@ -620,7 +620,7 @@ body.home #features-small .card__excerpt, body.single #features-small .card__exc
 
 .site-header .site-branding { grid-area: logo; margin-top: 1rem; margin-left: 0.9vw; }
 
-.site-header .site-branding img { width: 45%; min-width: 6rem; }
+.site-header .site-branding img { width: 55%; min-width: 6rem; }
 
 @media screen and (max-width: 600px) { .site-header .site-branding { margin-top: 4rem; } }
 
