@@ -17,7 +17,7 @@ textarea {
   color: $color__text-input;
   border: 1px solid rgba($color__border-input, 0.6);
   border-radius: 0;
-  padding: 0.5rem;
+  padding: 1rem;
 
   &:focus {
     color: $color__text-input-focus;
@@ -36,7 +36,6 @@ textarea {
 .wpcf7-quiz-label {
   @include sans;
   font-size: 70%;
-  padding: 1rem;
 }
 
 .wpcf7 input[type="email"],
