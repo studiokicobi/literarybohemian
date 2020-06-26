@@ -39,6 +39,14 @@ textarea {
   font-size: 70%;
 }
 
+span.wpcf7-not-valid-tip {
+  color: #f15959;
+  font-size: 1em;
+  font-weight: normal;
+  display: block;
+  font-size: 1.3rem;
+}
+
 .wpcf7 input[type="email"],
 input[type="text"],
 input[type="text"].wpcf7-text {

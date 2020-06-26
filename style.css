@@ -269,6 +269,8 @@ textarea { width: 100%; }
 
 .contact-form__label, .wpcf7-quiz-label, .wpcf7-not-valid-tip { font-family: sofia-pro, sans-serif; font-weight: 600; font-style: normal; font-size: 70%; }
 
+span.wpcf7-not-valid-tip { color: #f15959; font-size: 1em; font-weight: normal; display: block; font-size: 1.3rem; }
+
 .wpcf7 input[type="email"], input[type="text"], input.wpcf7-text[type="text"] { width: 100%; }
 
 div.wpcf7-validation-errors, div.wpcf7-acceptance-missing { background-color: #f7ee73; border: 0; font-style: italic; }
