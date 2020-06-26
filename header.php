@@ -15,7 +15,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<meta name="og:url" content="https://literarybohemian.com/">
+	<meta name="og:title" content="The Literary Bohemian">
+	<meta name="og:type" content="website">
+	<meta name="og:description" content="Words & Wanderlust">
+	<meta name="og:image" content="https://literarybohemian.com/icon.png">
+
+		<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php
 	// Random numbers for the disc positions on the header arrow
