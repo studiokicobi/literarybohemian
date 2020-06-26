@@ -54,6 +54,17 @@
 	.disc-3, #random-content-3 { left: <?php echo $d_3b . "%"; ?>; animation: slide-3 <?php echo $fade_3 . "s"; ?> ease-out 1, fade <?php echo $fade_time; ?> linear 1; }
 	</style>
 
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18801989-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-18801989-1');
+	</script>
+
 	<?php wp_head(); ?>
 
 </head>
