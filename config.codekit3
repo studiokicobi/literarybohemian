@@ -2701,7 +2701,7 @@
 		"oA": 1,
 		"oAP": "/_normalize.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/elements/_elements.scss": {
@@ -2714,7 +2714,7 @@
 		"oA": 1,
 		"oAP": "/_elements.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/elements/_lists.scss": {
@@ -2727,7 +2727,7 @@
 		"oA": 1,
 		"oAP": "/_lists.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/elements/_tables.scss": {
@@ -2740,7 +2740,7 @@
 		"oA": 1,
 		"oAP": "/_tables.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/forms/_buttons.scss": {
@@ -2753,7 +2753,7 @@
 		"oA": 1,
 		"oAP": "/_buttons.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/forms/_fields.scss": {
@@ -2766,7 +2766,7 @@
 		"oA": 1,
 		"oAP": "/_fields.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/forms/_float-label.scss": {
@@ -2779,7 +2779,7 @@
 		"oA": 1,
 		"oAP": "/_float-label.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/forms/_forms.scss": {
@@ -2792,7 +2792,7 @@
 		"oA": 1,
 		"oAP": "/_forms.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/layout/_authors.scss": {
@@ -2805,7 +2805,7 @@
 		"oA": 1,
 		"oAP": "/_authors.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/layout/_cards.scss": {
@@ -2818,7 +2818,7 @@
 		"oA": 1,
 		"oAP": "/_cards.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/layout/_category.scss": {
@@ -2831,7 +2831,7 @@
 		"oA": 1,
 		"oAP": "/_category.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/layout/_content-sidebar.scss": {
@@ -2844,7 +2844,7 @@
 		"oA": 1,
 		"oAP": "/_content-sidebar.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/layout/_footer.scss": {
@@ -2857,7 +2857,7 @@
 		"oA": 1,
 		"oAP": "/_footer.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/layout/_header.scss": {
@@ -2870,7 +2870,7 @@
 		"oA": 1,
 		"oAP": "/_header.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/layout/_homepage.scss": {
@@ -2883,7 +2883,7 @@
 		"oA": 1,
 		"oAP": "/_homepage.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/layout/_issue-index.scss": {
@@ -2896,7 +2896,7 @@
 		"oA": 1,
 		"oAP": "/_issue-index.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/layout/_newsletter.scss": {
@@ -2909,7 +2909,7 @@
 		"oA": 1,
 		"oAP": "/_newsletter.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/layout/_no-sidebar.scss": {
@@ -2922,7 +2922,7 @@
 		"oA": 1,
 		"oAP": "/_no-sidebar.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/layout/_sidebar-content.scss": {
@@ -2935,7 +2935,7 @@
 		"oA": 1,
 		"oAP": "/_sidebar-content.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/layout/_single.scss": {
@@ -2948,7 +2948,7 @@
 		"oA": 1,
 		"oAP": "/_single.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/layout/_switcher.scss": {
@@ -2961,7 +2961,7 @@
 		"oA": 1,
 		"oAP": "/_switcher.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/layout/_tooltip.scss": {
@@ -2974,7 +2974,7 @@
 		"oA": 1,
 		"oAP": "/_tooltip.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/layout/_truncate-overflow.scss": {
@@ -2987,7 +2987,7 @@
 		"oA": 1,
 		"oAP": "/_truncate-overflow.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/media/_captions.scss": {
@@ -3000,7 +3000,7 @@
 		"oA": 1,
 		"oAP": "/_captions.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/media/_galleries.scss": {
@@ -3013,7 +3013,7 @@
 		"oA": 1,
 		"oAP": "/_galleries.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/media/_media.scss": {
@@ -3026,7 +3026,7 @@
 		"oA": 1,
 		"oAP": "/_media.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/mixins/_mixins-master.scss": {
@@ -3039,7 +3039,7 @@
 		"oA": 1,
 		"oAP": "/_mixins-master.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/modules/_accessibility.scss": {
@@ -3052,7 +3052,7 @@
 		"oA": 1,
 		"oAP": "/_accessibility.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/modules/_alignments.scss": {
@@ -3065,7 +3065,7 @@
 		"oA": 1,
 		"oAP": "/_alignments.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/modules/_clearings.scss": {
@@ -3078,7 +3078,7 @@
 		"oA": 1,
 		"oAP": "/_clearings.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/modules/_custom-scrollbars.scss": {
@@ -3091,7 +3091,7 @@
 		"oA": 1,
 		"oAP": "/_custom-scrollbars.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/modules/_infinite-scroll.scss": {
@@ -3104,7 +3104,7 @@
 		"oA": 1,
 		"oAP": "/_infinite-scroll.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/navigation/_links.scss": {
@@ -3117,7 +3117,7 @@
 		"oA": 1,
 		"oAP": "/_links.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/navigation/_menus.scss": {
@@ -3130,7 +3130,7 @@
 		"oA": 1,
 		"oAP": "/_menus.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/navigation/_navigation.scss": {
@@ -3143,7 +3143,7 @@
 		"oA": 1,
 		"oAP": "/_navigation.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/site/_site.scss": {
@@ -3156,7 +3156,7 @@
 		"oA": 1,
 		"oAP": "/_site.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/site/primary/_comments.scss": {
@@ -3169,7 +3169,7 @@
 		"oA": 1,
 		"oAP": "/_comments.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/site/primary/_posts-and-pages.scss": {
@@ -3182,7 +3182,7 @@
 		"oA": 1,
 		"oAP": "/_posts-and-pages.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/site/secondary/_widgets.scss": {
@@ -3195,7 +3195,7 @@
 		"oA": 1,
 		"oAP": "/_widgets.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/style.scss": {
@@ -3221,7 +3221,7 @@
 		"oA": 1,
 		"oAP": "/_copy.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/typography/_headings.scss": {
@@ -3234,7 +3234,7 @@
 		"oA": 1,
 		"oAP": "/_headings.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/typography/_typography.scss": {
@@ -3247,7 +3247,7 @@
 		"oA": 1,
 		"oAP": "/_typography.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/variables-site/_colors.scss": {
@@ -3260,7 +3260,7 @@
 		"oA": 1,
 		"oAP": "/_colors.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/variables-site/_columns.scss": {
@@ -3273,7 +3273,7 @@
 		"oA": 1,
 		"oAP": "/_columns.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/variables-site/_structure.scss": {
@@ -3286,7 +3286,7 @@
 		"oA": 1,
 		"oAP": "/_structure.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/variables-site/_typography.scss": {
@@ -3299,7 +3299,7 @@
 		"oA": 1,
 		"oAP": "/_typography.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/sass/variables-site/_variables-site.scss": {
@@ -3312,7 +3312,7 @@
 		"oA": 1,
 		"oAP": "/_variables-site.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"sct": 1
 		},
 	"/screenshot.png": {
@@ -5530,7 +5530,7 @@
 		"createSourceMap": 1,
 		"decimalPrecision": 10,
 		"emitCharset": 1,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1
 		},
