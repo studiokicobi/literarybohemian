@@ -275,6 +275,8 @@ span.wpcf7-not-valid-tip { color: #f15959; font-size: 1em; font-weight: normal; 
 
 div.wpcf7-validation-errors, div.wpcf7-acceptance-missing { background-color: #f7ee73; border: 0; font-style: italic; }
 
+div.wpcf7-mail-sent-ok { background: #bbe8a7; border: 0; }
+
 div.wpcf7-response-output { margin: 2em 0 1em; padding: 1em; border: 0; }
 
 input.wpcf7-submit[type="submit"] { margin-top: 2rem; }
