@@ -267,9 +267,13 @@ select { border: 1px solid #ccc; }
 
 textarea { width: 100%; }
 
-.contact-form__label, .wpcf7-quiz-label { font-family: sofia-pro, sans-serif; font-weight: 600; font-style: normal; font-size: 70%; }
+.contact-form__label, .wpcf7-quiz-label, .wpcf7-not-valid-tip { font-family: sofia-pro, sans-serif; font-weight: 600; font-style: normal; font-size: 70%; }
 
 .wpcf7 input[type="email"], input[type="text"], input.wpcf7-text[type="text"] { width: 100%; }
+
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing { background-color: #f7ee73; border: 0; font-style: italic; }
+
+div.wpcf7-response-output { margin: 2em 0 1em; padding: 1em; border: 0; }
 
 input.wpcf7-submit[type="submit"] { margin-top: 2rem; }
 
