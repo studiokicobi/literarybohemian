@@ -41,6 +41,11 @@ p {
   max-width: 55ch;
 }
 
+body.page p,
+body.page ul {
+  font-size: 80%;
+}
+
 // Sans = Sofia Pro Semi Bold
 @mixin sans {
   font-family: sofia-pro, sans-serif;
