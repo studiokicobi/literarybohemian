@@ -24,6 +24,7 @@
       flex: 0 0 calc(50vw - #{$rl-site-margin});
       padding-top: 14rem;
       padding-right: 3vw;
+      position: relative;
 
       @media (max-width: #{$responsive-switch}) {
         flex: 0 1 50%;

@@ -599,7 +599,7 @@ body.home #features-small .card__excerpt, body.single #features-small .card__exc
 
 @media (max-width: 50rem) { .archived-issue__intro { flex-direction: column; } }
 
-.archived-issue__intro--header { flex: 0 0 calc(50vw - calc(2.5rem + 0.333vw)); padding-top: 14rem; padding-right: 3vw; }
+.archived-issue__intro--header { flex: 0 0 calc(50vw - calc(2.5rem + 0.333vw)); padding-top: 14rem; padding-right: 3vw; position: relative; }
 
 @media (max-width: 50rem) { .archived-issue__intro--header { flex: 0 1 50%; padding-top: 0; padding-right: 0; margin-top: 3rem; margin-bottom: 0; } }
 
