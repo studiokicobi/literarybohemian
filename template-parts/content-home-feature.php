@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template part for displaying the feature, i.e. the latest Journal post
  * *
@@ -6,18 +7,18 @@
  */
 ?>
 
-  <?php
-  // The latest post from The Journal
-      query_posts(array(
-          'post_type' => array('poetry', 'postcard_prose', 'travel_notes',),
-          'post_status' => 'publish',
-          'orderby' => 'publish_date',
-          'order' => 'DESC',
-          'showposts' => 1
-      ) );
-  ?>
+<?php
+// The latest post from The Journal
+query_posts(array(
+  'post_type' => array('poetry', 'postcard_prose', 'travel_notes',),
+  'post_status' => 'publish',
+  'orderby' => 'publish_date',
+  'order' => 'DESC',
+  'showposts' => 1
+));
+?>
 
-  <?php while (have_posts()) : the_post();
+<?php while (have_posts()) : the_post();
 
   // Get the category
   // ----------------------------------------------------------------------------
@@ -38,10 +39,10 @@
   }
 
   // Get the custom post type
-  if ( get_post_type( get_the_ID() ) == 'poetry' ) {
+  if (get_post_type(get_the_ID()) == 'poetry') {
     $journal_cpt = 'Poetry';
     $cpt_class = 'icon-poetry-home';
-  } elseif ( get_post_type( get_the_ID() ) == 'postcard_prose' ) {
+  } elseif (get_post_type(get_the_ID()) == 'postcard_prose') {
     $journal_cpt = 'Postcard Prose';
     $cpt_class = 'icon-postcard-home';
   } else {
@@ -56,21 +57,21 @@
 
   // The title
   // --------------------
-  the_title( '<h2 class="home-feature__title">', '</h2>' );
+  the_title('<h2 class="home-feature__title">', '</h2>');
 
   // Byline
   // --------------------
 
   // If this is a Poetry post type
-  if ( get_post_type( get_the_ID() ) == 'poetry' ) {
+  if (get_post_type(get_the_ID()) == 'poetry') {
 
     // Check if we have multiple poems
 
     // Get the ACF rows
-    if ( have_rows( 'poems' ) ) :
-      while ( have_rows( 'poems' ) ) : the_row();
+    if (have_rows('poems')) :
+      while (have_rows('poems')) : the_row();
 
-      if ( get_field( 'multiple_poems' ) == 1 ) :
+        if (get_field('multiple_poems') == 1) :
         // do nothing
         else :
           // echo the author name
@@ -81,7 +82,7 @@
   } else {
     // end get poetry post type
     echo '<p class="home-feature__byline">By ' . $name . '</p>';
-}
+  }
 
   // The metadata section
   // --------------------
@@ -95,36 +96,37 @@
   // --------------------
   echo '<div class="home-feature__excerpt truncate">';
 
-  if ( get_post_type( get_the_ID() ) == 'poetry' ) {
+  if (get_post_type(get_the_ID()) == 'poetry') {
 
     // Drill down through the ACF repeaters and get the first poem content
-    $rows = get_field('poems' );
+    $rows = get_field('poems');
     $first_row = $rows[0];
     $first_row_poem = $first_row['poem'];
     $first_row_poem_content = $first_row_poem['poem_content'];
 
-      // Print the content of the first poem
-      echo $first_row_poem_content;
-
+    // Print the content of the first poem
+    echo $first_row_poem_content;
   } else {
-    echo the_field( 'text' );
+    echo the_field('text');
   }
 
   echo '</div>';
 
   // Read more
-  echo '<a href="' . get_the_permalink() . '" class="home-feature__more button" title="Continue reading ' . get_the_title() '">Read more</a>';
+  echo '<a href="' . get_the_permalink() . '" class="home-feature__more button" title="Continue reading">Read more</a>';
 
   // Close feature
   echo '</div>';
-  ?>
+?>
 
-  <!-- <div class="card__bg" style="background-image: url('<?php //echo get_template_directory_uri(); ?>/img/random/<?php //echo rand(1,9)?>.jpg');"></div> -->
+  <!-- <div class="card__bg" style="background-image: url('<?php //echo get_template_directory_uri(); 
+                                                            ?>/img/random/<?php //echo rand(1,9)
+                                                                                                                    ?>.jpg');"></div> -->
 
-  <?
-  endwhile;
+<?
+endwhile;
 
-  // Reset the query
-  wp_reset_query();
+// Reset the query
+wp_reset_query();
 
-  ?>
+?>
