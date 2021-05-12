@@ -41,6 +41,10 @@ p {
   max-width: 55ch;
 }
 
+.page .entry-content {
+  font-size: calc(1rem + (0.333vw * 2));
+}
+
 // body.page p,
 // body.page ul {
 //   font-size: 80%;
