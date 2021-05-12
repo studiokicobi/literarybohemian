@@ -41,6 +41,18 @@
       "oAP" : "\/category.php",
       "oF" : 0
     },
+    "\/critical-min.css" : {
+      "aP" : 0,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/critical-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/critical.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -3810,6 +3822,14 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/style.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/style.css.map",
+      "oF" : 0
+    },
     "\/tag.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -3864,6 +3884,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/content-journal-contents.php",
+      "oF" : 0
+    },
+    "\/template-parts\/content-logbook.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-logbook.php",
       "oF" : 0
     },
     "\/template-parts\/content-newsletter.php" : {
