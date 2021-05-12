@@ -3625,8 +3625,8 @@
       "oA" : 0,
       "oAP" : "\/style.css",
       "oF" : 0,
-      "oS" : 2,
-      "pg" : 0,
+      "oS" : 3,
+      "pg" : 1,
       "sct" : 1
     },
     "\/sass\/typography\/_copy.scss" : {
