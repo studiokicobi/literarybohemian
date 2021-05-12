@@ -144,7 +144,7 @@ strong, b { font-family: grad, serif; font-weight: 700; font-style: normal; }
 
 p { max-width: 55ch; }
 
-.page .entry-content { font-size: calc(1rem + (0.333vw * 2)); }
+.single-logbook .entry-content, .page .entry-content { font-size: calc(1rem + (0.333vw * 2)); }
 
 @media screen and (min-width: 801px) { #dropcap { margin: -0.52ch 0.1ch 0.75ch -0.1ch; padding: 0 0.01ch 0 0; float: left; font-size: calc(900% + 0.333vw); line-height: 0; font-family: sofia-pro, sans-serif; font-weight: 900; font-style: normal; } }
 
