@@ -113,7 +113,7 @@
   echo '</div>';
 
   // Read more
-  echo '<a href="' . get_the_permalink() . '" class="home-feature__more button">Read more</a>';
+  echo '<a href="' . get_the_permalink() . '" class="home-feature__more button" title="Continue reading ' . get_the_title() '">Read more</a>';
 
   // Close feature
   echo '</div>';
