@@ -29,7 +29,9 @@ get_template_part('template-parts/content', 'newsletter');
 		<?php wp_nav_menu(array('theme_location' => 'menu-4', 'menu_class'      => 'footer-menu')); ?>
 
 		<div class="copyright">
-			<img class="member-branding" src="<?php echo get_template_directory_uri(); ?>/img/clmp.png" alt="CLMP">
+			<div class="member-branding">
+				<img class="clmp" src="<?php echo get_template_directory_uri(); ?>/img/clmp.png" alt="CLMP">
+			</div>
 			&copy; 2008–<?php echo date("Y"); ?> The&nbsp;Literary&nbsp;Bohemian<br />
 			ISSN 2000–1460
 		</div>

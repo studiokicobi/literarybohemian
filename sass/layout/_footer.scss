@@ -89,6 +89,16 @@
         margin-top: 5rem;
         text-align: left;
       }
+
+      .member-branding {
+        .clmp {
+          max-width: 8em;
+        }
+
+        &:after {
+          @include clearfix-after;
+        }
+      }
     }
   }
 

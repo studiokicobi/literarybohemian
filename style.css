@@ -670,6 +670,10 @@ body.home #features-small .card__excerpt, body.single #features-small .card__exc
 
 @media screen and (max-width: 55rem) { .site-footer .site-info .copyright { flex-basis: 100%; margin-top: 5rem; text-align: left; } }
 
+.site-footer .site-info .copyright .member-branding .clmp { max-width: 8em; }
+
+.site-footer .site-info .copyright .member-branding:after { clear: both; }
+
 .site-footer img { vertical-align: bottom; width: 100vw; }
 
 .site-header { margin-bottom: calc(3rem + 0.333vw); }
