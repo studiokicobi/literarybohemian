@@ -10,7 +10,7 @@
 
 ?>
 
-<div class="single-post__random-header" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-header/<?php echo rand(1,15) ?>.jpg')"></div>
+<div class="single-post__random-header" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-header/<?php echo rand(1, 15) ?>.jpg')"></div>
 
 <article class="single-post__article">
 
@@ -148,9 +148,9 @@
 
 		?>
 
-		<div class="single-post__random-body-isolated-illos" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-body-isolated-illos/<?php echo rand(1,33) ?>.jpg')"></div>
+		<div class="single-post__random-body-isolated-illos" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-body-isolated-illos/<?php echo rand(1, 33) ?>.jpg')"></div>
 
-		<div class="single-post__random-body-photos" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-body-photos/<?php echo rand(1,19) ?>.jpg')"></div>
+		<div class="single-post__random-body-photos" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-body-photos/<?php echo rand(1, 19) ?>.jpg')"></div>
 
 	</header><!-- .entry-header -->
 
@@ -176,6 +176,11 @@
 							else :
 							// No title needed.
 							endif;
+
+							// Check for subheading
+							if (get_sub_field('subheading')) {
+								echo '<h3 class="poem__subheading">' . get_sub_field('subheading') . '</h3>';
+							}
 
 							echo get_sub_field('poem_content');
 							if (get_sub_field('poem_details')) {
