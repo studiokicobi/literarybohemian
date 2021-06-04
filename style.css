@@ -1034,6 +1034,8 @@ body.archive .site-main, body.search-results .site-main { padding-bottom: 12rem;
 
 .poem:nth-of-type(n + 2) .poem__title { margin-top: 6rem; }
 
+.poem__subheading { font-style: italic; font-size: 100%; margin-top: -1.25rem; line-height: 1; margin-bottom: 2rem; }
+
 .poem__poem-details { color: rgba(0, 0, 0, 0.7); background-color: rgba(255, 255, 255, 0.6); margin: 2rem 0; font-size: 85%; padding: 1.5rem; box-shadow: 0 0 4rem 0 rgba(0, 0, 0, 0.025); }
 
 .poem__poem-details p { margin: 0 0 0.25rem 0; }
