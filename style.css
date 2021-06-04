@@ -382,13 +382,13 @@ a.single-post__article:hover, a.single-post__article:active, a.single-post__arti
 
 .main-navigation ul { display: block; list-style: none; margin: 0; padding-left: 0; }
 
-.main-navigation ul ul { box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1); float: left; position: absolute; top: 100%; left: -999em; z-index: 999999; font-size: 95%; background-color: white; }
+.main-navigation ul ul { box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1); float: left; position: absolute; top: 100%; left: -999em; z-index: 999999; font-size: 95%; background-color: white; padding: 0.65rem 0.25rem; }
 
 .main-navigation ul ul ul { left: -999em; top: 0; }
 
 .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul { left: 100%; overflow: visible; height: auto; }
 
-.main-navigation ul ul a { min-width: 10rem; padding: 0.5rem 1rem; }
+.main-navigation ul ul a { min-width: 15rem; padding: 0.5rem 1rem; }
 
 .main-navigation ul li:hover > ul, .main-navigation ul li.focus > ul { left: auto; }
 
