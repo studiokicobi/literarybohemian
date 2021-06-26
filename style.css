@@ -1004,7 +1004,7 @@ body.archive .site-main, body.search-results .site-main { padding-bottom: 12rem;
 
 @media (max-width: 50rem) { .single-post__random-body-isolated-illos { display: none; } }
 
-.single-post__random-body-photos { height: 30vw; width: 30vw; background-color: #f7f2ee; background-repeat: no-repeat; background-size: contain; background-position: left; background-blend-mode: darken; border: 1rem solid #fff; -webkit-transform: rotate(-3deg); transform: rotate(-3deg); box-shadow: 0 0 5rem 0 rgba(0, 0, 0, 0.05); position: absolute; bottom: 5rem; left: 3rem; max-width: 30rem; max-height: 30rem; }
+.single-post__random-body-photos { height: 30vw; width: 30vw; background-color: #f7f2ee; background-repeat: no-repeat; background-size: contain; background-position: left; background-blend-mode: darken; border: 1rem solid #fff; -webkit-transform: rotate(-3deg); transform: rotate(-3deg); box-shadow: 0 0 5rem 0 rgba(0, 0, 0, 0.05); position: absolute; bottom: 5rem; left: 3rem; }
 
 @media (max-width: 50rem) { .single-post__random-body-photos { display: none; } }
 

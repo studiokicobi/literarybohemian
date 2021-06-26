@@ -89,8 +89,8 @@
     position: absolute;
     bottom: 5rem;
     left: 3rem;
-    max-width: 30rem;
-    max-height: 30rem;
+    // max-width: 30rem;
+    // max-height: 30rem;
 
     @media (max-width: #{$responsive-switch}) {
       display: none;
