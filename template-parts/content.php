@@ -284,7 +284,16 @@
 				$postslist_t = get_posts($args_t);
 
 				// Issue Introduction
-				echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . $category_link . '"><em>From the editors</em></a></li>';
+				// Define taxonomy prefix eg. 'category'
+				$taxonomy_prefix = 'category';
+
+				// Define prefixed term ID
+				$term_id_prefixed = $taxonomy_prefix . '_' . $category_id;
+
+				$issue_intro_checked_values = get_field('issue-intro', $term_id_prefixed);
+				if ($issue_intro_checked_values) :
+					echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . $category_link . '"><em>From the editors</em></a></li>';
+				endif;
 
 				// Poetry section
 				if ($postslist_p) {
