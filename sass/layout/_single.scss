@@ -60,7 +60,7 @@
 
   &__random-body-isolated-illos {
     margin-left: calc(#{$rl-site-margin} * -1);
-    height: 55vh;
+    height: 45vh;
     width: 100%;
     // background-image = inline style in content.php
     background-color: #f7f2ee;
@@ -75,8 +75,8 @@
   }
 
   &__random-body-photos {
-    height: 35vw;
-    width: 35vw;
+    height: 30vw;
+    width: 30vw;
     // background-image = inline style in content.php
     background-color: #f7f2ee;
     background-repeat: no-repeat;
@@ -87,8 +87,10 @@
     transform: rotate(-3deg);
     box-shadow: 0 0 5rem 0 rgba(0, 0, 0, 0.05);
     position: absolute;
-    bottom: 15rem;
+    bottom: 5rem;
     left: 3rem;
+    max-width: 30rem;
+    max-height: 30rem;
 
     @media (max-width: #{$responsive-switch}) {
       display: none;
