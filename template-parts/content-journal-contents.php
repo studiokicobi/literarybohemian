@@ -25,7 +25,7 @@ wp_reset_query();
 
     // The latest post from The Journal
     query_posts(array(
-      'post_type' => array('poetry', 'postcard_prose', 'travel_notes',),
+      'post_type' => array('poetry', 'postcard_prose', 'travel_notes', 'visual_poetry'),
       'post_status' => 'publish',
       'orderby' => 'publish_date',
       'order' => 'DESC',

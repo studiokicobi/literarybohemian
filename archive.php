@@ -29,6 +29,9 @@ get_header();
 		} elseif ($uriSegments[1] == 'travel-notes') {
 			$cpt = 'travel_notes';
 			$heading = 'Travel Notes';
+		} elseif ($uriSegments[1] == 'visual-poetry') {
+			$cpt = 'visual_poetry';
+			$heading = 'Visual Poetry';
 		} elseif ($uriSegments[1] == 'book-reviews') {
 			$cpt = 'book_reviews';
 			$heading = 'Book Reviews';

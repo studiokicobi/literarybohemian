@@ -10,7 +10,17 @@
 
 ?>
 
-<div class="single-post__random-header" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-header/<?php echo rand(1, 15) ?>.jpg')"></div>
+<?php if (!is_singular('visual_poetry')) {
+	// no random header
+?>
+	<div class="single-post__random-header" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-header/<?php echo rand(1, 15) ?>.jpg')"></div>
+<?php } ?>
+
+<div class="spinner">
+	<div class="bounce1"></div>
+	<div class="bounce2"></div>
+	<div class="bounce3"></div>
+</div>
 
 <article class="single-post__article">
 
@@ -25,6 +35,60 @@
 		// --------------------
 		the_title('<h1 class="single-post__heading">', '</h1>');
 
+		if (is_singular('visual_poetry')) {
+			// Get the height of the title and use it set the CSS variable
+		?>
+			<script>
+				document.onreadystatechange = function() {
+					if (document.readyState !== 'complete') {
+						document.querySelector('.single-post__article').style.visibility = 'hidden';
+						document.querySelector('.spinner').style.visibility = 'visible';
+					} else {
+						document.querySelector('.spinner').style.display = 'none';
+						document.querySelector('.single-post__article').style.visibility = 'visible';
+					}
+				};
+
+				// document.addEventListener('DOMContentLoaded', function(event) {
+
+				document.body.onload = function() {
+
+					const title = document.querySelector('.single-post__heading');
+					const titleHeight = title.clientHeight + 'px';
+					const image = document.querySelector('.visual-poetry-image img');
+					const imageHeight = image.clientHeight + 'px';
+
+					// set the CSS variables
+					document.documentElement.style.setProperty('--title-height', titleHeight);
+					document.documentElement.style.setProperty('--image-height', imageHeight);
+
+				}
+			</script>
+
+			<style>
+				:root {
+					--title-height: '---';
+					--image-height: '---';
+				}
+
+				/* Move the title below the image */
+				.single-post__header {
+					padding-top: calc(var(--image-height) + 3rem);
+				}
+
+				/* Move the content down and align with the title meta data */
+				.single-post__body.visual-poetry-content {
+					padding-top: calc(var(--image-height) + 3rem + var(--title-height));
+				}
+
+				/* Max width to accomodate image */
+				body.single-visual_poetry>.single-post__article {
+					width: 100%;
+				}
+			</style>
+		<?php
+		}
+
 		// The metadata section
 		// --------------------
 		echo '<ul class="meta">';
@@ -36,7 +100,7 @@
 		$name = get_field('name');
 
 		// If this is a Journal post:
-		if (is_singular(array('poetry', 'postcard_prose', 'travel_notes'))) {
+		if (is_singular(array('poetry', 'postcard_prose', 'travel_notes', 'visual_poetry'))) {
 
 			$posts = get_field('author_bio');
 			// get the post if it exists using ACF relationship field
@@ -79,9 +143,13 @@
 			$cpt = 'Travel Notes';
 			$cpt_class = 'icon-travel-home';
 			$link = $cpt;
+		} elseif (is_singular('visual_poetry')) {
+			$cpt = 'Visual Poetry';
+			$cpt_class = 'icon-travel-home';
+			$link = $cpt;
 		}
 
-		if (is_singular(array('poetry', 'postcard_prose', 'travel_notes'))) {
+		if (is_singular(array('poetry', 'postcard_prose', 'travel_notes', 'visual_poetry'))) {
 			echo '<li class="meta__item meta__item--border ' . $cpt_class . '">' . $link . '</li>';
 		}
 
@@ -110,7 +178,7 @@
 		$category_link = get_category_link($category_id);
 
 		// If this is the Journal: print category and tags
-		if (is_singular(array('poetry', 'postcard_prose', 'travel_notes'))) {
+		if (is_singular(array('poetry', 'postcard_prose', 'travel_notes', 'visual_poetry'))) {
 			echo '<li class="meta__taxonomy-wrapper">';
 			echo '<ul class="meta__taxonomy">';
 			echo '<li class="meta__taxonomy-cat"><a href="' . $category_link . '">' . $post_categories . '</a></li>';
@@ -148,7 +216,11 @@
 
 		?>
 
-		<div class="single-post__random-body-isolated-illos" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-body-isolated-illos/<?php echo rand(1, 33) ?>.jpg')"></div>
+		<?php if (!is_singular('visual_poetry')) {
+			// no random illo if it's Visual Poetry 
+		?>
+			<div class="single-post__random-body-isolated-illos" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-body-isolated-illos/<?php echo rand(1, 33) ?>.jpg')"></div>
+		<?php } ?>
 
 		<div class="single-post__random-body-photos" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-body-photos/<?php echo rand(1, 19) ?>.jpg')"></div>
 
@@ -157,9 +229,13 @@
 	<?php
 	// The text
 	// ----------------------------------------------------------------------------
+
+	if (is_singular('visual_poetry')) {
+		$body_style = ' visual-poetry-content';
+	}
 	?>
 
-	<div class="single-post__body">
+	<div class="single-post__body<?php echo $body_style; ?>">
 
 		<?php
 		if (is_singular('poetry')) {
@@ -195,13 +271,24 @@
 			echo '<div id="dropcap-wrapper" class="single-post__lead">';
 			the_field('text');
 			echo '</div>';
+		} elseif (is_singular('visual_poetry')) {
+			echo '<div class="visual-poetry-image">';
+			$the_visual_poetry_image = get_field('the_visual_poetry_image');
+			$size = 'full';
+			if ($the_visual_poetry_image) {
+				echo wp_get_attachment_image($the_visual_poetry_image, $size);
+			}
+			echo '</div>';
+			echo '<div class="visual-poetry-info">';
+			the_field('info');
+			echo '</div>';
 		} else {
 			the_content();
 		}
 
 		// Get the author bio for Journal posts
 		// ----------------------------------------------------------------------------
-		if (is_singular(array('poetry', 'postcard_prose', 'travel_notes'))) {
+		if (is_singular(array('poetry', 'postcard_prose', 'travel_notes', 'visual_poetry'))) {
 
 			$posts = get_field('author_bio');
 
@@ -234,7 +321,7 @@
 		}
 
 		// Issue contents
-		if (is_singular(array('poetry', 'postcard_prose', 'travel_notes'))) {
+		if (is_singular(array('poetry', 'postcard_prose', 'travel_notes', 'visual_poetry'))) {
 
 
 			if ($post_categories != "—") {
@@ -282,6 +369,9 @@
 				// Travel Notes
 				$args_t = array('category' => $category_id, 'post_type' => 'travel_notes', 'numberposts' => '100',);
 				$postslist_t = get_posts($args_t);
+				// Visual Poetry
+				$args_v = array('category' => $category_id, 'post_type' => 'visual_poetry', 'numberposts' => '100',);
+				$postslist_v = get_posts($args_v);
 
 				// Issue Introduction
 				// Define taxonomy prefix eg. 'category'
@@ -339,6 +429,20 @@
 						// Get the author name
 						$t_name = get_field('name');
 						echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a> <span class="inline-byline">by ' . $t_name . '</span></li>';
+					endforeach;
+					echo '</ul>';
+					echo '</li>';
+				}
+
+				// Visual Poetry
+				if ($postslist_v) {
+					echo '<li class="archived-issue__issue-content--list-section-heading">Visual Poetry';
+					echo '<ul class="archived-issue__issue-content--list-section">';
+					// Print the linked Visual Poetry titles
+					foreach ($postslist_v as $post) :  setup_postdata($post);
+						// Get the author name
+						$v_name = get_field('name');
+						echo '<li class="archived-issue__issue-content--list-section-item"><a class="archived-issue__issue-content--list-section-item-link" href="' . get_the_permalink() . '">' . get_the_title() . '</a> <span class="inline-byline">by ' . $v_name . '</span></li>';
 					endforeach;
 					echo '</ul>';
 					echo '</li>';
