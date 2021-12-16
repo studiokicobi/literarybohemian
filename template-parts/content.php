@@ -16,11 +16,15 @@
 	<div class="single-post__random-header" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/single-random-header/<?php echo rand(1, 15) ?>.jpg')"></div>
 <?php } ?>
 
-<div class="spinner">
-	<div class="bounce1"></div>
-	<div class="bounce2"></div>
-	<div class="bounce3"></div>
-</div>
+<?php if (is_singular('visual_poetry')) {
+	// Spinner
+?>
+	<div class="spinner">
+		<div class="bounce1"></div>
+		<div class="bounce2"></div>
+		<div class="bounce3"></div>
+	</div>
+<?php } ?>
 
 <article class="single-post__article">
 
