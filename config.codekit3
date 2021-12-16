@@ -3892,6 +3892,110 @@
       "oA" : 0,
       "oAP" : "\/tag.php",
       "oF" : 0
+    },
+    "\/template-parts\/archive-author-list.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/archive-author-list.php",
+      "oF" : 0
+    },
+    "\/template-parts\/content-bio.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-bio.php",
+      "oF" : 0
+    },
+    "\/template-parts\/content-cards.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-cards.php",
+      "oF" : 0
+    },
+    "\/template-parts\/content-home-feature.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-home-feature.php",
+      "oF" : 0
+    },
+    "\/template-parts\/content-home-latest-list.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-home-latest-list.php",
+      "oF" : 0
+    },
+    "\/template-parts\/content-journal-contents.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-journal-contents.php",
+      "oF" : 0
+    },
+    "\/template-parts\/content-logbook.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-logbook.php",
+      "oF" : 0
+    },
+    "\/template-parts\/content-newsletter.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-newsletter.php",
+      "oF" : 0
+    },
+    "\/template-parts\/content-none.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-none.php",
+      "oF" : 0
+    },
+    "\/template-parts\/content-page.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-page.php",
+      "oF" : 0
+    },
+    "\/template-parts\/content-search.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content-search.php",
+      "oF" : 0
+    },
+    "\/template-parts\/content.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/content.php",
+      "oF" : 0
+    },
+    "\/template-parts\/table-of-contents.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/table-of-contents.php",
+      "oF" : 0
     }
   },
   "hooks" : [
