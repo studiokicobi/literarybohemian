@@ -18,13 +18,12 @@
 
 <?php if (is_singular('visual_poetry')) {
 	// Spinner
-?>
-	<div class="spinner">
-		<div class="bounce1"></div>
-		<div class="bounce2"></div>
-		<div class="bounce3"></div>
-	</div>
-<?php } ?>
+	echo '<div class="spinner">';
+	echo '<div class="bounce1"></div>';
+	echo '<div class="bounce2"></div>';
+	echo '<div class="bounce3"></div>';
+	echo '</div>';
+} ?>
 
 <article class="single-post__article">
 
