@@ -52,4 +52,108 @@ wp_reset_query();
       $cats = array();
       foreach (get_the_category($post_id) as $c) {
         $cat = get_category($c);
-        array
+        array_push($cats, $cat->name);
+      }
+
+      if (sizeof($cats) > 0) {
+        $post_categories = implode(', ', $cats);
+      } else {
+        $post_categories = 'Not Assigned';
+      }
+
+      // Get the custom post type
+      if (get_post_type(get_the_ID()) == 'poetry') {
+        $journal_cpt = 'Poetry';
+        $cpt_class = 'card__meta-icon card__meta-icon--poetry';
+      } elseif (get_post_type(get_the_ID()) == 'postcard_prose') {
+        $journal_cpt = 'Postcard Prose';
+        $cpt_class = 'card__meta-icon card__meta-icon--postcard';
+      } elseif (get_post_type(get_the_ID()) == 'travel_notes') {
+        $journal_cpt = 'Travel Notes';
+        $cpt_class = 'card__meta-icon card__meta-icon--travel';
+      } elseif (get_post_type(get_the_ID()) == 'visual_poetry') {
+        $journal_cpt = 'Visual Poetry';
+        $cpt_class = 'card__meta-icon card__meta-icon--travel';
+      }
+
+      // Get the author name
+      $name = get_field('name');
+
+      // Print the custom post type and category
+      echo '<strong class="card__meta ' . $cpt_class . '">' . $journal_cpt . '</strong>';
+
+      // Card body wrapper
+      echo '<div class="card__body">';
+
+      // The title
+      // ----------------------------------------------------------------------------
+      the_title(sprintf('<h2 class="card__title"><a href="%s">', esc_url(get_permalink())), '</a></h2>');
+
+      // If this is a Poetry post type
+      // ----------------------------------------------------------------------------
+      if (get_post_type(get_the_ID()) == 'poetry') {
+
+        // Check if we have multiple poems
+        // If false, print the author name
+
+        // Get the ACF rows
+        if (have_rows('poems')) :
+          while (have_rows('poems')) : the_row();
+            if (get_field('multiple_poems') == 1) :
+            // We have multiple poems; do nothing.
+            else :
+              // This is a single poem; get the author name.
+              echo '<h3 class="card__author">By ' . get_field('name') . '</h3>';
+            endif;
+          endwhile;
+        endif;
+      } // end get poetry post type
+      else {
+        // This is a Postcard Prose text
+        echo '<h3 class="card__author">By ' . $name . '</h3>';
+      }
+
+      // The excerpt
+      // ----------------------------------------------------------------------------
+      echo '<p class="card__excerpt">' . get_the_excerpt() . '</p>';
+
+      // Card body bg and wrapper
+      echo '</div>';
+
+      if (get_post_type(get_the_ID()) == 'visual_poetry') {
+
+        $vs_image_field = get_field('the_visual_poetry_image');
+        $size = 'medium';
+        $vs_image = wp_get_attachment_image_src($vs_image_field, $size);
+    ?>
+
+        <div class="card__bg" style="background-image: url('<?php echo $vs_image[0]; ?>');"></div>
+
+      <?php
+      } else {
+      ?>
+        <div class="card__bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/random/<?php echo rand(1, 60) ?>.jpg');"></div>
+      <?php
+      }
+      ?>
+
+      </li>
+
+    <?php
+    endwhile;
+
+    // Reset the query
+    wp_reset_query();
+
+    ?>
+
+  </ul>
+
+  <p class="read-more">
+    <em>See more</em>
+    <a href="<?php echo site_url('/poetry/', 'https'); ?>" class="">Poetry</a>,
+    <a href="<?php echo site_url('/visual-poetry/', 'https'); ?>" class="">Visual Poetry</a>,
+    <em>or</em> <a href="<?php echo site_url('/postcard-prose/', 'https'); ?>" class="">Postcard&nbsp;Prose</a>
+  </p>
+
+</section>
