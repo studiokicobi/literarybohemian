@@ -230,8 +230,10 @@
 	</header><!-- .entry-header -->
 
 	<?php
-	// The text
-	// ----------------------------------------------------------------------------
+		// The text
+		// ----------------------------------------------------------------------------
+
+	$body_style = '';
 
 	if (is_singular('visual_poetry')) {
 		$body_style = ' visual-poetry-content';
