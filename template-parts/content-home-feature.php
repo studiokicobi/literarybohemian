@@ -2,7 +2,7 @@
 
 /**
  * Template part for displaying the feature, i.e. the latest Journal post
- * *
+ *
  * @package The_Literary_Bohemian
  */
 ?>
@@ -10,7 +10,7 @@
 <?php
 // The latest post from The Journal
 query_posts(array(
-  'post_type' => array('poetry', 'postcard_prose', 'travel_notes',),
+  'post_type' => array('poetry', 'postcard_prose', 'travel_notes'),
   'post_status' => 'publish',
   'orderby' => 'publish_date',
   'order' => 'DESC',
@@ -32,7 +32,7 @@ query_posts(array(
     array_push($cats, $cat->name);
   }
 
-  if (sizeOf($cats) > 0) {
+  if (sizeof($cats) > 0) {
     $post_categories = implode(', ', $cats);
   } else {
     $post_categories = '—'; // If we ever see this, we know there's no assigned category
@@ -91,7 +91,6 @@ query_posts(array(
   echo '<li class="meta__item ' . $cpt_class . '">' . $journal_cpt . '</li>';
   echo '</ul>';
 
-
   // The excerpt
   // --------------------
   echo '<div class="home-feature__excerpt truncate">';
@@ -107,7 +106,7 @@ query_posts(array(
     // Print the content of the first poem
     echo $first_row_poem_content;
   } else {
-    echo the_field('text');
+    echo get_field('text');
   }
 
   echo '</div>';
@@ -117,13 +116,7 @@ query_posts(array(
 
   // Close feature
   echo '</div>';
-?>
 
-  <!-- <div class="card__bg" style="background-image: url('<?php //echo get_template_directory_uri(); 
-                                                            ?>/img/random/<?php //echo rand(1,9)
-                                                                          ?>.jpg');"></div> -->
-
-<?
 endwhile;
 
 // Reset the query
