@@ -51,3 +51,5 @@ wp_reset_query();
 
       $cats = array();
       foreach (get_the_category($post_id) as $c) {
+        $cat = get_category($c);
+        array
